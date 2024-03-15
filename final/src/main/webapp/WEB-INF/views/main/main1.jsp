@@ -13,6 +13,6 @@
 
 </head>
 <body>
-    여기는 main2
+    여기는 main2 입니다.
 </body>
 </html>
