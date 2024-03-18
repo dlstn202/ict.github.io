@@ -28,7 +28,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_1.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_1.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -41,7 +41,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_2.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_2.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -54,7 +54,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_3.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_3.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -67,7 +67,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_4.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_4.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -80,7 +80,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_5.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_5.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -93,7 +93,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_1.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_1.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -106,7 +106,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_2.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_2.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -119,7 +119,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_3.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_3.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -132,7 +132,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_4.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_4.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
@@ -145,7 +145,7 @@
                     <div class="contents-slide-group">
                       <div class="cardset cardset-user">
                         <figure class="cardset-figure">
-                          <img class="cardset-img" src="../resources/images/img_profile_5.png" alt="이미지">
+                          <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_profile_5.png" alt="이미지">
                         </figure>
                         <div class="cardset-profile">
                           <p class="cardset-text"> 템플릿하우스로 사용 으로 업무 시간과 생산성을 높일 수있습니다. 다양한 프로젝트 활용과 자주 쓰는 코딩을 미리 저장하고 빠르게 적용할 수 있어서 너무 편리하고 좋아요 </p>
