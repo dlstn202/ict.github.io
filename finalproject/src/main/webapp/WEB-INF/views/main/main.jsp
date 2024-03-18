@@ -36,18 +36,18 @@
             }
         });
         $.ajax({
-            url: "conteiner1.do",
+            url: "container1.do",
             success: function (res_data) {
-                $("#conteiner1").html(res_data);
+                $("#container1").html(res_data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
             }
         });
         $.ajax({
-            url: "conteiner2.do",
+            url: "container2.do",
             success: function (res_data) {
-                $("#conteiner2").html(res_data);
+                $("#container2").html(res_data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -69,8 +69,8 @@
 <body>
     <div id="nav"></div>
     <div id="header"></div>
-    <div id="conteiner1"></div>
-    <div id="conteiner2"></div>
+    <div id="container1"></div>
+    <div id="container2"></div>
     <div id="footer"></div>
   <!-- [E]glamping-N3 -->
   <script src="${pageContext.request.contextPath}/assets/js/setting.js"></script>

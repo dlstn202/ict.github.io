@@ -24,16 +24,16 @@ public class MainController {
         return "main/main_header";
     }
 
-    @RequestMapping("conteiner1.do")
+    @RequestMapping("container1.do")
     public String conteiner1(){
 
-        return "main/main_conteiner1";
+        return "main/main_container1";
     }
 
-    @RequestMapping("conteiner2.do")
+    @RequestMapping("container2.do")
     public String conteiner2(){
 
-        return "main/main_conteiner2";
+        return "main/main_container2";
     }
 
     @RequestMapping("footer.do")
