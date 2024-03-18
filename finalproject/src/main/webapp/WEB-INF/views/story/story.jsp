@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/story.css"/>
     <script>
         $(document).ready(function () {
             // main 초기화
@@ -18,7 +19,7 @@
                 }
             });
             $.ajax({
-                url: "header.do",
+                url: "story_header.do",
                 success: function (res_data) {
                     $("#header").html(res_data);
                 },
@@ -27,18 +28,9 @@
                 }
             });
             $.ajax({
-                url: "story_conteiner1.do",
+                url: "story_container.do",
                 success: function (res_data) {
-                    $("#conteiner1").html(res_data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.table(jqXHR)
-                }
-            });
-            $.ajax({
-                url: "story_conteiner2.do",
-                success: function (res_data) {
-                    $("#conteiner2").html(res_data);
+                    $("#container").html(res_data);
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.table(jqXHR)
@@ -60,9 +52,8 @@
 
 <body>
     <div id="nav"></div>
-    <div id="header"></div>
-    <div id="conteiner1"></div>
-    <div id="conteiner2"></div>
+    <div id="story_header"></div>
+    <div id="story_container"></div>
     <div id="footer"></div>
 </body>
 
