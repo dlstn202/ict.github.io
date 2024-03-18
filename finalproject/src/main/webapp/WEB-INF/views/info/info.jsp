@@ -10,15 +10,6 @@
         $(document).ready(function () {
             // main 초기화
             $.ajax({
-                url: "nav.do",
-                success: function (res_data) {
-                    $("#nav").html(res_data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.table(jqXHR)
-                }
-            });
-            $.ajax({
                 url: "info_header.do",
                 success: function (res_data) {
                     $("#info_header").html(res_data);
@@ -36,25 +27,15 @@
                     console.table(jqXHR)
                 }
             });
-            $.ajax({
-                url: "footer.do",
-                success: function (res_data) {
-                    $("#footer").html(res_data);
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.table(jqXHR)
-                }
-            });
 
         })
     </script>
 </head>
 
 <body>
-    <div id="nav"></div>
     <div id="info_header"></div>
     <div id="info_container"></div>
-    <div id="footer"></div>
+
 </body>
 
 </html>
