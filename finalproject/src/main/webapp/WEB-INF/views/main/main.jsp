@@ -9,6 +9,11 @@
 <meta charset="UTF-8">
 <title>캠프로버</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/setting.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/plugin.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/template.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/common.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/style.css">
 <script>
     $(document).ready(function() {
         // main 초기화
