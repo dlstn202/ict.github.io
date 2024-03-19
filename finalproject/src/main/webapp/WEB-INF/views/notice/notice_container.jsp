@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="th-layout-main ">
-    <!-- [S]glamping-N10 -->
+    <!-- 헤더 -->
     <div class="glamping-N10" data-bid="ZNlTWPw93U">
       <div class="contents-container">
         <img class="contents-subvisual img-pc" src="../resources/images/img_subvisual.png" alt="PC 서브 비주얼 이미지">
@@ -21,32 +21,8 @@
         </div>
       </div>
     </div>
-    <!-- [E]glamping-N10 -->
-    <!-- [S]glamping-N11 -->
-    <div class="glamping-N11" data-bid="UIltWPW998">
-      <div class="contents-container">
-        <div class="tabset tabset-fluid border-bottom">
-          <ul class="tabset-list tabset-lg container-md">
-            <li class="tabset-item">
-              <a class="tabset-link" href="javascript:void(0)">
-                <span>인사말</span>
-              </a>
-            </li>
-            <li class="tabset-item">
-              <a class="tabset-link active" href="javascript:void(0)">
-                <span>산책로 소개</span>
-              </a>
-            </li>
-            <li class="tabset-item">
-              <a class="tabset-link" href="javascript:void(0)">
-                <span>오시는길</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- [E]glamping-N11 -->
+     <!-- 헤더 -->
+
     <!-- [S]glamping-N39 -->
     <div class="glamping-N39" data-bid="sbLtwpW9GA">
       <div class="contents-inner">
