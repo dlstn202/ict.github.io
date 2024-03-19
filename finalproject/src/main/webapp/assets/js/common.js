@@ -13,30 +13,30 @@
         }
       });
       // Gnb
-      $block.find(".header-center").on("mouseover", function() {
-        if (window.innerWidth > 992) {
-          $block.addClass("block-active");
-        }
-      });
-      $block.find(".header-center").on("mouseout", function() {
-        if (window.innerWidth > 992) {
-          $block.removeClass("block-active");
-        }
-      });
+      // $block.find(".header-center").on("mouseover", function() {
+      //   if (window.innerWidth > 992) {
+      //     $block.addClass("block-active");
+      //   }
+      // });
+      // $block.find(".header-center").on("mouseout", function() {
+      //   if (window.innerWidth > 992) {
+      //     $block.removeClass("block-active");
+      //   }
+      // });
       // Gnb DecoLine
-      $block.find(".header-gnbitem").each(function() {
-        const $this = $(this);
-        $this.on("mouseover", function() {
-          if (window.innerWidth > 992) {
-            $this.find(".header-gnblink").addClass("on");
-          }
-        });
-        $this.on("mouseout", function() {
-          if (window.innerWidth > 992) {
-            $this.find(".header-gnblink").removeClass("on");
-          }
-        });
-      });
+      // $block.find(".header-gnbitem").each(function() {
+      //   const $this = $(this);
+      //   $this.on("mouseover", function() {
+      //     if (window.innerWidth > 992) {
+      //       $this.find(".header-gnblink").addClass("on");
+      //     }
+      //   });
+      //   $this.on("mouseout", function() {
+      //     if (window.innerWidth > 992) {
+      //       $this.find(".header-gnblink").removeClass("on");
+      //     }
+      //   });
+      // });
       // Mobile Top
       $block.find(".btn-momenu").on("click", function() {
         $block.addClass("mo-active");
@@ -63,19 +63,19 @@
         $block.find(".header-fullmenu").removeClass("fullmenu-active");
       });
       // Full Gnb DecoLine
-      $block.find(".fullmenu-gnbitem").each(function() {
-        const $this = $(this);
-        $this.on("mouseover", function() {
-          if (window.innerWidth > 992) {
-            $this.find(".fullmenu-gnblink").addClass("on");
-          }
-        });
-        $this.on("mouseout", function() {
-          if (window.innerWidth > 992) {
-            $this.find(".fullmenu-gnblink").removeClass("on");
-          }
-        });
-      });
+      // $block.find(".fullmenu-gnbitem").each(function() {
+      //   const $this = $(this);
+      //   $this.on("mouseover", function() {
+      //     if (window.innerWidth > 992) {
+      //       $this.find(".fullmenu-gnblink").addClass("on");
+      //     }
+      //   });
+      //   $this.on("mouseout", function() {
+      //     if (window.innerWidth > 992) {
+      //       $this.find(".fullmenu-gnblink").removeClass("on");
+      //     }
+      //   });
+      // });
       // Header Mobile 1Depth Click
       if (window.innerWidth <= 992) {
         $block.find(".header-gnbitem").each(function() {
