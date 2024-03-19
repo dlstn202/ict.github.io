@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FAQController {
 
-    @RequestMapping("faqmain.do")
+    @RequestMapping("faq_main.do")
     public String main(){
 
         return "faq/faq_main";

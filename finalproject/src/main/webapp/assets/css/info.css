@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.map-container{display: flex;}
+.map-container #map{width:60%;height: 905px;}
+.map-container #list{width:40%;height: 905px; border: 2px solid red;}
+.sido_select{display: flex;height: 50px; font-size: 15px;}
+.sido_select #sido{width:90%; height: 50px; font-size: 15px; float: left;}
+.sido_select #search{float: right;}
+
+.palce_select{height: 50px; font-size: 20px;}
