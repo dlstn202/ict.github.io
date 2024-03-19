@@ -1,9 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 	<!DOCTYPE html>
 	<html>
 
 	<head>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<meta charset="UTF-8">
@@ -15,62 +19,67 @@
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/detail.css">
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
-		<script>
-            $(document).ready(function () {
+		<script type="text/javascript">
+
                 // main 초기화
                 $.ajax({
                     url: "nav.do",
                     success: function (res_data) {
                         $("#detail_nav").html(res_data);
-                        $.ajax({
-                            url: "reservation_header.do",
-                            success: function (res_data) {
-                                $("#reservation_header").html(res_data);
-                                $.ajax({
-                                    url: "reservation_container_date.do",
-                                    success: function (res_data) {
-                                        $("#reservation_container_date").html(res_data);
-                                        $.ajax({
-                                            url: "footer.do",
-                                            success: function (res_data) {
-                                                $("#detail_footer").html(res_data);
-                                            },
-                                            error: function (jqXHR, textStatus, errorThrown) {
-                                                console.table(jqXHR)
-                                            }
-                                        });
-                                    },
-                                    error: function (jqXHR, textStatus, errorThrown) {
-                                        console.table(jqXHR)
-                                    }
-                                });
-                            },
-                            error: function (jqXHR, textStatus, errorThrown) {
-                                console.table(jqXHR)
-                            }
-                        });
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
                     },
-                    complete: function () {
-                        // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
-                        loadAdditionalScripts();
-                    }
+
                 });
-            });
-        </script>
+                $.ajax({
+                    url: "detail_container_info.do",
+                    success: function (res_data) {
+                        $("#container_info").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    },
 
-		<script type="text/javascript">
+                });
+                $.ajax({
+                    url: "detail_container_insert_review.do",
+                    success: function (res_data) {
+                        $("#container_insert_review").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    },
 
-			<div id="info"></div>
-			<div id="news"></div>
-			<div id="insert_review"></div>
+                });
+                $.ajax({
+                    url: "detail_container_review.do",
+                    success: function (res_data) {
+                        $("#container_review").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    },
+
+                });
+                $.ajax({
+                    url: "footer.do",
+                    success: function (res_data) {
+                        $("#detail_footer").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    },
+
+                });
+			
+		</script>
+
+			<div id="detail_nav"></div>
+			<div id="container_info"></div>
+			<div id="container_insert_review"></div>
+			<div id="container_review"></div>
 			<div id="detail_footer"></div>
-		</div>
-
-
-
 
 	</body>
 

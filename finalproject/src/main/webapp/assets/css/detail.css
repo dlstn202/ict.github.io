@@ -7,7 +7,7 @@
    }
 
    body{
-      background: #F3F3F3;
+      background: rgba(var(--main), 0.1);
    }
    
    .nav{
@@ -774,6 +774,7 @@
       min-height: 500px;
       margin: auto;
       margin-top: 20px;
+      margin-bottom: 100px;
       background-color: #FFFFFF;
       overflow: hidden;
    }
