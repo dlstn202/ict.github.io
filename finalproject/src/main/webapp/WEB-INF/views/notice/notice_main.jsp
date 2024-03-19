@@ -24,12 +24,13 @@
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
         <script>
             $(document).ready(function () {
                 // main 초기화
                 $.ajax({
-                    url: "notice_nav.do",
+                    url: "nav.do",
                     success: function (res_data) {
                         $("#notice_nav").html(res_data);
                     },
@@ -59,7 +60,7 @@
                 });
                 
                 $.ajax({
-                    url: "notice_footer.do",
+                    url: "footer.do",
                     success: function (res_data) {
                         $("#notice_footer").html(res_data);
                     },

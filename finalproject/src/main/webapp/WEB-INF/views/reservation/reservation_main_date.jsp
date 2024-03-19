@@ -1,30 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
     <!DOCTYPE html>
-    <html lang="en">
+    <html>
 
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="imagetoolbar" content="no">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="title" content="웹사이트">
-        <meta name="description" content="웹사이트입니다.">
-        <meta name="keywords" content="키워드,키워드,키워드">
-        <meta property="og:title" content="웹사이트">
-        <meta property="og:description" content="웹사이트입니다">
-        <meta property="og:image" content="https://웹사이트/images/opengraph.png">
-        <meta property="og:url" content="https://웹사이트">
-        <title>커뮤니티_공지사항</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <title>캠프로버</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/reservation.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/reservation.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+
         <script>
             $(document).ready(function () {
                 // main 초기화
@@ -32,33 +23,33 @@
                     url: "nav.do",
                     success: function (res_data) {
                         $("#reservation_nav").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "reservation_header.do",
-                    success: function (res_data) {
-                        $("#reservation_header").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "reservation_container_date.do",
-                    success: function (res_data) {
-                        $("#reservation_container_date").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "footer.do",
-                    success: function (res_data) {
-                        $("#reservation_footer").html(res_data);
+                        $.ajax({
+                            url: "reservation_header.do",
+                            success: function (res_data) {
+                                $("#reservation_header").html(res_data);
+                                $.ajax({
+                                    url: "reservation_container_date.do",
+                                    success: function (res_data) {
+                                        $("#reservation_container_date").html(res_data);
+                                        $.ajax({
+                                            url: "footer.do",
+                                            success: function (res_data) {
+                                                $("#reservation_footer").html(res_data);
+                                            },
+                                            error: function (jqXHR, textStatus, errorThrown) {
+                                                console.table(jqXHR)
+                                            }
+                                        });
+                                    },
+                                    error: function (jqXHR, textStatus, errorThrown) {
+                                        console.table(jqXHR)
+                                    }
+                                });
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.table(jqXHR)
+                            }
+                        });
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
@@ -68,8 +59,7 @@
                         loadAdditionalScripts();
                     }
                 });
-
-            })
+            });
         </script>
         <script>
             function loadAdditionalScripts() {
