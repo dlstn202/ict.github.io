@@ -24,8 +24,9 @@
   --warning: #ffc107;
   --danger: #dc0000;
   --black: #000;
-  --main: #007235;
+  --main: 0,144,53;
   --white: #fff;
+  --main-rgb : ;
   --primary-rgb: 82, 66, 51;
   --secondary-rgb: 151, 131, 108;
   --success-rgb: 25, 135, 84;
