@@ -901,7 +901,7 @@ progress { vertical-align: baseline; }
 /* Accordion : Accordset Plus */
 .accordset.accordset-plus .accordset-header::after { content: '\e902'; font-family: var(--ff-ico); text-align: center; } 
 .accordset.accordset-plus .accordset-item.active .accordset-header { background-color: rgba(var(--main-ton-down-rgb), 0.1); } 
-.accordset.accordset-plus .accordset-item.active .accordset-header ::after { content: '\e901'; } 
+.accordset.accordset-plus .accordset-item.active .accordset-header::after { content: '\e901'; } 
 .accordset.accordset-plus .accordset-item.active + .accordset-item { border-top: 0; } 
 /* Accordion : Accordset Arrow */
 .accordset.accordset-arrow .accordset-header::after { font-family: var(--ff-ico); text-align: center; } 
