@@ -25,6 +25,8 @@
   --danger: #dc0000;
   --black: #000;
   --main: #007235;
+  --main-ton-down:#003A1B;
+  --main-ton-down-rgb:0, 58, 27;
   --white: #fff;
   --main-rgb : 0,144,53;
   --primary-rgb: 82, 66, 51;
@@ -47,7 +49,7 @@
   --letter-spacing: -0.025rem;
   --text-color1: #111111;
   --text-color2: #007235;
-  --text-color3: #007235;
+  --text-color3: #003A1B;
   --text-color4: #00AF52;
   /* 
   --text-color2: #242424;
@@ -57,7 +59,7 @@
   --bg-color: var(--highlight-bg);
   --line-color1: #e5e5e5;
   --line-color2: #F0F0F6;
-  --line-color3: #E5E5EC;
+  --line-color3: #003A1B;
   /* --line-color4: #242424; */
   --line-color4: #007235;
   --ff: "Roboto", "Noto Sans KR", sans-serif;
@@ -894,12 +896,12 @@ progress { vertical-align: baseline; }
 .accordset .accordset-q { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; line-height: 3.2rem; font-size: var(--fs-p2); font-weight: 700; color: var(--text-color5); background-color: var(--line-color4); border-radius: 50%; text-align: center; } 
 .accordset .accordset-a { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; font-size: var(--fs-p2); font-weight: 700; line-height: var(--lh-p3); text-align: center; color: var(--text-color2); } 
 .accordset .accordset-body { display: none; } 
-.accordset .accordset-content { display: flex; align-items: flex-start; padding: 3.2rem 2.4rem; word-break: keep-all; font-size: var(--fs-p2); background-color: var(--highlight-bg); color: var( --text-color3); } 
+.accordset .accordset-content { display: flex; align-items: flex-start; padding: 3.2rem 2.4rem; word-break: keep-all; font-size: var(--fs-p2); background-color: rgba(var(--main-ton-down-rgb), 0.1); color: var( --text-color3); } 
 .accordset .accordset-item.active .accordset-body { display: block; } 
 /* Accordion : Accordset Plus */
 .accordset.accordset-plus .accordset-header::after { content: '\e902'; font-family: var(--ff-ico); text-align: center; } 
-.accordset.accordset-plus .accordset-item.active .accordset-header { background-color: var(--highlight-bg); } 
-.accordset.accordset-plus .accordset-item.active .accordset-header::after { content: '\e901'; } 
+.accordset.accordset-plus .accordset-item.active .accordset-header { background-color: rgba(var(--main-ton-down-rgb), 0.1); } 
+.accordset.accordset-plus .accordset-item.active .accordset-header ::after { content: '\e901'; } 
 .accordset.accordset-plus .accordset-item.active + .accordset-item { border-top: 0; } 
 /* Accordion : Accordset Arrow */
 .accordset.accordset-arrow .accordset-header::after { font-family: var(--ff-ico); text-align: center; } 
