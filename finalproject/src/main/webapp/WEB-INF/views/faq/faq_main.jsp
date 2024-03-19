@@ -15,50 +15,57 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/faq.css">
 <script>
-    $(document).ready(function() {
-        // main 초기화
-        $.ajax({
-            url: "faq_nav.do",
-            success: function (res_data) {
-                $("#faq_nav").html(res_data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            }
-        });
-        $.ajax({
-            url: "faq_header.do",
-            success: function (res_data) {
-                $("#faq_header").html(res_data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            }
-        });
-        $.ajax({
-            url: "faq_container.do",
-            success: function (res_data) {
-                $("#faq_container").html(res_data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            }
-        });
-        $.ajax({
-            url: "faq_footer.do",
-            success: function (res_data) {
-                $("#faq_footer").html(res_data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            },
+
+$(document).ready(function() {
+    // main 초기화
+    $.ajax({
+        url: "nav.do",
+        success: function(res_data) {
+            $("#nav").html(res_data);
+            
+            $.ajax({
+                url: "faq_header.do",
+                success: function(res_data) {
+                    $("#faq_header").html(res_data);
+                    
+                    $.ajax({
+                        url: "faq_container.do",
+                        success: function(res_data) {
+                            $("#faq_container").html(res_data);
+                            
+                            $.ajax({
+                                url: "footer.do",
+                                success: function(res_data) {
+                                    $("#footer").html(res_data);
+                                    
+                                    loadAdditionalScripts();
+                                },
+                                error: function(jqXHR, textStatus, errorThrown) {
+                                    console.table(jqXHR);
+                                }
+                            });
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.table(jqXHR);
+                        }
+                    });
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.table(jqXHR);
+                }
+            });
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.table(jqXHR);
+        },
             complete: function () {
-                        // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
+                        
                         loadAdditionalScripts();
             }
-        });
+    });
+});
 
-    })
+
 </script>
 <script>
 
@@ -76,9 +83,9 @@
 </script>
 </head>
 <body>
-    <div id="faq_nav"></div>
+    <div id="nav"></div>
     <div id="faq_header"></div>
     <div id="faq_container"></div>
-    <div id="faq_footer"></div>
+    <div id="footer"></div>
 </body>
 </html>
