@@ -20,8 +20,8 @@
                 <img class="cardset-img" src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png" alt="카드이미지">
               </figure>
               <div class="cardset-body">
-                <h2 class="cardset-tit"> 템하 글램핑만의 감성으로 <br> 새로움을 만듭니다. </h2>
-                <p class="cardset-desc"> 디자인은 단순히 아름답게만 만드는 작업이 아니라, 사용자의 편의성을 <br> 고려해 아름다움을 불어넣어야 합니다. </p>
+                <h2 class="cardset-tit"> 서울캠핑장</h2>
+                <p class="cardset-desc"> 디자인은 단순히 아름답게만 만드는 작업이 아니라, 사용자의 편의성을 고려해 아름다움을 불어넣어야 합니다. </p>
                 <a href="javascript:void(0);" class="btnset btnset-round btnset-line btnset-black">자세히보기</a>
               </div>
             </div>
