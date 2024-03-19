@@ -15,48 +15,9 @@
         <div class="contents-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="contents-backimg img-pc" src="../resources/images/img_mainvisual_01.png" alt="PC 메인 비주얼 이미지">
-              <img class="contents-backimg img-mobile" src="../resources/images/img_mainvisual_mobile_01.png" alt="모바일 메인 비주얼 이미지">
-              <div class="contents-slide-group container-md">
-                <div class="textset textset-visual">
-                  <h2 class="textset-tit">함께 떠나는 템하 글램핑</h2>
-                  <p class="textset-desc"> 템하 글램핑를 통해 가족, 연인과의 추억의 시간을 만들어 보세요. <br> 템하 글램핑에서 자신있게 초대합니다. </p>
-                </div>
-                <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a>
-              </div>
+              <img class="contents-backimg img-pc" src="${pageContext.request.contextPath}/assets/images/main_header.jpg" alt="PC 메인 비주얼 이미지">
+              <img class="contents-backimg img-mobile" src="${pageContext.request.contextPath}/assets/images/img_mainvisual_mobile_01.png" alt="모바일 메인 비주얼 이미지">
             </div>
-            <div class="swiper-slide">
-              <img class="contents-backimg img-pc" src="../resources/images/img_mainvisual_02.png" alt="PC 메인 비주얼 이미지">
-              <img class="contents-backimg img-mobile" src="../resources/images/img_mainvisual_mobile_02.png" alt="모바일 메인 비주얼 이미지">
-              <div class="contents-slide-group container-md">
-                <div class="textset textset-visual">
-                  <h2 class="textset-tit">함께 떠나는 템하 글램핑</h2>
-                  <p class="textset-desc"> 템하 글램핑를 통해 가족, 연인과의 추억의 시간을 만들어 보세요. <br> 템하 글램핑에서 자신있게 초대합니다. </p>
-                </div>
-                <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <img class="contents-backimg img-pc" src="../resources/images/img_mainvisual_03.png" alt="PC 메인 비주얼 이미지">
-              <img class="contents-backimg img-mobile" src="../resources/images/img_mainvisual_mobile_03.png" alt="모바일 메인 비주얼 이미지">
-              <div class="contents-slide-group container-md">
-                <div class="textset textset-visual">
-                  <h2 class="textset-tit">함께 떠나는 템하 글램핑</h2>
-                  <p class="textset-desc"> 템하 글램핑를 통해 가족, 연인과의 추억의 시간을 만들어 보세요. <br> 템하 글램핑에서 자신있게 초대합니다. </p>
-                </div>
-                <a class="btnset btnset-round btnset-line" href="javascript:void(0)">자세히 보기</a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="contents-control">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-pause">
-              <img src="../resources/icons/ico_pause_white.svg" alt="스와이퍼 멈춤버튼">
-            </div>
-            <div class="swiper-button-play">
-              <img src="../resources/icons/ico_play_white.svg" alt="스와이퍼 재생버튼">
             </div>
           </div>
         </div>
@@ -70,7 +31,7 @@
           <div class="cardset-wrap">
             <div class="cardset cardset-xl cardset-deco cardset-hor row-rever">
               <figure class="cardset-figure">
-                <img class="cardset-img" src="../resources/images/img_glamping_N5_1.png" alt="카드이미지">
+                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N5_1.png" alt="카드이미지">
               </figure>
               <div class="cardset-body">
                 <h2 class="cardset-tit"> 템하 글램핑만의 감성으로 <br> 새로움을 만듭니다. </h2>
@@ -80,7 +41,7 @@
             </div>
             <div class="cardset cardset-xl cardset-deco cardset-hor">
               <figure class="cardset-figure">
-                <img class="cardset-img" src="../resources/images/img_glamping_N5_2.png" alt="카드이미지">
+                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N5_2.png" alt="카드이미지">
               </figure>
               <div class="cardset-body">
                 <h2 class="cardset-tit"> 자연을 담은 템하 글램핑 여행 <br> 마음껏 체험하세요. </h2>
@@ -98,8 +59,8 @@
       <div class="contents-inner">
         <div class="contents-container">
           <div class="imageset">
-            <img class="imageset-img img-pc" src="../resources/images/img_glamping_N6_1.png" alt="PC 이미지">
-            <img class="imageset-img img-mobile" src="../resources/images/img_glamping_mobile_N6_1.png" alt="모바일 이미지">
+            <img class="imageset-img img-pc" src="${pageContext.request.contextPath}/assets/images/img_glamping_N6_1.png" alt="PC 이미지">
+            <img class="imageset-img img-mobile" src="${pageContext.request.contextPath}/assets/images/img_glamping_mobile_N6_1.png" alt="모바일 이미지">
           </div>
           <div class="cardset cardset-xl cardset-deco">
             <h2 class="cardset-tit"> 추억쌓기 딱 좋은 템하 캠핑 <br> 마음껏 체험하기 </h2>
@@ -124,7 +85,7 @@
                 <div class="contents-slide-group container-md">
                   <a href="javascript:void(0);" class="cardset">
                     <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_glamping_N7_1.png" alt="이미지">
+                      <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N7_1.png" alt="이미지">
                     </figure>
                     <div class="cardset-body">
                       <h2 class="cardset-tit">캠프랜드에서의 하루</h2>
@@ -137,7 +98,7 @@
                 <div class="contents-slide-group container-md">
                   <a href="javascript:void(0);" class="cardset">
                     <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_glamping_N7_2.png" alt="이미지">
+                      <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N7_2.png" alt="이미지">
                     </figure>
                     <div class="cardset-body">
                       <h2 class="cardset-tit">자연경관 글램핑</h2>
@@ -150,7 +111,7 @@
                 <div class="contents-slide-group container-md">
                   <a href="javascript:void(0);" class="cardset">
                     <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_glamping_N7_3.png" alt="이미지">
+                      <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N7_3.png" alt="이미지">
                     </figure>
                     <div class="cardset-body">
                       <h2 class="cardset-tit">힐링파크 스팟</h2>
@@ -163,12 +124,13 @@
                 <div class="contents-slide-group container-md">
                   <a href="javascript:void(0);" class="cardset">
                     <figure class="cardset-figure">
-                      <img class="cardset-img" src="../resources/images/img_glamping_N7_4.png" alt="이미지">
+                      <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N7_4.png" alt="이미지">
                     </figure>
                     <div class="cardset-body">
                       <h2 class="cardset-tit">여유로운 글램핑</h2>
                       <p class="cardset-desc"> 강촌에 캠프랜드가 새로 생겼습니다. 캠핑장 <br> 에서 서향의 노을이 아릅답습니다. </p>
                     </div>
+                    
                   </a>
                 </div>
               </div>
@@ -179,7 +141,7 @@
           <div class="contents-control">
             <div class="swiper-pagination"></div>
             <a href="javascript:void(0);" class="btnset btnset-text btnset-icon">자세히보기 <div class="btnset-img">
-                <img src="../resources/icons/ico_more_black.svg" alt="자세히보기 아이콘">
+                <img src="${pageContext.request.contextPath}/assets/icons/ico_more_black.svg" alt="자세히보기 아이콘">
               </div>
             </a>
           </div>
@@ -193,13 +155,13 @@
         <div class="contents-container">
           <div class="videoset">
             <video class="videoset-video">
-              <source src="../resources/videos/video.mp4">
+              <source src="${pageContext.request.contextPath}/assets/videos/video.mp4">
             </video>
             <div class="videoset-body container-md">
               <p class="videoset-subtit">Temha Video</p>
               <h2 class="videoset-tit"> 기분좋은 일상 속 행복 여행 <br> 템하 글램핑 여행사 </h2>
               <button class="videoset-play">
-                <img src="../resources/icons/ico_video_play.svg" alt="플레이버튼">
+                <img src="${pageContext.request.contextPath}/assets/icons/ico_video_play.svg" alt="플레이버튼">
               </button>
             </div>
           </div>
