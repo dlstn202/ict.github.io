@@ -18,9 +18,18 @@
     $(document).ready(function() {
         // main 초기화
         $.ajax({
+            url: "faq_nav.do",
+            success: function (res_data) {
+                $("#faq_nav").html(res_data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+        $.ajax({
             url: "faq_header.do",
             success: function (res_data) {
-                $("#header").html(res_data);
+                $("#faq_header").html(res_data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -29,7 +38,7 @@
         $.ajax({
             url: "faq_container.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#faq_container").html(res_data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -38,7 +47,7 @@
         $.ajax({
             url: "faq_footer.do",
             success: function (res_data) {
-                $("#footer").html(res_data);
+                $("#faq_footer").html(res_data);
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -67,8 +76,9 @@
 </script>
 </head>
 <body>
-    <div id="header"></div>
-    <div id="container"></div>
-    <div id="footer"></div>
+    <div id="faq_nav"></div>
+    <div id="faq_header"></div>
+    <div id="faq_container"></div>
+    <div id="faq_footer"></div>
 </body>
 </html>

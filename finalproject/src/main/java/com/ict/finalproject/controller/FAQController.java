@@ -11,7 +11,12 @@ public class FAQController {
 
         return "faq/faq_main";
     }
+    
+    @RequestMapping("faq_nav.do")
+    public String nav(){
 
+        return "faq/faq_nav";
+    }
     @RequestMapping("faq_header.do")
     public String header(){
 
