@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-* {
-    margin: auto;
-    
-}
-
 /* ========== */
 /* Card : Cardset */
 .cardset-wrap { display: flex; } 
