@@ -10,8 +10,6 @@
      <!-- [S]glamping-N3 -->
   <footer class="glamping-N3" data-bid="NgltwpHQWu">
     <div class="footer-container">
-      <img class="footer-backimg img-pc" src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg" alt="PC 푸터 비주얼">
-      <img class="footer-backimg img-mobile" src="${pageContext.request.contextPath}/assets/img/sample/img_footer_mobile.png" alt="모바일 푸터 비주얼">
       <div class="footer-body container-md">
         <h2 class="footer-logo">
           <a href="javascript:void(0)">
