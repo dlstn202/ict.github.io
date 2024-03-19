@@ -1,28 +1,26 @@
 // glamping-N1 [KdltWpHPRk]
 
-let headerHeight = 0;
+
 
 window.addEventListener('resize', () => {
-  resizeHeaderHeight();
+  headerHeight = resizeHeaderHeight();
 });
 
 function resizeHeaderHeight() {  
-  if(document.querySelector('.contents-backimg.img-pc').offsetHeight>0){
-    headerHeight = document.querySelector('.contents-backimg.img-pc').offsetHeight;
-  }else if(document.querySelector('.contents-backimg.img-mobile').offsetHeight>0){
-    headerHeight = document.querySelector('.contents-backimg.img-mobile').offsetHeight;
-  }else if(document.querySelector('.contents-subvisual.img-pc').offsetHeight>0){
-    headerHeight = document.querySelector('.contents-subvisual.img-pc').offsetHeight;
-  }else if(document.querySelector('.contents-subvisual.img-mobile').offsetHeight>0){
-    headerHeight = document.querySelector('.contents-subvisual.img-mobile').offsetHeight;
+  if(document.querySelector('s.wiper-wrapper')!= null){
+    headerHeight = document.querySelector('.swiper-wrapper').offsetHeight;
+  }else if(document.querySelector('.contents-container') != null){
+    headerHeight = document.querySelector('.contents-container').offsetHeight;
   }
+  console.log(headerHeight);
+
 }
 
 window.addEventListener('scroll', function() {
 
   var scrollPosition = document.documentElement.scrollTop;
   if(scrollPosition>=headerHeight){
-    console.log("하이");
+    // console.log("하이");
   }
   
 });
