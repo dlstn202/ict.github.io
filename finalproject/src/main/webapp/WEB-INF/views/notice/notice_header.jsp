@@ -24,7 +24,7 @@
         <img class="contents-subvisual img-mobile" src="../assets/img/header/main_header.jpg" alt="모바일 서브 비주얼 이미지">
         <div class="textset textset-visual container-md">
           <p class="textset-name">About Us</p>
-          <h2 class="textset-tit">템하소개</h2>
+          <h2 class="textset-tit">공지사항</h2>
         </div>
       </div>
     </div>
