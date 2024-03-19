@@ -24,7 +24,7 @@
               <div class="accordset-item">
                 <div class="accordset-header">
                   <button class="accordset-button btn" type="button">
-                    <span class="accordset-q">Q</span> 객실에 인터넷은 되나요? </button>
+                    <span class="accordset-q">Q</span> <span class="accordset-q-text">객실에 인터넷은 되나요?</span> </button>
                 </div>
                 <div class="accordset-body">
                   <div class="accordset-content">

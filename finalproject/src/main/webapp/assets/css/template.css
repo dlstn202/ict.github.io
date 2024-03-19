@@ -896,6 +896,7 @@ progress { vertical-align: baseline; }
 .accordset .accordset-header::after { content: '\e900'; display: inline-block; position: absolute; top: 50%; right: 2.4rem; transform: translateY(-50%); width: 2.8rem; height: 2.8rem; font-size: var(--fs-h6); } 
 .accordset .accordset-button { display: flex; align-items: center; width: 100%; padding: 2rem 6rem 2rem 2.4rem; border: none; font-size: var(--fs-p1); text-align: left; word-break: keep-all; border-radius: 0; transition: none; } 
 .accordset .accordset-q { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; line-height: 3.2rem; font-size: var(--fs-p2); font-weight: 700; color: var(--text-color5); background-color: var(--line-color4); border-radius: 50%; text-align: center; } 
+.accordset .accordset-q-text {max-width: 80%; overflow: hidden; text-overflow: ellipsis;}
 .accordset .accordset-a { display: inline-block; width: 3.2rem; height: 3.2rem; margin-right: 1.2rem; font-size: var(--fs-p2); font-weight: 700; line-height: var(--lh-p3); text-align: center; color: var(--text-color2); } 
 .accordset .accordset-body { display: none; } 
 .accordset .accordset-content { display: flex; align-items: flex-start; padding: 3.2rem 2.4rem; word-break: keep-all; font-size: var(--fs-p2); background-color: rgba(var(--main-ton-down-rgb), 0.1); color: var( --text-color3); } 
