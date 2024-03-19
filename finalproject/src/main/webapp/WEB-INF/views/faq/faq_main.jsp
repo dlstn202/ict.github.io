@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/faq.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
 <script>
 
 $(document).ready(function() {
