@@ -72,7 +72,7 @@
         <div class="fullmenu-head">
           <h4 class="fullmenu-title">
             <a href="javascript:void(0)">
-              <img src="${pageContext.request.contextPath}/assets/images/img_logo_white.png" alt="로고">
+              <img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
             </a>
           </h4>
           <ul class="fullmenu-member">

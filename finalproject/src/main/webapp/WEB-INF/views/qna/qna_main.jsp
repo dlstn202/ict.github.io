@@ -26,7 +26,7 @@
      $(document).ready(function () {
         // main 초기화
         $.ajax({
-            url: "qna_nav.do",
+            url: "nav.do",
             success: function (res_data) {
                 $("#qna_nav").html(res_data);
                 $.ajax({
@@ -38,7 +38,7 @@
                             success: function (res_data) {
                                 $("#qna_container").html(res_data);
                                 $.ajax({
-                                    url: "qna_footer.do",
+                                    url: "footer.do",
                                     success: function (res_data) {
                                         $("#qna_footer").html(res_data);
                                     },  
@@ -81,9 +81,9 @@
 </head>
 
 <body>
-  <div id="qna_nav"></div>
-  <div id="qna_header"></div>
-  <div id="qna_container"></div>
-  <div id="qna_footer"></div>
+    <div id="qna_nav"></div>
+    <div id="qna_header"></div>
+    <div id="qna_container"></div>
+    <div id="qna_footer"></div>
 
 </body>

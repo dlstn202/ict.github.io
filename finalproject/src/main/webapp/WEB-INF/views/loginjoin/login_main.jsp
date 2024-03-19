@@ -19,24 +19,35 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
   <script>
   $(document).ready(function () {
 
     $.ajax({
-      url: "login_nav.do",
+      url: "nav.do",
         success: function (res_data) {
           $("#login_nav").html(res_data);
           $.ajax({
-            url: "login_container.do",
+            url: "login_header.do",
             success: function (res_data) {
-              $("#login_container").html(res_data);
+              $("#login_header").html(res_data);
               $.ajax({
-                url: "login_footer.do",
+                url: "login_container.do",
                 success: function (res_data) {
-                    $("#login_footer").html(res_data);
+                  $("#login_container").html(res_data);
+                  $.ajax({
+                    url: "footer.do",
+                    success: function (res_data) {
+                        $("#login_footer").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    }
+                  });
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.table(jqXHR)
@@ -44,7 +55,7 @@
               });
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
+                    console.table(jqXHR)
             }
           });
         },
@@ -74,6 +85,7 @@ function loadAdditionalScripts() {
  
 
   <div id="login_nav"></div>
+  <div id="login_header"></div>
   <div id="login_container"></div>
   <div id="login_footer"></div>
           

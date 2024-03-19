@@ -40,6 +40,7 @@
 
 /* glamping-N5 [dbltWPhpZn] */
 .glamping-N5 {color: #007235;}
+.glamping-N5 .cardset-desc {color: #003A1B;}
 .glamping-N5 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N5 .cardset-wrap { flex-direction: column; }
 .glamping-N5 .cardset { justify-content: space-between; }
@@ -58,17 +59,20 @@
 
 /* glamping-N9 [FllTwPhQTo] C:\git\finalproject\src\main\webapp\assets\icons */
 .glamping-N9 { color: #007235; overflow: hidden; }
+.glamping-N9 .textset-desc { color: #003A1B;  }
+.glamping-N9 .cardset-text { color: #003A1B;  }
 .glamping-N9 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N9 .contents-container { position: relative; overflow: hidden; }
 .glamping-N9 .textset { margin-bottom: 7rem; text-align: center; }
 .glamping-N9 .textset-tit+.textset-desc { margin-top: 1rem; }
 .glamping-N9 .swiper-slide { width: 40rem; margin-right: 4rem; }
+.glamping-N9 .cardset-text {overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;}
 .glamping-N9 .cardset-figure { height: 23rem; }
 .glamping-N9 .contents-control { display: flex; align-items: center; justify-content: center; gap: 0.8rem; position: absolute; right: 0; bottom: 4rem; }
 .glamping-N9 .swiper-button-next,.glamping-N9 .swiper-button-prev { position: relative; left: 0; right: 0; width: 3.2rem; height: 3.2rem; background-color: var(--line-color4); border-radius: 50%; }
-.glamping-N9 .swiper-button-prev:after { content: ''; width: 2rem; height: 2rem; background-image: url("../../assets/icons/ico_arrow_left_withe.svg"); background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5; }
+.glamping-N9 .swiper-button-prev:after { content: ''; width: 2rem; height: 2rem; background-image: url("../../assets/icons/ico_arrow_left_withe.svg"); background-repeat: no-repeat; background-position: center; background-size: cover;  }
 .glamping-N9 .swiper-button-prev:hover::after,.glamping-N9 .swiper-button-next:hover::after { opacity: 1; }
-.glamping-N9 .swiper-button-next:after { content: ''; width: 2rem; height: 2rem; background-image: url("../../assets/icons/ico_arrow_right_withe.svg"); background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5; }
+.glamping-N9 .swiper-button-next:after { content: ''; width: 2rem; height: 2rem; background-image: url("../../assets/icons/ico_arrow_right_withe.svg"); background-repeat: no-repeat; background-position: center; background-size: cover;  }
 @media (max-width: 992px) {
  .glamping-N9 .contents-inner { padding: 5rem 2.4rem; }
  .glamping-N9 .textset { margin-bottom: 7.2rem; }
