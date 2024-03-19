@@ -9,19 +9,32 @@
 
 <body>
 
-    <!-- [S]glamping-N10 -->
-    <div class="glamping-N10" data-bid="NZltwPiFAY">
-        <div class="contents-container">
-            <img class="contents-subvisual img-pc" src="../resources/images/img_subvisual.png" alt="PC 서브 비주얼 이미지">
-            <img class="contents-subvisual img-mobile" src="../resources/images/img_subvisual_mobile.png"
-                alt="모바일 서브 비주얼 이미지">
-            <div class="textset textset-visual container-md">
-                <p class="textset-name">About Us</p>
-                <h2 class="textset-tit">템하소개</h2>
+    <!-- [S]glamping-N32 -->
+    <div class="glamping-N32" data-bid="XrlTWpiFGn">
+        <div class="contents-inner">
+          <div class="contents-container container-md">
+            <div class="textset">
+              <p class="textset-name">예약하기</p>
+              <h2 class="textset-tit">Reservation</h2>
             </div>
+            <ul class="contents-list">
+              <li class="contents-item item-check">
+                <span>1</span>
+              </li>
+              <li class="contents-item item-active">
+                <span>2</span>
+              </li>
+              <li class="contents-item">
+                <span>3</span>
+              </li>
+              <li class="contents-item">
+                <span>4</span>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <!-- [E]glamping-N10 -->
+      </div>
+      <!-- [E]glamping-N32 -->
 
 </body>
 
