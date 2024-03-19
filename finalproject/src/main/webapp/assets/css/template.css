@@ -27,6 +27,8 @@
   --main: #007235;
   --main-ton-down:#003A1B;
   --main-ton-down-rgb:0, 58, 27;
+  --main-ton-up:#00AF52;
+  --main-ton-up-rgb:0,175,82;
   --white: #fff;
   --main-rgb : 0,144,53;
   --primary-rgb: 82, 66, 51;
@@ -144,7 +146,7 @@ sub,
 sup { position: relative; font-size: 0.75em; line-height: 0; vertical-align: baseline; }
 sub { bottom: -0.25em; }
 sup { top: -0.5em; }
-a { display: inline-block; color: var(--link-color); text-decoration: none; }
+a { display: inline-block; color: var(--main-ton-down); text-decoration: none; }
 a:hover { color: var(--link-hover-color); }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover { color: inherit; text-decoration: none; }
@@ -399,11 +401,11 @@ progress { vertical-align: baseline; }
 
 /* ========== */
 /* Button : Btnset */
-.btnset { display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; min-width: 12rem; padding: 0 2.8rem; height: var(--ht-md); font-size: var(--fs-p2); color: var(--white); background-color: var(--primary); border-width: 2px; border-style: solid; border-color: var(--primary); border-radius: .4rem; font-weight: 500; letter-spacing: var(--letter-spacing); transition: .3s; } 
+.btnset { display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; min-width: 12rem; padding: 0 2.8rem; height: var(--ht-md); font-size: var(--fs-p2); color: var(--white); background-color: var(--main); border-width: 2px; border-style: solid; border-color: var(--main); border-radius: .4rem; font-weight: 500; letter-spacing: var(--letter-spacing); transition: .3s; } 
 .btnset::before { transition: inherit; } 
 .btnset::after { transition: inherit; } 
 .btnset + .btnset { margin-left: .8rem; } 
-.btnset:hover { color: var(--white); background-color: rgba(var(--primary-rgb), .8); border-color: rgba(var(--primary-rgb), .8); } 
+.btnset:hover { color: var(--white); background-color: rgba(var(--main-ton-up-rgb)); border-color: rgba(var(--main-ton-up-rgb)); text-decoration: none;} 
 .btnset:disabled, .btnset.disabled { color: var(--text-color4) !important; background-color: var(--bg-color) !important; border-color: var(--bg-color) !important; } 
 .btnset:disabled:hover, .btnset.disabled:hover { color: var(--text-color4) !important; background-color: var(--bg-color) !important; border-color: var(--bg-color) !important; } 
 /* Button : Btnset Size */
@@ -413,8 +415,8 @@ progress { vertical-align: baseline; }
 .btnset.btnset-xs { min-width: 6.8rem; padding: 0 1.6rem; height: var(--ht-xs); font-size: var(--fs-p2); } 
 .btnset.btnset-block { width: 100%; } 
 /* Button : Btnset Text */
-.btnset.btnset-text { background-color: transparent; min-width: 12rem; width: auto; height: auto; padding: 0; font-weight: 600; border: 0; color: var(--text-color1); } 
-.btnset.btnset-text:hover { color: var(--primary); } 
+.btnset.btnset-text { background-color: transparent; min-width: 12rem; width: auto; height: auto; padding: 0; font-weight: 600; border: 0; color: var(--main-ton-down); } 
+.btnset.btnset-text:hover { color: var(--main-ton-down); } 
 .btnset.btnset-text:disabled, .btnset.btnset-text.disabled { background-color: var(--bg-color); color: var(--text-color4); } 
 /* Button : Btnset Icon */
 .btnset.btnset-icon { align-items: center; gap: 1.2rem; } 
@@ -423,8 +425,8 @@ progress { vertical-align: baseline; }
 .btnset.btnset-icon:disabled, .btnset.btnset-icon.disabled { background-color: transparent !important; }
 .btnset.btnset-icon:disabled .btnset-img, .btnset.btnset-icon.disabled .btnset-img { filter: invert(50%); } 
 /* Button : Btnset Line */
-.btnset.btnset-line { color: var(--primary); background-color: transparent; border-color: var(--primary); } 
-.btnset.btnset-line:hover { color: var(--white); background-color: var(--primary); border-color: var(--primary); } 
+.btnset.btnset-line { color: var(--main-ton-down); background-color: transparent; border-color: var(--main); } 
+.btnset.btnset-line:hover { color: var(--white); background-color: var(--main-ton-up); border-color: var(--main-ton-up); text-decoration: none;} 
 .btnset.btnset-line:disabled, .btnset.btnset-line.disabled { color: var(--text-color4); background-color: var(--bg-color); border-color: var(--line-color1); } 
 .btnset.btnset-line.btnset-black { border-color: var(--line-color4); color: var(--text-color2); } 
 .btnset.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--main); color: var(--white); text-decoration: none;} 
