@@ -8,12 +8,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <meta charset="UTF-8">
         <title>캠프로버</title>
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+        <!-- <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css"> -->
         <script>
             $(document).ready(function () {
                 // main 초기화
