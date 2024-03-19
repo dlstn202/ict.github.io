@@ -29,7 +29,7 @@
             $(document).ready(function () {
                 // main 초기화
                 $.ajax({
-                    url: "reservation_nav.do",
+                    url: "nav.do",
                     success: function (res_data) {
                         $("#reservation_nav").html(res_data);
                     },
@@ -56,7 +56,7 @@
                     }
                 });
                 $.ajax({
-                    url: "reservation_footer.do",
+                    url: "footer.do",
                     success: function (res_data) {
                         $("#reservation_footer").html(res_data);
                     },
