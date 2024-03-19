@@ -13,7 +13,7 @@
       <div class="header-left">
         <h1 class="header-title">
           <a href="javascript:void(0)">
-            <img src="${pageContext.request.contextPath}/assets/images/img_logo_white.png" alt="로고">
+            <img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
           </a>
         </h1>
       </div>

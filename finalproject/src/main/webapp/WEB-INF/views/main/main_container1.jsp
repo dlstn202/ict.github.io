@@ -17,7 +17,7 @@
           <div class="cardset-wrap">
             <div class="cardset cardset-xl cardset-deco cardset-hor row-rever">
               <figure class="cardset-figure">
-                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N5_1.png" alt="카드이미지">
+                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png" alt="카드이미지">
               </figure>
               <div class="cardset-body">
                 <h2 class="cardset-tit"> 템하 글램핑만의 감성으로 <br> 새로움을 만듭니다. </h2>
@@ -27,7 +27,7 @@
             </div>
             <div class="cardset cardset-xl cardset-deco cardset-hor">
               <figure class="cardset-figure">
-                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/images/img_glamping_N5_2.png" alt="카드이미지">
+                <img class="cardset-img" src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_2.png" alt="카드이미지">
               </figure>
               <div class="cardset-body">
                 <h2 class="cardset-tit"> 자연을 담은 템하 글램핑 여행 <br> 마음껏 체험하세요. </h2>
@@ -41,7 +41,7 @@
     </div>
     <!-- [E]glamping-N5 -->
     <!-- [S]glamping-N6 -->
-    <div class="glamping-N6" data-bid="QRLTwpHQ2q">
+    <!-- <div class="glamping-N6" data-bid="QRLTwpHQ2q">
       <div class="contents-inner">
         <div class="contents-container">
           <div class="imageset">
@@ -55,10 +55,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- [E]glamping-N6 -->
     <!-- [S]glamping-N7 -->
-    <div class="glamping-N7" data-bid="EKltWPhQgB">
+    <!-- <div class="glamping-N7" data-bid="EKltWPhQgB">
       <div class="contents-inner">
         <div class="contents-container container-md">
           <div class="textset">
@@ -133,10 +133,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- [E]glamping-N7 -->
     <!-- [S]glamping-N8 -->
-    <div class="glamping-N8" data-bid="gdlTwpHqON">
+    <!-- <div class="glamping-N8" data-bid="gdlTwpHqON">
       <div class="contents-inner">
         <div class="contents-container">
           <div class="videoset">
@@ -153,7 +153,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- [E]glamping-N8 -->
     <!-- [E]glamping-N9 -->
   </main>
