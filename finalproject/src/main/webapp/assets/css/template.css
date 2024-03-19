@@ -10,7 +10,6 @@
    padding: 0;
    font-family: "Noto Sans KR", sans-serif;
    font-optical-sizing: auto;
-   font-weight: normal;
    font-style: normal;
    /* color: #007235; */
 }
@@ -682,7 +681,7 @@ progress { vertical-align: baseline; }
 .inputset .inputset-input:disabled { border-color: var(--border-color); background-color: var(--bg-color); color: var(--text-color4); } 
 .inputset .inputset-icon { display: inline-block; position: absolute; top: 50%; width: 2.4rem; height: 2.4rem; transform: translateY(-50%); } 
 .inputset .inputset-icon.icon-human::after { content: '\e90f'; display: inline-block; font-family: var(--ff-ico); font-size: var(--fs-h5); } 
-.inputset .inputset-icon.icon-search::after { content: '\e910'; display: inline-block; font-family: var(--ff-ico); font-size: 2rem } 
+.inputset .inputset-icon.icon-search::after { content: '\e910'; display: inline-block; font-family: var(--ff-ico); font-size: 2rem; position: absolute; left: 0; line-height: 0; } 
 .inputset .inputset-icon.icon-left { left: 2rem; } 
 .inputset .inputset-icon.icon-right { right: 2rem; } 
 .inputset .inputset-icon.icon-left + .inputset-input { padding-left: calc(2rem + 2.6rem + .8rem); } 
