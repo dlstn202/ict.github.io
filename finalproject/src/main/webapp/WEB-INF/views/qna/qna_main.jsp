@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -19,57 +18,53 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/qna.css">
 <script>
-    $(document).ready(function () {
-
-        // $.ajax({
-        //     url: "qna_nav.do",
-        //     success: function (res_data) {
-        //         $("#qna_nav").html(res_data);
-        //     },
-        //     error: function (jqXHR, textStatus, errorThrown) {
-        //         console.table(jqXHR)
-        //     }
-        // });
-
+     $(document).ready(function () {
+        // main 초기화
         $.ajax({
-            url: "qna_header.do",
+            url: "qna_nav.do",
             success: function (res_data) {
-                $("#qna_header").html(res_data);
+                $("#qna_nav").html(res_data);
+                $.ajax({
+                    url: "qna_header.do",
+                    success: function (res_data) {
+                        $("#qna_header").html(res_data);
+                        $.ajax({
+                            url: "qna_container.do",
+                            success: function (res_data) {
+                                $("#qna_container").html(res_data);
+                                $.ajax({
+                                    url: "qna_footer.do",
+                                    success: function (res_data) {
+                                        $("#qna_footer").html(res_data);
+                                    },  
+                                    error: function (jqXHR, textStatus, errorThrown) {
+                                        console.table(jqXHR)
+                                    }
+                                });
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.table(jqXHR)
+                            }
+                        });
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    }
+                });
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
-            }
-        });
-
-        $.ajax({
-            url: "qna_content.do",
-            success: function (res_data) {
-                $("#qna_content").html(res_data);
             },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            }
-        });
-
-        $.ajax({
-            url: "qna_footer.do",
-            success: function (res_data) {
-                $("#qna_footer").html(res_data);
-            },
-            error: function (jqXHR, textStatus, errorThrown) {
-                console.table(jqXHR)
-            },complete: function () {
+            complete: function () {
                 // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
                 loadAdditionalScripts();
             }
         });
-            
     })
 </script>
 <script>
@@ -88,7 +83,7 @@
 <body>
   <div id="qna_nav"></div>
   <div id="qna_header"></div>
-  <div id="qna_content"></div>
+  <div id="qna_container"></div>
   <div id="qna_footer"></div>
 
 </body>
