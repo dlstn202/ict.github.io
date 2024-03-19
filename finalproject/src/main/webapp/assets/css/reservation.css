@@ -1,8 +1,22 @@
 @charset "utf-8";/* ========== */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: normal;
+   font-style: normal;
+   /* color: #007235; */
+}
+
+
 /* reservation_container_date --------------------------------------------*/
 /* glamping-N33 [vfLtWpiFmM] */
-.glamping-N33 .contents-inner { padding: 8rem 2.4rem; }
+.glamping-N33 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N33 .contents-top { width: 100%; margin-top: 2.4rem; }
 .glamping-N33 .date-picker-wrapper { width: 100%; padding: 2rem 0 4rem 0; background-color: transparent; border-left: none; border-right: none; border-top-color: var(--text-color2); border-bottom-color: var(--border-color); font-family: var(--ff); }
 .glamping-N33 .date-picker-wrapper .month-wrapper { position: relative; width: 100% !important; padding: 0; border: 0; background-color: transparent; }
@@ -66,7 +80,7 @@
 
 /* reservation_container_input --------------------------------------------*/
 /* glamping-N35 [kDLtwPJ58p] */
-.glamping-N35 .contents-inner { padding: 8rem 2.4rem; }
+.glamping-N35 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N35 .contents-top { display: flex; align-items: flex-end; justify-content: space-between; }
 .glamping-N35 .contents-list { display: flex; align-items: center; flex-wrap: wrap; gap: 2rem; }
 .glamping-N35 .contents-item { padding-right: 1rem; }
@@ -131,7 +145,7 @@
 /* reservation_container_input --------------------------------------------*/
 /* reservation_container_finish --------------------------------------------*/
 /* glamping-N38 [PllTwpJ1kN] */
-.glamping-N38 .contents-inner { padding: 8rem 2.4rem; }
+.glamping-N38 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N38 .contents-icon { display: flex; align-items: center; justify-content: center; width: 8rem; height: 8rem; margin: 0 auto; padding: 2rem; border-radius: 50%; background-color: var(--primary); }
 .glamping-N38 .contents-icon img { width: 100%; height: 100%; object-fit: contain; }
 .glamping-N38 .textset { margin-top: 4rem; text-align: center; }

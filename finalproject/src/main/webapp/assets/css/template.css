@@ -3,6 +3,16 @@
 /* Web Font */
 @import url('https://cdn.jsdelivr.net/gh/openfieldth/temha-icon/v1.2.0/Temha-Icon.css');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   /* color: #007235; */
+}
 
 /* ========== */
 /* Variable */
@@ -671,7 +681,7 @@ progress { vertical-align: baseline; }
 .inputset .inputset-input:disabled { border-color: var(--border-color); background-color: var(--bg-color); color: var(--text-color4); } 
 .inputset .inputset-icon { display: inline-block; position: absolute; top: 50%; width: 2.4rem; height: 2.4rem; transform: translateY(-50%); } 
 .inputset .inputset-icon.icon-human::after { content: '\e90f'; display: inline-block; font-family: var(--ff-ico); font-size: var(--fs-h5); } 
-.inputset .inputset-icon.icon-search::after { content: '\e910'; display: inline-block; font-family: var(--ff-ico); font-size: 2rem } 
+.inputset .inputset-icon.icon-search::after { content: '\e910'; display: inline-block; font-family: var(--ff-ico); font-size: 2rem; position: absolute; left: 0; line-height: 0; } 
 .inputset .inputset-icon.icon-left { left: 2rem; } 
 .inputset .inputset-icon.icon-right { right: 2rem; } 
 .inputset .inputset-icon.icon-left + .inputset-input { padding-left: calc(2rem + 2.6rem + .8rem); } 

@@ -1,11 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<title>캠프로버</title>
 </head>
     <body>
     <!-- [S]glamping-N35 -->
@@ -17,7 +19,7 @@
               <div class="contents-item">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_calendar_black.svg" alt="달력 아이콘">
+                    <img src="../assets/icons/ico_calendar_black.svg" alt="달력 아이콘">
                   </figure>
                   <span>투숙기간</span>
                 </div>
@@ -26,7 +28,7 @@
               <div class="contents-item">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_camping_black.svg" alt="캠핑 아이콘">
+                    <img src="../assets/icons/ico_camping_black.svg" alt="캠핑 아이콘">
                   </figure>
                   <span>객실명</span>
                 </div>
@@ -35,7 +37,7 @@
               <div class="contents-item content-mobile-group">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_adult_black.svg" alt="성인 아이콘">
+                    <img src="../assets/icons/ico_adult_black.svg" alt="성인 아이콘">
                   </figure>
                   <span>성인</span>
                 </div>
@@ -44,7 +46,7 @@
               <div class="contents-item content-mobile-group">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_child_black.svg" alt="소인 아이콘">
+                    <img src="../assets/icons/ico_child_black.svg" alt="소인 아이콘">
                   </figure>
                   <span>소인</span>
                 </div>
@@ -53,7 +55,7 @@
               <div class="contents-item content-mobile-group">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_baby_black.svg" alt="유아 아이콘">
+                    <img src="../assets/icons/ico_baby_black.svg" alt="유아 아이콘">
                   </figure>
                   <span>유아</span>
                 </div>
@@ -62,7 +64,7 @@
               <div class="contents-item">
                 <div class="contents-group">
                   <figure class="contents-icon">
-                    <img src="../resources/icons/ico_pet_black.svg" alt="펫 아이콘">
+                    <img src="../assets/icons/ico_pet_black.svg" alt="펫 아이콘">
                   </figure>
                   <span>반려견동행</span>
                 </div>
