@@ -1,7 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +16,7 @@
       <div class="contents-inner">
         <div class="contents-container container-md">
           <div class="contents-icon">
-            <img src="../resources/icons/ico_check_xl_white.svg" alt="체크 아이콘 이미지">
+            <img src="../assets/icons/ico_check_xl_white.svg" alt="체크 아이콘 이미지">
           </div>
           <div class="textset">
             <h2 class="textset-tit"> 홍길동 고객님 <br> 템하글램핑 예약이 완료되었습니다 </h2>

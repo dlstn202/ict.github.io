@@ -12,12 +12,6 @@ public class NoticeController {
         return "notice/notice_main";
     }
 
-    @RequestMapping("notice_nav.do")
-    public String nav(){
-
-        return "main/main_nav";
-    }
-
     @RequestMapping("notice_header.do")
     public String header(){
 
@@ -28,11 +22,6 @@ public class NoticeController {
     public String container(){
 
         return "notice/notice_container";
-    }
-    @RequestMapping("notice_footer.do")
-    public String footer(){
-
-        return "main/main_footer";
     }
 
 }

@@ -1,11 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
     <body>
 
@@ -23,13 +22,13 @@
                 <p class="contents-label">기간</p>
                 <div class="contents-amount">
                   <button class="contents-btn btn-minus" type="button">
-                    <img src="../resources/icons/ico_minus_black.svg" alt="마이너스 아이콘">
+                    <img src="../assets/icons/ico_minus_black.svg" alt="마이너스 아이콘">
                   </button>
                   <p class="contents-amount-num">
                     <span>2</span>박
                   </p>
                   <button class="contents-btn btn-plus" type="button">
-                    <img src="../resources/icons/ico_plus_black.svg" alt="플러스 아이콘">
+                    <img src="../assets/icons/ico_plus_black.svg" alt="플러스 아이콘">
                   </button>
                 </div>
               </li>
@@ -37,13 +36,13 @@
                 <p class="contents-label">성인</p>
                 <div class="contents-amount">
                   <button class="contents-btn btn-minus" type="button">
-                    <img src="../resources/icons/ico_minus_black.svg" alt="마이너스 아이콘">
+                    <img src="../assets/icons/ico_minus_black.svg" alt="마이너스 아이콘">
                   </button>
                   <p class="contents-amount-num">
                     <span>2</span>명
                   </p>
                   <button class="contents-btn btn-plus" type="button">
-                    <img src="../resources/icons/ico_plus_black.svg" alt="플러스 아이콘">
+                    <img src="../assets/icons/ico_plus_black.svg" alt="플러스 아이콘">
                   </button>
                 </div>
               </li>
@@ -51,13 +50,13 @@
                 <p class="contents-label">소인</p>
                 <div class="contents-amount">
                   <button class="contents-btn btn-minus" type="button">
-                    <img src="../resources/icons/ico_minus_black.svg" alt="마이너스 아이콘">
+                    <img src="../assets/icons/ico_minus_black.svg" alt="마이너스 아이콘">
                   </button>
                   <p class="contents-amount-num">
                     <span>1</span>명
                   </p>
                   <button class="contents-btn btn-plus" type="button">
-                    <img src="../resources/icons/ico_plus_black.svg" alt="플러스 아이콘">
+                    <img src="../assets/icons/ico_plus_black.svg" alt="플러스 아이콘">
                   </button>
                 </div>
               </li>
@@ -65,13 +64,13 @@
                 <p class="contents-label">유아</p>
                 <div class="contents-amount">
                   <button class="contents-btn btn-minus" type="button">
-                    <img src="../resources/icons/ico_minus_black.svg" alt="마이너스 아이콘">
+                    <img src="../assets/icons/ico_minus_black.svg" alt="마이너스 아이콘">
                   </button>
                   <p class="contents-amount-num">
                     <span>1</span>명
                   </p>
                   <button class="contents-btn btn-plus" type="button">
-                    <img src="../resources/icons/ico_plus_black.svg" alt="플러스 아이콘">
+                    <img src="../assets/icons/ico_plus_black.svg" alt="플러스 아이콘">
                   </button>
                 </div>
               </li>
