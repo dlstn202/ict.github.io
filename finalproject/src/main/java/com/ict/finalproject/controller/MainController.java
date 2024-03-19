@@ -12,12 +12,6 @@ public class MainController {
         return "main/main";
     }
 
-    @RequestMapping("nav.do")
-    public String nav(){
-
-        return "main/main_nav";
-    }
-
     @RequestMapping("header.do")
     public String header(){
 
@@ -36,9 +30,4 @@ public class MainController {
         return "main/main_container2";
     }
 
-    @RequestMapping("footer.do")
-    public String footer(){
-
-        return "main/main_footer";
-    }
 }

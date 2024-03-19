@@ -21,42 +21,42 @@
                     url: "nav.do",
                     success: function (res_data) {
                         $("#nav").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "header.do",
-                    success: function (res_data) {
-                        $("#header").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "container1.do",
-                    success: function (res_data) {
-                        $("#container1").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "container2.do",
-                    success: function (res_data) {
-                        $("#container2").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    }
-                });
-                $.ajax({
-                    url: "footer.do",
-                    success: function (res_data) {
-                        $("#footer").html(res_data);
+                        $.ajax({
+                            url: "header.do",
+                            success: function (res_data) {
+                                $("#header").html(res_data);
+                                $.ajax({
+                                    url: "container1.do",
+                                    success: function (res_data) {
+                                        $("#container1").html(res_data);
+                                        $.ajax({
+                                            url: "container2.do",
+                                            success: function (res_data) {
+                                                $("#container2").html(res_data);
+                                                $.ajax({
+                                                    url: "footer.do",
+                                                    success: function (res_data) {
+                                                        $("#footer").html(res_data);
+                                                    },
+                                                    error: function (jqXHR, textStatus, errorThrown) {
+                                                        console.table(jqXHR)
+                                                    }
+                                                });
+                                            },
+                                            error: function (jqXHR, textStatus, errorThrown) {
+                                                console.table(jqXHR)
+                                            }
+                                        });
+                                    },
+                                    error: function (jqXHR, textStatus, errorThrown) {
+                                        console.table(jqXHR)
+                                    }
+                                });
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.table(jqXHR)
+                            }
+                        });
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
@@ -66,6 +66,10 @@
                         loadAdditionalScripts();
                     }
                 });
+
+
+
+
 
             })
         </script>
