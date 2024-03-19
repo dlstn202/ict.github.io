@@ -29,36 +29,36 @@
             $(document).ready(function () {
                 // main 초기화
                 $.ajax({
-                    url: "renav.do",
+                    url: "reservation_nav.do",
                     success: function (res_data) {
-                        $("#nav").html(res_data);
+                        $("#reservation_nav").html(res_data);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
                     }
                 });
                 $.ajax({
-                    url: "header.do",
+                    url: "reservation_header.do",
                     success: function (res_data) {
-                        $("#header").html(res_data);
+                        $("#reservation_header").html(res_data);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
                     }
                 });
                 $.ajax({
-                    url: "container.do",
+                    url: "reservation_container_date.do",
                     success: function (res_data) {
-                        $("#container1").html(res_data);
+                        $("#reservation_container_date").html(res_data);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
                     }
                 });
                 $.ajax({
-                    url: "footer.do",
+                    url: "reservation_footer.do",
                     success: function (res_data) {
-                        $("#footer").html(res_data);
+                        $("#reservation_footer").html(res_data);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
@@ -86,10 +86,10 @@
 
     <body>
 
-        <div id="header"></div>
-        <div id="container1"></div>
-        <div id="container2"></div>
-        <div id="footer"></div>
+        <div id="reservation_nav"></div>
+        <div id="reservation_header"></div>
+        <div id="reservation_container_date"></div>
+        <div id="reservation_footer"></div>
     </body>
 
     </html>
