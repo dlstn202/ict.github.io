@@ -9,24 +9,20 @@ public class LoginController {
     @RequestMapping("login_main.do")
     public String login_main(){
 
-        return "login/login_main";
+        return "loginjoin/login_main";
     }
 
-    @RequestMapping("login_nav.do")
-    public String login_nav(){
-
-        return "all/all_nav";
-    }
 
     @RequestMapping("login_container.do")
     public String login_container(){
 
-        return "login/login_container";
+        return "loginjoin/login_container";
     }
 
-    @RequestMapping("login_footer.do")
-    public String login_footer(){
+    @RequestMapping("login_header.do")
+    public String login_header(){
 
-        return "all/all_footer";
+        return "loginjoin/login_header";
     }
+
 }

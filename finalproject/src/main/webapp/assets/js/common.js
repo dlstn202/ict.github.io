@@ -45,16 +45,16 @@
         $block.removeClass("mo-active");
       });
       // Mobile Gnb
-      $block.find(".header-gnbitem").each(function() {
-        const $this = $(this);
-        const $thislink = $this.find(".header-gnblink");
-        $thislink.on("click", function() {
-          if (!$(this).parent().hasClass("item-active")) {
-            $(".header-gnbitem").removeClass("item-active");
-          }
-          $(this).parents(".header-gnbitem").toggleClass("item-active");
-        });
-      });
+      // $block.find(".header-gnbitem").each(function() {
+      //   const $this = $(this);
+      //   const $thislink = $this.find(".header-gnblink");
+      //   $thislink.on("click", function() {
+      //     if (!$(this).parent().hasClass("item-active")) {
+      //       $(".header-gnbitem").removeClass("item-active");
+      //     }
+      //     $(this).parents(".header-gnbitem").toggleClass("item-active");
+      //   });
+      // });
       // Full Gnb
       $block.find(".btn-allmenu").on("click", function() {
         $block.find(".header-fullmenu").addClass("fullmenu-active");
