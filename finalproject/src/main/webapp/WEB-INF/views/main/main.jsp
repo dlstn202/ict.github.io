@@ -26,6 +26,7 @@
                             url: "header.do",
                             success: function (res_data) {
                                 $("#header").html(res_data);
+                                
                                 $.ajax({
                                     url: "container1.do",
                                     success: function (res_data) {
@@ -69,7 +70,7 @@
                 });
 
 
-
+                
 
 
             })

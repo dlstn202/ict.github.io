@@ -1,9 +1,38 @@
 // glamping-N1 [KdltWpHPRk]
+
+let headerHeight = 0;
+
+window.addEventListener('resize', () => {
+  resizeHeaderHeight();
+});
+
+function resizeHeaderHeight() {  
+  if(document.querySelector('.contents-backimg.img-pc').offsetHeight>0){
+    headerHeight = document.querySelector('.contents-backimg.img-pc').offsetHeight;
+  }else if(document.querySelector('.contents-backimg.img-mobile').offsetHeight>0){
+    headerHeight = document.querySelector('.contents-backimg.img-mobile').offsetHeight;
+  }else if(document.querySelector('.contents-subvisual.img-pc').offsetHeight>0){
+    headerHeight = document.querySelector('.contents-subvisual.img-pc').offsetHeight;
+  }else if(document.querySelector('.contents-subvisual.img-mobile').offsetHeight>0){
+    headerHeight = document.querySelector('.contents-subvisual.img-mobile').offsetHeight;
+  }
+}
+
+window.addEventListener('scroll', function() {
+
+  var scrollPosition = document.documentElement.scrollTop;
+  if(scrollPosition>=headerHeight){
+    console.log("하이");
+  }
+  
+});
+
+
 (function() {
   $(function() {
     $(".glamping-N1").each(function() {
       const $block = $(this);
-      // Header Scroll
+      resizeHeaderHeight();
       $(window).on("load scroll", function() {
         const $thisTop = $(this).scrollTop();
         if ($thisTop > 0) {
