@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/faq.css">
 <script>
     $(document).ready(function() {
         // main 초기화
@@ -42,21 +42,33 @@
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
+            },
+            complete: function () {
+                        // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
+                        loadAdditionalScripts();
             }
         });
 
     })
+</script>
+<script>
+
+    function loadAdditionalScripts() {
+        // 추가적인 스크립트 파일들을 로드합니다.
+        $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/script.js");
+    }
+
+
+
 </script>
 </head>
 <body>
     <div id="header"></div>
     <div id="container"></div>
     <div id="footer"></div>
-  <!-- [E]glamping-N3 C:\git\ict.github.io\finalproject\src\main\webapp\assets\js -->
-  <script src="${pageContext.request.contextPath}/assets/js/setting.js"></script>
-  <script src="${pageContext.request.contextPath}/assets/js/plugin.js"></script>
-  <script src="${pageContext.request.contextPath}/assets/js/template.js"></script>
-  <script src="${pageContext.request.contextPath}/assets/js/common.js"></script>
-  <script src="${pageContext.request.contextPath}/assets/js/script.js"></script>
 </body>
 </html>

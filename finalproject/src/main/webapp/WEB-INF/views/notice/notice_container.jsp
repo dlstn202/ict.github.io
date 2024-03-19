@@ -6,47 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css"/>
 </head>
 <body>
   <main class="th-layout-main ">
-    <!-- [S]glamping-N10 -->
-    <div class="glamping-N10" data-bid="ZNlTWPw93U">
-      <div class="contents-container">
-        <img class="contents-subvisual img-pc" src="../resources/images/img_subvisual.png" alt="PC 서브 비주얼 이미지">
-        <img class="contents-subvisual img-mobile" src="../resources/images/img_subvisual_mobile.png" alt="모바일 서브 비주얼 이미지">
-        <div class="textset textset-visual container-md">
-          <p class="textset-name">About Us</p>
-          <h2 class="textset-tit">템하소개</h2>
-        </div>
-      </div>
-    </div>
-    <!-- [E]glamping-N10 -->
-    <!-- [S]glamping-N11 -->
-    <div class="glamping-N11" data-bid="UIltWPW998">
-      <div class="contents-container">
-        <div class="tabset tabset-fluid border-bottom">
-          <ul class="tabset-list tabset-lg container-md">
-            <li class="tabset-item">
-              <a class="tabset-link" href="javascript:void(0)">
-                <span>인사말</span>
-              </a>
-            </li>
-            <li class="tabset-item">
-              <a class="tabset-link active" href="javascript:void(0)">
-                <span>산책로 소개</span>
-              </a>
-            </li>
-            <li class="tabset-item">
-              <a class="tabset-link" href="javascript:void(0)">
-                <span>오시는길</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- [E]glamping-N11 -->
+
+
     <!-- [S]glamping-N39 -->
     <div class="glamping-N39" data-bid="sbLtwpW9GA">
       <div class="contents-inner">

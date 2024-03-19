@@ -13,7 +13,7 @@
       <div class="header-left">
         <h1 class="header-title">
           <a href="javascript:void(0)">
-            <img src="../resources/images/img_logo_white.png" alt="로고">
+            <img src="../assets/img/sample/img_logo_white.png" alt="로고">
           </a>
         </h1>
       </div>
@@ -157,16 +157,16 @@
       <div class="header-right">
         <div class="header-utils">
           <a href="javascript:void(0);" class="btn-user header-utils-btn">
-            <img src="../resources/icons/ico_user_white.svg" alt="유저 아이콘">
+            <img src="../assets/icons/ico_user_white.svg" alt="유저 아이콘">
           </a>
           <button class="btn-allmenu header-utils-btn">
-            <img src="../resources/icons/ico_menu_white.svg" alt="PC메뉴">
+            <img src="../assets/icons/ico_menu_white.svg" alt="PC메뉴">
           </button>
           <button class="btn-momenu header-utils-btn">
-            <img src="../resources/icons/ico_menu_white.svg" alt="모바일메뉴">
+            <img src="../assets/icons/ico_menu_white.svg" alt="모바일메뉴">
           </button>
           <button class="btn-moclose header-utils-btn">
-            <img src="../resources/icons/ico_close_white.svg" alt="닫기">
+            <img src="../assets/icons/ico_close_white.svg" alt="닫기">
           </button>
         </div>
       </div>
@@ -176,7 +176,7 @@
         <div class="fullmenu-head">
           <h4 class="fullmenu-title">
             <a href="javascript:void(0)">
-              <img src="../resources/images/img_logo_white.png" alt="로고">
+              <img src="../assets/img/sample/img_logo_white.png" alt="로고">
             </a>
           </h4>
           <ul class="fullmenu-member">
@@ -317,7 +317,7 @@
         </ul>
       </div>
       <button class="fullmenu-close">
-        <img src="../resources/icons/ico_close_white.svg" alt="닫기">
+        <img src="../assets/icons/ico_close_white.svg" alt="닫기">
       </button>
     </div>
   </header>

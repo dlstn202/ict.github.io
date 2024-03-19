@@ -10,12 +10,12 @@
      <!-- [S]glamping-N3 -->
   <footer class="glamping-N3" data-bid="NgltwpHQWu">
     <div class="footer-container">
-      <img class="footer-backimg img-pc" src="../resources/images/img_footer.png" alt="PC 푸터 비주얼">
-      <img class="footer-backimg img-mobile" src="../resources/images/img_footer_mobile.png" alt="모바일 푸터 비주얼">
+      <img class="footer-backimg img-pc" src="../assets/img/sample/img_footer.png" alt="PC 푸터 비주얼">
+      <img class="footer-backimg img-mobile" src="../assets/img/sample/img_footer_mobile.png" alt="모바일 푸터 비주얼">
       <div class="footer-body container-md">
         <h2 class="footer-logo">
           <a href="javascript:void(0)">
-            <img src="../resources/images/img_logo_white.png" alt="로고">
+            <img src="../assets/img/sample/img_logo_white.png" alt="로고">
           </a>
         </h2>
         <ul class="footer-menulist">
@@ -113,17 +113,17 @@
         <ul class="footer-snslist">
           <li class="footer-snsitem">
             <a class="footer-snslink" href="javascript:void(0)">
-              <img src="../resources/icons/ico_instagram_white.svg" alt="인스타그램">
+              <img src="../assets/icons/ico_instagram_white.svg" alt="인스타그램">
             </a>
           </li>
           <li class="footer-snsitem">
             <a class="footer-snslink" href="javascript:void(0)">
-              <img src="../resources/icons/ico_youtube_white.svg" alt="유튜브">
+              <img src="../assets/icons/ico_youtube_white.svg" alt="유튜브">
             </a>
           </li>
           <li class="footer-snsitem">
             <a class="footer-snslink" href="javascript:void(0)">
-              <img src="../resources/icons/ico_facebook_white.svg" alt="페이스북">
+              <img src="../assets/icons/ico_facebook_white.svg" alt="페이스북">
             </a>
           </li>
         </ul>

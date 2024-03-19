@@ -19,15 +19,26 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <!-- <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css" /> -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
         <script>
             $(document).ready(function () {
                 // main 초기화
+                $.ajax({
+                    url: "notice_nav.do",
+                    success: function (res_data) {
+                        $("#notice_nav").html(res_data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    },
+
+                });
+        
                 $.ajax({
                     url: "notice_header.do",
                     success: function (res_data) {
@@ -61,6 +72,7 @@
                     }
                 });
 
+
             })
         </script>
         <script>
@@ -77,6 +89,7 @@
     </head>
 
     <body>
+        <div id="notice_nav"></div>
         <div id="notice_header"></div>
         <div id="notice_container"></div>
         <div id="notice_footer"></div>
