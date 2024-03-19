@@ -2,7 +2,7 @@
 
 /* glamping-N3 [NgltwpHQWu] */
 .glamping-N3 { overflow: hidden; }
-.glamping-N3 .footer-container { position: relative; height: 65rem; }
+.glamping-N3 .footer-container { position: relative; height: 30rem; }
 .glamping-N3 .footer-backimg { width: calc(100% + 64rem); height: 100%; margin-left: -32rem; object-fit: cover; }
 .glamping-N3 .footer-body { position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); padding: 0 2.4rem; }
 .glamping-N3 .footer-logo { text-align: center; }

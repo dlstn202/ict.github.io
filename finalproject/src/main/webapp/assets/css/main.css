@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 *{
    margin: 0;
    padding: 0;
-   font-family: "Nanum Gothic", sans-serif;
-   font-weight: 300;
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: normal;
+   font-style: normal;
    /* color: #007235; */
 }
 
@@ -47,12 +50,13 @@
 }
 
 /* glamping-N5 [dbltWPhpZn] */
+.glamping-N5 {color: #007235;}
 .glamping-N5 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N5 .cardset-wrap { flex-direction: column; }
 .glamping-N5 .cardset { justify-content: space-between; }
 .glamping-N5 .cardset+.cardset { margin-top: 10rem; }
-.glamping-N5 .cardset .cardset-figure { width: 50%; height: 60rem; }
-.glamping-N5 .cardset .cardset-body { width: calc(50% - 13rem); }
+.glamping-N5 .cardset .cardset-figure {  width: 40%; height: 48rem; }
+.glamping-N5 .cardset .cardset-body { width: calc(60% - 13rem); }
 .glamping-N5 .cardset.cardset-deco .cardset-tit+.cardset-desc::before { background-color: var(--line-color4); }
 @media (max-width: 992px) {
  .glamping-N5 .contents-inner { padding: 5rem 2.4rem; }
@@ -64,7 +68,7 @@
 
 
 /* glamping-N9 [FllTwPhQTo] C:\git\finalproject\src\main\webapp\assets\icons */
-.glamping-N9 { overflow: hidden; }
+.glamping-N9 { color: #007235; overflow: hidden; }
 .glamping-N9 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N9 .contents-container { position: relative; overflow: hidden; }
 .glamping-N9 .textset { margin-bottom: 7rem; text-align: center; }

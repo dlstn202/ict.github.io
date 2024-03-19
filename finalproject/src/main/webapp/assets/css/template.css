@@ -2,8 +2,7 @@
 
 /* Web Font */
 @import url('https://cdn.jsdelivr.net/gh/openfieldth/temha-icon/v1.2.0/Temha-Icon.css');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /* ========== */
 /* Variable */
@@ -15,6 +14,7 @@
   --warning: #ffc107;
   --danger: #dc0000;
   --black: #000;
+  --main: #007235;
   --white: #fff;
   --primary-rgb: 82, 66, 51;
   --secondary-rgb: 151, 131, 108;
@@ -35,15 +35,20 @@
   --highlight-bg: #F7F7FB;
   --letter-spacing: -0.025rem;
   --text-color1: #111111;
+  --text-color2: #007235;
+  --text-color3: #007235;
+  --text-color4: #00AF52;
+  /* 
   --text-color2: #242424;
   --text-color3: #777777;
-  --text-color4: #999999;
+  --text-color4: #999999; */
   --text-color5: #ffffff;
   --bg-color: var(--highlight-bg);
   --line-color1: #e5e5e5;
   --line-color2: #F0F0F6;
   --line-color3: #E5E5EC;
-  --line-color4: #242424;
+  /* --line-color4: #242424; */
+  --line-color4: #007235;
   --ff: "Roboto", "Noto Sans KR", sans-serif;
   --ff-ko: "Noto Sans KR", sans-serif;
   --ff-en: "Roboto", sans-serif;
@@ -409,7 +414,8 @@ progress { vertical-align: baseline; }
 .btnset.btnset-line:hover { color: var(--white); background-color: var(--primary); border-color: var(--primary); } 
 .btnset.btnset-line:disabled, .btnset.btnset-line.disabled { color: var(--text-color4); background-color: var(--bg-color); border-color: var(--line-color1); } 
 .btnset.btnset-line.btnset-black { border-color: var(--line-color4); color: var(--text-color2); } 
-.btnset.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--black); color: var(--white); } 
+.btnset.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--main); color: var(--white); text-decoration: none;} 
+/* .btnset.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--black); color: var(--white); }  */
 .btnset.btnset-line.btnset-white { border-color: var(--white); color: var(--white); } 
 .btnset.btnset-line.btnset-white:hover { background-color: var(--white); color: var(--text-color1); } 
 /* Button : Btnset Mono */
@@ -439,7 +445,8 @@ progress { vertical-align: baseline; }
 .cardset-wrap { display: flex; } 
 .cardset { position: relative; } 
 .cardset .cardset-figure { width: 100%; height: 40rem; margin-bottom: 0; } 
-.cardset .cardset-img { width: 100%; height: 100%; object-fit: cover; } 
+.cardset .cardset-img { width: 100%; height: 100%; object-fit: cover; border-radius: 30px;} 
+/* .cardset .cardset-img { width: 100%; height: 100%; object-fit: cover;}  */
 .cardset .cardset-tit { font-size: var(--fs-h6); line-height: var(--lh-h6); font-weight: 600; } 
 .cardset .cardset-tit + .cardset-desc { margin-top: 1.2rem; } 
 .cardset .cardset-tit + .cardset-txt { margin-top: 1.2rem; } 
@@ -450,7 +457,8 @@ progress { vertical-align: baseline; }
 .cardset .cardset-cont .cardset-desc { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; } 
 /* Card : Cardset Deco */
 .cardset.cardset-deco .cardset-desc { position: relative; padding-top: 2.8rem !important; margin-top: 2.8rem !important; } 
-.cardset.cardset-deco .cardset-tit + .cardset-desc::before { content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 4.4rem; height: 0.2rem; background-color: var(--primary); } 
+.cardset.cardset-deco .cardset-tit + .cardset-desc::before { content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 12.4rem; height: 0.2rem; background-color: var(--primary); } 
+/* .cardset.cardset-deco .cardset-tit + .cardset-desc::before { content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 4.4rem; height: 0.2rem; background-color: var(--primary); }  */
 @media (max-width: 992px){
  .cardset .cardset-body { padding: 2rem 0; } 
  .cardset .cardset-tit + .cardset-txt { margin-top: 0.8rem; } 
@@ -476,7 +484,8 @@ progress { vertical-align: baseline; }
  .cardset.cardset-hor.col-rever { flex-direction: column; } 
  }
 /* Card : Cardset User */
-.cardset.cardset-user::after { content: ''; position: absolute; top: 6.8rem; left: 0; width: 100%; height: calc(100% - 6.8rem); background-color: var(--bg-color); } 
+/* .cardset.cardset-user::after { content: ''; position: absolute; top: 6.8rem; left: 0; width: 100%; height: calc(100% - 6.8rem); background-color: var(--bg-color); }  */
+.cardset.cardset-user::after { content: ''; position: absolute; top: 6.8rem; left: 0; width: 100%; height: calc(100% - 6.8rem); background-color: rgba(0, 58, 27, 0.1); } 
 .cardset.cardset-user .cardset-figure { position: relative; width: 14rem; height: 14rem; margin: 0 auto; border-radius: 50%; overflow: hidden; z-index: 2; } 
 .cardset.cardset-user .cardset-profile { position: relative; padding: 4rem; z-index: 2; text-align: center; } 
 .cardset.cardset-user .cardset-text { font-size: var(--fs-p2); word-break: keep-all; margin-bottom: 0; } 
