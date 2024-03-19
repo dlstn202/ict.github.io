@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css" />
+        <!-- <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/notice.css" /> -->
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
@@ -33,20 +33,20 @@
                     success: function (res_data) {
                         $("#notice_header").html(res_data);
                         $.ajax({
-                            url: "notice_container.do",
-                            success: function (res_data) {
-                                $("#notice_container").html(res_data);
-                            },
-                            error: function (jqXHR, textStatus, errorThrown) {
-                                console.table(jqXHR)
-                            }
-                        });
+                    url: "notice_container.do",
+                    success: function (res_data) {
+                        $("#notice_container").html(res_data);
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         console.table(jqXHR)
                     }
                 });
-
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.table(jqXHR)
+                    }
+                });
+                
                 $.ajax({
                     url: "notice_footer.do",
                     success: function (res_data) {
