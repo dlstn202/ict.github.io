@@ -9,7 +9,7 @@
 <body>
    <!-- [S]glamping-N1 -->
   <header class="glamping-N1" data-bid="KdltWpHPRk">
-    <div class="header-container container-lg">
+    <div class="header-container">
       <div class="header-left">
         <h1 class="header-title">
           <a href="javascript:void(0)">

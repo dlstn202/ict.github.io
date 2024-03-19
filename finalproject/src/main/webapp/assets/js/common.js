@@ -21,6 +21,9 @@ window.addEventListener('scroll', function() {
   var scrollPosition = document.documentElement.scrollTop;
   if(scrollPosition>=headerHeight){
     // console.log("하이");
+    $(".header-container").addClass("all-nav");
+  }else{
+    $(".header-container").removeClass("all-nav");
   }
   
 });
