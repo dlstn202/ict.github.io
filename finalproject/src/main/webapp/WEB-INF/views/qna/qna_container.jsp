@@ -7,21 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <!-- [E]glamping-N10 -->
-    <!-- [S]glamping-N11 -->
-    <div class="glamping-N11" data-bid="XaltWPT6K0">
-        <div class="contents-container">
-            <div class="tabset tabset-fluid border-bottom">
-                <ul class="tabset-list tabset-lg container-md">
-                    <li class="tabset-item">
-                        <a class="tabset-link active" href="javascript:void(0)">
-                            <span>온라인문의</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <!-- [E]glamping-N11 -->
     <!-- [S]glamping-N42 -->

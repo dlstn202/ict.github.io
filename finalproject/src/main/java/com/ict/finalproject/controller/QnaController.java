@@ -13,11 +13,6 @@ public class QnaController {
         return "qna/qna_main";
     }
 
-    @RequestMapping("qna_nav.do")
-    public String qna_nav(){
-
-        return "all/all_nav";
-    }
 
     @RequestMapping("qna_header.do")
     public String qna_header(){
@@ -29,12 +24,6 @@ public class QnaController {
     public String qna_container(){
 
         return "qna/qna_container";
-    }
-
-    @RequestMapping("qna_footer.do")
-    public String qna_footer(){
-
-        return "all/all_footer";
     }
 
 

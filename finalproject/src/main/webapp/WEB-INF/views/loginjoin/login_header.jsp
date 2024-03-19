@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>캠프로버</title>
+<title>Insert title here</title>
 </head>
 <body>
-      <!-- <main class="th-layout-main ">
+  <!-- <main class="th-layout-main ">
 
             <div class="swiper-slide">
               <img class="contents-backimg img-pc" src="../assets/img/header/main_header.jpg" alt="PC 메인 비주얼 이미지">
@@ -23,11 +23,13 @@
         <img class="contents-subvisual img-pc" src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg" alt="PC 서브 비주얼 이미지">
         <img class="contents-subvisual img-mobile" src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg" alt="모바일 서브 비주얼 이미지">
         <div class="textset textset-visual container-md">
-          <p class="textset-name">QNA</p>
-          <h2 class="textset-tit">온라인문의</h2>
+          <p class="textset-name">login</p>
+          <h2 class="textset-tit">로그인</h2>
         </div>
       </div>
     </div>
-  
+    <!-- [E]glamping-N10 -->
+    </div>
+    <!-- [E]glamping-N11 -->
 </body>
 </html>
