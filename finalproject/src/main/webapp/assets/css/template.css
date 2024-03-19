@@ -678,8 +678,9 @@ progress { vertical-align: baseline; }
  /* ========== */
 /* Input : Inputset */
 .inputset { position: relative; } 
-.inputset .inputset-input { border-color: var(--border-color); border-radius: 0; color: var(--body-color); height: var(--ht-md); padding: 0 1.6rem; font-size: var(--fs-p2); } 
-.inputset .inputset-input:hover { border-color: var(--primary); } 
+.inputset .inputset-input { border-color: rgba(var(--main-ton-down-rgb),0.1); border-radius: 0; color: var(--main); height: var(--ht-md); padding: 0 1.6rem; font-size: var(--fs-p2); } 
+.inputset .inputset-input:hover { border-color: var(--main); } 
+.inputset .inputset-input:focus { border-color: var(--main); } 
 .inputset .inputset-input::placeholder { color: var(--text-color3); } 
 .inputset .inputset-input:disabled { border-color: var(--border-color); background-color: var(--bg-color); color: var(--text-color4); } 
 .inputset .inputset-icon { display: inline-block; position: absolute; top: 50%; width: 2.4rem; height: 2.4rem; transform: translateY(-50%); } 
@@ -694,6 +695,7 @@ progress { vertical-align: baseline; }
 .inputset.inputset-border-bottom .inputset-input { border-left: 0; border-right: 0; border-top: 0; border-radius: 0; } 
 .inputset.inputset-border-bottom .inputset-input:focus { outline: none; } 
 .inputset.inputset-border-bottom .inputset-icon.icon-right + .inputset-input { padding-left: 0; padding-right: calc( 2rem + 2.6rem); } 
+.inputset.inputset-border-bottom .inputset-icon.icon-right + .inputset-input:focus { -webkit-box-shadow: none;  box-shadow: none;}
 .inputset.inputset-border-bottom .inputset-icon.icon-right { right: 0; } 
 .inputset.inputset-border-bottom .inputset-icon.icon-left + .inputset-input { padding-right: 0; padding-left: calc( 2rem + 2.6rem); } 
 .inputset.inputset-border-bottom .inputset-icon.icon-left { left: 0; } 
@@ -839,15 +841,15 @@ progress { vertical-align: baseline; }
  /* ========== */
 /* Pagination : Pagiset */
 .pagiset { position: relative; display: flex; justify-content: center; align-items: center; } 
-.pagiset .pagiset-ctrl .pagiset-first::after { content: '\e911'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); } 
-.pagiset .pagiset-ctrl .pagiset-prev::after { content: '\e915'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); } 
-.pagiset .pagiset-ctrl .pagiset-next::after { content: '\e914'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); } 
-.pagiset .pagiset-ctrl .pagiset-last::after { content: '\e912'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); } 
+.pagiset .pagiset-ctrl .pagiset-first::after { content: '\e911'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); color: var(--main);} 
+.pagiset .pagiset-ctrl .pagiset-prev::after { content: '\e915'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); color: var(--main);} 
+.pagiset .pagiset-ctrl .pagiset-next::after { content: '\e914'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); color: var(--main);} 
+.pagiset .pagiset-ctrl .pagiset-last::after { content: '\e912'; display: flex; align-items: center; font-family: var(--ff-ico); font-size: var( --fs-h6); color: var(--main);} 
 .pagiset .pagiset-ctrl + .pagiset-ctrl,
 .pagiset .pagiset-ctrl + .pagiset-list,
 .pagiset .pagiset-list + .pagiset-ctrl { margin-left: 1.2rem; } 
 .pagiset .pagiset-list { display: flex; align-items: center; } 
-.pagiset .pagiset-link { display: flex; justify-content: center; align-items: center; width: 4rem; height: 4rem; font-size: var(--fs-p2); font-weight: 500; } 
+.pagiset .pagiset-link { display: flex; justify-content: center; align-items: center; width: 4rem; height: 4rem; font-size: var(--fs-p2); font-weight: 500; color: var(--main); } 
 .pagiset .pagiset-link.active-fill { background-color: var(--line-color4); color: var(--white); } 
 .pagiset .pagiset-link.active-line { border: 1px solid var(--line-color4); color: var(--line-color4); } 
 /* Pagination : Circ */
