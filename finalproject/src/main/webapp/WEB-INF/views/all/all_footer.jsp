@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>캠프로버</title>
+<script>
+  $(document).ready(function () {
+    $.getScript("${pageContext.request.contextPath}/assets/js/footer.js")
+  })
+
+</script>
 </head>
 <body>
      <!-- [S]glamping-N3 -->
@@ -16,23 +22,6 @@
             <img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
           </a>
         </h2>
-        <ul class="footer-snslist">
-          <li class="footer-snsitem">
-            <a class="footer-snslink" href="javascript:void(0)">
-              <img src="${pageContext.request.contextPath}/assets/icons/ico_instagram_white.svg" alt="인스타그램">
-            </a>
-          </li>
-          <li class="footer-snsitem">
-            <a class="footer-snslink" href="javascript:void(0)">
-              <img src="${pageContext.request.contextPath}/assets/icons/ico_youtube_white.svg" alt="유튜브">
-            </a>
-          </li>
-          <li class="footer-snsitem">
-            <a class="footer-snslink" href="javascript:void(0)">
-              <img src="${pageContext.request.contextPath}/assets/icons/ico_facebook_white.svg" alt="페이스북">
-            </a>
-          </li>
-        </ul>
         <ul class="footer-menugroup">
           <li class="footer-menulink">
             <a href="javascript:void(0)">
