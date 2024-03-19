@@ -14,7 +14,7 @@
         <div class="contents-container container-md">
           <div class="textset">
             <h2 class="textset-tit">약관동의</h2>
-            <p class="textset-desc">캠프로버에 오신것을 진심으로 환영합니다</p>
+            <p class="textset-desc">가입에 필요한 약관에 동의해주세요</p>
           </div>
           <ul class="contents-list">
             <li class="contents-item item-check">
