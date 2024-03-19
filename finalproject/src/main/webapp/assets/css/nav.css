@@ -15,7 +15,7 @@
 .glamping-N1 .header-member { display: none; }
 .glamping-N1 .header-gnblist { display: flex; }
 .glamping-N1 .header-gnbitem { position: relative; }
-.glamping-N1 .header-gnblink { position: relative; padding: 2.8rem 3rem; font-size: var(--fs-p2); font-weight: 500; text-align: center; white-space: nowrap; color: var(--text-color5); }
+.glamping-N1 .header-gnblink { position: relative; padding: 2.8rem 5rem; font-size: var(--fs-p1); font-weight: 500; text-align: center; white-space: nowrap; color: var(--text-color5); }
 .glamping-N1 .header-gnblink span::after { content: ''; position: absolute; left: 3rem; bottom: 0; height: 0.2rem; width: calc(100% - 6rem); transition: 0.3s; transform: scaleX(0); background-color: var(--white); }
 .glamping-N1 .header-gnblink.on span::after { content: ''; transform: scaleX(1); }
 .glamping-N1 .header-sublist { display: none; position: absolute; width: 100%; padding: 2.5rem 0; height: 0; }
