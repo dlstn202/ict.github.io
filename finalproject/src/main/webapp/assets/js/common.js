@@ -25,7 +25,7 @@ window.addEventListener('scroll', function() {
   //console.log("scrollPosition function"+scrollPosition);
   //console.log("scrollPosition function,headerHeight"+headerHeight);
   //console.log(headerHeight);
-  if(scrollPosition>=headerHeight){
+  if(scrollPosition>=headerHeight-80){
     // console.log("하이");
     $(".header-container").addClass("all-nav");
   }else{
