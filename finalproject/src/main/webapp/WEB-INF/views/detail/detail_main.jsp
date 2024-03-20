@@ -1,86 +1,105 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-	<!DOCTYPE html>
-	<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+		<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+			<!DOCTYPE html>
+			<html>
 
-	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<meta charset="UTF-8">
-		<title>캠프로버</title>
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/detail.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
-		<script type="text/javascript">
+			<head>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+				<link rel="stylesheet"
+					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+				<meta charset="UTF-8">
+				<title>캠프로버</title>
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/detail.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+				<script type="text/javascript">
 
-                // main 초기화
-                $.ajax({
-                    url: "nav.do",
-                    success: function (res_data) {
-                        $("#detail_nav").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    },
+					// main 초기화
+					// $.ajax({
+					//     url: "nav.do",
+					//     success: function (res_data) {
+					//         $("#detail_nav").html(res_data);
+					//     },
+					//     error: function (jqXHR, textStatus, errorThrown) {
+					//         console.table(jqXHR)
+					//     },
 
-                });
-                $.ajax({
-                    url: "detail_container_info.do",
-                    success: function (res_data) {
-                        $("#container_info").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    },
+					// });
+					$.ajax({
+						url: "detail_container_info.do",
+						success: function (res_data) {
+							$("#container_info").html(res_data);
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							console.table(jqXHR)
+						},
 
-                });
-                $.ajax({
-                    url: "detail_container_insert_review.do",
-                    success: function (res_data) {
-                        $("#container_insert_review").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    },
+					});
+					$.ajax({
+						url: "detail_container_insert_review.do",
+						success: function (res_data) {
+							$("#container_insert_review").html(res_data);
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							console.table(jqXHR)
+						},
 
-                });
-                $.ajax({
-                    url: "detail_container_review.do",
-                    success: function (res_data) {
-                        $("#container_review").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    },
+					});
+					$.ajax({
+						url: "detail_container_review.do",
+						success: function (res_data) {
+							$("#container_review").html(res_data);
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							console.table(jqXHR)
+						},
 
-                });
-                $.ajax({
-                    url: "footer.do",
-                    success: function (res_data) {
-                        $("#detail_footer").html(res_data);
-                    },
-                    error: function (jqXHR, textStatus, errorThrown) {
-                        console.table(jqXHR)
-                    },
+					});
+					$.ajax({
+						url: "footer.do",
+						success: function (res_data) {
+							$("#detail_footer").html(res_data);
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							console.table(jqXHR)
+						},
 
-                });
-			
-		</script>
+					});
 
-			<div id="detail_nav"></div>
-			<div id="container_info"></div>
-			<div id="container_insert_review"></div>
-			<div id="container_review"></div>
-			<div id="detail_footer"></div>
+				</script>
+			</head>
 
-	</body>
+			<body>
+				<div class="nav">
+					<div class="sitename">
+						<img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
+					</div>
+					<div class="login_join">
+						<c:if test="${empty sessionScope.user }">
+							<a href="javascript:void(0);" class="btn-user header-utils-btn">
+								<img src="${pageContext.request.contextPath}/assets/icons/ico_user_white.svg" alt="유저 아이콘">
+							</a>
+						</c:if>
+						<c:if test="${ not empty sessionScope.user }">
+							<b onclick="mypage();">${ sessionScope.user.pl_mem_name }</b>님&nbsp;&nbsp;
+							<input id="btnLogOut" class="btn" type="button" value="로그아웃">
+						</c:if>
+					</div>
+				</div>
+				<!-- 
+			<div id="detail_nav"></div> -->
+				<div id="container_info"></div>
+				<div id="container_insert_review"></div>
+				<div id="container_review"></div>
+				<div id="detail_footer"></div>
 
-	</html>
+			</body>
+
+			</html>
