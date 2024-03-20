@@ -60,10 +60,10 @@
    }
 
    function handleRatingClick() {
-  // 이곳에 로그인 상태를 체크하는 코드 추가 가능
+      // 이곳에 로그인 상태를 체크하는 코드 추가 가능
 
-  $('#review_modal').modal('show');
-}
+         $('#review_modal').modal('show');
+   }
 
 </script> 
 
