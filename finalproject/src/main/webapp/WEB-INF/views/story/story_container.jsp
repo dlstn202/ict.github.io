@@ -4,22 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script>
-
-var elem = document.querySelector('.story_wrap');
-var msnry = new Masonry( elem, {
-  // options
-  itemSelector: '.grid-storybox',
-  columnWidth: 200
-});
-
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.story_wrap', {
-  // options
-});
-</script>
 </head>
 <body>
 
