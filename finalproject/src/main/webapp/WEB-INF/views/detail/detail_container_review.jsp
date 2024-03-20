@@ -27,7 +27,24 @@
 							  </c:forEach>
 							  <c:set var="averageScore" value="${totalScore / fn:length(review_list)}"/>
 							  <c:set var="roundedAverageScore" value="${Math.round(averageScore)}" />
-							  (평균점수) ${roundedAverageScore }점 
+							  (평균점수) ${roundedAverageScore }점
+						  </div>
+						  <div class="star-rating">
+							<div class="back-stars" style="width: 46%">
+							  <i class="fa fa-star" aria-hidden="true"></i>
+							  <i class="fa fa-star" aria-hidden="true"></i>
+							  <i class="fa fa-star" aria-hidden="true"></i>
+							  <i class="fa fa-star" aria-hidden="true"></i>
+							  <i class="fa fa-star" aria-hidden="true"></i>
+							  
+							  <div class="front-stars" style="width: 46%">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+							  </div>
+							</div>
 						  </div>
 			  
 					   </div>

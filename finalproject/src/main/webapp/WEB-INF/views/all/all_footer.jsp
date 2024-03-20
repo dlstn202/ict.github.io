@@ -38,25 +38,24 @@
             </li>
             <li class="footer-menulink">
               <a href="javascript:void(0)">
-                <span>푸터메뉴1</span>
+                <span>제휴제안</span>
               </a>
             </li>
             <li class="footer-menulink">
               <a href="javascript:void(0)">
-                <span>푸터메뉴2</span>
+                <span>고객센터</span>
               </a>
             </li>
           </ul>
           <div class="footer-txtgroup">
             <div class="footer-txt">
-              <p> 서울시 영등포구 선유로70 우리벤처타운2 705호 </p>
+              <p> 서울 서초구 서초대로77길 41 </p>
               <p>
-                <span>T. 070-8872-8874</span>
-                <span>E. help@openfield.co.kr</span>
+                <span>E. camprover@naver.com</span>
               </p>
             </div>
             <div class="footer-txt">
-              <p>2023 BY TEMPLATEHOUSE. ALL RIGHTS RESEVED</p>
+              <p>2023 BY CAMPROVER. ALL RIGHTS RESEVED</p>
             </div>
           </div>
         </div>
