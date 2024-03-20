@@ -1,5 +1,8 @@
 @charset "utf-8"; 
 
+.grid-item img {display: block; min-width:100%; max-width: 100%;}
+
+
 .story_wrap{
     width: 1280px;
     min-height: 1000px;
@@ -7,14 +10,9 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
-    column-count: 2;
-    column-gap: 20px;
+    /* column-count: 2;
+    column-gap: 20px; */
 
-    /* display: flex; 
-    flex-wrap: wrap; 
-    justify-content: flex-start; */
-
-    /* border: 1px solid red; */
 }
 
 .storybox{
@@ -27,13 +25,14 @@
     border-radius: 3px;
     border: 1px solid #003A1B;
 
-    break-inside: avoid-column;
-    margin-bottom: 20px;
+    /* break-inside: avoid-column;
+    margin-bottom: 20px; */
 
     /* width: 470px;
     display: flex;
     flex-direction: column; */
 
+    
 }
 
 .story_line{
@@ -64,6 +63,7 @@
     margin-bottom: 14px;
     font-size: 20px;
     font-weight: bold;
+    color: rgba(var(--main-ton-down-rgb),1);
 }
 
 #story_content{
@@ -71,6 +71,7 @@
     margin-right: 15px;
     margin-bottom: 15px;
     min-height: 70px;
+    color: rgba(var(--main-ton-down-rgb),1);
 }
 
 #story_writer{
