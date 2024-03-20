@@ -11,8 +11,8 @@
 
          <body>
             <div id="info">
-               <input type="hidden" id="detail_contenttypeid" value="${detail_vo.contenttypeid}">
-               <input type="hidden" id="detail_contentid" value="${detail_vo.contentid}">
+               <input type="hidden" id="detail_contenttypeid" value=""><!--${detail_vo.contenttypeid}-->
+               <input type="hidden" id="detail_contentid" value=""> <!--${detail_vo.contentid}-->
                <!-- ---------------------상세정보--------------------- -->
                <div class="detail">
                   <div class="detail_top">

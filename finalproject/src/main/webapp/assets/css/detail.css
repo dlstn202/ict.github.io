@@ -18,7 +18,7 @@
    body{
       /* background: rgba(var(--main-rgb), 0.1); */
       background-color: rgba(0, 58, 27,0.1);
-      color: var(--font-color);
+      color: var(--main-ton-down);
       /* background: #003a1b; */
    }
    
@@ -347,26 +347,7 @@
    
 /* ---------------------------------------------------------------스크롤바*/
 
-      /* 수직 스크롤바 */
-      ::-webkit-scrollbar {
-          width: 8px; /* 스크롤바 너비 */
-      }
-      
-      /* 수직 스크롤바의 트랙(Track) 영역 */
-      ::-webkit-scrollbar-track {
-          background-color: #00AF52; /* 트랙 배경색 */
-      }
-      
-      /* 스크롤바의 쓰바(Thumb) */
-      ::-webkit-scrollbar-thumb {
-          background-color: #007235; /* 쓰바 색상 */
-      }
-      
-      /* 호버(hover) 상태의 쓰바 */
-      ::-webkit-scrollbar-thumb:hover {
-          background-color: #003A1B; /* 호버 상태에서의 쓰바 색상 */
-      }
-      
+     
       
    /* ------------------------상세정보 스크롤바----- */
    
