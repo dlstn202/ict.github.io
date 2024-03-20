@@ -26,8 +26,8 @@
 .glamping-N33 .month-wrapper table>thead .week-name th:first-child,.glamping-N33 .month-wrapper table>tbody tr td:first-child .day { color: #de3636 !important; }
 .glamping-N33 .date-picker-wrapper table .caption .prev,.glamping-N33 .date-picker-wrapper table .caption .next { display: inline-block; position: relative; text-indent: -9999px; }
 .glamping-N33 .date-picker-wrapper table .caption .prev::after,.glamping-N33 .date-picker-wrapper table .caption .next::after { content: ''; display: inline-block; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 4.4rem; height: 4.4rem; background-repeat: no-repeat; background-position: center; background-size: contain; }
-.glamping-N33 .date-picker-wrapper table .caption .prev::after { background-image: url("../../resources/icons/ico_arrow_left_black.svg"); }
-.glamping-N33 .date-picker-wrapper table .caption .next::after { background-image: url("../../resources/icons/ico_arrow_right_black.svg"); }
+.glamping-N33 .date-picker-wrapper table .caption .prev::after { background-image: url("../../assets/icons/ico_arrow_left_black.svg"); }
+.glamping-N33 .date-picker-wrapper table .caption .next::after { background-image: url("../../assets/icons/ico_arrow_right_black.svg"); }
 .glamping-N33 .date-picker-wrapper table .caption .prev:hover,.glamping-N33 .date-picker-wrapper table .caption .next:hover { background-color: transparent; }
 .glamping-N33 .date-picker-wrapper .month-wrapper table { width: calc(50% - 2rem); }
 .glamping-N33 .date-picker-wrapper .month-wrapper .month2 { float: right; }
@@ -80,6 +80,7 @@
 
 /* reservation_container_input --------------------------------------------*/
 /* glamping-N35 [kDLtwPJ58p] */
+.glamping-N35 {color: var(--main-ton-down);}
 .glamping-N35 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N35 .contents-top { display: flex; align-items: flex-end; justify-content: space-between; }
 .glamping-N35 .contents-list { display: flex; align-items: center; flex-wrap: wrap; gap: 2rem; }
@@ -88,11 +89,11 @@
 .glamping-N35 .contents-group { display: flex; align-items: center; gap: 0.4rem; }
 .glamping-N35 .contents-icon { width: 2.8rem; height: 2.8rem; margin-bottom: 0; }
 .glamping-N35 .contents-icon img { width: 100%; height: 100%; object-fit: contain; }
-.glamping-N35 .contents-group span { font-size: 1.8rem; color: var(--text-color4); }
+.glamping-N35 .contents-group span { font-size: 1.8rem; color: var(--main); font-weight: 600;}
 .glamping-N35 .content-text { margin-top: 0.8rem; font-size: var(--fs-h5); line-height: var(--lh-h5); }
-.glamping-N35 .contents-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 4rem; padding: 2.4rem; background-color: var(--highlight-bg); border-top: 1px solid var(--border-color); }
-.glamping-N35 .contents-bottom span { font-size: var(--fs-p3); line-height: var(--lh-p3); font-weight: 500; color: var(--text-color4); }
-.glamping-N35 .contents-bottom strong { font-size: var(--fs-h5); line-height: var(--lh-h5); font-weight: 500; }
+.glamping-N35 .contents-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 4rem; padding: 2.4rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); border-top: 1px solid rgba(var(--main-ton-down-rgb), 0.1); }
+.glamping-N35 .contents-bottom span { font-size: var(--fs-p3); line-height: var(--lh-p3); font-weight: 500; }
+.glamping-N35 .contents-bottom strong { font-size: var(--fs-h5); line-height: var(--lh-h5); font-weight: 500; color: var(--main);}
 @media (max-width: 992px) {
  .glamping-N35 .contents-inner { padding: 5rem 2.4rem; }
  .glamping-N35 .contents-top { flex-direction: column; align-items: flex-start; gap: 1.6rem; }
@@ -145,8 +146,9 @@
 /* reservation_container_input --------------------------------------------*/
 /* reservation_container_finish --------------------------------------------*/
 /* glamping-N38 [PllTwpJ1kN] */
+.glamping-N38 {color : var(--main-ton-down)}
 .glamping-N38 .contents-inner { padding: 12rem 2.4rem; }
-.glamping-N38 .contents-icon { display: flex; align-items: center; justify-content: center; width: 8rem; height: 8rem; margin: 0 auto; padding: 2rem; border-radius: 50%; background-color: var(--primary); }
+.glamping-N38 .contents-icon { display: flex; align-items: center; justify-content: center; width: 8rem; height: 8rem; margin: 0 auto; padding: 2rem; border-radius: 50%; background-color: var(--main); }
 .glamping-N38 .contents-icon img { width: 100%; height: 100%; object-fit: contain; }
 .glamping-N38 .textset { margin-top: 4rem; text-align: center; }
 .glamping-N38 .textset-tit { font-size: var(--fs-h2); line-height: var(--lh-h2); font-weight: 500; }

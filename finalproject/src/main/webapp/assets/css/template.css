@@ -408,8 +408,8 @@ progress { vertical-align: baseline; }
 .btnset::after { transition: inherit; } 
 .btnset + .btnset { margin-left: .8rem; } 
 .btnset:hover { color: var(--white); background-color: rgba(var(--main-ton-up-rgb)); border-color: rgba(var(--main-ton-up-rgb)); text-decoration: none;} 
-.btnset:disabled, .btnset.disabled { color: var(--text-color4) !important; background-color: var(--bg-color) !important; border-color: var(--bg-color) !important; } 
-.btnset:disabled:hover, .btnset.disabled:hover { color: var(--text-color4) !important; background-color: var(--bg-color) !important; border-color: var(--bg-color) !important; } 
+.btnset:disabled, .btnset.disabled { background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; border: none !important;} 
+.btnset:disabled:hover, .btnset.disabled:hover {background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; color: var(--main) !important;border: none !important;} 
 /* Button : Btnset Size */
 .btnset.btnset-xl { min-width: 9.4rem; padding: 0 3.2rem; height: var(--ht-xl); font-size: var(--fs-h6); } 
 .btnset.btnset-lg { min-width: 9.4rem; padding: 0 2.8rem; height: var(--ht-lg); font-size: var(--fs-p1); } 
