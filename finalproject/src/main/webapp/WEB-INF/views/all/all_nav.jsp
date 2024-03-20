@@ -9,7 +9,7 @@
 <body>
    <!-- [S]glamping-N1 -->
   <header class="glamping-N1" data-bid="KdltWpHPRk">
-    <div class="header-container container-lg">
+    <div class="header-container">
       <div class="header-left">
         <h1 class="header-title">
           <a href="javascript:void(0)">
@@ -72,7 +72,7 @@
         <div class="fullmenu-head">
           <h4 class="fullmenu-title">
             <a href="javascript:void(0)">
-              <img src="${pageContext.request.contextPath}/assets/images/img_logo_white.png" alt="로고">
+              <img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
             </a>
           </h4>
           <ul class="fullmenu-member">

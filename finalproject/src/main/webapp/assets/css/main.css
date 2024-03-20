@@ -40,6 +40,7 @@
 
 /* glamping-N5 [dbltWPhpZn] */
 .glamping-N5 {color: #007235;}
+.glamping-N5 .cardset-desc {color: #003A1B;}
 .glamping-N5 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N5 .cardset-wrap { flex-direction: column; }
 .glamping-N5 .cardset { justify-content: space-between; }
@@ -58,6 +59,8 @@
 
 /* glamping-N9 [FllTwPhQTo] C:\git\finalproject\src\main\webapp\assets\icons */
 .glamping-N9 { color: #007235; overflow: hidden; }
+.glamping-N9 .textset-desc { color: #003A1B;  }
+.glamping-N9 .cardset-text { color: #003A1B;  }
 .glamping-N9 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N9 .contents-container { position: relative; overflow: hidden; }
 .glamping-N9 .textset { margin-bottom: 7rem; text-align: center; }

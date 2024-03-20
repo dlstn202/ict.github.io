@@ -3,55 +3,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>let headerHeight = 0;</script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <meta charset="UTF-8">
-<title>캠프로버</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+<title>캠프안내</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/faq.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/info.css">
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=897d9c3b7e07054fabb6126c0c458f98"></script>
 <script>
 
 $(document).ready(function() {
     // main 초기화
     $.ajax({
-        url: "nav.do",
+        url: "info_nav.do",
         success: function(res_data) {
-            $("#nav").html(res_data);
+            $("#info_nav").html(res_data);
             
             $.ajax({
-                url: "faq_header.do",
+                url: "info_container1.do",
                 success: function(res_data) {
-                    $("#faq_header").html(res_data);
+                    $("#info_container1").html(res_data);
                     
-                    $.ajax({
-                        url: "faq_container.do",
-                        success: function(res_data) {
-                            $("#faq_container").html(res_data);
-                            
-                            $.ajax({
-                                url: "footer.do",
-                                success: function(res_data) {
-                                    $("#footer").html(res_data);
-                                    
-                                    loadAdditionalScripts();
-                                },
-                                error: function(jqXHR, textStatus, errorThrown) {
-                                    console.table(jqXHR);
-                                }
-                            });
-                        },
-                        error: function(jqXHR, textStatus, errorThrown) {
-                            console.table(jqXHR);
-                        }
-                    });
                 },
                 error: function(jqXHR, textStatus, errorThrown) {
                     console.table(jqXHR);
@@ -86,9 +63,8 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-    <div id="nav"></div>
-    <div id="faq_header"></div>
-    <div id="faq_container"></div>
-    <div id="footer"></div>
+    <div id="info_nav"></div>
+    <div id="info_container1"></div>
+    
 </body>
 </html>

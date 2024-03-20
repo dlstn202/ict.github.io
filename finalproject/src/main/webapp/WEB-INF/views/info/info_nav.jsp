@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    
+<div id="nav" style="height: 50px; ">
+    캠프로버 내비영역
+</div>
 </body>
 </html>

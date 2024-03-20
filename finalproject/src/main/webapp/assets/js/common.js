@@ -1,9 +1,45 @@
 // glamping-N1 [KdltWpHPRk]
+
+//[S]nav 변경 js
+headerHeight = resizeHeaderHeight(); 
+window.addEventListener('resize', () => {
+  headerHeight = resizeHeaderHeight();
+  //console.log("resize function"+headerHeight);
+});
+
+function resizeHeaderHeight() {  
+  let localHeaderHeight = 0;
+  if(document.querySelector('s.wiper-wrapper')!= null){
+    localHeaderHeight = document.querySelector('.swiper-wrapper').offsetHeight;
+  }else if(document.querySelector('.contents-container') != null){
+    localHeaderHeight = document.querySelector('.contents-container').offsetHeight;
+  }
+  //console.log("resizeHeaderHeight function"+localHeaderHeight);
+  //console.log(headerHeight);
+  return localHeaderHeight; 
+}
+
+window.addEventListener('scroll', function() {
+  
+  var scrollPosition = document.documentElement.scrollTop;
+  //console.log("scrollPosition function"+scrollPosition);
+  //console.log("scrollPosition function,headerHeight"+headerHeight);
+  //console.log(headerHeight);
+  if(scrollPosition>=headerHeight){
+    // console.log("하이");
+    $(".header-container").addClass("all-nav");
+  }else{
+    $(".header-container").removeClass("all-nav");
+  }
+  
+});
+//[E]nav 변경 js
+
 (function() {
   $(function() {
     $(".glamping-N1").each(function() {
       const $block = $(this);
-      // Header Scroll
+      resizeHeaderHeight();
       $(window).on("load scroll", function() {
         const $thisTop = $(this).scrollTop();
         if ($thisTop > 0) {
