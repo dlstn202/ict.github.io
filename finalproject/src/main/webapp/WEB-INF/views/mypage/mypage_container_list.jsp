@@ -12,6 +12,7 @@
                 <span class="ico_star inner_star" style="width:84%"></span>
             </span>
 
-
+            <span class='star-rating'>
+                <span style ="width:50%"></span>
 </body>
 </html>
