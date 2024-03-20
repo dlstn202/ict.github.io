@@ -13,6 +13,8 @@
    font-style: normal;
    /* color: #007235; */
 }
+a:hover{ text-decoration: none;}
+a:focus{ text-decoration: none; outline: none; color: var(--white);}
 
 /* ========== */
 /* Variable */
