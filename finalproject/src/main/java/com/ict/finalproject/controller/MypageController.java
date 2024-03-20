@@ -31,6 +31,18 @@ public class MypageController {
         return "mypage/mypage_main_manager";
     }
 
+    @RequestMapping("mypage_container_list.do")
+    public String mypage_container_list(){
+
+        return "mypage/mypage_container_list";
+    }
+
+    @RequestMapping("mypage_container_info.do")
+    public String mypage_container_info(){
+
+        return "mypage/mypage_container_info";
+    }
+
 
 
 

@@ -17,54 +17,54 @@
           <div class="contents-top">
             <div class="contents-list">
               <div class="contents-item">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_calendar_black.svg" alt="달력 아이콘">
+                    <i class="fa-solid fa-calendar-days fa-xl" style="color: #007235;" alt="달력 아이콘"></i>
                   </figure>
                   <span>투숙기간</span>
                 </div>
                 <p class="content-text">2023.01.09 월 - 2023.01.11 수</p>
               </div>
               <div class="contents-item">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_camping_black.svg" alt="캠핑 아이콘">
+                    <i class="fa-solid fa-campground fa-xl" style="color: #007235;" alt="캠핑 아이콘"></i>
                   </figure>
                   <span>객실명</span>
                 </div>
                 <p class="content-text">템하 글램핑</p>
               </div>
               <div class="contents-item content-mobile-group">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_adult_black.svg" alt="성인 아이콘">
+                    <i class="fa-solid fa-person fa-2xl" style="color: #007235;" alt="성인 아이콘"></i>
                   </figure>
                   <span>성인</span>
                 </div>
                 <p class="content-text">3명</p>
               </div>
               <div class="contents-item content-mobile-group">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_child_black.svg" alt="소인 아이콘">
+                    <i class="fa-solid fa-child fa-2xl" style="color: #007235;" alt="소인 아이콘"></i>
                   </figure>
                   <span>소인</span>
                 </div>
                 <p class="content-text">2명</p>
               </div>
               <div class="contents-item content-mobile-group">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_baby_black.svg" alt="유아 아이콘">
+                    <i class="fa-solid fa-baby fa-2xl" style="color: #007235;" alt="유아 아이콘"></i>
                   </figure>
                   <span>유아</span>
                 </div>
                 <p class="content-text">2명</p>
               </div>
               <div class="contents-item">
-                <div class="contents-group">
+                <div class="contents-icongroup">
                   <figure class="contents-icon">
-                    <img src="../assets/icons/ico_pet_black.svg" alt="펫 아이콘">
+                    <i class="fa-solid fa-paw fa-2xl" style="color: #007235;" alt="펫 아이콘"></i>
                   </figure>
                   <span>반려견동행</span>
                 </div>
