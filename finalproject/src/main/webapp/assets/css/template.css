@@ -924,3 +924,24 @@ progress { vertical-align: baseline; }
  .accordset .accordset-q { width: 2.4rem; height: 2.4rem; line-height: 2.4rem; } 
  .accordset .accordset-a { width: 2.4rem; height: 2.4rem; } 
  }
+
+ /* 수직 스크롤바 */
+::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+/* 수직 스크롤바의 트랙(Track) 영역 */
+::-webkit-scrollbar-track {
+  background-color: rgba(var(--main-ton-up-rgb),0.2); /* 트랙 배경색 */
+}
+
+/* 스크롤바의 쓰바(Thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main); /* 쓰바 색상 */
+  border-radius: var(--main); /* 쓰바의 모서리 반경 */
+}
+
+/* 호버(hover) 상태의 쓰바 */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-ton-down); /* 호버 상태에서의 쓰바 색상 */
+}

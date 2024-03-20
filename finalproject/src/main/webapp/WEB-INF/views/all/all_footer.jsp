@@ -9,11 +9,9 @@
       $(document).ready(function () {
         $.getScript("${pageContext.request.contextPath}/assets/js/footer.js");
         $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
-        $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
         $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
         $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
       })
-
     </script>
   </head>
 
