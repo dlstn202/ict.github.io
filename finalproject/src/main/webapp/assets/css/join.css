@@ -151,7 +151,7 @@
 .glamping-N47 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N47 .contents-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; }
 .glamping-N47 .contents-tit { font-size: var(--fs-h5); line-height: var(--lh-h5); font-weight: 600; color: rgba(var(--main-ton-down-rgb),1);}
-.glamping-N47 .contents-top span { font-size: var(--fs-p2); line-height: var(--lh-p2); }
+.glamping-N47 .contents-top span { font-size: var(--fs-p2); line-height: var(--lh-p2); color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N47 .contents-group { padding-top: 2.4rem; border-top: 1px solid var(--line-color4); }
 .glamping-N47 .form-wrap+.form-wrap { margin-top: 1.6rem; }
 .glamping-N47 .form-wrap .form-tit { min-width: 15.3rem; color: rgba(var(--main-ton-down-rgb),1);}

@@ -44,28 +44,29 @@
               <span class="contents-ortext">SNS 계정으로 간편 로그인</span>
             </span>
             <ul class="contents-list">
-              <li class="contents-item">
+              <li>
                 <a href="javascript:void(0);">
                   <figure class="contents-figure ico-kakao">
-                    <img class="contents-icon" src="${pageContext.request.contextPath}/assets/icons/ico_kakao.svg" alt="카카오톡 아이콘">
+                    <img class="contents-icon-kakao-emblem" src="${pageContext.request.contextPath}/assets/icons/ico_kakao.svg" alt="카카오톡 아이콘">
+                    <span class="content-sns fontkakao">카카오 로그인</span>
                   </figure>
-                  <span class="content-sns">카카오톡</span>
+
                 </a>
               </li>
               <li class="contents-item">
                 <a href="javascript:void(0);">
                   <figure class="contents-figure ico-naver">
-                    <img class="contents-icon" src="${pageContext.request.contextPath}/assets/icons/ico_naver.svg" alt="네이버 아이콘">
+                    <img class="contents-icon-naver-emblem" src="${pageContext.request.contextPath}/assets/icons/ico_naver_round.png" alt="네이버 아이콘">
+                    <span class="content-sns fontnaver">네이버 로그인</span>
                   </figure>
-                  <span class="content-sns">네이버</span>
                 </a>
               </li>
               <li class="contents-item">
                 <a href="javascript:void(0);">
                   <figure class="contents-figure ico-google">
-                    <img class="contents-icon" src="${pageContext.request.contextPath}/assets/icons/ico_google.svg" alt="구글 아이콘">
+                    <img class="contents-icon-google-emblem" src="${pageContext.request.contextPath}/assets/icons/ico_google_round.svg" alt="구글 아이콘">
+                    <span class="content-sns fontgoogle">&nbsp;구글&nbsp;&nbsp;로그인</span>
                   </figure>
-                  <span class="content-sns">구글</span>
                 </a>
               </li>
             </ul>
