@@ -7,47 +7,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MypageController {
 
 
-    @RequestMapping("reservation_header.do")
-    public String header(){
+    @RequestMapping("mypage_header.do")
+    public String mypage_header(){
 
-        return "reservation/reservation_header";
+        return "mypage/mypage_header";
     }
 
-    @RequestMapping("reservation_main_finish.do")
-    public String main_finish(){
+    @RequestMapping("mypage_main_general.do")
+    public String main_general(){
 
-        return "reservation/reservation_main_finish";
+        return "mypage/mypage_main_general";
     }
 
-    @RequestMapping("reservation_main_input.do")
-    public String main_input(){
+    @RequestMapping("mypage_main_ceo.do")
+    public String main_ceo(){
 
-        return "reservation/reservation_main_input";
+        return "mypage/mypage_main_ceo";
     }
 
-    @RequestMapping("reservation_main_date.do")
-    public String main_date(){
+    @RequestMapping("mypage_main_manager.do")
+    public String main_manager(){
 
-        return "reservation/reservation_main_date";
+        return "mypage/mypage_main_manager";
     }
 
-    @RequestMapping("reservation_container_date.do")
-    public String container_date(){
 
-        return "reservation/reservation_container_date";
-    }
-
-    @RequestMapping("reservation_container_input.do")
-    public String container_input(){
-
-        return "reservation/reservation_container_input";
-    }
-
-    @RequestMapping("reservation_container_finish.do")
-    public String container_finish(){
-
-        return "reservation/reservation_container_finish";
-    }
 
 
 }
