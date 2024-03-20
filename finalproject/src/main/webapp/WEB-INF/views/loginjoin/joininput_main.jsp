@@ -66,7 +66,7 @@
            },
            complete: function () {
                // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
-               loadAdditionalScripts();
+           //    loadAdditionalScripts();
            }
        });
    })
@@ -74,11 +74,11 @@
 <script>
     function loadAdditionalScripts() {
         // 추가적인 스크립트 파일들을 로드합니다.
-        $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
-        $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
-        $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
-        $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
-        $.getScript("${pageContext.request.contextPath}/assets/js/script.js");
+        // $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
+        // $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
+        // $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
+        // $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
+        // $.getScript("${pageContext.request.contextPath}/assets/js/script.js");
     }
  
  </script>
