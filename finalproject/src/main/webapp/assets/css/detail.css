@@ -559,7 +559,26 @@
     display: inline-block;
     border: 0;
    }
+/* ---------------------------------------------------------------평균점수별*/
+.star-rating {
+   font-family: FontAwesome, serif;
+   line-height: 1em;
+   color: #d3d3d3; /* 기본 별 색상 */
+ }
  
+ .back-stars {
+   display: flex;
+   position: relative;
+ }
+ 
+ .front-stars {
+   position: absolute;
+   top: 0;
+   left: 0;
+   white-space: nowrap;
+   overflow: hidden;
+   color: #007235; /* 채워진 별 색상 */
+ }
 
 
 /* ---------------------------------------------------------------리뷰상단*/
