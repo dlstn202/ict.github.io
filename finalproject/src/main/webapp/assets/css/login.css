@@ -11,18 +11,18 @@
 .glamping-N44 .contents-form { margin: 6rem 0; }
 .glamping-N44 .contents-form .inputset+.inputset { margin-top: 0.8rem; }
 .glamping-N44 .contents-form .inputset-input { font-size: 1.4rem; }
-.glamping-N44 .contents-form .form-control { border-width: 2px; }
+.glamping-N44 .contents-form .form-control { border-width: 2px; color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N44 .contents-util { display: flex; justify-content: space-between; margin-top: 2rem; }
 .glamping-N44 .contents-util .checkset-text { font-size: var(--fs-p2); }
 .glamping-N44 .contents-find a { position: relative; padding-right: 1.6rem; font-size: var(--fs-p2); }
 .glamping-N44 .contents-find a+a { padding-left: 1.6rem; padding-right: 0; }
-.glamping-N44 .contents-find a+a::before { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1px; height: 1.6rem; background-color: #707070; }
+.glamping-N44 .contents-find a+a::before { content: ''; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 1px; height: 1.6rem; background-color: rgba(var(--main-ton-down-rgb),1); }
 .glamping-N44 .contents-btnset { margin-top: 4rem; }
 .glamping-N44 .contents-btnset .btnset { width: 100%; }
 .glamping-N44 .contents-btnset .btnset+.btnset { margin-left: 0; margin-top: 0.8rem; }
 .glamping-N44 .contents-or { display: flex; align-items: center; width: 100%; }
-.glamping-N44 .contents-or::before { content: ''; display: inline-block; width: 100%; height: 0.1rem; background-color: var(--line-color1); }
-.glamping-N44 .contents-or::after { content: ''; display: inline-block; width: 100%; height: 0.1rem; background-color: var(--line-color1); }
+.glamping-N44 .contents-or::before { content: ''; display: inline-block; width: 100%; height: 0.1rem; background-color: rgba(var(--main-ton-down-rgb),0.1); }
+.glamping-N44 .contents-or::after { content: ''; display: inline-block; width: 100%; height: 0.1rem; background-color: rgba(var(--main-ton-down-rgb),0.1); }
 .glamping-N44 .contents-or span { flex-shrink: 0; margin: 0 2rem; font-size: 1.4rem; font-weight: 500; }
 .glamping-N44 .contents-list { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; margin-top: 2rem; }
 .glamping-N44 .contents-figure { width: 6rem; height: 6rem; padding: 1.4rem; margin: 0 auto; border-radius: 50%; }

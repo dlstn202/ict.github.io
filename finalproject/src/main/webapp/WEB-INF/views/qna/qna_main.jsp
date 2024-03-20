@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/qna.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
+    <script>let headerHeight = 0;</script>
 <script>
      $(document).ready(function () {
         // main 초기화

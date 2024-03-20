@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+  <script>let headerHeight = 0;</script>
   <script>
   $(document).ready(function () {
 
@@ -64,7 +65,7 @@
       },
       complete: function () {
         // AJAX 호출이 모두 완료되면 추가적인 스크립트 파일들을 로드합니다.
-        loadAdditionalScripts();
+  //      loadAdditionalScripts();
       }
     });
   })
