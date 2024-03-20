@@ -3,13 +3,24 @@
 .grid-item img {display: block; min-width:100%; max-width: 100%;}
 
 
-.story_wrap{
-    width: 1280px;
+.story_bigwrap{
+    width: 1050px;
     min-height: 1000px;
-    margin: auto;
+    margin: 50px auto;
+    /* column-count: 2;
+    column-gap: 20px; */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    /* flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start; */
+}
+
+.story_wrap{
+    width: 500px;
+    min-height: 1000px;
     margin-top: 50px;
     margin-bottom: 50px;
-
+    display: inline-block;
     /* column-count: 2;
     column-gap: 20px; */
 
@@ -20,7 +31,6 @@
     min-height: 400px;
     display: inline-block;
 
-    margin: 83px;
     margin-bottom: 20px;
     border-radius: 3px;
     border: 1px solid #003A1B;
@@ -51,7 +61,7 @@
 }
 
 #story_photo > img{
-    width: 470px;
+    width: 468  px;
     height:320px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
