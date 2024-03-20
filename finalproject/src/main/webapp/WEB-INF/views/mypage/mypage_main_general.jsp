@@ -29,7 +29,7 @@
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							console.table(jqXHR)
-						},
+						}
 
 					});
 
@@ -44,6 +44,17 @@
 						}
 					});
 
+					//contanier_list
+					$.ajax({
+						url: "mypage_container_list.do",
+						success: function (res_data) {
+							$("#container_list").html(res_data);
+						},
+						error: function (jqXHR, textStatus, errorThrown) {
+							console.table(jqXHR)
+						}
+
+					});
 					//내정보
 					$.ajax({
 						url: "mypage_container_info.do",
@@ -52,31 +63,7 @@
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							console.table(jqXHR)
-						},
-
-					});
-
-					//예약내역
-					$.ajax({
-						url: "mygeneral_container_reserve.do",
-						success: function (res_data) {
-							$("#container_reserve").html(res_data);
-						},
-						error: function (jqXHR, textStatus, errorThrown) {
-							console.table(jqXHR)
-						},
-
-					});
-
-					//문의내역
-					$.ajax({
-						url: "mygeneral_container_inquiry.do",
-						success: function (res_data) {
-							$("#container_inquiry").html(res_data);
-						},
-						error: function (jqXHR, textStatus, errorThrown) {
-							console.table(jqXHR)
-						},
+						}
 
 					});
 
@@ -88,7 +75,7 @@
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							console.table(jqXHR)
-						},
+						}
 
 					});
 
@@ -99,7 +86,7 @@
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							console.table(jqXHR)
-						},
+						}
 
 					});
 
@@ -109,11 +96,9 @@
 			<body>
 				<div id="main_general_nav"></div>
 				<div id="mypage_header"></div>
-				<div id="container_info"></div>
-				<div id="container_reserve"></div>
-				<div id="ccontainer_inquiry"></div>
-				<div id="container_review"></div>
-				<div id="detail_footer"></div>
+				<div id="container_list"></div>
+				<div id="container"></div>
+				<div id="main_general_footer"></div>
 
 			</body>
 
