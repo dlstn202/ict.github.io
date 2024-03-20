@@ -1,13 +1,29 @@
 @charset "UTF-8";
+
+/* Web Font */
+@import url('https://cdn.jsdelivr.net/gh/openfieldth/temha-icon/v1.2.0/Temha-Icon.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-   *{
-      margin:0px;
-      padding: 0px;
-   }
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   /* color: #007235; */
+}
+
+:root {
+   --font-color: #003a1b; /* 폰트 색상을 변수로 정의 */
+ }
 
    body{
-      background: rgba(var(--main), 0.1);
+      /* background: rgba(var(--main-rgb), 0.1); */
+      background-color: rgba(0, 58, 27,0.1);
+      color: var(--font-color);
+      /* background: #003a1b; */
    }
    
    .nav{
@@ -15,7 +31,7 @@
       width: 100%;
       height: 65px;
       margin: auto;
-      background-color: #FFFFFF;
+      background: #003a1b;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
       text-align: right;
       padding: 17px;
@@ -58,7 +74,7 @@
    }
 
    .login_join>input:hover{   
-      color: #000000;
+      color: #FFFFFF;
 
    }
    
@@ -99,7 +115,8 @@
        width: 100%;
        height: 200px;
        margin: auto;
-       background-color: #FFFFFF;
+       margin-top: 100px;
+       background-color:#007235;
        position: relative; /* 추가 */
        z-index: 1; /* 추가 */
        overflow: hidden;
@@ -132,7 +149,7 @@
        
    }
    #keepNo, #keepOn{
-	  color: #3396ff;
+	  color: #007235;
    }
    
    #keepOn{
@@ -151,39 +168,39 @@
       }      
    
    #location_title{
+       margin-top: 25px;
+       margin-bottom: 25px;
        font-weight: bold;
        font-size: 40px;   
    
    }
    
    #evaluate{
-      margin-top: 8px;
+      margin-top: 25px;
       font-size: 16px;
-      color: #5d5d5d;         
+      color: #003a1b;
    }
-   
-   #detail_icon{
-       display: flex;
-       flex-direction: row;
-       margin-top: 20px;
-       justify-content: center;
-   }
-   
-   #detail_map{
-       display: flex;
-       flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: center; /* 가운데 정렬 */
-       cursor: pointer; /* 마우스 커서 모양 변경 */
-   }
-   
-   #detail_icon>p{
-      font-size: 13px;
-   }
-   
-   #detail_keep{
-      margin-left: 40px; /* 아이콘과 텍스트 사이 간격 조정 */
+
+   #detail_icon {
+      display: flex;
+      flex-direction: row;
+      margin-top: 14px;
+      justify-content: center; /* 가로 중앙 정렬 */
+      align-items: center; /* 세로 중앙 정렬 추가 */
+      gap: 40px; /* "지도"와 "저장" 사이의 간격 조정, 필요에 따라 조절 가능 */
+  }
+  
+  #detail_map, #detail_keep {
+      display: flex;
+      flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
+      align-items: center; /* 가운데 정렬 */
       cursor: pointer; /* 마우스 커서 모양 변경 */
-   }
+  }
+  
+  #detail_icon p {
+      margin-top: 5px;
+      font-size: 15px; /* 폰트 크기 조정 */
+  }
    
 
    .detail_bottom {
@@ -194,10 +211,12 @@
        /* border: 1px solid black; */
        position: relative; /* 추가 */
        z-index: 1; /* 추가 */
-      
+     
+   /* -------------------------상세정보내용란*/     
+
    }
    .detail_info{
-      padding-top: 150px;
+      padding-top: 120px;
       padding-left: 100px;
       padding-right: 100px;
       width: 100%;
@@ -241,7 +260,7 @@
     	font-size: 12px;
     	margin-top: 30px;
     	margin-bottom: 30px;
-    	color: #939396;
+    	color: #007235;
     
     }
       
@@ -256,7 +275,7 @@
        display: flex;
        flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
        align-items: baseline;
-       margin-top: 30px;   
+       margin-top: 20px;   
    }
    
    .info_addr>div{
@@ -314,7 +333,8 @@
    
        display: flex;
        flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;   
+       align-items: baseline;
+       margin-bottom: 28px;
    }
    
    .info_detail>div{
@@ -349,17 +369,17 @@
       
       /* 수직 스크롤바의 트랙(Track) 영역 */
       ::-webkit-scrollbar-track {
-          background-color: #92C7FF; /* 트랙 배경색 */
+          background-color: #00AF52; /* 트랙 배경색 */
       }
       
       /* 스크롤바의 쓰바(Thumb) */
       ::-webkit-scrollbar-thumb {
-          background-color: #3396FF; /* 쓰바 색상 */
+          background-color: #007235; /* 쓰바 색상 */
       }
       
       /* 호버(hover) 상태의 쓰바 */
       ::-webkit-scrollbar-thumb:hover {
-          background-color: #1166DD; /* 호버 상태에서의 쓰바 색상 */
+          background-color: #003A1B; /* 호버 상태에서의 쓰바 색상 */
       }
       
       
@@ -372,211 +392,21 @@
       
       /* 수직 스크롤바의 트랙(Track) 영역 */
       .new-line::-webkit-scrollbar-track {
-          background-color: #92C7FF; /* 트랙 배경색 */
+          background-color: #00AF52; /* 트랙 배경색 */
       }
       
       /* 스크롤바의 쓰바(Thumb) */
       .new-line::-webkit-scrollbar-thumb {
-          background-color: #3396FF; /* 쓰바 색상 */
+          background-color: #007235; /* 쓰바 색상 */
       }
       
       /* 호버(hover) 상태의 쓰바 */
       .new-line::-webkit-scrollbar-thumb:hover {
-          background-color: #1166DD; /* 호버 상태에서의 쓰바 색상 */
+          background-color: #003A1B; /* 호버 상태에서의 쓰바 색상 */
       }
-   
-   
-   /* ------------------------소식의 스크롤바----- */
-   
 
 
-      /* 수직 스크롤바 */
-      .news_length::-webkit-scrollbar {
-          width: 1px; /* 스크롤바 너비 */
-
-          
-      }
-      
-      /* 수직 스크롤바의 트랙(Track) 영역 */
-      .news_length::-webkit-scrollbar-track {
-          background-color: #92C7FF; /* 트랙 배경색 */
-      }
-      
-      /* 스크롤바의 쓰바(Thumb) */
-      .news_length::-webkit-scrollbar-thumb {
-          background-color: #3396FF; /* 쓰바 색상 */
-      }
-      
-      /* 호버(hover) 상태의 쓰바 */
-      .news_length::-webkit-scrollbar-thumb:hover {
-          background-color: #1166DD; /* 호버 상태에서의 쓰바 색상 */
-      }
-   
-   
-   
-
-/* ---------------------------------------------------------------소식*/
-
-   .info_news{
-      width: 800px;
-      min-height: 300px;
-      margin: auto;
-      margin-top: 20px;
-      background-color: #FFFFFF;
-      overflow: hidden;
-      /* border: 1px solid black; */
-   }
-
-   
-   .info_box {
-       margin: auto;
-       width: 600px; /* 원하는 너비로 조정 */
-       margin-bottom:20px;
-       min-height: 150px; /* 원하는 높이로 조정 */
-       background-color: #fafafa; /* 박스 배경색 */
-       position: relative; /* 내부 요소를 절대 위치 시킬 것이므로 상대 위치 설정 */
-   }
-   
-   .news_length{
-       margin: auto;
-       width: 600px; /* 원하는 너비로 조정 */
-       margin-bottom:20px;
-       max-height: 12.5em;
-       position: relative; /* 내부 요소를 절대 위치 시킬 것이므로 상대 위치 설정 */
-       overflow-y: auto;
-       overflow-x: hidden;
-
-   }
-
-   
-   .modifybut{
-   		display: flex;
-   		justify-content: flex-end;
-   		margin-right: 35px;
-  		padding-top: 8px;
-  		cursor: pointer;
-   
-   }
-   
-   .modifybut2{
-   		display: flex;
-   		justify-content: flex-end;
-   		margin-right: 35px;
-  		padding-top: 20px;
-  		cursor: pointer;
-   
-   }
-   
-   
-   .close_box {
-       position: absolute; /* 상대 위치 설정한 부모 요소에 대해 절대 위치 설정 */
-       top: 5px; /* 원하는 위치로 조정 */
-       right: 5px; /* 원하는 위치로 조정 */
-       width: 20px; /* X 아이콘 영역 너비 */
-       height: 20px; /* X 아이콘 영역 높이 */
-       cursor: pointer; /* 마우스 커서 모양 변경 */
-   }
-   
-   .close_icon {
-       font-size: 16px; /* 아이콘 크기 */
-       color: #999; /* 아이콘 색상 */
-   }
-   
-   .info_box>p{
-      margin-bottom: 10px;
-      margin-left: 100px;
-      font-size: 16px;
-      text-decoration: underline;
-   }
-   
-	.modi_btn {
-	    border: none;
-	    background-color: transparent;
-	    float: right;
-	    margin-right: 35px;
-	}
-	
-   
-    /* 소식 글씨 크기 및 정렬 */
-   .news_title, .news_content, .news_regidate,
-   #news_title,#news_content{
-      margin:auto;
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-bottom: 10px;
-      font-size: 15px;
-      overflow: hidden;
-   
-   }
-   
-   .news_content{
-   	color: #5d5d5d;
-   }
-   
-   
-   
-   textarea.news_content {
-   		width: 400px; /* 너비 조정 */
-    	height: 100px;
-    	resize: none;
-   
-   }
-
-
-   
-   .btn-bor-modi{
-      display: none;
-   }
-   
-   .btn-bor-del{
-      display: none;
-   }
-   
-   
-   
-   .news_regidate{
-       color: #939396;
-       font-size: 13px;
-       padding-bottom: 20px;
-   
-   } /*news 박스내용  */
-   
-   
-   
-   .news_top{
-      display:flex;
-      align-items: center; 
-      margin: auto;
-      margin-top: 30px;
-      justify-content: center;
-
-   }
-   
-   .saup{
-      margin-top: 5px;
-      margin-bottom: 20px;
-      margin-right: 40px;
-      font-size: 20px;
-   }
-   
-   .inform{
-      margin-top: 5px;
-      margin-bottom: 20px;
-      margin-left: 40px;
-      position: relative;
-      color: #1166DD;
-        background: #e1efff; /* 배경색 */
-        padding: 8px;
-        border-radius: 20px; /* 타원 형태로 만들기 위한 값 */
-        overflow: hidden; /* 내부 컨텐츠가 넘치지 않도록 설정 */
-        
-   }
-   
-
-   
-   
-
-/* ---------------------------   ------------------------------------별점*/
+/* ---------------------------------------------------------------별점*/
    .star{
        display: flex; /* 부모 요소를 플렉스 박스로 설정 */
        justify-content: center; /* 가로 중앙 정렬 */
@@ -631,14 +461,14 @@
    
    .rate input:checked ~ label, 
    .rate label:hover,.rate label:hover ~ label { 
-      color: #f73c32 !important;  
+      color: #007235 !important;  
    } 
    
    .rate input:checked + .rate label:hover,
    .rate input input:checked ~ label:hover,
    .rate input:checked ~ .rate label:hover ~ label,  
    .rate label:hover ~ input:checked ~ label {
-       color: #f73c32 !important;
+       color: #007235 !important;
    }
 
 
@@ -675,14 +505,14 @@
    
    .review_score_rate input:checked ~ label, 
    .review_score_rate label:hover,.review_score_rate label:hover ~ label { 
-      color: #f73c32 !important;  
+      color: #007235 !important;  
    } 
    
    .review_score_rate input:checked + .review_score_rate label:hover,
    .review_score_rate input input:checked ~ label:hover,
    .review_score_rate input:checked ~ .review_score_rate label:hover ~ label,  
    .review_score_rate label:hover ~ input:checked ~ label {
-       color: #f73c32 !important;
+       color: #007235 !important;
    }
    
 
@@ -714,7 +544,7 @@
    
    
 	.rateRed input:checked ~ label { 
-	    color: #f73c32 !important;  
+	    color: #007235 !important;  
 	} 
 
    
@@ -750,14 +580,14 @@
    
    
    #re_review_grade_new{
-   	color: #f73c32;
+   	color: #007235;
     transform: scale(0.6);
     margin-left: 78px;
    }
    
    
    .rateRed {
-    color: #f73c32;
+    color: #007235;
 /*     transform: scale(0.6);
     margin-left: -46px; */
     display: inline-block;
@@ -791,7 +621,7 @@
    .review_total{
       padding-left: 10px;
       font-size: 16px;
-      color: #3396FF;
+      color: #007235;
    }
    
    .average{
@@ -814,7 +644,28 @@
    .ratesize{
        transform: scale(0.8); /* 크기를 80%로 축소 */
    }
+/* ---------------------------------------------------------------리뷰모달*/     
+      
+   .modal-body {
+      display: flex; /* Flexbox를 사용하여 자식 요소들을 중앙 정렬 */
+      justify-content: center; /* 가로축 기준 중앙 정렬 */
+      align-items: center; /* 세로축 기준 중앙 정렬 */
+   }
    
+   #re_content {
+      width: 100%; /* modal-body에 대한 상대적 넓이 */
+      max-height: 200px; /* 최대 높이 설정 */
+      margin: auto; /* 상하 마진을 auto로, 좌우 마진을 auto로 설정하여 가로 중앙 정렬 */
+      text-align: left; /* 텍스트 왼쪽 정렬 */
+      padding: 10px; /* 내부 여백 추가 */
+      resize: none;
+   }
+
+   textarea.form-control:focus {
+         border-color: #00AF52; /* 원하는 색상으로 변경 */
+         outline: none; /* 기본 아웃라인 제거 */
+         box-shadow: 0 0 5px #00AF52; /* 포커스 시 그림자 추가로 더 돋보이게 함 */
+   }
    
 
 /* ---------------------------------------------------------------리뷰내용*/   
@@ -836,6 +687,10 @@
        display: block; /* 블록 레벨 요소로 설정 */
    }
 
+   #btn-register{
+      color: var(--font-color);
+   
+   }
 
    .review_writer {
       float: left; /* 왼쪽으로 부유시킴 */
@@ -851,7 +706,7 @@
 	   border-left: 1px solid #dddddd;
 	   padding-left: 20px;
 	   padding-top: 2px;
-	   color: #939396;
+	   color: #003A1B;
 	   font-size: 12px;
 	   padding-bottom: 2px;
 	   justify-content: space-between;
@@ -869,24 +724,7 @@
     padding-bottom: 2px;
    
    } */
-   
-   .re_content{
-      margin-left: 20px;
-      margin-right: 120px;
-      font-size: 15px;
-   
-   }
-      .review_content{
-   	  max-width: 84%;
-   	  resize: none;
-   }
-   
-textarea.review_content {
-    width: 570px; /* 너비를 300px로 조정 */
-    min-height: 90px;
-    overflow: hidden;
 
-}
       
    .no{
       margin-top: 30px;
@@ -932,17 +770,4 @@ textarea.review_content {
 .re_content_form_>.modifybut3 {
     align-self: flex-end; /* 버튼을 오른쪽에 배치 */
     
-}
-
-
-/* ---------------------------------------------------------------리뷰모달*/
-
-#registerform{
-   width: 47%;
-}
-
-#re_content{
-     width: 100%; /* 부모의 100% */
-     min-height: 100px;
-     resize: none;
 }
