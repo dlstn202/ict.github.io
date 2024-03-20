@@ -81,6 +81,42 @@
 					<div class="sitename">
 						<img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
 					</div>
+					<div class="header-center">
+						<ul class="header-member">
+						  <li>
+							<a href="javascript:void(0)">로그인</a>
+						  </li>
+						  <li>
+							<a href="javascript:void(0)">회원가입</a>
+						  </li>
+						</ul>
+						<ul class="header-gnblist">
+						  <li class="header-gnbitem">
+							<a class="header-gnblink" href="javascript:void(0)">
+							  <span>캠핑안내</span>
+							</a>
+						  </li>
+						  <li class="header-gnbitem">
+							<a class="header-gnblink" href="javascript:void(0)">
+							  <span>스토리</span>
+							</a>
+						  <li class="header-gnbitem">
+							<a class="header-gnblink" href="javascript:void(0)">
+							  <span>공지사항</span>
+							</a>
+						  </li>
+						  <li class="header-gnbitem">
+							<a class="header-gnblink" href="javascript:void(0)">
+							  <span>FAQ</span>
+							</a>
+						  </li>
+						  <li class="header-gnbitem">
+							<a class="header-gnblink" href="javascript:void(0)">
+							  <span>온라인문의</span>
+							</a>
+						  </li>
+						</ul>
+					  </div>
 					<div class="login_join">
 						<c:if test="${empty sessionScope.user }">
 							<a href="javascript:void(0);" class="btn-user header-utils-btn">
