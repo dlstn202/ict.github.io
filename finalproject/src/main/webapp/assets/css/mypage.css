@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+/* .star_rate {
+    display: inline-block; 
+    background: url('../icons/ico_gray_star.png') no-repeat; 
+    height: 25px;
+    width: 125px; 
+}
+
+.inner_star {
+    background: url('../icons/ico_green_star.png') no-repeat; 
+    height: 100%; 
+    width: 84%; 
+} */
+
+/* .ico_star {
+    display: inline-block; 
+    background: url('../icons/ico_green_star.png') no-repeat; 
+
+    height: 100%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.star_rate {
+    display: inline-block; 
+    background:url('../icons/ico_gray_star.png') no-repeat; 
+    height: 25px; 
+    width: 125px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.star-rating { width:205px; }
+.star-rating,.star-rating span { display:inline-block; height:39px; overflow:hidden; background:url(star.png)no-repeat; }
+.star-rating span{ background-position:left bottom; line-height:0; vertical-align:top; }

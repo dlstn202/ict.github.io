@@ -651,7 +651,7 @@ progress { vertical-align: baseline; }
 .selectset.selectset-round .selectset-select { padding: 0 2rem; border-radius: var(--ht-lg); padding-right: calc(2rem + 2rem); } 
 .selectset.selectset-round.selectset-sm .selectset-toggle { padding-right: calc(1.6rem + 2rem + 1.6rem); } 
 .selectset.selectset-round.selectset-sm .selectset-toggle::after { right: 1.6rem; } 
-.selectset.active .btn { color: var(--body-color); } 
+.selectset.active .btn { color: rgba(var(--main-ton-down-rgb),1); } 
 .selectset.active .selectset-toggle { border-color: var(--line-color4); } 
 .selectset.active .selectset-toggle::after { transform: translateY(-50%) rotate(180deg); } 
 .selectset.active .selectset-list { display: block; } 

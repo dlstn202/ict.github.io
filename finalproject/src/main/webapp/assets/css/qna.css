@@ -44,7 +44,7 @@
 .glamping-N43 .form-wrap .form-tit { min-width: 11.7rem; color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N43 .form-wrap .radioset-input:checked+.radioset-label::before { color: var(--line-color4); }
 .glamping-N43 .form-wrap .inputset { width: 100%; border-width: 2px !important; }
-.glamping-N43 .form-wrap .form-control { border-width: 2px !important; }
+.glamping-N43 .form-wrap .form-control { border-width: 2px !important; border-color: rgba(var(--main-ton-down-rgb),0.1); color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N43 .contents-form-group { display: flex; gap: 2rem; width: 100%; }
 .glamping-N43 .selectset { max-width: 35rem; }
 .glamping-N43 .contents-mail { display: flex; align-items: center; gap: 0.8rem; width: 100%; margin-right: 2rem; }

@@ -23,7 +23,7 @@
         <img class="contents-subvisual img-pc" src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg" alt="PC 서브 비주얼 이미지">
         <img class="contents-subvisual img-mobile" src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg" alt="모바일 서브 비주얼 이미지">
         <div class="textset textset-visual container-md">
-          <p class="textset-name">Sign in</p>
+          <p class="textset-name">Sign up</p>
           <h2 class="textset-tit">회원가입</h2>
         </div>
       </div>
