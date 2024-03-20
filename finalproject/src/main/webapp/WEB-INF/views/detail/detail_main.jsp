@@ -5,9 +5,8 @@
 			<html>
 
 			<head>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-				<link rel="stylesheet"
-					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 				<meta charset="UTF-8">
@@ -21,17 +20,17 @@
 				<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
 				<script type="text/javascript">
 
-					// main 초기화
-					// $.ajax({
-					//     url: "nav.do",
-					//     success: function (res_data) {
-					//         $("#detail_nav").html(res_data);
-					//     },
-					//     error: function (jqXHR, textStatus, errorThrown) {
-					//         console.table(jqXHR)
-					//     },
+					//main 초기화
+					$.ajax({
+					    url: "nav.do",
+					    success: function (res_data) {
+					        $("#detail_nav").html(res_data);
+					    },
+					    error: function (jqXHR, textStatus, errorThrown) {
+					        console.table(jqXHR)
+					    },
 
-					// });
+					});
 					$.ajax({
 						url: "detail_container_info.do",
 						success: function (res_data) {
@@ -77,60 +76,7 @@
 			</head>
 
 			<body>
-				<div class="nav">
-					<div class="sitename">
-						<img src="${pageContext.request.contextPath}/assets/img/sample/img_logo_white.png" alt="로고">
-					</div>
-					<div class="header-center">
-						<ul class="header-member">
-						  <li>
-							<a href="javascript:void(0)">로그인</a>
-						  </li>
-						  <li>
-							<a href="javascript:void(0)">회원가입</a>
-						  </li>
-						</ul>
-						<ul class="header-gnblist">
-						  <li class="header-gnbitem">
-							<a class="header-gnblink" href="javascript:void(0)">
-							  <span>캠핑안내</span>
-							</a>
-						  </li>
-						  <li class="header-gnbitem">
-							<a class="header-gnblink" href="javascript:void(0)">
-							  <span>스토리</span>
-							</a>
-						  <li class="header-gnbitem">
-							<a class="header-gnblink" href="javascript:void(0)">
-							  <span>공지사항</span>
-							</a>
-						  </li>
-						  <li class="header-gnbitem">
-							<a class="header-gnblink" href="javascript:void(0)">
-							  <span>FAQ</span>
-							</a>
-						  </li>
-						  <li class="header-gnbitem">
-							<a class="header-gnblink" href="javascript:void(0)">
-							  <span>온라인문의</span>
-							</a>
-						  </li>
-						</ul>
-					  </div>
-					<div class="login_join">
-						<c:if test="${empty sessionScope.user }">
-							<a href="javascript:void(0);" class="btn-user header-utils-btn">
-								<img src="${pageContext.request.contextPath}/assets/icons/ico_user_white.svg" alt="유저 아이콘">
-							</a>
-						</c:if>
-						<c:if test="${ not empty sessionScope.user }">
-							<b onclick="mypage();">${ sessionScope.user.pl_mem_name }</b>님&nbsp;&nbsp;
-							<input id="btnLogOut" class="btn" type="button" value="로그아웃">
-						</c:if>
-					</div>
-				</div>
-				<!-- 
-			<div id="detail_nav"></div> -->
+				<div id="detail_nav"></div>
 				<div id="container_info"></div>
 				<div id="container_insert_review"></div>
 				<div id="container_review"></div>
