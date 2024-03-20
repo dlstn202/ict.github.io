@@ -82,8 +82,8 @@
  .glamping-N1 .header-utils .header-utils-btn { width: 2.8rem; height: 2.8rem; }
  .glamping-N1 .header-utils .btn-allmenu { display: none; }
  .glamping-N1 .header-utils .btn-momenu { display: block; }
- .glamping-N1.mo-active { background-color: var(--black); }
- .glamping-N1.mo-active .header-center { left: 0; transform: translateX(0); top: 100%; width: 100%; padding: 0 2.4rem; padding-bottom: 19rem; overflow-y: auto; background-color: var(--main-ton-down); }
+ .glamping-N1.mo-active { background-color: var(--main-ton-down); }
+ .glamping-N1.mo-active .header-center { left: 0; transform: translateX(0); top: 100%; width: 100%; padding: 0 2.4rem; padding-bottom: 19rem; overflow-y: hidden; background-color: var(--main-ton-down); }
  .glamping-N1.mo-active .header-title { height: 6rem; display: flex; align-items: center; }
  .glamping-N1.mo-active .header-member { width: 100%; margin: 4rem 0 2rem 0; }
  .glamping-N1.mo-active .header-member li { position: relative; }
