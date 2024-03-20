@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/join.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
+  <script>let headerHeight = 0;</script>
 <script>
     $(document).ready(function () {
        // main 초기화

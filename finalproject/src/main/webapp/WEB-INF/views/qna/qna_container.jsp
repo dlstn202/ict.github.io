@@ -5,6 +5,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var radiosetTexts = document.querySelectorAll('.radioset-text');
+    
+        radiosetTexts.forEach(function(text) {
+            text.addEventListener('click', function() {
+                var inputId = this.getAttribute('data-for');
+                var input = document.getElementById(inputId);
+                if(input) {
+                    input.checked = true;
+                }
+            });
+        });
+    });
+</script>
 </head>
 <body>
 
@@ -91,7 +106,7 @@
                     <div class="inputset inputset-round">
                         <div class="contents-mail">
                             <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                            <span>@</span>
+                            <span class="qna_email">@</span>
                             <input type="text" class="inputset-input form-control" aria-label="내용" required="">
                         </div>
                     </div>

@@ -78,7 +78,7 @@
                 <div class="inputset inputset-round">
                   <div class="contents-mail">
                     <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                    <span>@</span>
+                    <span class="joininput_email">@</span>
                     <input type="text" class="inputset-input form-control" aria-label="내용" required="">
                   </div>
                 </div>
