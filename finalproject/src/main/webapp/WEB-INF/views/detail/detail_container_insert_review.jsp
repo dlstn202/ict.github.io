@@ -31,33 +31,33 @@
 </script>  
 
 <script>  
-   //별점 클릭 이벤트 핸들러
-   function handleRatingClick(value) {
+   // //별점 클릭 이벤트 핸들러
+   // function handleRatingClick(value) {
    
-      let ratingValue = parseFloat(value);
+   //    let ratingValue = parseFloat(value);
          
-      // 별점 입력 요소들을 찾음
-      let radioButtons = document
-            .querySelectorAll('.rate input[name="re_review_grade"]');
+   //    // 별점 입력 요소들을 찾음
+   //    let radioButtons = document
+   //          .querySelectorAll('.rate input[name="re_review_grade"]');
    
-      // 각 별점 입력 요소에 선택된 값 적용
-      radioButtons.forEach(function(radioButton) {
-         if (parseFloat(radioButton.value) == ratingValue) {
-            radioButton.checked = true;
-         } else {
-            radioButton.checked = false;
-         }
-      });
+   //    // 각 별점 입력 요소에 선택된 값 적용
+   //    radioButtons.forEach(function(radioButton) {
+   //       if (parseFloat(radioButton.value) == ratingValue) {
+   //          radioButton.checked = true;
+   //       } else {
+   //          radioButton.checked = false;
+   //       }
+   //    });
    
-      //    //로그인 되었을때 리뷰 작성 모달띄우기
-      // if ('${not empty sessionScope.user}' == "true") {
-      //    
-      // } else {
-      //    $('#myModal').modal('show');
+   //    //    //로그인 되었을때 리뷰 작성 모달띄우기
+   //    // if ('${not empty sessionScope.user}' == "true") {
+   //    //    
+   //    // } else {
+   //    //    $('#myModal').modal('show');
    
-      // }
+   //    // }
      
-   }
+   // }
 
    function handleRatingClick() {
   // 이곳에 로그인 상태를 체크하는 코드 추가 가능
