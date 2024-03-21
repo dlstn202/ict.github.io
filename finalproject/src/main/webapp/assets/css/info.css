@@ -1,16 +1,50 @@
 @charset "utf-8";
+.glamping-N1 .header-container {
+    background-color: #003A1B;
+}
+/* -------------------------------------------------------------------------- */
+.map-container{display: flex;}
+.map-container #map{width:65%;height: 875px;}
+.map-container #info_container_list{background-color: rgba(var(--main-ton-down-rgb), 0.1); width:35%;height: 875px;  overflow: auto;}
+/* -------------------------------------------------------------------------- */
+.sido_select{display: flex; height: 50px; font-size: 17px;border-bottom: 0.1px solid rgba(var(--main-ton-down-rgb), 0.1);align-items: center;}
+.sido_select #sido{height: 50px; font-size: 14px; float: left; padding-top: 10px; margin-left: 16px; cursor: pointer; color: #003A1B;}
+.sido_select #sido span{font-size: 20px;}
+.sido_select #local_cancel{margin-left: 20px; cursor: pointer;} 
+.sido_select #local_button{margin-left: 20px;}
+.sido_select #local_ok{border: 1px solid rgba(var(--main-ton-down-rgb), 0.3);  color:#003A1B; width: 75px; padding-top: 3px; padding-bottom: 3px; margin-right: 20px; margin-left: auto; cursor: pointer; text-align: -webkit-center; border-radius: 5px;}
+.sido_select #local_ok:hover{color: white; background-color: #003A1B;}
+.fa-solid fa-check{color: #003A1B;}
+.sido_select #local_ok:hover .fa-solid {color: white !important;}
 
-.map-container,.place_list{display: flex;}
-.map-container #map{width:65%;height: 905px;}
-.map-container #list{width:35%;height: 905px; border: 2px solid red; overflow: auto;}
-.sido_select{display: flex; height: 50px; font-size: 15px;}
-.sido_select #sido{width:90%; height: 50px; font-size: 15px; float: left;}
-.sido_select #search{float: right;}
-.palce_select{height: 50px; font-size: 20px;}
-.place_list{border: 1px solid red;}
-.place_list .place_list_img img{margin: 2px; width: 120px;height: 120px; float: left;}
 
-.place_list .place_list_content{float: right;}
+/* -------------------------------------------------------------------------- */
+
+.local_select .sido_title{margin: 10px; margin-left: 20px;font-size: 20px;}
+.local_select .sido_select_list{display: flex; flex-wrap: wrap;margin-top: 10px; margin-bottom: 50px;}
+.local_select .sido_select_list #sido_select_box{border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); margin-left: 10px; margin-bottom: 10px; font-size: 16px;cursor: pointer; padding-left: 5px; padding-right: 5px;border-radius: 5px;}
+.local_select .sido_select_list #sido_select_box >span{font-size: 12px;}
+.local_select .gu_title{margin: 10px; margin-left: 20px;font-size: 20px;}
+.local_select .gu_select_list{display: flex; flex-wrap: wrap;margin-top: 10px; margin-bottom: 50px;}
+.local_select .gu_select_list #gu_select_box{border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); margin-left: 10px; margin-bottom: 10px; font-size: 16px;cursor: pointer; padding-left: 5px; padding-right: 5px;border-radius: 5px;}
+.local_select .gu_select_list #gu_select_box >span{font-size: 12px;}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.place_select{color: #003A1B; height: 50px; font-size: 17px; display: flex; justify-content: space-around; border-bottom: 0.1px solid #007235;border-top: 0.1px solid rgba(var(--main-ton-down-rgb), 0.1); cursor: pointer;}
+.place_select > div { text-align: center; padding: 10px;}
+
+/* -------------------------------------------------------------------------- */
+.hashtag{display: flex; height: 30px; margin: 10px; justify-content: flex-end;}
+.hashtag .hashtag_icon{border: 1px solid rgba(var(--main-ton-down-rgb), 0.3);  color:#003A1B; width: 75px; padding-top: 3px; padding-bottom: 3px;margin-top: -2px;margin-left: auto; cursor: pointer; text-align: -webkit-center; border-radius: 5px;}
+.hashtag .hashtag_icon:hover{color: white; background-color: #003A1B;}
+.fa-solid fa-angle-down{color: #003A1B;}
+.hashtag .hashtag_icon:hover .fa-solid {color: white !important;}
+/* -------------------------------------------------------------------------- */
+.place_list{display: flex; background-color: white;margin: 10px; padding: 3px;border-radius: 10px;cursor: pointer;}
+.place_list .place_list_img img{margin: 2px; width: 120px;height: 120px; float: left;border-top-left-radius: 10px;border-bottom-left-radius:10px;}
+/* -------------------------------------------------------------------------- */
+.place_list .place_list_content{ float: right;}
 
 
 
+    

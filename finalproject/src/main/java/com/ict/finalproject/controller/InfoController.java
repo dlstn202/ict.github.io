@@ -23,6 +23,18 @@ public class InfoController {
         return "info/info_container1";
     }
 
+    @RequestMapping("info_container_list.do")
+    public String info_container_list(){
+
+        return "info/info_container_list";
+    }
+
+    @RequestMapping("info_container_local.do")
+    public String info_container_local(){
+
+        return "info/info_container_local";
+    }
+
 
      
 }

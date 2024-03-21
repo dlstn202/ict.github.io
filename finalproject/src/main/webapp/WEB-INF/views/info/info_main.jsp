@@ -11,9 +11,10 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/plugin.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/template.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/common.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/info.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
 <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=897d9c3b7e07054fabb6126c0c458f98"></script>
 <script>
 
@@ -51,7 +52,7 @@ $(document).ready(function() {
 
     function loadAdditionalScripts() {
         // 추가적인 스크립트 파일들을 로드합니다.
-        // $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/changeContent.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
