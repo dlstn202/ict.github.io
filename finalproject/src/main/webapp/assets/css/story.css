@@ -53,18 +53,18 @@
 }
 
 #story_photo{
-    width: 470px;
-    height: 320px;
-    margin: auto;
-    margin-bottom: 20px;
-    border-radius: 25px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 #story_photo > img{
-    width: 468  px;
-    height:320px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    width: 100%;
+    height: auto;
 }
 
 #story_title{
