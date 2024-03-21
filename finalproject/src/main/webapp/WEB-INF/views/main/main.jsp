@@ -4,9 +4,7 @@
 
     <head>
         <script>let headerHeight = 0;</script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/assets/js/plugin.js"></script>
         <meta charset="UTF-8">
         <title>캠프로버</title>
         <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/setting.css">

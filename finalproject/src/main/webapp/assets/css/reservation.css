@@ -3,35 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-*{
-   margin: 0;
-   padding: 0;
-   font-family: "Noto Sans KR", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: normal;
-   font-style: normal;
-   /* color: #007235; */
-}
+*{ margin: 0; padding: 0; font-family: "Noto Sans KR", sans-serif; font-optical-sizing: auto; font-weight: normal; font-style: normal;}
 
+.contents-icongroup { display: flex; text-align: center;}
 
-.contents-icongroup {
-   display: flex;
-   text-align: center; /* 텍스트를 중앙 정렬 */
- }
+.contents-icon{ margin-right: 10px; }
 
- .contents-icon{
-   margin-right: 10px;
- }
+.contents-icongroup span { font-size: 1.8rem; color: var(--main); font-weight: 600;}
 
- .contents-icongroup span { font-size: 1.8rem; color: var(--main); font-weight: 600;}
+.content-text{ padding-top: 10px; }
 
- .content-text{
-   padding-top: 10px;
+.tabset-item .tabset-link { color: #003A1B; text-decoration: none; }
 
- }
-
-
-
+.tabset-link:hover { color: white !important; background-color: #00AF52 !important; border-color: #00AF52 !important;}
 
 
 /* reservation_container_date --------------------------------------------*/
@@ -136,7 +120,7 @@
 .glamping-N37 .contents-top .form-wrap:last-child { margin-top: 3.2rem; }
 .glamping-N37 .form-wrap+.form-wrap { margin-top: 1.6rem; }
 .glamping-N37 .form-wrap .form-tit { min-width: 11.7rem; }
-.glamping-N37 .contents-form-group { display: flex; gap: 2rem; width: 100%; }
+.glamping-N37 .contents-form-group { display: flex; gap: 2rem; width: 100%; margin-bottom: -5px;}
 .glamping-N37 .form-wrap .inputset { width: 100%; }
 .glamping-N37 .selectset { max-width: 35rem; }
 .glamping-N37 .selectset>* { border-width: 1px; }
