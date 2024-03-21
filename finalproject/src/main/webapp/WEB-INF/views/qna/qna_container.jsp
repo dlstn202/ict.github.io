@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,30 +20,10 @@
     });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // 도메인 선택 버튼들에 대한 클릭 이벤트 리스너를 추가합니다.
-        document.querySelectorAll('.selectset-link').forEach(function(button) {
-            button.addEventListener('click', function() {
-                var value = this.getAttribute('data-value'); // 버튼의 data-value 값을 가져옵니다.
-                var emailInputs = document.querySelectorAll('.contents-mail .inputset-input'); // 이메일 입력 필드들을 선택합니다.
-                var domainInput = emailInputs[emailInputs.length - 1]; // 마지막 입력 필드(도메인 입력 필드)를 선택합니다.
-                
-                if (value === "직접입력") {
-                    // "직접입력"이 선택된 경우, 도메인 입력 필드를 비워 사용자가 직접 입력할 수 있도록 합니다.
-                    domainInput.value = "";
-                    domainInput.removeAttribute('readonly'); // 읽기 전용 속성을 제거하여 입력 가능하게 합니다.
-                } else {
-                    // 그 외의 경우, 도메인 입력 필드에 선택된 도메인을 설정하고 읽기 전용으로 만듭니다.
-                    domainInput.value = value;
-                    domainInput.setAttribute('readonly', true); // 읽기 전용 속성을 추가하여 수정할 수 없도록 합니다.
-                }
+
+    </script>
     
-                // 선택된 도메인을 버튼에 표시합니다.
-                document.querySelector('.selectset-toggle span').textContent = this.textContent;
-            });
-        });
-    });
-</script>
+
 </head>
 <body>
 
@@ -132,7 +111,7 @@
                         <div class="contents-mail">
                             <input type="text" class="inputset-input form-control" aria-label="내용" required="">
                             <span class="qna_email">@</span>
-                            <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                            <input type="text" class="email_domain inputset-input form-control" aria-label="내용" required="">
                         </div>
                     </div>
                 </div>
@@ -143,18 +122,18 @@
                     <ul class="selectset-list">
                         <li class="selectset-item">
                             <button class="selectset-link btn" type="button" data-value="직접입력" selected="">
-                            <span>직접입력</span>
+                                <span>직접입력</span>
                             </button>
                         </li>
                         <li class="selectset-item">
-                        <button class="selectset-link btn" type="button" data-value="naver.com">
-                            <span>naver.com</span>
-                        </button>
+                            <button class="selectset-link btn" type="button" data-value="naver.com">
+                                <span>naver.com</span>
+                            </button>
                         </li>
                         <li class="selectset-item">
-                        <button class="selectset-link btn" type="button" data-value="daum.net">
-                            <span>daum.net</span>
-                        </button>
+                            <button class="selectset-link btn" type="button" data-value="daum.net">
+                                <span>daum.net</span>
+                            </button>
                         </li>
                     </ul>
                 </div>

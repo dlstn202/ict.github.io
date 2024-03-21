@@ -26,7 +26,7 @@
 
 
 /* glamping-N47 [KAltwpIVGl] */
-.glamping-N47 .contents-inner { padding: 0rem 0rem; }
+.glamping-N47 .contents-inner { padding: 8rem 2.4rem; }
 .glamping-N47 .contents-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; }
 .glamping-N47 .contents-tit { font-size: var(--fs-h5); line-height: var(--lh-h5); font-weight: 600; color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N47 .contents-top span { font-size: var(--fs-p2); line-height: var(--lh-p2); color: rgba(var(--main-ton-down-rgb),1);}
@@ -36,7 +36,7 @@
 .glamping-N47 .form-wrap .inputset { width: 100%; border-width: 2px !important; }
 .glamping-N47 .form-wrap .form-control { border-width: 2px !important; }
 .glamping-N47 .contents-form-group { display: flex; gap: 1.2rem; width: 100%; }
-.glamping-N47 .selectset { max-width: 20rem;}
+.glamping-N47 .selectset { max-width: 25rem; }
 .glamping-N47 .contents-mail { display: flex; align-items: center; gap: 0.8rem; width: 100%; margin-right: 1.2rem; }
 .glamping-N47 .checkset-wrap { margin-bottom: 2rem; }
 .glamping-N47 .checkset-wrap .checkset input:checked+.checkset-thumb { background-color: var(--line-color4); }
@@ -61,7 +61,21 @@
 
 .joininput_email{ color: rgba(var(--main-ton-down-rgb),1); }
 
-
-
-
 /* [E]mypage_container_info */
+
+/* [S]sns */
+#sns_box{display: flex; justify-content: center;}
+#sns { display: flex; flex-direction: column; align-items: flex-start;}
+#sns_title {font-size: 2.3rem; font-weight: 600; margin-bottom: 0.5rem;}
+#sns_content {margin-bottom: 2rem;}
+
+.sns_brand{display: flex; justify-content: center;gap: 4rem;}
+.sns_brand_one { width: 18rem; height: 18rem; border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem;}
+.sns_brand_one img { width: 5rem;}
+.kakao .kakao_logo{width: 5.5rem; height: 5.5rem; background-color: #FEE500; border-radius: 30px; display: flex; justify-content: center; align-items: center;}
+.sns_brand_one .kakao_logo img { width: 4rem;}
+.sns_brand_one input[value="연동하기"] { transition: .3s; width: 9rem; height: 3.5rem; color: white; background-color: rgba(var(--main-ton-down-rgb)); border-radius: 10px; border: none;}
+.sns_brand_one input[value="연동해제"] { transition: .3s; width: 9rem; height: 3.5rem; background-color: rgba(var(--main-ton-down-rgb),0.1); border-radius: 10px; border: none;}
+.sns_brand_one input:hover { background-color: var(--main-ton-up); color: white;}
+
+/* [E]sns */

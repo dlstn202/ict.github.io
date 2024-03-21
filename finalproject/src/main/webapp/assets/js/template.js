@@ -106,8 +106,10 @@
       buttonParentSiblings.forEach((siblingElement) => {
         siblingElement.querySelector(".selectset-link").classList.remove("on");
       });
-      button.classList.toggle("on");
+      // button.classList.toggle("on");
       buttonSelectsetToggle.querySelector("span").innerHTML = buttonText;
+      if(buttonText != "직접입력"){
+      document.querySelector(".email_domain").value=buttonText;}
     };
     buttonElement.removeEventListener("click", clickEventHandler);
     buttonElement.addEventListener("click", clickEventHandler);
