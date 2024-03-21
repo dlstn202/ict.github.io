@@ -9,22 +9,22 @@
 <body>
 <nav class="mypage_container_list_nav">
 <ul class="mypage_container_list">
-    <li id="info">내정보</li>
+    <li id="info"><a href="">내정보</a></li>
     <!-- 일반 -->
-    <li id="keep">내장소</li>
+    <li id="keep"><a href="">내장소</a></li>
     <!-- 일반 -->
-    <li id="reserve">예약내역</li>
+    <li id="reserve"><a href="">예약내역</a></li>
     <!-- 일반+사장 -->
-    <li id="inquiry">문의내역</li>
+    <li id="inquiry"><a href="">문의내역</a></li>
     <!-- 일반 -->
-    <li id="review">리뷰</li>
+    <li id="review"><a href="">리뷰</a></li>
     <!-- 사장 -->
-    <li id="business">내캠핑장</li>
+    <li id="business"><a href="">내캠핑장</a></li>
     <!-- 관리자 -->
-    <li id="member">회원정보</li>
-    <li id="qna">문의답변</li>
-    <li id="faq">FAQ</li>
-    <li id="req_content">캠핑장신청내역</li>
+    <li id="member"><a href="">회원정보</a></li>
+    <li id="qna"><a href="">문의답변</a></li>
+    <li id="faq"><a href="">FAQ</a></li>
+    <li id="req_content"><a href="">캠핑장신청내역</a></li>
 </ul>
 </nav>
 </body>
