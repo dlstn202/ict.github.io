@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
-*{
+* {
    margin: 0;
    padding: 0;
    font-family: "Noto Sans KR", sans-serif;
@@ -15,678 +15,767 @@
    /* color: #007235; */
 }
 
-   body{
-      /* background: rgba(var(--main-rgb), 0.1); */
-      background-color: rgba(0, 58, 27,0.1);
-      color: var(--main-ton-down);
-      /* background: #003a1b; */
-   }
-   
-   .glamping-N1 .header-container{
-      background-color: #003A1B;
-   }
-   
-    .sitenav{
-    display: flex;
-    align-items: center;
-     justify-content: flex-end;
-     
-   }
+body {
+   /* background: rgba(var(--main-rgb), 0.1); */
+   background-color: rgba(0, 58, 27, 0.1);
+   color: var(--main-ton-down);
+   /* background: #003a1b; */
+}
+
+.glamping-N1 .header-container {
+   background-color: #003A1B;
+}
+
+.sitenav {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+
+}
 
 .nav .sitename {
-    margin-right: auto;
+   margin-right: auto;
 }
 
 
 .sitename img.imgLogo {
-    width: 132px;
-    height: 40px;
-    cursor: pointer;
+   width: 132px;
+   height: 40px;
+   cursor: pointer;
 }
 
 
-.b, .btn{
-    margin-left: 10px;
+.b,
+.btn {
+   margin-left: 10px;
 }
 
-.b:first-child, .btn:first-child{
-    margin-left: 0px;
+.b:first-child,
+.btn:first-child {
+   margin-left: 0px;
 }
-   login_join>input{   
-      background-color: #FFFFFF;
-      color: #6B6B6B;
-      border-color: #A8A8A8;
-   }
 
-   .login_join>input:hover{   
-      color: #FFFFFF;
-
-   }
-   
-
-   #info{
-   
-      max-width: 800px;
-      margin: auto;
-      margin-top: 20px;   
-
-   }
-   
-   .login_join b:hover {
-   		cursor: pointer;
-   }
-   #btnLogOut {
-    background-color: #FFFFFF;
-    color: #6B6B6B;
-    border-color: #A8A8A8;
+login_join>input {
+   background-color: #FFFFFF;
+   color: #6B6B6B;
+   border-color: #A8A8A8;
 }
-   
-   
 
-/* ---------------------------------------------------------------상세정보*/   
-   .detail{
-      
-      display: block;
-      max-width: 800px;
-      min-height: 200px;
-      margin: auto;
-      background-color: #FFFFFF;
-      /* border: 1px solid black; */
-      position: relative;
+.login_join>input:hover {
+   color: #FFFFFF;
 
-   }
-   
-   .detail_top {
-       width: 100%;
-       height: 200px;
-       margin: auto;
-       margin-top: 100px;
-       background-color:#007235;
-       position: relative; /* 추가 */
-       z-index: 1; /* 추가 */
-       overflow: hidden;
-       
-       
-   }
-   
-   .detail_top >img{
-      width: 100%;
-   }
-   
-   .detail_center {
+}
 
-      text-align:center;
-      justify-content: center;
-       width: 91%;
-       height: 220px;
-       margin: auto;
-       background-color: #FFFFFF;
-       margin-top: 90px;
-       border-bottom: 1px solid #e3e3e3; /* 테두리 밑에만 선 추가 */
-       box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1); /* 아래쪽에만 그림자 추가 */
-       position: absolute;
-       top: 62%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       z-index: 2; /* 추가 */
-       display: flex;
-       align-items: center;
-       
-   }
-   #keepNo, #keepOn{
-	  color: #007235;
-   }
-   
-   #keepOn{
-   	display: none;
-   }
-   
-   .info_addr i,
-   .info_operate i,
-   .info_home i,
-   .info_tel i,
-   .info_info i {
-       display: flex;
-       align-items: center;
-       justify-content: center; /* 가로 중앙 정렬 */
-       width: 20px; /* 아이콘의 너비 조정 */
-      }      
-   
-   #location_title{
-       margin-top: 25px;
-       margin-bottom: 25px;
-       font-weight: bold;
-       font-size: 40px;   
-   
-   }
-   
-   #evaluate{
-      margin-top: 25px;
-      font-size: 16px;
-      color: #003a1b;
-   }
 
-   #detail_icon {
-      display: flex;
-      flex-direction: row;
-      margin-top: 14px;
-      justify-content: center; /* 가로 중앙 정렬 */
-      align-items: center; /* 세로 중앙 정렬 추가 */
-      gap: 40px; /* "지도"와 "저장" 사이의 간격 조정, 필요에 따라 조절 가능 */
-  }
-  
-  #detail_map, #detail_keep {
-      display: flex;
-      flex-direction: column; /* 아이콘과 텍스트를 세로로 배치 */
-      align-items: center; /* 가운데 정렬 */
-      cursor: pointer; /* 마우스 커서 모양 변경 */
-  }
-  
-  #detail_icon p {
-      margin-top: 5px;
-      font-size: 15px; /* 폰트 크기 조정 */
-  }
-   
+#info {
 
-   .detail_bottom {
-       width: 100%;
-       height: 80px;
-       margin: auto;
-       background-color: #FFFFFF;
-       /* border: 1px solid black; */
-       position: relative; /* 추가 */
-       z-index: 1; /* 추가 */
-     
-   /* -------------------------상세정보내용란*/     
+   max-width: 800px;
+   margin: auto;
+   margin-top: 20px;
 
-   }
-   .detail_info{
-      padding-top: 120px;
-      padding-left: 100px;
-      padding-right: 100px;
-      width: 100%;
-      min-height: 400px;
-      margin: auto;
-      background-color: #FFFFFF;
-      /* border: 1px solid black; */
-      position: relative;
-   }
+}
 
-   .detail_infotop>p{
-      font-weight: bold;
-      font-size: 18px;
-      margin: 0 0 25px;
-   }
+.login_join b:hover {
+   cursor: pointer;
+}
 
-    .detail_infotop {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 10px;
-        align-items: center;
-        font-size: 12px;
-    }
-    
-    .no_cursor{
-    	 cursor: context-menu !important;
-    }
-    
-    
-    .info_regidate{
-    
-       color: #939396;
-    }
+#btnLogOut {
+   background-color: #FFFFFF;
+   color: #6B6B6B;
+   border-color: #A8A8A8;
+}
 
-    .detail_infotop p, .detail_infotop .info_regidate {
-        margin: 0; /* 기본 마진 제거 */
-    }
-    
-    .info_reg{
-    
-    	font-size: 12px;
-    	margin-top: 30px;
-    	margin-bottom: 30px;
-    	color: #007235;
-    
-    }
-      
-   .info_addr,.info_operate,.info_home,.info_tel{
-   
-      font-size: 15px;
-      margin-bottom: 30px;
-   }
 
-   .info_addr{
-      
-       display: flex;
-       flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;
-       margin-top: 20px;   
-   }
-   
-   .info_addr>div{
-      margin-left: 10px;
-   }
-   
-   .info_operate{
-   
-       display: flex;
-       flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;   
-   }
-   
-   .info_operate>div{
-      margin-left: 10px;
-   }
-   
-   .info_home{
-   
-       display: flex;
-       flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;   
-   }
-   
-   .info_home>div{
-      margin-left: 10px;
-   }
-   
-   .info_tel{
-   
-       display: flex;
-       flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;   
-   }
-   
-   .info_tel>div{
-      margin-left: 10px;
-   }
-   
-   .info_info{
-      display: flex;
-      flex-direction: column;
-   }
-   
-   .info_add{
-      margin-left: 20px;
-   
-   }
-   
-    .info_add > div {
-       margin-bottom: 30px; /* 원하는 여백 크기(px)로 조절 */
-    }
-   
-   .info_detail{
-   
-       display: flex;
-       flex-direction: row; /* 아이콘과 텍스트를 세로로 배치 */
-       align-items: baseline;
-       margin-bottom: 28px;
-   }
-   
-   .info_detail>div{
-      margin-left: 10px;
-   }
-   
-   .new-line{
-      margin-top: 8px;
-       margin-left: 23px;
-       line-height: 1.5;
-      height: auto; /* 자동으로 높이를 조정할 수 있도록 변경 */
-       max-height: 4.5em; /* 최대 높이를 4.5em으로 제한 */
-       overflow-y: auto; /* 수직 스크롤바가 필요한 경우에만 스크롤바 표시 */
-       margin-bottom: 20px;
-   }
-   
-   .info_add{
-      overflow: hidden;
-   
-   }
-   
 
-   
+/* ---------------------------------------------------------------상세정보*/
+.detail {
 
-   
+   display: block;
+   max-width: 800px;
+   min-height: 200px;
+   margin: auto;
+   background-color: #FFFFFF;
+   /* border: 1px solid black; */
+   position: relative;
+
+}
+
+.detail_top {
+   width: 100%;
+   height: 200px;
+   margin: auto;
+   margin-top: 100px;
+   background-color: #007235;
+   position: relative;
+   /* 추가 */
+   z-index: 1;
+   /* 추가 */
+   overflow: hidden;
+
+
+}
+
+.detail_top>img {
+   width: 100%;
+}
+
+.detail_center {
+
+   text-align: center;
+   justify-content: center;
+   width: 91%;
+   height: 220px;
+   margin: auto;
+   background-color: #FFFFFF;
+   margin-top: 90px;
+   border-bottom: 1px solid #e3e3e3;
+   /* 테두리 밑에만 선 추가 */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+   /* 아래쪽에만 그림자 추가 */
+   position: absolute;
+   top: 62%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 2;
+   /* 추가 */
+   display: flex;
+   align-items: center;
+
+}
+
+#keepNo,
+#keepOn {
+   color: #007235;
+}
+
+#keepOn {
+   display: none;
+}
+
+.info_addr i,
+.info_operate i,
+.info_home i,
+.info_tel i,
+.info_info i {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* 가로 중앙 정렬 */
+   width: 20px;
+   /* 아이콘의 너비 조정 */
+}
+
+#location_title {
+   margin-top: 25px;
+   margin-bottom: 25px;
+   font-weight: bold;
+   font-size: 40px;
+
+}
+
+#evaluate {
+   margin-top: 25px;
+   font-size: 16px;
+   color: #003a1b;
+}
+
+#detail_icon {
+   display: flex;
+   flex-direction: row;
+   margin-top: 14px;
+   justify-content: center;
+   /* 가로 중앙 정렬 */
+   align-items: center;
+   /* 세로 중앙 정렬 추가 */
+   gap: 40px;
+   /* "지도"와 "저장" 사이의 간격 조정, 필요에 따라 조절 가능 */
+}
+
+#detail_map,
+#detail_keep {
+   display: flex;
+   flex-direction: column;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: center;
+   /* 가운데 정렬 */
+   cursor: pointer;
+   /* 마우스 커서 모양 변경 */
+}
+
+#detail_icon p {
+   margin-top: 5px;
+   font-size: 15px;
+   /* 폰트 크기 조정 */
+}
+
+
+.detail_bottom {
+   width: 100%;
+   height: 80px;
+   margin: auto;
+   background-color: #FFFFFF;
+   /* border: 1px solid black; */
+   position: relative;
+   /* 추가 */
+   z-index: 1;
+   /* 추가 */
+
+   /* -------------------------상세정보내용란*/
+
+}
+
+.detail_info {
+   padding-top: 120px;
+   padding-left: 100px;
+   padding-right: 100px;
+   width: 100%;
+   min-height: 400px;
+   margin: auto;
+   background-color: #FFFFFF;
+   /* border: 1px solid black; */
+   position: relative;
+}
+
+.detail_infotop>p {
+   font-weight: bold;
+   font-size: 18px;
+   margin: 0 0 25px;
+}
+
+.detail_infotop {
+   display: flex;
+   justify-content: space-between;
+   margin-right: 10px;
+   align-items: center;
+   font-size: 12px;
+}
+
+.no_cursor {
+   cursor: context-menu !important;
+}
+
+
+.info_regidate {
+
+   color: #939396;
+}
+
+.detail_infotop p,
+.detail_infotop .info_regidate {
+   margin: 0;
+   /* 기본 마진 제거 */
+}
+
+.info_reg {
+
+   font-size: 12px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   color: #007235;
+
+}
+
+.info_addr,
+.info_operate,
+.info_home,
+.info_tel {
+
+   font-size: 15px;
+   margin-bottom: 30px;
+}
+
+.info_addr {
+
+   display: flex;
+   flex-direction: row;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: baseline;
+   margin-top: 20px;
+}
+
+.info_addr>div {
+   margin-left: 10px;
+}
+
+.info_operate {
+
+   display: flex;
+   flex-direction: row;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: baseline;
+}
+
+.info_operate>div {
+   margin-left: 10px;
+}
+
+.info_home {
+
+   display: flex;
+   flex-direction: row;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: baseline;
+}
+
+.info_home>div {
+   margin-left: 10px;
+}
+
+.info_tel {
+
+   display: flex;
+   flex-direction: row;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: baseline;
+}
+
+.info_tel>div {
+   margin-left: 10px;
+}
+
+.info_info {
+   display: flex;
+   flex-direction: column;
+}
+
+.info_add {
+   margin-left: 20px;
+
+}
+
+.info_add>div {
+   margin-bottom: 30px;
+   /* 원하는 여백 크기(px)로 조절 */
+}
+
+.info_detail {
+
+   display: flex;
+   flex-direction: row;
+   /* 아이콘과 텍스트를 세로로 배치 */
+   align-items: baseline;
+   margin-bottom: 28px;
+}
+
+.info_detail>div {
+   margin-left: 10px;
+}
+
+.new-line {
+   margin-top: 8px;
+   margin-left: 23px;
+   line-height: 1.5;
+   height: auto;
+   /* 자동으로 높이를 조정할 수 있도록 변경 */
+   max-height: 4.5em;
+   /* 최대 높이를 4.5em으로 제한 */
+   overflow-y: auto;
+   /* 수직 스크롤바가 필요한 경우에만 스크롤바 표시 */
+   margin-bottom: 20px;
+}
+
+.info_add {
+   overflow: hidden;
+
+}
+
+
+
+
+
 /* ---------------------------------------------------------------스크롤바*/
 
-     
-      
-   /* ------------------------상세정보 스크롤바----- */
-   
-      /* 수직 스크롤바 */
-      .new-line::-webkit-scrollbar {
-          width: 1px; /* 스크롤바 너비 */
-      }
-      
-      /* 수직 스크롤바의 트랙(Track) 영역 */
-      .new-line::-webkit-scrollbar-track {
-          background-color: #00AF52; /* 트랙 배경색 */
-      }
-      
-      /* 스크롤바의 쓰바(Thumb) */
-      .new-line::-webkit-scrollbar-thumb {
-          background-color: #007235; /* 쓰바 색상 */
-      }
-      
-      /* 호버(hover) 상태의 쓰바 */
-      .new-line::-webkit-scrollbar-thumb:hover {
-          background-color: #003A1B; /* 호버 상태에서의 쓰바 색상 */
-      }
+
+
+/* ------------------------상세정보 스크롤바----- */
+
+/* 수직 스크롤바 */
+.new-line::-webkit-scrollbar {
+   width: 1px;
+   /* 스크롤바 너비 */
+}
+
+/* 수직 스크롤바의 트랙(Track) 영역 */
+.new-line::-webkit-scrollbar-track {
+   background-color: #00AF52;
+   /* 트랙 배경색 */
+}
+
+/* 스크롤바의 쓰바(Thumb) */
+.new-line::-webkit-scrollbar-thumb {
+   background-color: #007235;
+   /* 쓰바 색상 */
+}
+
+/* 호버(hover) 상태의 쓰바 */
+.new-line::-webkit-scrollbar-thumb:hover {
+   background-color: #003A1B;
+   /* 호버 상태에서의 쓰바 색상 */
+}
 
 
 /* ---------------------------------------------------------------별점*/
-   .star{
-       display: flex; /* 부모 요소를 플렉스 박스로 설정 */
-       justify-content: center; /* 가로 중앙 정렬 */
-       align-items: center; /* 세로 중앙 정렬 */
-      width: 800px;
-      min-height: 100px;
-      margin: auto;
-      margin-top: 20px;
-      background-color: #FFFFFF;
-   }
-   
-   .star_intro{
-      margin-top: 10px;
-      margin-right: 60px;
-      font-size: 18px;
-   }
-      
-   .star_intro_star{
-      margin-top: 10px;
-      margin-left: 60px;
-   }
-   
-   .rate {
-      display: inline-block;
-      border: 0;
-      margin-right: 15px;
-   }
-   
-   .rate > input {
-      display: none;
-   }
-   
-   .rate > label {
-      float: right;
-      color: #ddd;
-   }
-   
-   .rate > label:before {
-      display: inline-block;
-      font-size: 4rem;
-      padding: .3rem .2rem;
-      margin: 0;
-      font-family: FontAwesome;
-      content: "\f005";
-   }
-   
-   .rate .half:before {
-      content: "\f089 ";
-      position: absolute;
-      padding-right: 0;
-   }
-   
-   .rate input:checked ~ label, 
-   .rate label:hover,.rate label:hover ~ label { 
-      color: #007235 !important;  
-   } 
-   
-   .rate input:checked + .rate label:hover,
-   .rate input input:checked ~ label:hover,
-   .rate input:checked ~ .rate label:hover ~ label,  
-   .rate label:hover ~ input:checked ~ label {
-       color: #007235 !important;
-   }
+.star {
+   display: flex;
+   /* 부모 요소를 플렉스 박스로 설정 */
+   justify-content: center;
+   /* 가로 중앙 정렬 */
+   align-items: center;
+   /* 세로 중앙 정렬 */
+   width: 800px;
+   min-height: 100px;
+   margin: auto;
+   margin-top: 20px;
+   background-color: #FFFFFF;
+}
+
+.star_intro {
+   margin-top: 10px;
+   margin-right: 60px;
+   font-size: 18px;
+}
+
+.star_intro_star {
+   margin-top: 10px;
+   margin-left: 60px;
+}
+
+.rate {
+   display: inline-block;
+   border: 0;
+   margin-right: 15px;
+}
+
+.rate>input {
+   display: none;
+}
+
+.rate>label {
+   float: right;
+   color: #ddd;
+}
+
+.rate>label:before {
+   display: inline-block;
+   font-size: 4rem;
+   padding: .3rem .2rem;
+   margin: 0;
+   font-family: FontAwesome;
+   content: "\f005";
+}
+
+.rate .half:before {
+   content: "\f089 ";
+   position: absolute;
+   padding-right: 0;
+}
+
+.rate input:checked~label,
+.rate label:hover,
+.rate label:hover~label {
+   color: #007235 !important;
+}
+
+.rate input:checked+.rate label:hover,
+.rate input input:checked~label:hover,
+.rate input:checked~.rate label:hover~label,
+.rate label:hover~input:checked~label {
+   color: #007235 !important;
+}
 
 
-   .review_score_rate {
-      display: inline-block;
-      border: 0;
-/*       margin-left: -46px;
+.review_score_rate {
+   display: inline-block;
+   border: 0;
+   /*       margin-left: -46px;
       transform: scale(0.6); */
-   }
-   
-   .review_score_rate > input {
-      display: none;
-   }
-   
-   .review_score_rate > label {
-      float: right;
-      color: #ddd;
-   }
-   
-   .review_score_rate > label:before {
-      display: inline-block;
-      font-size: 2rem;
-      padding: .3rem .2rem;
-      margin: 0;
-      font-family: FontAwesome;
-      content: "\f005";
-   }
-   
-   .review_score_rate .half:before {
-      content: "\f089 ";
-      position: absolute;
-      padding-right: 0;
-   }
-   
-   .review_score_rate input:checked ~ label, 
-   .review_score_rate label:hover,.review_score_rate label:hover ~ label { 
-      color: #007235 !important;  
-   } 
-   
-   .review_score_rate input:checked + .review_score_rate label:hover,
-   .review_score_rate input input:checked ~ label:hover,
-   .review_score_rate input:checked ~ .review_score_rate label:hover ~ label,  
-   .review_score_rate label:hover ~ input:checked ~ label {
-       color: #007235 !important;
-   }
-   
+}
 
-   
-   .rateRed > input {
-      display: none;
-   }
-   
-   .rateRed > label {
-      float: right;
-      color: #ddd;
-   }
-   
-   .rateRed > label:before {
+.review_score_rate>input {
+   display: none;
+}
 
-      display: inline-block;
-      font-size: 2rem;
-      padding: .3rem .2rem;
-      margin: 0;
-      font-family: FontAwesome;
-      content: "\f005";
-   }
-   
-   .rateRed .half:before {
-      content: "\f089 ";
-      position: absolute;
-      padding-right: 0;
-   }
-   
-   
-	.rateRed input:checked ~ label { 
-	    color: #007235 !important;  
-	} 
+.review_score_rate>label {
+   float: right;
+   color: #ddd;
+}
 
-   
-   .rateAver {
-      display: inline-block;
-      border: 0;
-      margin-right: 15px;
-   }
-   
-   .rateAver > input {
-      display: none;
-   }
-   
-   .rateAver > label {
-      float: right;
-      color: #ddd;
-   }
-   
-   .rateAver > label:before {
-      display: inline-block;
-      font-size: 3.8rem;
-      padding: .3rem .2rem;
-      margin: 0;
-      font-family: FontAwesome;
-      content: "\f005";
-   }
-   
-   .rateAver .half:before {
-      content: "\f089 ";
-      position: absolute;
-      padding-right: 0;
-   }
-   
-   
-   #re_review_grade_new{
-   	color: #007235;
-    transform: scale(0.6);
-    margin-left: 78px;
-   }
-   
-   
-   .rateRed {
-    color: #007235;
-/*     transform: scale(0.6);
+.review_score_rate>label:before {
+   display: inline-block;
+   font-size: 2rem;
+   padding: .3rem .2rem;
+   margin: 0;
+   font-family: FontAwesome;
+   content: "\f005";
+}
+
+.review_score_rate .half:before {
+   content: "\f089 ";
+   position: absolute;
+   padding-right: 0;
+}
+
+.review_score_rate input:checked~label,
+.review_score_rate label:hover,
+.review_score_rate label:hover~label {
+   color: #007235 !important;
+}
+
+.review_score_rate input:checked+.review_score_rate label:hover,
+.review_score_rate input input:checked~label:hover,
+.review_score_rate input:checked~.review_score_rate label:hover~label,
+.review_score_rate label:hover~input:checked~label {
+   color: #007235 !important;
+}
+
+
+
+.rateRed>input {
+   display: none;
+}
+
+.rateRed>label {
+   float: right;
+   color: #ddd;
+}
+
+.rateRed>label:before {
+
+   display: inline-block;
+   font-size: 2rem;
+   padding: .3rem .2rem;
+   margin: 0;
+   font-family: FontAwesome;
+   content: "\f005";
+}
+
+.rateRed .half:before {
+   content: "\f089 ";
+   position: absolute;
+   padding-right: 0;
+}
+
+
+.rateRed input:checked~label {
+   color: #007235 !important;
+}
+
+
+.rateAver {
+   display: inline-block;
+   border: 0;
+   margin-right: 15px;
+}
+
+.rateAver>input {
+   display: none;
+}
+
+.rateAver>label {
+   float: right;
+   color: #ddd;
+}
+
+.rateAver>label:before {
+   display: inline-block;
+   font-size: 3.8rem;
+   padding: .3rem .2rem;
+   margin: 0;
+   font-family: FontAwesome;
+   content: "\f005";
+}
+
+.rateAver .half:before {
+   content: "\f089 ";
+   position: absolute;
+   padding-right: 0;
+}
+
+
+#re_review_grade_new {
+   color: #007235;
+   transform: scale(0.6);
+   margin-left: 78px;
+}
+
+
+.rateRed {
+   color: #007235;
+   /*     transform: scale(0.6);
     margin-left: -46px; */
-    display: inline-block;
-    border: 0;
-   }
-/* ---------------------------------------------------------------평균점수별*/
-.star-rating { width:80px; }
-.star-rating,.star-rating span { display:inline-block; height:17px; overflow:hidden; background:url(../icons/ico_star_small_80px.png)no-repeat; }
-.star-rating span{ background-position:left bottom; line-height:0; vertical-align:top; }
+   display: inline-block;
+   border: 0;
+}
+
 
 
 /* ---------------------------------------------------------------리뷰상단*/
-   
-   #review{
-   
-      width: 800px;
-      min-height: 500px;
-      margin: auto;
-      margin-top: 20px;
-      margin-bottom: 100px;
-      background-color: #FFFFFF;
-      overflow: hidden;
-   }
-   .all_score{
-      display:flex;
-      margin-top: 45px;
-      margin-left: 100px;
-   }
-   
-   .all_score>p{
-      font-size: 17px;
-   }
-   
-   .review_total{
-      padding-left: 10px;
-      font-size: 16px;
-      color: #007235;
-   }
-   
-   .average{
-      display: flex; /* 부모 요소를 플렉스 박스로 설정 */
-       justify-content: flex-start; /* 요소를 왼쪽으로 정렬 */
-       align-items: center; /* 세로 중앙 정렬 */
-      margin: auto;
-      margin-top: 5px;
-      margin-left: 100px;
-   }
-   
-    .average_score{
-       display: flex;
-      font-size: 20px;
-      margin-right: 5px;
-   }
-   
-   
-   
-   .ratesize{
-       transform: scale(0.8); /* 크기를 80%로 축소 */
-   }
-/* ---------------------------------------------------------------리뷰모달*/     
-      
-   .modal-body {
-      display: flex; /* Flexbox를 사용하여 자식 요소들을 중앙 정렬 */
-      justify-content: center; /* 가로축 기준 중앙 정렬 */
-      align-items: center; /* 세로축 기준 중앙 정렬 */
-   }
-   
-   #re_content {
-      width: 100%; /* modal-body에 대한 상대적 넓이 */
-      max-height: 200px; /* 최대 높이 설정 */
-      margin: auto; /* 상하 마진을 auto로, 좌우 마진을 auto로 설정하여 가로 중앙 정렬 */
-      text-align: left; /* 텍스트 왼쪽 정렬 */
-      padding: 10px; /* 내부 여백 추가 */
-      resize: none;
-   }
 
-   textarea.form-control:focus {
-         border-color: #00AF52; /* 원하는 색상으로 변경 */
-         outline: none; /* 기본 아웃라인 제거 */
-         box-shadow: 0 0 5px #00AF52; /* 포커스 시 그림자 추가로 더 돋보이게 함 */
-   }
-   
+#review {
 
-/* ---------------------------------------------------------------리뷰내용*/   
-   .review_center,.review_write{
-      margin-left: 120px;
-      
+   width: 800px;
+   min-height: 500px;
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 100px;
+   background-color: #FFFFFF;
+   overflow: hidden;
+}
 
-   }
-   
-   #review_bord >div{
-   		margin-left: 120px; 
-   }
-   
-   #review_bord hr {
-       width: 75%;
-       border: none;
-       border-top: 1px solid #dddddd;
-       margin: 8px auto; /* 위아래 여백 조정 및 좌우 중앙 정렬 */
-       display: block; /* 블록 레벨 요소로 설정 */
-   }
+.all_score {
+   display: flex;
+   margin-top: 45px;
+   margin-left: 100px;
+}
 
-   #btn-register{
-      color: var(--font-color);
-   
-   }
+.all_score>p {
+   font-size: 17px;
+}
 
-   .review_writer {
-      float: left; /* 왼쪽으로 부유시킴 */
-      margin-left: 120px;
-      margin-right: 20px; 
-      overflow: hidden;
-      font-size: 16px;
-    }
-    
-    .review_regdate{
-       display: flex;
-	   align-items: center;
-	   border-left: 1px solid #dddddd;
-	   padding-left: 20px;
-	   padding-top: 2px;
-	   color: #003A1B;
-	   font-size: 12px;
-	   padding-bottom: 2px;
-	   justify-content: space-between;
-    }
-   
-   .ratesizee{
-       transform: scale(0.5);
-       transform-origin: left;
-       margin-left: 20px;
-   }
-   
+.review_total {
+   padding-left: 10px;
+   font-size: 16px;
+   color: #007235;
+}
+
+.average {
+   display: flex;
+   /* 부모 요소를 플렉스 박스로 설정 */
+   justify-content: flex-start;
+   /* 요소를 왼쪽으로 정렬 */
+   align-items: center;
+   /* 세로 중앙 정렬 */
+   margin: auto;
+   margin-top: 5px;
+   margin-left: 100px;
+}
+
+.average_score {
+   display: flex;
+   font-size: 20px;
+   margin-right: 5px;
+   align-items: center;
+}
+
+
+
+.ratesize {
+   transform: scale(0.8);
+   /* 크기를 80%로 축소 */
+}
+
+/* ---------------------------------------------------------------리뷰별점*/
+.star-rating {
+   width: 80px;
+   margin-left: 10px;
+}
+
+
+
+.star-rating,
+.star-rating span {
+   display: inline-block;
+   height: 17px;
+   overflow: hidden;
+   background: url(../icons/ico_star_small_90px.png)no-repeat;
+}
+
+.star-rating span {
+   background-position: left bottom;
+   line-height: 0;
+   vertical-align: top;
+}
+
+
+/* ---------------------------------------------------------------리뷰모달*/
+
+.modal-body {
+   display: flex;
+   /* Flexbox를 사용하여 자식 요소들을 중앙 정렬 */
+   justify-content: center;
+   /* 가로축 기준 중앙 정렬 */
+   align-items: center;
+   /* 세로축 기준 중앙 정렬 */
+}
+
+#re_content {
+   width: 100%;
+   /* modal-body에 대한 상대적 넓이 */
+   max-height: 200px;
+   /* 최대 높이 설정 */
+   margin: auto;
+   /* 상하 마진을 auto로, 좌우 마진을 auto로 설정하여 가로 중앙 정렬 */
+   text-align: left;
+   /* 텍스트 왼쪽 정렬 */
+   padding: 10px;
+   /* 내부 여백 추가 */
+   resize: none;
+}
+
+textarea.form-control:focus {
+   border-color: #00AF52;
+   /* 원하는 색상으로 변경 */
+   outline: none;
+   /* 기본 아웃라인 제거 */
+   box-shadow: 0 0 5px #00AF52;
+   /* 포커스 시 그림자 추가로 더 돋보이게 함 */
+}
+
+
+/* ---------------------------------------------------------------리뷰내용*/
+.review_center,
+.review_write {
+   margin-left: 120px;
+
+
+}
+
+#review_bord>div {
+   margin-left: 120px;
+}
+
+#review_bord hr {
+   width: 75%;
+   border: none;
+   border-top: 1px solid #dddddd;
+   margin: 8px auto;
+   /* 위아래 여백 조정 및 좌우 중앙 정렬 */
+   display: block;
+   /* 블록 레벨 요소로 설정 */
+}
+
+#btn-register {
+   color: var(--font-color);
+
+}
+
+.review_writer {
+   float: left;
+   /* 왼쪽으로 부유시킴 */
+   margin-left: 120px;
+   margin-right: 20px;
+   overflow: hidden;
+   font-size: 16px;
+}
+
+.review_regdate {
+   display: flex;
+   align-items: center;
+   border-left: 1px solid #dddddd;
+   padding-left: 20px;
+   padding-top: 2px;
+   color: #003A1B;
+   font-size: 12px;
+   padding-bottom: 2px;
+   justify-content: space-between;
+}
+
+.ratesizee {
+   transform: scale(0.5);
+   transform-origin: left;
+   margin-left: 20px;
+}
+
 /*    #review_regdate{
     color: #939396;
     font-size: 12px;
@@ -694,49 +783,61 @@
    
    } */
 
-      
-   .no{
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-   }
-   
-   .del_close{
-   	text-align: right;
-   	margin-right:120px;
-   	font-size: 16px;
-    color: #999;
-   }
-   .del_close span{
-   	cursor: pointer;
-   	
-   }
-   
-	.btn_re_modify{
-    cursor: pointer;
-	font-size: 14px;
-	color: black;
-	margin-right: 5px;
-   }
-   
-  .modifybut3{
-    border: none;
-    background-color: transparent;
-    float: right;
-    margin-right: 139px;
-    margin-left: 500px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-   
-   }
-   
-   .re_content_form{
-    display: flex;
-    flex-direction: column; /* 세로로 요소들을 배열 */
-    align-items: flex-start; /* 요소들을 왼쪽에 정렬 */
+
+.no {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.del_close {
+   text-align: right;
+   margin-right: 120px;
+   font-size: 16px;
+   color: #999;
+}
+
+.del_close span {
+   cursor: pointer;
+
+}
+
+.btn_re_modify {
+   cursor: pointer;
+   font-size: 14px;
+   color: black;
+   margin-right: 5px;
+}
+
+.modifybut3 {
+   border: none;
+   background-color: transparent;
+   float: right;
+   margin-right: 139px;
+   margin-left: 500px;
+   margin-top: 8px;
+   margin-bottom: 8px;
+
+}
+
+.re_content_form {
+   display: flex;
+   flex-direction: column;
+   /* 세로로 요소들을 배열 */
+   align-items: flex-start;
+   /* 요소들을 왼쪽에 정렬 */
 }
 
 .re_content_form_>.modifybut3 {
-    align-self: flex-end; /* 버튼을 오른쪽에 배치 */
-    
+   align-self: flex-end;
+   /* 버튼을 오른쪽에 배치 */
+
+}
+
+.re_con{
+   width: 80%;
+   resize: none;
+   overflow-y: auto;
+
+   
 }
