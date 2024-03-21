@@ -33,6 +33,6 @@
     background-size: cover;
 } */
 
-.star-rating { width:205px; }
-.star-rating,.star-rating span { display:inline-block; height:39px; overflow:hidden; background:url(../icons/ico_star_small.png)no-repeat; }
+.star-rating { width:80px; }
+.star-rating,.star-rating span { display:inline-block; height:17px; overflow:hidden; background:url(../icons/ico_star_small_80px.png)no-repeat; }
 .star-rating span{ background-position:left bottom; line-height:0; vertical-align:top; }
