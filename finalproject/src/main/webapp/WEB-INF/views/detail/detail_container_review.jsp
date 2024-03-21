@@ -28,25 +28,11 @@
 							  <c:set var="averageScore" value="${totalScore / fn:length(review_list)}"/>
 							  <c:set var="roundedAverageScore" value="${Math.round(averageScore)}" />
 							  (평균점수) ${roundedAverageScore }점
-						  </div>
-						  <div class="star-rating">
-							<div class="back-stars" style="width: 46%">
-							  <i class="fa fa-star" aria-hidden="true"></i>
-							  <i class="fa fa-star" aria-hidden="true"></i>
-							  <i class="fa fa-star" aria-hidden="true"></i>
-							  <i class="fa fa-star" aria-hidden="true"></i>
-							  <i class="fa fa-star" aria-hidden="true"></i>
-							  
-							  <div class="front-stars" style="width: 46%">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-							  </div>
-							</div>
-						  </div>
-			  
+								<span class='star-rating'>
+									<span style ="width:50%">
+								</span>
+		
+						</div>
 					   </div>
 					   <!-- ----------------------------리뷰목록----------- -->
 							<form>
@@ -92,17 +78,17 @@
 											  <input type="hidden"  name="re_idx"  value="${ vo.re_idx }">
 												 <input type="hidden"  name="pl_code" value="${vo.pl_code}">
 											  <input type="hidden" class="review_star2"   name="re_review_grade" id="re_review_grade_new${ vo.re_idx }" value="${ vo.re_review_grade }">
-											  <textarea class="review_content" name="re_content" id="re_content_new${ vo.re_idx }" >${ vo.re_content }</textarea>
+											  <textarea class=" re_con form-control" name="re_content" rows="5" id="re_content_new${ vo.re_idx }" >${ vo.re_content }</textarea>
 											  <input class="modifybut3" type="button" value="수정" id="btn_review_modify_${ vo.re_idx }" onclick="re_modify_content(this.form);" style="display: none;"><!-- 진짜 수정버튼 -->
 										  </div> 
-										  <div class="review_star2" id="re_review_star${vo.re_idx}">별점두개</div>
+										  <div class="review_star2" id="re_review_star${vo.re_idx}">별점위치함${vo.re_star}</div>
 										  <div class="review_content" id="re_content${vo.re_idx}">하 집가기 글렀노</div>
 									  </div>
 									  
 									  <div> 
 										  
 									  </div> 
-									  </div>
+								</div>
 								 
 							  </div>
 									  </form>

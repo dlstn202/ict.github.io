@@ -281,7 +281,7 @@ function insert_review(f) {
                   <!-- Modal Header -->
                   <div class="modal-header">
                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <h4 class="modal-title" id="review_modal_title">${detail_vo.title}</h4>
+                     <h4 class="modal-title" id="review_modal_title">가게명</h4>
                   </div>
       
                   <!-- Modal body -->
