@@ -84,6 +84,12 @@
     color: rgba(var(--main-ton-down-rgb),1);
 }
 
+.stroy_writer_date{
+  display: flex;
+  justify-content: space-between;
+}
+
+
 #story_writer{
     margin-left: 15px;
     margin-bottom: 10px;
@@ -96,7 +102,6 @@
     align-content: right;
     display: inline-block;
     position: relative;
-    left: 324px;
 
 }
 
