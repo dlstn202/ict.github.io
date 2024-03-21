@@ -133,7 +133,7 @@
 .glamping-N46 .contents-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N46 .contents-tit { font-size: var(--fs-h6); line-height: var(--lh-h6); font-weight: 600; }
 .glamping-N46 .checkset-text { font-size: var(--fs-p2); color: rgba(var(--main-ton-down-rgb),1);}
-.glamping-N46 .contents-terms { max-height: 20rem; padding: 1.6rem; overflow-y: auto; border-radius: 3rem; border: 2px solid var(--border-color); }
+.glamping-N46 .contents-terms { max-height: 20rem; padding: 1.6rem; overflow-y: auto; border-radius: 3rem; border: 2px solid rgba(var(--main-ton-down-rgb), 0.1); color: rgba(var(--main-ton-down-rgb), 1);}
 .glamping-N46 .contents-terms strong { display: block; margin-bottom: 0.8rem; font-size: var(--fs-h6); line-height: var(--lh-h6); color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N46 .contents-terms span { display: block; margin-bottom: 0.8rem; font-size: var(--fs-p1); line-height: var(--lh-p1); font-weight: 500; color: rgba(var(--main-ton-down-rgb),1);}
 .glamping-N46 .contents-terms p { font-size: var(--fs-p2); line-height: var(--lh-p2); color: var(--text-color3); }
