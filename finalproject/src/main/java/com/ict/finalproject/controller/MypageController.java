@@ -2,6 +2,9 @@ package com.ict.finalproject.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 public class MypageController {
@@ -43,6 +46,11 @@ public class MypageController {
         return "mypage/mypage_container_info";
     }
 
+    @RequestMapping("mypage_container_mygeneral_reserve.do")
+    public String requestMethodName(@RequestParam String param) {
+        return "mypage/mypage_container_mygeneral_reserve";
+    }
+    
 
 
 
