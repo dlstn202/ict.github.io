@@ -28,6 +28,7 @@
 							  <c:set var="averageScore" value="${totalScore / fn:length(review_list)}"/>
 							  <c:set var="roundedAverageScore" value="${Math.round(averageScore)}" />
 							  (평균점수) ${roundedAverageScore }점
+							  <span class='star-rating'><span style ="width:50%"></span>
 						  </div>
 						  <div class="star-rating">
 							<div class="back-stars" style="width: 46%">

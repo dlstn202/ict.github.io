@@ -560,25 +560,9 @@
     border: 0;
    }
 /* ---------------------------------------------------------------평균점수별*/
-.star-rating {
-   font-family: FontAwesome, serif;
-   line-height: 1em;
-   color: #d3d3d3; /* 기본 별 색상 */
- }
- 
- .back-stars {
-   display: flex;
-   position: relative;
- }
- 
- .front-stars {
-   position: absolute;
-   top: 0;
-   left: 0;
-   white-space: nowrap;
-   overflow: hidden;
-   color: #007235; /* 채워진 별 색상 */
- }
+.star-rating { width:80px; }
+.star-rating,.star-rating span { display:inline-block; height:17px; overflow:hidden; background:url(../icons/ico_star_small_80px.png)no-repeat; }
+.star-rating span{ background-position:left bottom; line-height:0; vertical-align:top; }
 
 
 /* ---------------------------------------------------------------리뷰상단*/
