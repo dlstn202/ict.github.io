@@ -2,15 +2,17 @@
 
 
 .container{display: flex; margin-top: 12rem; color: var(--main-ton-down);margin-bottom: 12rem;}
-
+#container_content{width: 858px;}
 
 
 
 /* [S]mypage_container_list */
-.mypage_container_list_nav{ margin-right: 5rem; border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); border-radius: 12px; flex: 0 0 282px; height: -moz-fit-content; height: fit-content;}
+.mypage_container_list_nav{ margin-right: 5rem; border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); border-radius: 12px; flex: 0 0 282px; height: -moz-fit-content; height: fit-content; overflow: hidden;}
+.mypage_container_list {     margin-bottom: 0;}
 .mypage_container_list li{ border-bottom: 1px solid rgba(var(--main-ton-down-rgb), 0.3); height: 50px; width: 23rem; line-height: 50px; text-align: justify; padding-left: 10px; font-size: 1.7rem; font-weight: 500; }
 .mypage_container_list li:last-of-type{border-bottom: none;}
 .mypage_container_list li div:hover{cursor: pointer;}
+.mypage_container_list li:hover{background-color: var(--main-ton-up); color: white !important;} 
 
 /* [E]mypage_container_list */
 
@@ -56,7 +58,7 @@
  .glamping-N47 .contents-mail { margin-right: 0; }
  .glamping-N47 .contents-address .contents-form-group { margin-bottom: 0.8rem; }
  .glamping-N47 .contents-btn-group { margin-top: 4rem; }
- .btn_modify_photo{left: 26rem;}
+ .btn_modify_photo{left: 35rem;}
 }
 
 .joininput_email{ color: rgba(var(--main-ton-down-rgb),1); }
@@ -79,3 +81,18 @@
 .sns_brand_one input:hover { background-color: var(--main-ton-up); color: white;}
 
 /* [E]sns */
+
+
+
+/* [S]my_keep */
+
+.my_keep_list{max-width: 1280px;}
+.keep_box{ width: 83rem; height: 15rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; align-items: center; padding: 1rem; gap: 1rem; border-radius: 9px;}
+.keep_box_img img{width: 14rem; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
+.keep_box_content{height: 100%;width: 100%;display: flex; gap: 1rem; flex-direction: column; align-items: flex-start;}
+.hashtag,.keep_title .keep_addr, .keep_line_intro{overflow: hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.keep_title{font-size: 2rem; font-weight: 500;}
+@media (max-width: 992px) {
+    .keep_box {width: 100%; }
+}
+/* [E]my_keep */

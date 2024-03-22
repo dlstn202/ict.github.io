@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    mypage_container_manager_qna
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">문의 답변</div>
+        </div>
+    </main>
 </body>
 </html>

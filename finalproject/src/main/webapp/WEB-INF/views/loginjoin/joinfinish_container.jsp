@@ -17,13 +17,13 @@
             <p class="textset-desc">캠프로버에 오신것을 진심으로 환영합니다</p>
           </div>
           <ul class="contents-list">
-            <li class="contents-item item-active">
+            <li class="contents-item item-check">
               <span>1</span>
             </li>
-            <li class="contents-item">
+            <li class="contents-item item-check">
               <span>2</span>
             </li>
-            <li class="contents-item item-check">
+            <li class="contents-item item-active">
               <span>3</span>
             </li>
           </ul>

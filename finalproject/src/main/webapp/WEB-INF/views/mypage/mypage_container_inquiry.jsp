@@ -21,8 +21,7 @@
   }  
 </style>
 </head>
-<body>
-    
+<body>   
         <table class="table">
             <tr class="info">
             <th width="10%">번호</th>
@@ -31,6 +30,5 @@
             <th width="10%">답변상태</th>
             </tr>
         </table>    
-    
 </body>
 </html>
