@@ -1,15 +1,40 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<meta charset="UTF-8">
-<title>캠프로버</title>
-</head>
-    <body>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>캠프로버</title>
+  </head>
+
+  <body>
+
+    <!-- [S]glamping-N45 -->
+    <div class="glamping-N45" data-bid="iFltwPivdp">
+      <div class="contents-inner">
+        <div class="contents-container container-md">
+          <div class="textset">
+            <h2 class="textset-tit">예약정보</h2>
+            <p class="textset-desc">예약에 필요한 정보들을 입력해주세요</p>
+          </div>
+          <ul class="contents-list">
+            <li class="contents-item item-check">
+              <span>1</span>
+            </li>
+            <li class="contents-item item-active">
+              <span>2</span>
+            </li>
+            <li class="contents-item">
+              <span>3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- [E]glamping-N45 -->
     <!-- [S]glamping-N35 -->
     <div class="glamping-N35" data-bid="kDLtwPJ58p">
       <div class="contents-inner">
@@ -99,7 +124,8 @@
                 <h6 class="form-tit">연락처 <span>*</span>
                 </h6>
                 <div class="inputset inputset-round">
-                  <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="-없이 번호를 입력해주세요" required="">
+                  <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="-없이 번호를 입력해주세요"
+                    required="">
                 </div>
               </div>
               <div class="form-wrap">
@@ -191,10 +217,12 @@
                 <div class="contents-card-num">
                   <div class="contents-form-group">
                     <div class="inputset inputset-round">
-                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="월" required="">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="월"
+                        required="">
                     </div>
                     <div class="inputset inputset-round">
-                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="년도" required="">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="년도"
+                        required="">
                     </div>
                   </div>
                   <p class="contents-desc"> * 신용카드 정보는 위약금 결제를 위해 수집되며, 글램핑 요금은 체크인 시 결제됩니다. </p>
@@ -227,8 +255,8 @@
       </div>
     </div>
     <!-- [E]glamping-N37 -->
-  </main>
+    </main>
 
-    </body>
+  </body>
 
-    </html>
+  </html>

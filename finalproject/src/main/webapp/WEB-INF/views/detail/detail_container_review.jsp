@@ -82,7 +82,7 @@
 											  <input class="modifybut3" type="button" value="수정" id="btn_review_modify_${ vo.re_idx }" onclick="re_modify_content(this.form);" style="display: none;"><!-- 진짜 수정버튼 -->
 										  </div> 
 										  <div class="review_star2" id="re_review_star${vo.re_idx}">별점위치함${vo.re_star}</div>
-										  <div class="review_content" id="re_content${vo.re_idx}">하 집가기 글렀노</div>
+										  <div class="review_content" id="re_content${vo.re_idx}">하 집가기 글렀노${vo.re_content}</div>
 									  </div>
 									  
 									  <div> 

@@ -8,6 +8,13 @@
             <meta charset="UTF-8">
             <title>상세정보</title>
          </head>
+         <script>
+            $(document).ready(function () {
+               $('#myCarousel').carousel({
+                  interval: false
+               });
+            });
+         </script>
 
          <body>
             <div id="info">
@@ -48,7 +55,7 @@
                   </div>
 
                   <div class="info_addr">
-                     <i class="fa-solid fa-location-dot fa-lg" style="color:#007235;"></i>   
+                     <i class="fa-solid fa-location-dot fa-lg" style="color:#007235;"></i>
                      <div>주소</div>
                   </div>
 
@@ -65,15 +72,72 @@
                      <div>전화번호</div>
                   </div>
 
-                  <div class="info_info">
-                     <div class="info_detail">
-                        <i class="fa-solid fa-circle-info fa-lg" style="color:#007235;"></i>
-                        <div style="font-size:15px;">상세정보</div>
+                  <div class="info_image_container">
+                     <div class="info_image">
+                        <i class="fa-regular fa-image fa-lg" style="color:#007235;"></i>
+                        <div style="font-size:15px;">이미지</div>
                      </div>
-                     <div class="new-line">${detail_vo.overview}</div>
+
+                     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                           <li data-target="#myCarousel" data-slide-to="0"></li>
+                           <li data-target="#myCarousel" data-slide-to="1"></li>
+                           <li data-target="#myCarousel" data-slide-to="2"></li>
+                           <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                           <div class="item active">
+                              <img src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg"
+                                 alt="PC 메인 비주얼 이미지">
+                           </div>
+
+                           <div class="item">
+                              <img src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg"
+                                 alt="PC 메인 비주얼 이미지">
+                           </div>
+
+                           <div class="item">
+                              <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_2.png"
+                                 alt="PC 메인 비주얼 이미지">
+                           </div>
+
+                           <div class="item">
+                              <img src="${pageContext.request.contextPath}/assets/img/header/main_header.jpg"
+                                 alt="PC 메인 비주얼 이미지">
+                           </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                           <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                           <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                     </div>
+                  </div>
+
+
+
+                     <div class="info_info">
+                        <div class="info_detail">
+                           <i class="fa-solid fa-circle-info fa-lg" style="color:#007235;"></i>
+                           <div style="font-size:15px;">상세정보</div>
+                        </div>
+                        <div class="new-line">${detail_vo.overview}dfdsfsdfdsfdsfdsf</div>
+                     </div>
+                     <!-- 추가정보 #태그로 남기기 -->
+                     <div class="info_add">
+                        <div class="chkpet">애완동물동반유무 : ${detail_vo.chkpet}</div>
+                        <div class="expagerange">체험가능연령 : ${detail_vo.expagerange}</div>
+                     </div>
+
+
                   </div>
                </div>
-            </div>
          </body>
          </body>
 

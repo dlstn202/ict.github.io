@@ -78,41 +78,7 @@
     buttonElement.removeEventListener("click", clickEventHandler);
     buttonElement.addEventListener("click", clickEventHandler);
   });
-
-  // Selectset
-  const selectsetToggle = document.querySelectorAll(".selectset-toggle");
-  const selectsetLink = document.querySelectorAll(".selectset-link");
-  selectsetToggle.forEach((buttonElement) => {
-    const clickEventHandler = (event) => {
-      event.stopPropagation();
-      const button = event.target.closest(".selectset-toggle");
-      const buttonParent = button.closest(".selectset");
-      buttonParent.classList.toggle("active");
-    };
-    buttonElement.removeEventListener("click", clickEventHandler);
-    buttonElement.addEventListener("click", clickEventHandler);
-  });
-  selectsetLink.forEach((buttonElement) => {
-    const clickEventHandler = (event) => {
-      event.stopPropagation();
-      const button = event.target.closest(".selectset-link");
-      const buttonText = button.querySelector("span").innerHTML;
-      const buttonGrandParent = button.closest(".selectset-list");
-      const buttonParent = button.closest(".selectset-item");
-      const buttonParentSiblings = getSiblings(buttonGrandParent, buttonParent);
-      const buttonSelectsetToggle = button
-        .closest(".selectset")
-        .querySelector(".selectset-toggle");
-      buttonParentSiblings.forEach((siblingElement) => {
-        siblingElement.querySelector(".selectset-link").classList.remove("on");
-      });
-      button.classList.toggle("on");
-      buttonSelectsetToggle.querySelector("span").innerHTML = buttonText;
-    };
-    buttonElement.removeEventListener("click", clickEventHandler);
-    buttonElement.addEventListener("click", clickEventHandler);
-  });
-
+  
   // Dropset
   const dropsetToggle = document.querySelectorAll(".dropset-toggle");
   dropsetToggle.forEach((buttonElement) => {

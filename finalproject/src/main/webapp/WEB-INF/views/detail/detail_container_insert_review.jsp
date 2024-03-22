@@ -293,6 +293,7 @@ function insert_review(f) {
                         <input type="hidden" name="pl_type" value="">
                         <input type="hidden" name="url" value="">
                            <div>
+
                               <fieldset class="rate">
                                     <input type="radio" id="rating10" name="re_review_grade" value="5.0"><label for="rating10" title="5점"></label>
                                            <input  type="radio" id="rating9" name="re_review_grade" value="4.5" ><label class="half" for="rating9" title="4.5점"></label>
@@ -306,11 +307,18 @@ function insert_review(f) {
                                            <input type="radio" id="rating1" name="re_review_grade" value="0.5"><label class="half" for="rating1" title="0.5점"></label>
                               </fieldset>
                          </div>
+
                               <div class="form-group mb-3">
                                  <textarea class="form-control" id="re_content" name="re_content" rows="5" maxlength="1000" placeholder="작성내용은 마이페이지와 장소상세에 노출되며 매장주를 포함한 다른 사용자들이 볼 수 있으니, 서로를 배려하는 마음을 담아 작성해 주세요.">${ vo.re_content }</textarea>
                                  
+
+                                                                 
                               </div>
-                           <input type="button"  class="text-center btn btn-default" id="btn-register" value="등록" onclick="insert_review();">
+                              <div class="modal-footer">
+                                 <input type="file" class="photo" name="photo">
+                                 <input type="button" id="btn-register" value="등록" onclick="insert_review();">
+                              </div>
+
                         </form>
                      </div>
                   </div>

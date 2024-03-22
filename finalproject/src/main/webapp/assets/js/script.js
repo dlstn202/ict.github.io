@@ -93,13 +93,15 @@
       // Date Range Picker
       $calendar.dateRangePicker({
         container: '.glamping-N33 .contents-top',
-        // language:'ko',
+        //language:'ko',
         language: 'custom',
         inline: true,
         alwaysOpen: true,
       }).bind('datepicker-first-date-selected', function(event, obj) {
+        $('.separator-day').html("~");
         console.log(obj);
       }).bind('datepicker-change', function(event, obj) {
+        $('.separator-day').html("~");
         console.log(obj);
       });
       // Amount Count Button Click Event

@@ -3,6 +3,7 @@ package com.ict.finalproject.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
 public class MypageController {
 
@@ -43,6 +44,52 @@ public class MypageController {
         return "mypage/mypage_container_info";
     }
 
+    @RequestMapping("mypage_container_general_keep_list.do")
+    public String mypage_container_general_keep_list(){
+
+        return "mypage/mypage_container_general_keep_list";
+    }
+
+    @RequestMapping("mypage_container_general_reserve.do")
+    public String mypage_container_general_reserv() {
+        return "mypage/mypage_container_general_reserve";
+    }
+
+    @RequestMapping("mypage_container_inquiry.do")
+    public String mypage_container_inquiry() {
+        return "mypage/mypage_container_inquiry";
+    }
+        
+    @RequestMapping("mypage_container_general_review.do")
+    public String mypage_container_general_review() {
+        return "mypage/mypage_container_general_review";
+    }
+        
+    @RequestMapping("mypage_container_ceo_business.do")
+    public String mypage_container_ceo_business() {
+        return "mypage/mypage_container_ceo_business";
+    }
+        
+    @RequestMapping("mypage_container_manager_member.do")
+    public String mypage_container_manager_member() {
+        return "mypage/mypage_container_manager_member";
+    }
+        
+    @RequestMapping("mypage_container_manager_qna.do")
+    public String mypage_container_manager_qna() {
+        return "mypage/mypage_container_manager_qna";
+    }
+        
+    @RequestMapping("mypage_container_manager_faq.do")
+    public String mypage_container_manager_faq() {
+        return "mypage/mypage_container_manager_faq";
+    }
+        
+    @RequestMapping("mypage_container_manager_req_content.do")
+    public String mypage_container_manager_req_content() {
+        return "mypage/mypage_container_manager_req_content";
+    }
+    
 
 
 
