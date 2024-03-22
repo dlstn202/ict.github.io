@@ -16,9 +16,12 @@
                         <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png" alt="">
                     </div>
                     <div class="keep_box_content">
+                        <div class="hashtag">해시태그</div>
                         <div class="keep_title">강원신재생에너지</div>
                         <div class="keep_addr">주소주소</div>
+                        <div class="keep_line_intro">한줄소개</div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
