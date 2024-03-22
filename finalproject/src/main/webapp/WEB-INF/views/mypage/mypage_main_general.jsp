@@ -39,8 +39,9 @@
 								$.ajax({
 									url: "mypage_container_info.do",
 									success: function (res_data) {
-										$("#container").html(res_data);
+										$("#container_content").html(res_data);
 										$.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
+										$("#info").css("color", "#00AF52");
 										$.ajax({
 											url: "footer.do",
 											success: function (res_data) {
@@ -103,7 +104,7 @@
 	<div id="mypage_header"></div>
 	<div class="container">
 		<div id="container_list"></div>
-		<div id="container"></div>
+		<div id="container_content"></div>
 	</div>
 	<div id="main_general_footer"></div>
 

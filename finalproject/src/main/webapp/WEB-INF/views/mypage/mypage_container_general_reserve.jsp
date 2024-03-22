@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    마이페이지 예약목록
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">예약 내역</div>
+        </div>
+    </main>
 </body>
 </html>

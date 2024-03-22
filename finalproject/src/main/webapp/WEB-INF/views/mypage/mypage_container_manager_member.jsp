@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    회원정보
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">회원정보</div>
+        </div>
+    </main>
 </body>
 </html>

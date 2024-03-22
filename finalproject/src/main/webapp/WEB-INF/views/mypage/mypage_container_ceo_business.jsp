@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    내캠핑장
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">내 캠핑장</div>
+        </div>
+    </main>
 </body>
 </html>
