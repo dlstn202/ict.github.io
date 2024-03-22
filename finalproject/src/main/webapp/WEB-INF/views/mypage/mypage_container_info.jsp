@@ -5,6 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        
     </head>
 
     <body>
@@ -125,8 +126,7 @@
                                                         <input type="text" class="inputset-input form-control"
                                                             aria-label="내용">
                                                     </div>
-                                                    <button class="btnset btnset-round btnset-line" type="buton">우편번호 검색</button>
-                                                    <button class="btnset btnset-round btnset-line" type="buton">수정</button>
+                                                    <input class="btnset btnset-round btnset-line" type="button" value="우편번호 검색">
                                                 </div>
                                                 <div class="inputset inputset-round">
                                                     <input type="text" class="inputset-input form-control"
@@ -136,8 +136,7 @@
                                         </div>
                                     </div>
                                     <div class="contents-btn-group">
-                                        <!-- <input type="button" class="btnset btnset-round" value="수정"> -->
-                                        <button class="btnset btnset-round btnset-line" type="buton">수정</button>
+                                        <input type="button" class="btnset btnset-round" value="수정">
                                     </div>
                                 </div>
                             </div>
