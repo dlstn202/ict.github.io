@@ -99,6 +99,19 @@
             }
         });
     }
+    function business_room(){
+        $.ajax({
+            url: "mypage_container_ceo_business_room.do",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#business_room").css("color", "#00AF52");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
 
     // 회원정보
     function member(){
@@ -161,6 +174,21 @@
         });
     }
 
+    // 신고내역
+    function notify(){
+        $.ajax({
+            url: "mypage_container_manager_notify.do",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#notify").css("color", "#00AF52");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
+
 
 </script>
 <script>
@@ -189,11 +217,13 @@
     <li id="review"><div onclick="review();">내리뷰</div></li>
     <!-- 사장 -->
     <li id="business"><div onclick="business();">내캠핑장</div></li>
+    <li id="business_room"><div onclick="business_room();">객실정보</div></li>
     <!-- 관리자 -->
     <li id="member"><div onclick="member();">회원정보</div></li>
     <li id="qna"><div onclick="qna();">문의답변</div></li>
     <li id="faq"><div onclick="faq();">FAQ</div></li>
     <li id="req_content"><div onclick="req_content();">캠핑장신청내역</div></li>
+    <li id="notify"><div onclick="notify();">신고내역</div></li>
 </ul>
 </nav>
 </body>
