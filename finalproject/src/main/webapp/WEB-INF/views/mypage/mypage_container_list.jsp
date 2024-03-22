@@ -12,7 +12,7 @@
         $.ajax({
             url: "mypage_container_info.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#info").css("color", "#00AF52");
                 $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
@@ -30,7 +30,7 @@
         $.ajax({
             url: "mypage_container_general_keep_list.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#keep").css("color", "#00AF52");
             },
@@ -45,7 +45,7 @@
         $.ajax({
             url: "mypage_container_general_reserve.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#reserve").css("color", "#00AF52");
             },
@@ -60,7 +60,7 @@
         $.ajax({
             url: "mypage_container_inquiry.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#inquiry").css("color", "#00AF52");
             },
@@ -75,7 +75,7 @@
         $.ajax({
             url: "mypage_container_general_review.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#review").css("color", "#00AF52");
             },
@@ -90,7 +90,7 @@
         $.ajax({
             url: "mypage_container_ceo_business.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#business").css("color", "#00AF52");
             },
@@ -105,7 +105,7 @@
         $.ajax({
             url: "mypage_container_manager_member.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#member").css("color", "#00AF52");
             },
@@ -120,7 +120,7 @@
         $.ajax({
             url: "mypage_container_manager_qna.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#qna").css("color", "#00AF52");
             },
@@ -135,7 +135,7 @@
         $.ajax({
             url: "mypage_container_manager_faq.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#faq").css("color", "#00AF52");
                 
@@ -151,7 +151,7 @@
         $.ajax({
             url: "mypage_container_manager_req_content.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#req_content").css("color", "#00AF52");
             },
