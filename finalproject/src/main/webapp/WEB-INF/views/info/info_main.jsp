@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
 <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=897d9c3b7e07054fabb6126c0c458f98"></script>
 <script>
+    
 
 $(document).ready(function() {
     // main 초기화
@@ -46,13 +47,13 @@ $(document).ready(function() {
     });
 });
 
-
 </script>
+
 <script>
 
     function loadAdditionalScripts() {
         // 추가적인 스크립트 파일들을 로드합니다.
-        $.getScript("${pageContext.request.contextPath}/assets/js/changeContent.js");
+        //$.getScript("${pageContext.request.contextPath}/assets/js/click.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
         // $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
