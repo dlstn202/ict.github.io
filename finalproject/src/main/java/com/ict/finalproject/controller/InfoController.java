@@ -29,12 +29,46 @@ public class InfoController {
         return "info/info_container_list";
     }
 
-    @RequestMapping("info_container_local.do")
-    public String info_container_local(){
+    @RequestMapping("info_container_filter.do")
+    public String info_container_filter(String type){    
+        if ("local".equals(type)) {
+ 
+            return "info/info_container_local";
+        }
 
-        return "info/info_container_local";
+        else if ("filter".equals(type)) {
+
+            return "info/info_container_filter";
+        }
+        else {
+       
+            return "info/info_container_list";
+        }
     }
+    @RequestMapping("info_container_place.do")
+    public String info_container_place(String type){    
+        if ("camping".equals(type)) {
+ 
+            return "info/info_camping";
+        }
 
+        else if ("hospital".equals(type)) {
 
-     
+            return "info/info_hospital";
+        }
+
+        else if ("store".equals(type)) {
+
+            return "info/info_store";
+        }
+        // 마트 페이지
+        else if ("mart".equals(type)) {
+
+            return "info/info_mart";
+        }
+        else {
+       
+            return "info/info_container_list";
+        }
+    }
 }
