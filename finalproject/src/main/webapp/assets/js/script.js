@@ -97,13 +97,16 @@
         language: 'custom',
         inline: true,
         alwaysOpen: true,
+        startDate: new Date(),
       }).bind('datepicker-first-date-selected', function(event, obj) {
         $('.separator-day').html("~");
         console.log(obj);
       }).bind('datepicker-change', function(event, obj) {
         $('.separator-day').html("~");
         console.log(obj);
+
       });
+      
       // Amount Count Button Click Event
       $block.find(".contents-amount").each(function() {
         const $this = $(this);

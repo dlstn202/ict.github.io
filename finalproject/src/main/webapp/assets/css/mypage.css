@@ -2,7 +2,7 @@
 
 
 .container{display: flex; margin-top: 12rem; color: var(--main-ton-down);margin-bottom: 12rem;}
-
+#container_content{width: 858px;}
 
 
 
@@ -86,10 +86,32 @@
 
 /* [S]my_keep */
 
-.my_keep_list{max-width: 1280px;}
-.keep_box{ width: 83rem; background-color: rgba(var(--main-ton-down-rgb), 0.1);}
-.keep_box_img img{width: 14rem; }
+.my_keep_list{max-width: 1280px;display: flex; flex-direction: column; gap: 2rem;}
+.keep_box{ width: 83rem; height: 15rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; align-items: center; padding: 1rem; gap: 1rem; border-radius: 9px;}
+.keep_box_img img{width: 14rem; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
+.keep_box_content{height: 100%;width: 100%;display: flex; gap: 1rem; flex-direction: column; align-items: flex-start;}
+.keep_box_content_f { width: 100%; display: flex; justify-content: space-between;}
+.btn_keep_del { border: none;  background-color: transparent; margin-right: 0.6rem; font-size: 1.7rem; color: chocolate; font-weight: 600;}
+.hashtag,.keep_title, .keep_addr, .keep_line_intro{overflow: hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+.hashtag { color: var(--main); font-weight: 300;}
+.keep_title{font-size: 2rem; font-weight: 500;}
+.keep_line_intro {color: var(--main-ton-up);}
 @media (max-width: 992px) {
     .keep_box {width: 100%; }
 }
 /* [E]my_keep */
+
+/* [S]my_reserve */
+.my_reserve_list{max-width: 1280px;display: flex; flex-direction: column; gap: 2rem;}
+.reserve_box{ width: 83rem; height: 15rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; align-items: center; padding: 1rem; gap: 1rem; border-radius: 9px;}
+.reserve_box_img img{width: 14rem; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
+.reserve_box_content{height: 100%;width: 100%;display: flex; gap: 1rem; flex-direction: column; align-items: flex-start;}
+.reserve_title, .reserve_addr{overflow: hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;}
+
+.reserve_title{font-size: 2rem; font-weight: 500;}
+
+@media (max-width: 992px) {
+    .reserve_box {width: 100%; }
+}
+
+/* [E]my_reserve */

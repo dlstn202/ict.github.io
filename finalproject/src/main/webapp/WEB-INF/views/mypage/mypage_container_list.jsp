@@ -12,7 +12,7 @@
         $.ajax({
             url: "mypage_container_info.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#info").css("color", "#00AF52");
                 $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
@@ -30,7 +30,7 @@
         $.ajax({
             url: "mypage_container_general_keep_list.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#keep").css("color", "#00AF52");
             },
@@ -45,7 +45,7 @@
         $.ajax({
             url: "mypage_container_general_reserve.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#reserve").css("color", "#00AF52");
             },
@@ -60,7 +60,7 @@
         $.ajax({
             url: "mypage_container_inquiry.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#inquiry").css("color", "#00AF52");
             },
@@ -75,7 +75,7 @@
         $.ajax({
             url: "mypage_container_general_review.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#review").css("color", "#00AF52");
             },
@@ -90,9 +90,22 @@
         $.ajax({
             url: "mypage_container_ceo_business.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#business").css("color", "#00AF52");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
+    function business_room(){
+        $.ajax({
+            url: "mypage_container_ceo_business_room.do",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#business_room").css("color", "#00AF52");
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -105,7 +118,7 @@
         $.ajax({
             url: "mypage_container_manager_member.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#member").css("color", "#00AF52");
             },
@@ -120,7 +133,7 @@
         $.ajax({
             url: "mypage_container_manager_qna.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#qna").css("color", "#00AF52");
             },
@@ -135,7 +148,7 @@
         $.ajax({
             url: "mypage_container_manager_faq.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#faq").css("color", "#00AF52");
                 
@@ -151,9 +164,24 @@
         $.ajax({
             url: "mypage_container_manager_req_content.do",
             success: function (res_data) {
-                $("#container").html(res_data);
+                $("#container_content").html(res_data);
                 changeLiColor();
                 $("#req_content").css("color", "#00AF52");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
+
+    // 신고내역
+    function notify(){
+        $.ajax({
+            url: "mypage_container_manager_notify.do",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#notify").css("color", "#00AF52");
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
@@ -189,11 +217,13 @@
     <li id="review"><div onclick="review();">내리뷰</div></li>
     <!-- 사장 -->
     <li id="business"><div onclick="business();">내캠핑장</div></li>
+    <li id="business_room"><div onclick="business_room();">객실정보</div></li>
     <!-- 관리자 -->
     <li id="member"><div onclick="member();">회원정보</div></li>
     <li id="qna"><div onclick="qna();">문의답변</div></li>
     <li id="faq"><div onclick="faq();">FAQ</div></li>
     <li id="req_content"><div onclick="req_content();">캠핑장신청내역</div></li>
+    <li id="notify"><div onclick="notify();">신고내역</div></li>
 </ul>
 </nav>
 </body>
