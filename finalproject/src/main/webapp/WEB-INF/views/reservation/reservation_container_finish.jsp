@@ -8,9 +8,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
 </head>
     <body>
+    <!-- [S]glamping-N45 -->
+    <div class="glamping-N45" data-bid="iFltwPivdp">
+      <div class="contents-inner">
+        <div class="contents-container container-md">
+          <div class="textset">
+            <h2 class="textset-tit">예약완료</h2>
+          </div>
+          <ul class="contents-list">
+            <li class="contents-item item-check">
+              <span>1</span>
+            </li>
+            <li class="contents-item item-check">
+              <span>2</span>
+            </li>
+            <li class="contents-item item-active">
+              <span>3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- [E]glamping-N45 -->
+
     <!-- [S]glamping-N38 -->
     <div class="glamping-N38" data-bid="PllTwpJ1kN">
       <div class="contents-inner">

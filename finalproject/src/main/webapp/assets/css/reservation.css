@@ -19,6 +19,32 @@
 
 
 /* reservation_container_date --------------------------------------------*/
+/* glamping-N45 [SGltwPIrt8] */
+.glamping-N45 {color: var(--main);}
+.glamping-N45 .contents-inner { padding: 12rem 2.4rem; }
+.glamping-N45 .contents-container { display: flex; justify-content: space-between; align-items: flex-end; }
+.glamping-N45 .textset { width: 50%; }
+.glamping-N45 .textset-tit { font-size: var(--fs-h1); line-height: var(--lh-h1); font-weight: 600; }
+.glamping-N45 .textset-tit+.textset-desc { margin-top: 1.8rem; font-size: var(--fs-p1); line-height: var(--lh-p1); }
+.glamping-N45 .contents-list { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; width: 50%; }
+.glamping-N45 .contents-item { display: flex; align-items: center; justify-content: center; position: relative; width: 4.8rem; height: 4.8rem; font-size: var(--fs-h5); text-align: center; border: 1px solid var(--line-color1); border-radius: 50%; color: var(--text-color4); }
+.glamping-N45 .contents-item+.contents-item { margin-left: 7.6rem; }
+.glamping-N45 .contents-item+.contents-item::before { content: ''; position: absolute; top: 50%; right: calc(100% + 1.6rem); transform: translateY(-50%); width: 4rem; height: 0.1rem; background-color: var(--line-color1); }
+.glamping-N45 .contents-item.item-active { background-color: var(--line-color4); border-color: var(--line-color4); color: var(--text-color5); }
+.glamping-N45 .contents-item.item-check { background-color: var(--highlight-bg); border-color: var(--highlight-bg); }
+.glamping-N45 .contents-item.item-check::after { content: ''; display: inline-block; width: 2.8rem; height: 2.8rem; background: url("../../assets/icons/ico_check_gray.svg") no-repeat center/contain; }
+.glamping-N45 .contents-item.item-check span { display: none; }
+@media (max-width: 992px) {
+ .glamping-N45 .contents-container { display: block; }
+ .glamping-N45 .textset { width: 100%; }
+ .glamping-N45 .textset-tit+.textset-desc { margin-top: 0.8rem; }
+ .glamping-N45 .contents-list { justify-content: flex-start; width: 100%; margin-top: 4rem; }
+ .glamping-N45 .contents-item { width: 3.2rem; height: 3.2rem; line-height: 3.2rem; }
+ .glamping-N45 .contents-item+.contents-item { margin-left: 3.6rem; }
+ .glamping-N45 .contents-item+.contents-item::before { content: ''; position: absolute; top: 50%; right: calc(100% + 0.8rem); width: 2rem; }
+ .glamping-N45 .contents-item.item-check::after { width: 2rem; height: 2rem; }
+}
+
 /* glamping-N33 [vfLtWpiFmM] */
 .glamping-N33 .contents-inner { padding: 12rem 2.4rem; }
 .glamping-N33 .contents-top { width: 100%; margin-top: 2.4rem; }

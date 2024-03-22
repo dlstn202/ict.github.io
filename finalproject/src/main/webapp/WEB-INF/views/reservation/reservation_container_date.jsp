@@ -5,9 +5,34 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+
+
 </head>
     <body>
-
+    <!-- [S]glamping-N45 -->
+    <div class="glamping-N45" data-bid="iFltwPivdp">
+      <div class="contents-inner">
+        <div class="contents-container container-md">
+          <div class="textset">
+            <h2 class="textset-tit">예약하기</h2>
+            <p class="textset-desc">예약에 필요한 정보들을 입력해주세요</p>
+          </div>
+          <ul class="contents-list">
+            <li class="contents-item item-active">
+              <span>1</span>
+            </li>
+            <li class="contents-item">
+              <span>2</span>
+            </li>
+            <li class="contents-item">
+              <span>3</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- [E]glamping-N45 -->
     <!-- [S]glamping-N33 -->
     <div class="glamping-N33" data-bid="vfLtWpiFmM">
       <div class="contents-inner">

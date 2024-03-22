@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class DetailController {
 		
 		
-		@RequestMapping("detail.do")
+		@RequestMapping("detail_main.do")
 		public String main(HttpServletRequest request, HttpServletResponse response) {
 			
 			return "detail/detail_main";

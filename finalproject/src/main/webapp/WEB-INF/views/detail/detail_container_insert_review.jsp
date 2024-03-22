@@ -316,7 +316,7 @@ function insert_review(f) {
                               </div>
                               <div class="modal-footer">
                                  <input type="file" class="photo" name="photo">
-                                 <input type="button"  class="text-center btn btn-default" id="btn-register" value="등록" onclick="insert_review();">
+                                 <input type="button" id="btn-register" value="등록" onclick="insert_review();">
                               </div>
 
                         </form>

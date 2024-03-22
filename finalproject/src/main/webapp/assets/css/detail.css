@@ -67,7 +67,6 @@ body { background-color: rgba(0, 58, 27, 0.1); color: var(--main-ton-down);}
 .info_add>div { margin-bottom: 30px;}
 .info_add { overflow: hidden; margin-left: 20px; }
 /* ------------------------상세정보 스크롤바----- */
-
 /* 수직 스크롤바 */
 .new-line::-webkit-scrollbar {width: 1px;}
 /* 수직 스크롤바의 트랙(Track) 영역 */
@@ -122,33 +121,14 @@ body { background-color: rgba(0, 58, 27, 0.1); color: var(--main-ton-down);}
 .modal-body { display: flex; justify-content: center; align-items: center;}
 #re_content {width: 100%; max-height: 200px;  margin: auto; text-align: left; padding: 10px; resize: none;}
 textarea.form-control:focus { border-color: #00AF52; outline: none; box-shadow: 0 0 7px rgba(var(--main-rgb),0.3);}
-
-
-input[type=file] {
-    display: block;
-    width: 175px;
-}
-
-
-.modal-footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center; /* 버튼과 파일 입력 필드를 세로 중앙에 정렬합니다 */
-  }
-  
-  .file-input {
-    margin-right: 10px; /* 파일 입력 필드와 버튼 사이의 공간을 만듭니다 */
-    background-color: #ff0000; /* 원하는 배경색으로 변경 */
-    color: #ffffff;
-
-  }
-
+input[type=file] { display: block; width: 175px;}
+.modal-footer { display: flex; justify-content: flex-end; align-items: center; margin-bottom: -4px;} 
 /* ---------------------------------------------------------------리뷰내용*/
 .review_center,.review_write { margin-left: 120px;}
 #review_bord>div { margin-left: 120px;}
 #review_bord hr { width: 75%; border: none; border-top: 1px solid #dddddd; margin: 8px auto; display: block;}
-#btn-register {color: var(--font-color); float: right;}
-
+#btn-register { float: right; padding-top: 3px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; margin-left: 10px; border-radius: 3rem; color: var(--main-ton-down); border: 1px solid; background-color: transparent; border-color: var(--main);}
+#btn-register:hover { background-color: #00AF52; border-color: #00AF52; color: white; cursor: pointer;}
 .review_writer {float: left; margin-left: 120px; margin-right: 20px; overflow: hidden; font-size: 16px;}
 .review_regdate {display: flex; align-items: center; border-left: 1px solid #dddddd; padding-left: 20px; padding-top: 2px; color: #003A1B; font-size: 12px; padding-bottom: 2px; justify-content: space-between;}
 .ratesizee {transform: scale(0.5); transform-origin: left; margin-left: 20px;}
