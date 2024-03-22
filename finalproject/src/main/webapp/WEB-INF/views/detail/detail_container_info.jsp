@@ -40,6 +40,10 @@
                                  <i id="keepOn" class="fa-solid fa-bookmark fa-2x"></i>
                                  <p>저장</p>
                               </div>
+                              <div id="detail_reservation">
+                              <i class="fa-solid fa-calendar-check fa-2x" style="color: #007235;"></i>
+                              <p>예약</p>
+                           </div>
                            </c:if>
                         </div>
                      </div>
