@@ -96,6 +96,7 @@
     const clickEventHandler = (event) => {
       event.stopPropagation();
       const button = event.target.closest(".selectset-link");
+      //console.log(button.querySelector("span").innerHTML);
       const buttonText = button.querySelector("span").innerHTML;
       const buttonGrandParent = button.closest(".selectset-list");
       const buttonParent = button.closest(".selectset-item");
@@ -106,10 +107,13 @@
       buttonParentSiblings.forEach((siblingElement) => {
         siblingElement.querySelector(".selectset-link").classList.remove("on");
       });
-      // button.classList.toggle("on");
+      //button.classList.toggle("on");
       buttonSelectsetToggle.querySelector("span").innerHTML = buttonText;
       if(buttonText != "직접입력"){
-      document.querySelector(".email_domain").value=buttonText;}
+       document.querySelector(".email_domain").value = buttonText;}
+       else{
+        document.querySelector(".email_domain").value = "";
+       }
     };
     buttonElement.removeEventListener("click", clickEventHandler);
     buttonElement.addEventListener("click", clickEventHandler);

@@ -31,7 +31,7 @@
                                             <div class="contents-form-group">
                                                 <div class="inputset inputset-round">
                                                     <input type="text" class="inputset-input form-control"
-                                                        aria-label="내용" required="">
+                                                        aria-label="내용" required="아이디">
                                                 </div>
                                             </div>
                                         </div>
@@ -63,42 +63,52 @@
                                             <h6 class="form-tit">이메일 <span>*</span>
                                             </h6>
                                             <div class="contents-form-group">
-                                                <div class="inputset inputset-round">
-                                                    <div class="contents-mail">
-                                                        <input type="text" class="inputset-input form-control"
-                                                            aria-label="내용" required="">
-                                                        <span class="joininput_email">@</span>
-                                                        <input type="text" class="inputset-input form-control"
-                                                            aria-label="내용" required="">
-                                                    </div>
+                                              <div class="inputset inputset-round">
+                                                <div class="contents-mail">
+                                                  <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                                                  <span class="joininput_email">@</span>
+                                                  <input type="text" class="email_domain inputset-input form-control" value=" ">
                                                 </div>
+                                              </div>
                                             </div>
                                             <div class="selectset selectset-round selectset-md">
-                                                <button class="selectset-toggle btn" type="button">
-                                                    <span>선택해주세요</span>
-                                                </button>
-                                                <ul class="selectset-list">
-                                                    <li class="selectset-item">
-                                                        <button class="selectset-link btn" type="button"
-                                                            data-value="직접입력" selected="">
-                                                            <span>직접입력</span>
-                                                        </button>
-                                                    </li>
-                                                    <li class="selectset-item">
-                                                        <button class="selectset-link btn" type="button"
-                                                            data-value="naver.com">
-                                                            <span>naver.com</span>
-                                                        </button>
-                                                    </li>
-                                                    <li class="selectset-item">
-                                                        <button class="selectset-link btn" type="button"
-                                                            data-value="daum.net">
-                                                            <span>daum.net</span>
-                                                        </button>
-                                                    </li>
-                                                </ul>
+                                              <button class="selectset-toggle btn" type="button">
+                                                <span>선택해주세요</span>
+                                              </button>
+                                              <ul class="selectset-list">
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="직접입력" selected="">
+                                                    <span>직접입력</span>
+                                                  </button>
+                                                </li>
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="naver.com">
+                                                    <span>naver.com</span>
+                                                  </button>
+                                                </li>
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="daum.net">
+                                                    <span>daum.net</span>
+                                                  </button>
+                                                </li>
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="hanmail.net">
+                                                    <span>hanmail.net</span>
+                                                  </button>
+                                                </li>
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="kakao.com">
+                                                    <span>kakao.com</span>
+                                                  </button>
+                                                </li>
+                                                <li class="selectset-item">
+                                                  <button class="selectset-link btn" type="button" data-value="gmail.com">
+                                                    <span>gmail.com</span>
+                                                  </button>
+                                                </li>
+                                              </ul>
                                             </div>
-                                        </div>
+                                          </div>
                                         <div class="form-wrap">
                                             <h6 class="form-tit">연락처 <span>*</span>
                                             </h6>
@@ -115,8 +125,8 @@
                                                         <input type="text" class="inputset-input form-control"
                                                             aria-label="내용">
                                                     </div>
-                                                    <button class="btnset btnset-round btnset-line" type="buton">우편번호
-                                                        검색</button>
+                                                    <button class="btnset btnset-round btnset-line" type="buton">우편번호 검색</button>
+                                                    <button class="btnset btnset-round btnset-line" type="buton">수정</button>
                                                 </div>
                                                 <div class="inputset inputset-round">
                                                     <input type="text" class="inputset-input form-control"
@@ -126,7 +136,8 @@
                                         </div>
                                     </div>
                                     <div class="contents-btn-group">
-                                        <input type="button" class="btnset btnset-round" value="수정">
+                                        <!-- <input type="button" class="btnset btnset-round" value="수정"> -->
+                                        <button class="btnset btnset-round btnset-line" type="buton">수정</button>
                                     </div>
                                 </div>
                             </div>

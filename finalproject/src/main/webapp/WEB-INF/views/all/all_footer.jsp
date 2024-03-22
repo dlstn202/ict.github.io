@@ -11,6 +11,7 @@
         $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
         $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
         $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/script.js");
       })
     </script>
   </head>
