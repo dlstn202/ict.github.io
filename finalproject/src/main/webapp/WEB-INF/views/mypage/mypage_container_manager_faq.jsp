@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    mypage_container_manager_faq
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">FAQ</div>
+        </div>
+    </main>
 </body>
 </html>

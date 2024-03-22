@@ -41,6 +41,7 @@
 									success: function (res_data) {
 										$("#container").html(res_data);
 										$.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
+										$("#info").css("color", "#00AF52");
 										$.ajax({
 											url: "footer.do",
 											success: function (res_data) {

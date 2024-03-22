@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    mypage_container_manager_req_content
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">캠핑장 신청 내역</div>
+        </div>
+    </main>
 </body>
 </html>

@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-    문의
+    <main class="th-layout-main">
+        <div id="my_keep">
+            <div class="my_info_title">문의 내역</div>
+        </div>
+    </main>
 </body>
 </html>
