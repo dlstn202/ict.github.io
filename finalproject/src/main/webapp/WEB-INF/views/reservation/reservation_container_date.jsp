@@ -1,31 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+  <!DOCTYPE html>
+  <html>
 
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <title>캠프로버</title>
+  </head>
 
+  <body>
 
-</head>
-    <body>
+  <main class="th-layout-main ">
     <!-- [S]glamping-N45 -->
     <div class="glamping-N45" data-bid="iFltwPivdp">
       <div class="contents-inner">
         <div class="contents-container container-md">
           <div class="textset">
-            <h2 class="textset-tit">예약하기</h2>
-            <p class="textset-desc">예약에 필요한 정보들을 입력해주세요</p>
+            <h2 class="textset-tit">예약날짜</h2>
           </div>
           <ul class="contents-list">
             <li class="contents-item item-active">
               <span>1</span>
             </li>
-            <li class="contents-item">
+            <li class="contents-item ">
               <span>2</span>
             </li>
-            <li class="contents-item">
+            <li class="contents-item" >
               <span>3</span>
             </li>
           </ul>
@@ -129,6 +131,6 @@
     <!-- [E]glamping-N33 -->
   </main>
 
-    </body>
+  </body>
 
-    </html>
+  </html>
