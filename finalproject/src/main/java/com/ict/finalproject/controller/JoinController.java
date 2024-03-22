@@ -20,7 +20,7 @@ public class JoinController {
     }
 
 
-    // 정보 입력
+    // 정보 입력 - 일반회원
     @RequestMapping("joininput_main.do")
     public String joininput_main(){
 
@@ -31,6 +31,20 @@ public class JoinController {
     public String joininput_container(){
 
         return "loginjoin/joininput_container";
+    }
+
+
+    // 정보입력 - 사장 회원
+    @RequestMapping("joininput_forceo_main.do")
+    public String joininput_forceo_main(){
+
+        return "loginjoin/joininput_forceo_main";
+    }
+
+    @RequestMapping("joininput_forceo_container.do")
+    public String joininput_forceo_container(){
+
+        return "loginjoin/joininput_forceo_container";
     }
 
 

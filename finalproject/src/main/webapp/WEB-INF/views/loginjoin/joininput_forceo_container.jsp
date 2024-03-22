@@ -4,6 +4,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+    const regular_bizrno = /^[1-6]{1}[0-9]{2}-[0-9]{2}-[0-9]{5}$/;
+
+    function check_bizrno(f){
+
+        let bizrno = document.getElementById('bizrno').value;
+
+        if(regular_bizrno.test(bizrno)==false){
+            alert("사업자 등록번호 형식에 맞는 번호를 입력해주세요");
+            document.getElementById('bizrno').value = '';
+            document.getElementById('bizrno').focus();
+            return;
+        }
+
+        alert("형식에 맞는 사업자 등록번호입니다.");
+    }
+</script>
 </head>
 <body>
 <!-- [E]glamping-N2 -->
@@ -40,6 +57,16 @@
             <span>* 표시는 반드시 입력하셔야 하는 항목입니다</span>
           </div>
           <div class="contents-group">
+            <div class="form-wrap">
+              <h6 class="form-tit">사업자번호 <span>*</span>
+              </h6>
+              <div class="contents-form-group">
+                <div class="inputset inputset-round">
+                  <input type="text" class="inputset-input form-control" name="bizrno" id="bizrno" aria-label="내용" required="" placeholder="000-00-00000 형식으로 입력하세요">
+                </div>
+                <button class="btnset btnset-round" type="buton" onclick="check_bizrno();">형식확인</button>
+              </div>
+            </div>
             <div class="form-wrap">
               <h6 class="form-tit">아이디 <span>*</span>
               </h6>
@@ -145,7 +172,7 @@
           </div>
           <div class="contents-btn-group">
             <a href="javascript:void(0);" class="btnset btnset-line btnset-round">이전단계</a>
-            <a href="javascript:void(0);" class="btnset btnset-round">다음단계</a>
+            <a href="javascript:void(0);" class="btnset btnset-round" onclick="">다음단계</a>
           </div>
         </div>
       </div>

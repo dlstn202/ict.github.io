@@ -17,10 +17,10 @@
             <p class="textset-desc">가입에 필요한 약관에 동의해주세요</p>
           </div>
           <ul class="contents-list">
-            <li class="contents-item item-check">
+            <li class="contents-item item-active">
               <span>1</span>
             </li>
-            <li class="contents-item item-active">
+            <li class="contents-item">
               <span>2</span>
             </li>
             <li class="contents-item">
