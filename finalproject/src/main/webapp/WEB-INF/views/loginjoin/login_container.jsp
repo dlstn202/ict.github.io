@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-
 $(function(){
   $('.login_wrap > div').hide();
   $('.login_tab_ul a').click(function () {
