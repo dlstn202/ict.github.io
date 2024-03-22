@@ -9,6 +9,18 @@
     <meta charset="UTF-8">
     <title>캠프로버</title>
   </head>
+  <script>
+    function loadAdditionalScripts() {
+        // 추가적인 스크립트 파일들을 로드합니다.
+        $.getScript("${pageContext.request.contextPath}/assets/js/setting.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/plugin.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/template.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/common.js");
+        $.getScript("${pageContext.request.contextPath}/assets/js/script.js");
+    }
+
+</script>
+
 
   <body>
 
