@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-    function open_view_modal(nofity_idx) {
-        $("#notify_modal").modal();
+    function notify_detail(nofity_idx) {
+        
     }
 </script>
 </head>
@@ -79,14 +79,14 @@
                         <th class="notify_list_th">신고자</th>
                         <th class="notify_list_th">처리내역</th>
                     </tr>
-                    <tr onclick="open_view_modal(0);">
-                        <td class="notify_list_td_idx" id="notify_idx_0">1</td>
-                        <td class="notify_list_td_idx" id="notify_review_0">2</td>
-                        <td class="notify_list_td notify_content" id="notify_content_0">adf</td>
-                        <td class="notify_list_td" id="notify_type_0">adf</td>
-                        <td class="notify_list_td" id="notify_date_0">2024-03-25</td>
-                        <td class="notify_list_td" id="notify_name_0">금쪽이</td>
-                        <td class="notify_list_td" id="notify_current_0">처리대기</td>
+                    <tr onclick="notify_detail(0);">
+                        <td class="notify_list_td_idx">1</td>
+                        <td class="notify_list_td_idx">2</td>
+                        <td class="notify_list_td notify_content">adf</td>
+                        <td class="notify_list_td">adf</td>
+                        <td class="notify_list_td">2024-03-25</td>
+                        <td class="notify_list_td">금쪽이</td>
+                        <td class="notify_list_td">처리대기</td>
                     </tr>
                 </table>
                 <nav class="pagiset pagiset-circ">
