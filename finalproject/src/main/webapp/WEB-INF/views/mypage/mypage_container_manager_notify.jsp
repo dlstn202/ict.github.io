@@ -7,19 +7,20 @@
 <title>Insert title here</title>
 <script>
     function notify_detail(nofity_idx) {
-      // $.ajax({
-      //       url: "mypage_container_.do",
-      //       success: function (res_data) {
-      //           $("#container_content").html(res_data);
-      //           changeLiColor();
-      //           $("#info").css("color", "#00AF52");
-      //           $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
+      $.ajax({
+            url: "mypage_container_manager_notify_one.do",
+            data: {nofity_idx:nofity_idx},
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#info").css("color", "#00AF52");
+                $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
 
-      //       },
-      //       error: function (jqXHR, textStatus, errorThrown) {
-      //           console.table(jqXHR)
-      //       }
-      //   });
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
     }
 </script>
 </head>

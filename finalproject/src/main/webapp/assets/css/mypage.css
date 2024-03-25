@@ -142,3 +142,8 @@
 .notify_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
 .notify_table_title{font-size: 2rem; color: var(--main); font-weight: 500; margin-bottom: 0.8rem;}
 /* [E]manager_notify */
+
+
+/* [S]manager_notify_one */
+.notify_one_detail>.table>tbody>tr>th {width: 3rem;}
+/* [E]manager_notify_one */
