@@ -108,6 +108,11 @@ public class MypageController {
     public String mypage_container_manager_notify_one() {
         return "mypage/mypage_container_manager_notify_one";
     }
+
+    @RequestMapping("mypage_container_manager_notify_send.do")
+    public String mypage_container_manager_notify_send() {
+        return "redirect:mypage_container_manager_notify.do";
+    }
     
 
 

@@ -12,9 +12,6 @@
             data: {nofity_idx:nofity_idx},
             success: function (res_data) {
                 $("#container_content").html(res_data);
-                changeLiColor();
-                $("#info").css("color", "#00AF52");
-                $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
 
             },
             error: function (jqXHR, textStatus, errorThrown) {
@@ -41,7 +38,7 @@
                         <th class="notify_list_th">신고자</th>
                         <th class="notify_list_th">처리내역</th>
                     </tr>
-                    <tr class="notify_one">
+                    <tr onclick="notify_detail(1);" class="notify_one">
                         <td class="notify_list_td_idx">1</td>
                         <td class="notify_list_td_idx">2</td>
                         <td class="notify_list_td notify_content">adf</td>

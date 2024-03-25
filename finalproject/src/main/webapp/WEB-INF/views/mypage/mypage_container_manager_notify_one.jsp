@@ -6,10 +6,23 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-
+ function notify_send(f){
+    $.ajax({
+      type: "GET",
+      url: "mypage_container_manager_notify_send.do",
+      data: "data",
+      success: function (res_data) {
+        $("#container_content").html(res_data);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.table(jqXHR)
+      }
+    });
+ }
 </script>
 </head>
 <body>
+  <form>
     <!-- [S]manager_notify_one -->
     <main class="th-layout-main">
         <div id="manager_notify_one">
@@ -46,14 +59,28 @@
                     </tr>
                     <tr>
                       <th class="notify_list_th">처리내역</th>
-                      <td class="notify_list_td">처리대기</td>
+                      <td class="notify_list_td">
+                        <select id="notify_result" name="notify_result">
+                          <option value="wait" selected>처리대기</option>
+                          <option value="companion">신고반려</option>
+                          <option value="processed_hide_review">신고수리:댓글숨김</option>
+                          <option value="processed_ceo">신고수리:캠핑장경고</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="notify_list_th">처리사유</th>
+                      <td class="notify_list_td">이러한 사유로 이렇게 처리했습니다.</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><input type="button" class="btnset" value="저장" onclick="notify_send(this.form);"></td>
                     </tr>
                    
                 </table>
             </div>
         </div>
     </main>
-   
+  </form>
 
     
     <!-- [E]manager_notify_one -->
