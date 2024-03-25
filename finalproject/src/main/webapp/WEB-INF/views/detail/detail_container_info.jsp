@@ -45,6 +45,10 @@
                               <p>예약</p>
                            </div>
                            </c:if>
+                           <div id="detail_report">
+                              <i class="fa-solid fa-land-mine-on fa-2x" style="color: #007235;"></i>
+                              <p>신고</p>
+                           </div>
                         </div>
                      </div>
                   </div>
