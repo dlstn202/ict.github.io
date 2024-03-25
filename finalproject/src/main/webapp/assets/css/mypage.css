@@ -135,10 +135,17 @@
 
 .notify_list_th{ text-align: center; background-color: rgba(var(--main-ton-down-rgb),0.1); }
 .notify_content{ width: 30rem; overflow: hidden; text-overflow: ellipsis;}
-.notify_list_td{ text-align: center; }
-.notify_list_td_idx, .notify_list_td_yn{ width: 75px; text-align: center; }
+.notify_list_td_idx, .notify_list_td_yn{ width: 75px; }
 .notify_one:hover{cursor: pointer; background-color: rgba(var(--main-rgb),0.1);}
 .notify_list_td_btn{ width: 110px;}
 .notify_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
 .notify_table_title{font-size: 2rem; color: var(--main); font-weight: 500; margin-bottom: 0.8rem;}
 /* [E]manager_notify */
+
+
+/* [S]manager_notify_one */
+.notify_one_detail>.table>tbody>tr>th {width: 3rem;}
+.notify_one_detail>.table>tbody>tr:last-child>td {border-bottom: none;text-align-last: center;}
+#notify_result{width: 100%;border: none;margin-left: -5px;}
+#notify_result:focus-visible{outline: none;}
+/* [E]manager_notify_one */
