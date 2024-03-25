@@ -15,7 +15,36 @@
         return false;
       }).filter(':eq(0)').click();
       });
-    </script>
+</script>
+<script>
+
+    function GeneralModifyForAdmin() {
+
+    $("#GeneralModifyModal").modal('show');
+    $("#GeneralModifyModal").modal({backdrop : "static"});
+
+
+    }
+
+    function CEOModifyForAdmin() {
+
+    $("#CEOModifyModal").modal('show');
+    $("#CEOModifyModal").modal({backdrop : "static"});
+
+
+    }
+
+    function AdminModifyForAdmin() {
+
+    $("#AdminModifyModal").modal('show');
+    $("#AdminModifyModal").modal({backdrop : "static"});
+
+
+    }
+
+
+
+</script>
 
 <style>
 
@@ -26,7 +55,7 @@
 .memberlist_tab_ul li{ flex: 1 1; text-align: center; }
 .memberlist_tab_ul li :last-child{ border-left: none; border-right: none;}
 .memberlist_tab_ul li a:before{content:""; position:absolute; left:0; top:0px; width:100%; }
-.memberlist_tab_ul li a.active{ border-top: 2px solid rgba(var(--main-ton-down-rgb),1); border-bottom: none; }
+.memberlist_tab_ul li a.active{ border-bottom: none; }
 .memberlist_tab_ul li a{ position:relative; display:block; background: rgba(var(--main-ton-down-rgb),0.1); border:2px solid rgba(var(--main-ton-down-rgb),1); color: #000; padding:0 30px; line-height:46px; text-decoration:none; font-size:16px; }
 .memberlist_tab_ul li a.active{background:#fff; color:#000000; }
 .memberlist_tab_button{ width: 250px; height: 45px; }
@@ -44,18 +73,240 @@
 .memberlist_td_btn{ width: 110px;}
 .memberlist_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
 
+.custom-modal-mypage{ max-width: 600px !important;} 
+.modal { top: 50%; left: 50%; transform: translate(-50%, -50%); width: fit-content; height: fit-content; }
+.modal-dialog>.modal-body{ max-width: 380px  !important; }
+.modal-title{ font-size: larger; font-weight: 700; }
+
+.memberlist_modal_header{
+    background-color: #fff;
+    padding:20px
+}
+
+.memberlist_modal_content{
+    background-color: #fff;
+    position: relative;
+    background-clip: none;
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+.form-wrap{
+
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+
+    
+}
+
+.ml_modify_btn_wrap{
+
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: center; /* 내부 요소들을 가로 방향의 중앙에 배치 */
+    align-items: center; /* 내부 요소들을 세로 방향의 중앙에 배치 (필요한 경우) */
+    margin-bottom: 20px;
+}
+.memberlist_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;}
+
 </style>
 
 </head>
 <body>
+
+    <div id="AdminModifyModal" class="modal fade custom-modal-mypage" role="dialog">
+		<div class="modal-dialog custom-modal-mypage">
+
+            <div class="modal-header memberlist_modal_header">
+                <button id="closememberlistModal" type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="modal-title">회원정보 수정</p>
+            </div>
+
+			<div class="modal-content memberlist_modal_content">
+
+				<!-- Modal body -->
+                <div class="form-wrap">
+                    <h6 class="form-tit">회원명</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="금쪽이">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">아이디</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="gold2">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">등급</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="관리자">
+                    </div>
+                </div>
+
+                
+                <div class="form-wrap">
+                    <div class="inputset inputset-round ml_modify_btn_wrap">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="수정하기">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    
+    <div id="CEOModifyModal" class="modal fade custom-modal-mypage" role="dialog">
+		<div class="modal-dialog custom-modal-mypage">
+
+            <div class="modal-header memberlist_modal_header">
+                <button id="closememberlistModal" type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="modal-title">회원정보 수정</p>
+            </div>
+
+			<div class="modal-content memberlist_modal_content">
+
+				<!-- Modal body -->
+                <div class="form-wrap">
+                    <h6 class="form-tit">회원명</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="금쪽일">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">사업자번호</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="100-00-00000">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">아이디</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="gold1">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">등급</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="사장">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">신고누적</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" value="0">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">로그인여부</h6>
+                    <div class="selectset selectset-round selectset-md">
+                        <button class="selectset-toggle btn" type="button">
+                        <span>선택해주세요</span>
+                        </button>
+                        <ul class="selectset-list">
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="y">
+                            <span>y</span>
+                            </button>
+                        </li>
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="n">
+                            <span>n</span>
+                            </button>
+                        </li>                     
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="form-wrap">
+                    <div class="inputset inputset-round ml_modify_btn_wrap">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="수정하기">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+    <div id="GeneralModifyModal" class="modal fade custom-modal-mypage" role="dialog">
+		<div class="modal-dialog custom-modal-mypage">
+
+            <div class="modal-header memberlist_modal_header">
+                <button id="closememberlistModal" type="button" class="close" data-dismiss="modal">&times;</button>
+                <p class="modal-title">회원정보 수정</p>
+            </div>
+
+			<div class="modal-content memberlist_modal_content">
+
+				<!-- Modal body -->
+                <div class="form-wrap">
+                    <h6 class="form-tit">회원명</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="금쪽맘">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">아이디</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="gold0">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">등급</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" readonly="readonly" value="일반">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">신고누적</h6>
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="" value="0">
+                    </div>
+                </div>
+                <div class="form-wrap">
+                    <h6 class="form-tit">로그인여부</h6>
+                    <div class="selectset selectset-round selectset-md">
+                        <button class="selectset-toggle btn" type="button">
+                        <span>선택해주세요</span>
+                        </button>
+                        <ul class="selectset-list">
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="y">
+                            <span>y</span>
+                            </button>
+                        </li>
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="n">
+                            <span>n</span>
+                            </button>
+                        </li>                     
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="form-wrap">
+                    <div class="inputset inputset-round ml_modify_btn_wrap">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="수정하기">
+                        <input class="memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    </div>
+                </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+
     <main class="th-layout-main">
         <div id="my_manager_member">
             <div class="my_info_title">회원정보</div>
         </div>
 
         <div class="memberlist_tab">
-            <ul class="memberlist_tab_ul ml_t_1">
-                <li class="memberlist_tab_li">
+            <ul class="memberlist_tab_ul">
+                <li class="memberlist_tab_li ml_t_1">
                     <a href="#normal_memberlist">일반회원</a>
                 </li>
                 <li class="memberlist_tab_li ml_t_2">
@@ -97,7 +348,7 @@
                         <td class="memberlist_td">일반</td>
                         <td class="memberlist_td">0</td>
                         <td class="memberlist_td_yn">y</td>
-                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="" value="수정하기"></td>
+                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="GeneralModifyForAdmin();" value="수정하기"></td>
                     </tr>
                 </table>
             </div>
@@ -123,7 +374,7 @@
                         <td class="memberlist_td">사장</td>
                         <td class="memberlist_td">0</td>
                         <td class="memberlist_td">y</td>
-                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="" value="수정하기"></td>
+                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="CEOModifyForAdmin();" value="수정하기"></td>
                     </tr>
                 </table>
             </div>
@@ -144,7 +395,7 @@
                         <td class="memberlist_td">금쪽일</td>
                         <td class="memberlist_td">gold1</td>
                         <td class="memberlist_td">관리자</td>
-                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="" value="수정하기"></td>
+                        <td class="memberlist_td_btn"><input class="memberlist_btn" type="button" onclick="AdminModifyForAdmin();" value="수정하기"></td>
                     </tr>
                 </table>
             </div>
@@ -152,9 +403,9 @@
 
 
 
-
-
-
     </main>
+
+
+    
 </body>
 </html>

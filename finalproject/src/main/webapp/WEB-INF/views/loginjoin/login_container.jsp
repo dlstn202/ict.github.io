@@ -41,10 +41,10 @@ function gradeSelect() {
 
             <div class="login_tab">
               <ul class="login_tab_ul">
-                <li class="login_tab_li">
+                <li class="login_tab_li l_t_1">
                   <a href="#noraml_login">일반회원</a>
                 </li>
-                <li class="login_tab_li">
+                <li class="login_tab_li l_t_2">
                   <a href="#ceo_login">기업회원</a>
                 </li>       
               </ul>

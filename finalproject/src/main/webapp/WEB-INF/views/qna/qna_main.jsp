@@ -38,6 +38,7 @@
                             url: "qna_container.do",
                             success: function (res_data) {
                                 $("#qna_container").html(res_data);
+                                $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
                                 $.ajax({
                                     url: "footer.do",
                                     success: function (res_data) {
