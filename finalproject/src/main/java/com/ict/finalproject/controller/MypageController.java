@@ -59,6 +59,10 @@ public class MypageController {
     public String mypage_container_inquiry() {
         return "mypage/mypage_container_inquiry";
     }
+    @RequestMapping("mypage_container_inquiry_insertform.do")
+    public String mypage_container_inquiry_insertform() {
+        return "mypage/mypage_container_inquiry_insertform";
+    }
         
     @RequestMapping("mypage_container_general_review.do")
     public String mypage_container_general_review() {

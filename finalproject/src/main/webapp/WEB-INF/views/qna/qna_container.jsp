@@ -19,9 +19,6 @@
         });
     });
 </script>
-<script>
-
-    </script>
     
 
 </head>
@@ -105,19 +102,20 @@
                 </div>
             </div>
             <div class="form-wrap">
-                <h6 class="form-tit">이메일 <span>*</span></h6>
+                <h6 class="form-tit">이메일 <span>*</span>
+                </h6>
                 <div class="contents-form-group">
-                    <div class="inputset inputset-round">
-                        <div class="contents-mail">
-                            <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                            <span class="qna_email">@</span>
-                            <input type="text" class="email_domain inputset-input form-control" aria-label="내용" required="">
-                        </div>
+                  <div class="inputset inputset-round">
+                    <div class="contents-mail">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                      <span class="joininput_email">@</span>
+                      <input type="text" class="email_domain inputset-input form-control" aria-label="내용" required="">
                     </div>
+                  </div>
                 </div>
                 <div class="selectset selectset-round selectset-md">
                     <button class="selectset-toggle btn" type="button">
-                    <span>선택해주세요</span>
+                        <span>선택해주세요</span>
                     </button>
                     <ul class="selectset-list">
                         <li class="selectset-item">
@@ -126,13 +124,23 @@
                             </button>
                         </li>
                         <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" data-value="naver.com">
-                                <span>naver.com</span>
+                            <button class="selectset-link btn" type="button" value="naver.com">
+                                <span>daum.net</span>
                             </button>
                         </li>
                         <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" data-value="daum.net">
-                                <span>daum.net</span>
+                            <button class="selectset-link btn" type="button" value="hanmail.net">
+                              <span>hanmail.net</span>
+                            </button>
+                        </li>
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="kakao.com">
+                              <span>kakao.com</span>
+                            </button>
+                        </li>
+                        <li class="selectset-item">
+                            <button class="selectset-link btn" type="button" value="gmail.com">
+                              <span>gmail.com</span>
                             </button>
                         </li>
                     </ul>
