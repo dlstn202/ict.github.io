@@ -583,6 +583,12 @@ progress { vertical-align: baseline; }
 
 /* ========== */
 /* Table : Tableset */
+
+table tr {
+  height: 50px;
+}
+
+
 .tableset { position: relative; } 
 .tableset .tableset-tit { font-size: var(--fs-h6); line-height: var(--lh-h6); font-weight: 600; } 
 .tableset .tableset-desc { display: inline-block; margin-top: 0.8rem; font-size: 1.4rem; line-height: 2rem; color: var(--text-color2); font-weight: 400; } 
@@ -928,6 +934,12 @@ progress { vertical-align: baseline; }
  .accordset .accordset-q { width: 2.4rem; height: 2.4rem; line-height: 2.4rem; } 
  .accordset .accordset-a { width: 2.4rem; height: 2.4rem; } 
  }
+
+ .search_wrap{display: flex; margin-bottom: 20px; float: right; }
+ .search_inquiry{margin-right: 20px; border: 1px solid rgba(var(--main-ton-down-rgb), 0.11); border-radius: 8px;}
+ .search_text{margin-right: 10px;}
+
+
 
  /* 수직 스크롤바 */
 ::-webkit-scrollbar {

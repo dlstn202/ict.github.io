@@ -148,4 +148,15 @@
 .notify_one_detail>.table>tbody>tr:last-child>td {border-bottom: none;text-align-last: center;}
 #notify_result{width: 100%;border: none;margin-left: -5px;}
 #notify_result:focus-visible{outline: none;}
+.notify_list_td textarea {width: 100%; resize: none; border: none;}
+.notify_list_td textarea:focus-visible {outline: none;}
 /* [E]manager_notify_one */
+
+/* [S]req_content*/
+.req_list>tbody>tr:last-child {border-bottom: 1px solid #ddd;}
+.req_list_th_wrap{background-color: rgba(var(--main-ton-down-rgb), 0.1);}
+.memberlist_td,.memberlist_th{text-align: center;vertical-align: middle !important;}
+.memberlist_td_idx, .memberlist_td_yn{width: 75px; text-align: center;}
+.memberlist_td_btn{ width: 110px;}
+.memberlist_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none;}
+/* [E]req_content*/

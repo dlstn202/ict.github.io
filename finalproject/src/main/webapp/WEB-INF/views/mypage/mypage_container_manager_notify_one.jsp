@@ -19,6 +19,18 @@
       }
     });
  }
+ function notify_list(f){
+    $.ajax({
+      type: "GET",
+      url: "mypage_container_manager_notify.do",
+      success: function (res_data) {
+        $("#container_content").html(res_data);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.table(jqXHR)
+      }
+    });
+ }
 </script>
 </head>
 <body>
@@ -70,10 +82,15 @@
                     </tr>
                     <tr>
                       <th class="notify_list_th">처리사유</th>
-                      <td class="notify_list_td">이러한 사유로 이렇게 처리했습니다.</td>
+                      <td class="notify_list_td">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="처리사유를 입력하세요."></textarea>
+                      </td>
                     </tr>
                     <tr>
-                      <td colspan="2"><input type="button" class="btnset" value="저장" onclick="notify_send(this.form);"></td>
+                      <td colspan="2">
+                        <input type="button" class="btnset btnset-round" value="저장" onclick="notify_send(this.form);">
+                        <input type="button" class="btnset btnset-round btnset-line" value="뒤로가기" onclick="notify_list(this.form);">
+                      </td>
                     </tr>
                    
                 </table>
