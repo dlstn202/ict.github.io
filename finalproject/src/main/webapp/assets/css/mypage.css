@@ -155,8 +155,8 @@
 /* [S]req_content*/
 .req_list>tbody>tr:last-child {border-bottom: 1px solid #ddd;}
 .req_list_th_wrap{background-color: rgba(var(--main-ton-down-rgb), 0.1);}
-.memberlist_td,.memberlist_th{text-align: center;vertical-align: middle !important;}
-.memberlist_td_idx, .memberlist_td_yn{width: 75px; text-align: center;}
-.memberlist_td_btn{ width: 110px;}
-.memberlist_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none;}
+.req_list_td,.memberlist_th{text-align: center;vertical-align: middle !important;}
+.req_list_td_idx, .memberlist_td_yn{width: 75px; text-align: center;}
+.req_list_td_btn{ width: 110px;}
+.req_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none;}
 /* [E]req_content*/

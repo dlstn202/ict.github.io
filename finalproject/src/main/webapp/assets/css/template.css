@@ -584,9 +584,8 @@ progress { vertical-align: baseline; }
 /* ========== */
 /* Table : Tableset */
 
-table tr {
-  height: 50px;
-}
+table tr {height: 50px;vertical-align: middle !important;}
+table td, table th {vertical-align: middle !important;}
 
 
 .tableset { position: relative; } 

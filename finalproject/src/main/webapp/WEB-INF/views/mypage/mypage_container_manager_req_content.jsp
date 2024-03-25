@@ -31,26 +31,26 @@
           <div>
             <table class="table req_list">
                 <tr class="req_list_th_wrap">
-                    <th class="memberlist_th">번호</th>
-                    <th class="memberlist_th">신청자명</th>
-                    <th class="memberlist_th">캠핑장명</th>
-                    <th class="memberlist_th">신청일</th>
-                    <th class="memberlist_th">상태</th>
+                    <th class="req_list_th">번호</th>
+                    <th class="req_list_th">신청자명</th>
+                    <th class="req_list_th">캠핑장명</th>
+                    <th class="req_list_th">신청일</th>
+                    <th class="req_list_th">상태</th>
                 </tr>
       
-                <tr class="memberlist_td_wrap">
-                    <td class="memberlist_td_idx">1</td>
-                    <td class="memberlist_td">금쪽삼</td>
-                    <td class="memberlist_td">금쪽캠핑</td>
-                    <td class="memberlist_td">2024.03.22</td>
-                    <td class="memberlist_td">신청대기</td>
+                <tr class="req_list_td_wrap">
+                    <td class="req_list_td_idx">1</td>
+                    <td class="req_list_td">금쪽삼</td>
+                    <td class="req_list_td">금쪽캠핑</td>
+                    <td class="req_list_td">2024.03.22</td>
+                    <td class="req_list_td">신청대기</td>
                 </tr>
-                <tr class="memberlist_td_wrap">
-                    <td class="memberlist_td_idx">2</td>
-                    <td class="memberlist_td">금쪽일</td>
-                    <td class="memberlist_td">금쪽캠핑</td>
-                    <td class="memberlist_td">2024.03.22</td>
-                    <td class="memberlist_td">신청대기</td>
+                <tr class="req_list_td_wrap">
+                    <td class="req_list_td_idx">2</td>
+                    <td class="req_list_td">금쪽일</td>
+                    <td class="req_list_td">금쪽캠핑</td>
+                    <td class="req_list_td">2024.03.22</td>
+                    <td class="req_list_td">신청대기</td>
                 </tr>
                 
             </table>
