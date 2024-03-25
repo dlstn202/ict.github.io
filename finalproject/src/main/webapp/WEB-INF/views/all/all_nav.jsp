@@ -19,11 +19,8 @@
       </div>
       <div class="header-center">
         <ul class="header-member">
-          <li>
+          <li onclick="location.href='login_main.do'">
             <a href="javascript:void(0)">로그인</a>
-          </li>
-          <li>
-            <a href="javascript:void(0)">회원가입</a>
           </li>
         </ul>
         <ul class="header-gnblist">
@@ -76,36 +73,33 @@
             </a>
           </h4>
           <ul class="fullmenu-member">
-            <li>
+            <li onclick="location.href='login_main.do'">
               <a href="javascript:void(0)">로그인</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">회원가입</a>
             </li>
           </ul>
         </div>
         <ul class="fullmenu-gnblist">
-          <li class="fullmenu-gnbitem">
+          <li class="fullmenu-gnbitem" onclick="location.href='info_main.do'">
             <a class="fullmenu-gnblink" href="javascript:void(0)">
               <span>캠핑안내</span>
             </a>
           </li>
-          <li class="fullmenu-gnbitem">
+          <li class="fullmenu-gnbitem" onclick="location.href='story_main.do'">
             <a class="fullmenu-gnblink" href="javascript:void(0)">
               <span>스토리</span>
             </a>
           </li>
-          <li class="fullmenu-gnbitem">
+          <li class="fullmenu-gnbitem" onclick="location.href='notice_main.do'">
             <a class="fullmenu-gnblink" href="javascript:void(0)">
               <span>공지사항</span>
             </a>
           </li>
-          <li class="fullmenu-gnbitem">
+          <li class="fullmenu-gnbitem" onclick="location.href='faq_main.do'">
             <a class="fullmenu-gnblink" href="javascript:void(0)">
               <span>QNA</span>
             </a>
           </li>
-          <li class="fullmenu-gnbitem">
+          <li class="fullmenu-gnbitem" onclick="location.href='qna_main.do'">
             <a class="fullmenu-gnblink" href="javascript:void(0)">
               <span>온라인문의</span>
             </a>

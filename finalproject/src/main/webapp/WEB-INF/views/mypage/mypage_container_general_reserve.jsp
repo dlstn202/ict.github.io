@@ -5,6 +5,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+    function show_detail_reserve(){
+        $(".reserve_box").css("height","33rem");
+        $(".reserve_name").css("display","block");
+        $(".reserve_tel").css("display","block");
+        $(".reserve_pay").css("display","block");
+        $(".reserve_amount").css("display","block");
+        $(".hide_detail_reserve").css("display","block");
+        $(".show_detail_reserve").css("display","none");
+    }
+
+    function hide_detail_reserve(){
+        $(".reserve_box").css("height","23rem");
+        $(".reserve_name").css("display","none");
+        $(".reserve_tel").css("display","none");
+        $(".reserve_pay").css("display","none");
+        $(".reserve_amount").css("display","none");
+        $(".hide_detail_reserve").css("display","none");
+        $(".show_detail_reserve").css("display","block");
+    }
+</script>
 </head>
 <body>
     <main class="th-layout-main">
@@ -39,8 +60,15 @@
                                 <div class="reserve_guest">성인 1명</div>
                                 
                             </div>
+                            <div>
+                                <div class="reserve_name">예약자명 : 금쪽이</div>
+                                <div class="reserve_tel">전화번호 : 010-1234-1234</div>
+                                <div class="reserve_pay">결제방법 : 카드</div>
+                                <div class="reserve_amount">결제금액 : 100,000원</div>
+                            </div>
                             <div class="reserve_detailed_pay">
-                                <div>자세히보기</div>
+                                <div onclick="show_detail_reserve();" class="show_detail_reserve">자세히보기</div>
+                                <div onclick="hide_detail_reserve();" class="hide_detail_reserve">닫기</div>
                                 <div>예약완료</div>
                             </div>
                         </div>
