@@ -7,7 +7,19 @@
 <title>Insert title here</title>
 <script>
     function notify_detail(nofity_idx) {
-        
+      // $.ajax({
+      //       url: "mypage_container_.do",
+      //       success: function (res_data) {
+      //           $("#container_content").html(res_data);
+      //           changeLiColor();
+      //           $("#info").css("color", "#00AF52");
+      //           $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
+
+      //       },
+      //       error: function (jqXHR, textStatus, errorThrown) {
+      //           console.table(jqXHR)
+      //       }
+      //   });
     }
 </script>
 </head>
@@ -28,7 +40,7 @@
                         <th class="notify_list_th">신고자</th>
                         <th class="notify_list_th">처리내역</th>
                     </tr>
-                    <tr>
+                    <tr class="notify_one">
                         <td class="notify_list_td_idx">1</td>
                         <td class="notify_list_td_idx">2</td>
                         <td class="notify_list_td notify_content">adf</td>
@@ -73,13 +85,13 @@
                     <tr>
                         <th class="notify_list_th">신고 번호</th>
                         <th class="notify_list_th">캠핑장<br>번호</th>
-                        <th class="notify_list_th">내용</th>
+                        <th class="notify_list_th notify_content">내용</th>
                         <th class="notify_list_th">신고유형</th>
                         <th class="notify_list_th">신고일자</th>
                         <th class="notify_list_th">신고자</th>
                         <th class="notify_list_th">처리내역</th>
                     </tr>
-                    <tr onclick="notify_detail(0);">
+                    <tr onclick="notify_detail(0);" class="notify_one">
                         <td class="notify_list_td_idx">1</td>
                         <td class="notify_list_td_idx">2</td>
                         <td class="notify_list_td notify_content">adf</td>
