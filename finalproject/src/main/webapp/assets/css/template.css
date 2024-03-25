@@ -586,7 +586,7 @@ progress { vertical-align: baseline; }
 
 table tr {height: 50px;vertical-align: middle !important;}
 table td, table th {vertical-align: middle !important;}
-
+table th{text-align: center;}
 
 .tableset { position: relative; } 
 .tableset .tableset-tit { font-size: var(--fs-h6); line-height: var(--lh-h6); font-weight: 600; } 

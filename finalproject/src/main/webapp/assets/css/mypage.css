@@ -134,7 +134,7 @@
 .notify_list_table>tbody>tr>th,.notify_list_table>tbody>tr>td{ vertical-align: middle;  padding: 10px; border-bottom: 1px solid #ddd; }
 
 .notify_list_th{ text-align: center; background-color: rgba(var(--main-ton-down-rgb),0.1); }
-.notify_content{ width: 30rem; overflow: hidden; text-overflow: ellipsis;}
+.notify_content{ width: 30rem; max-width: 30rem; overflow: hidden; text-overflow: ellipsis;}
 .notify_list_td_idx, .notify_list_td_yn{ width: 75px; }
 .notify_one:hover{cursor: pointer; background-color: rgba(var(--main-rgb),0.1);}
 .notify_list_td_btn{ width: 110px;}
@@ -153,10 +153,11 @@
 /* [E]manager_notify_one */
 
 /* [S]req_content*/
-.req_list>tbody>tr:last-child {border-bottom: 1px solid #ddd;}
+.req_list_table{ width: 810px;}
+.center{text-align: center;}
+.table>tbody>tr:last-child {border-bottom: 1px solid #ddd;}
+.req_list_td_wrap:hover{cursor: pointer; background-color: rgba(var(--main-rgb),0.1);}
+.req_list_td{width: 20rem; max-width: 20rem; overflow: hidden; text-overflow: ellipsis;white-space: nowrap;}
 .req_list_th_wrap{background-color: rgba(var(--main-ton-down-rgb), 0.1);}
-.req_list_td,.memberlist_th{text-align: center;vertical-align: middle !important;}
 .req_list_td_idx, .memberlist_td_yn{width: 75px; text-align: center;}
-.req_list_td_btn{ width: 110px;}
-.req_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none;}
 /* [E]req_content*/
