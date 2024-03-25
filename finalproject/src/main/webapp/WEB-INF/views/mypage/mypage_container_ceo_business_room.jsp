@@ -27,7 +27,7 @@
             .room_time {display: flex;width: 100%; height: 120px; margin-bottom: 7px; margin-top: 7px; flex-direction: column;}
             .room_price{ font-size: 20px; font-weight: 450;}
             .room_remain{ font-size: 12px; color: red;}
-            .room_addinfo { display: flex; width: 100%; height: 80px; flex-direction: column;}
+            .room_addinfo { display: flex; width: 100%; min-height: 80px; flex-direction: column;}
             .room_room {width: 29%;}
             .room_detailed_pay {display: flex;justify-content: space-between;}
             .room_name,.room_tel,.room_pay,.room_amount,.hide_detail_room {display: none;}
@@ -35,6 +35,20 @@
             @media (max-width: 992px) {.room_box {width: 100%;}}
             /* [E]my_room */
         </style>
+                <script>
+                    // 객실정보수정
+                    function business_room_insertform(){
+                          $.ajax({
+                              url: "mypage_container_ceo_business_room_insertform.do",
+                              success: function (res_data) {
+                                  $("#container_content").html(res_data);
+                              },
+                              error: function (jqXHR, textStatus, errorThrown) {
+                                  console.table(jqXHR)
+                              }
+                          });
+                      }
+                  </script>
     </head>
 
     <body>
@@ -54,7 +68,7 @@
                                 </div>
                                 <div class="room_info">
                                     <div class="room_title">객실명</div>
-                                    <div class="room_look">상세보기 ></div>
+                                    <div class="room_look" onclick="business_room_insertform();">상세보기 ></div>
                                     <div class="room_detailed">
                                         <div class="room_time">
                                             <div class="room_date_to">입실시간</div>
@@ -66,6 +80,10 @@
                                         </div>    
                                         <div class="room_addinfo">
                                             <div class="room_date_to">객실정보 &nbsp;&nbsp;&nbsp;기준2인 · 최대2인</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                             <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                         </div>
                                     </div>

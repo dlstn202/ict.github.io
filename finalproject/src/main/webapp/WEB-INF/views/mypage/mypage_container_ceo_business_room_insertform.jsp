@@ -8,22 +8,7 @@
         <style>
         
         </style>
-        <script>
-            // 객실정보수정
-            function business_room_insertform(){
-                  $.ajax({
-                      url: "mypage_container_ceo_business_room_insertform.do",
-                      success: function (res_data) {
-                          $("#container_content").html(res_data);
-                          changeLiColor();
-                          $("#inquiry").css("color", "#00AF52");
-                      },
-                      error: function (jqXHR, textStatus, errorThrown) {
-                          console.table(jqXHR)
-                      }
-                  });
-              }
-          </script>
+
     </head>
 
     <body>
@@ -43,7 +28,7 @@
                                 </div>
                                 <div class="room_info">
                                     <div class="room_title">객실명</div>
-                                    <div class="room_look" onclick="business_room_insertform();">상세보기 ></div>
+                                    <div class="room_look">상세보기 ></div>
                                     <div class="room_detailed">
                                         <div class="room_time">
                                             <div class="room_date_to">입실시간</div>
@@ -55,6 +40,9 @@
                                         </div>    
                                         <div class="room_addinfo">
                                             <div class="room_date_to">객실정보 &nbsp;&nbsp;&nbsp;기준2인 · 최대2인</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                             <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                         </div>
                                     </div>

@@ -78,6 +78,11 @@ public class MypageController {
     public String mypage_container_ceo_business_room() {
         return "mypage/mypage_container_ceo_business_room";
     }
+
+    @RequestMapping("mypage_container_ceo_business_room_insertform.do")
+    public String mypage_container_ceo_business_room_insertform() {
+        return "mypage/mypage_container_ceo_business_room_insertform";
+    }
         
     @RequestMapping("mypage_container_manager_member.do")
     public String mypage_container_manager_member() {
