@@ -78,6 +78,11 @@ public class MypageController {
     public String mypage_container_ceo_business_room() {
         return "mypage/mypage_container_ceo_business_room";
     }
+
+    @RequestMapping("mypage_container_ceo_business_room_insertform.do")
+    public String mypage_container_ceo_business_room_insertform() {
+        return "mypage/mypage_container_ceo_business_room_insertform";
+    }
         
     @RequestMapping("mypage_container_manager_member.do")
     public String mypage_container_manager_member() {
@@ -98,6 +103,16 @@ public class MypageController {
     public String mypage_container_manager_req_content() {
         return "mypage/mypage_container_manager_req_content";
     }
+
+    @RequestMapping("mypage_container_manager_req_one.do")
+    public String mypage_container_manager_req_one() {
+        return "mypage/mypage_container_manager_req_one";
+    }
+
+    @RequestMapping("mypage_container_manager_req_send.do")
+    public String mypage_container_manager_req_send() {
+        return "redirect:mypage_container_manager_req_content.do";
+    }
         
     @RequestMapping("mypage_container_manager_notify.do")
     public String mypage_container_manager_notify() {
@@ -107,6 +122,11 @@ public class MypageController {
     @RequestMapping("mypage_container_manager_notify_one.do")
     public String mypage_container_manager_notify_one() {
         return "mypage/mypage_container_manager_notify_one";
+    }
+
+    @RequestMapping("mypage_container_manager_notify_send.do")
+    public String mypage_container_manager_notify_send() {
+        return "redirect:mypage_container_manager_notify.do";
     }
     
 

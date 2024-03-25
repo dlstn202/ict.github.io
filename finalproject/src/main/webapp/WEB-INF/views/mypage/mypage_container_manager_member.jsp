@@ -85,7 +85,7 @@
 .memberlist_modal_content{ background-color: #fff; position: relative; background-clip: none; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; outline: 0;}
 .form-wrap{ padding-right: 20px; padding-left: 20px; padding-top: 15px;}
 .ml_modify_btn_wrap{ display: flex; justify-content: center; align-items: center; margin-bottom: 20px;}
-.memberlist_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;}
+.memberlist_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; padding-bottom: 2px; margin:5px; margin-top: none;}
 
 </style>
 

@@ -23,33 +23,33 @@
     border: 1px solid rgba(var(--main-ton-down-rgb), 0.11);
     border-radius: 8px;
   }
-  .search_text{
-    margin-right: 10px;
-  }
+
 
   /* -------------------------------- */
-  .table.memberlist_table tbody:last-child {
+  .table.inquiry_table tbody:last-child {
     border-bottom: 1px solid #ddd;
     
   }
-  .member_list_th_wrap{
+  .inquiry_list_th_wrap{
     background-color: rgba(var(--main-ton-down-rgb), 0.1);
     height: 50px;
   }
-  .memberlist_td_wrap{
+  .inquiry_list_td_wrap{
     height: 50px;
   }
-  .memberlist_td,.memberlist_th{
+  .inquiry_list_td,.inquiry_list_th{
     text-align: center;
     vertical-align: middle !important;
   }
+  
 
-  .memberlist_td_idx, .memberlist_td_yn{
+  .inquiry_list_td_idx, .inquiry_list_td_yn{
       width: 75px;
       text-align: center;
+      align-content: center;
 
   }
-  .memberlist_td_btn{
+  .inquiry_list_td_btn{
       width: 110px;
   }
   .memberlist_btn{
@@ -66,13 +66,34 @@
     display: flex;
     flex-direction: row-reverse;
   }
-  
   .inquiry_insert{
     cursor: pointer;
-    color:white;
-    background-color: var(--main);
-    border:  1px solid rgba(var(--main-ton-down-rgb), 0.1);
-    border-radius: 5px;
+    align-content: center;
+    padding-bottom: 2px;
+    width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;
+  }
+  .inquiry_insert:hover{
+    background-color: rgba(var(--main-ton-up-rgb));
+  }
+  .inquiry_list_td_wrap{
+    /* transition: 0.3s; */
+    cursor: pointer;
+  }
+  .inquiry_list_title{
+    align-content: center;
+  }
+  .inquiry_content{
+    
+    padding: 10px;
+  }
+  
+  .inquiry_reply{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgba(var(--main-ton-down-rgb), 0.1);
+  }
+  .inquiry_reply_title,.inquiry_content_title{
+    margin-bottom: 10px;
   }
   
 </style>
@@ -85,12 +106,14 @@
                 $("#container_content").html(res_data);
                 changeLiColor();
                 $("#inquiry").css("color", "#00AF52");
+                $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)
             }
         });
     }
+
 </script>
 </head>
 <body>
@@ -111,59 +134,72 @@
           <button class="inputset-icon icon-right icon-search btn" type="button" aria-label="아이콘"></button>
           <input type="text" class="inputset-input form-control" placeholder="내용을 입력하세요" aria-label="내용">
         </div>
-            <!-- <input class="search_text" placeholder="검색어를 입력하세요">
-        <div ><i class="fa-solid fa-magnifying-glass" style="color: #003a1b;"></i></div> -->
+
       </div>
     </form> 
-    <div id="ceo_memberlist">
-      <table class="table memberlist_table">
-          <tr class="member_list_th_wrap">
-              <th class="memberlist_th">번호</th>
-              <th class="memberlist_th">제목</th>
-              <th class="memberlist_th">작성일자</th>
-              <th class="memberlist_th">답변상태</th>
+    <div id="inquiry_list">
+      <table class="table inquiry_table">
+          <tr class="inquiry_list_th_wrap">
+              <th class="inquiry_list_th">번호</th>
+              <th class="inquiry_list_th">제목</th>
+              <th class="inquiry_list_th">작성일자</th>
+              <th class="inquiry_list_th">답변상태</th>
           </tr>
 
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">1</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="inquiry_list_td_wrap" >
+              <td class="inquiry_list_td_idx">1</td>
+              <td class="inquiry_list_title" data-toggle="collapse" data-target="#demo,#demo_reply">금쪽일</td>
+              <td class="inquiry_list_td">2024.03.22</td>
+              <td class="inquiry_list_td">답변대기</td>
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">2</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr id="demo" class="collapse">
+            <td class="space"></td>
+            <td colspan="3">
+              <div class="inquiry_content">
+                <div class="inquiry_content_title">[문의내용]</div>
+                <div class="inquiry_content_content">내용 내용</div>
+              </div>
+              <div class="inquiry_reply">
+                <div class="inquiry_reply_title">[답변]</div>
+                <div class="inquiry_reply_content">답변</div>
+              </div>
+            </td>
+            
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">3</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="inquiry_list_td_wrap">
+              <td class="inquiry_list_td_idx">2</td>
+              <td class="inquiry_list_title">금쪽일</td>
+              <td class="inquiry_list_td">2024.03.22</td>
+              <td class="inquiry_list_td">답변대기</td>
+          </tr>
+          <tr class="inquiry_list_td_wrap">
+              <td class="inquiry_list_td_idx">3</td>
+              <td class="inquiry_list_title">금쪽일</td>
+              <td class="inquiry_list_td">2024.03.22</td>
+              <td class="inquiry_list_td">답변대기</td>
           </tr> 
-          <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">1</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+          <tr class="inquiry_list_td_wrap">
+            <td class="inquiry_list_td_idx">1</td>
+            <td class="inquiry_list_title">금쪽일</td>
+            <td class="inquiry_list_td">2024.03.22</td>
+            <td class="inquiry_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">2</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="inquiry_list_td_wrap">
+            <td class="inquiry_list_td_idx">2</td>
+            <td class="inquiry_list_title">금쪽일</td>
+            <td class="inquiry_list_td">2024.03.22</td>
+            <td class="inquiry_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">3</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="inquiry_list_td_wrap">
+            <td class="inquiry_list_td_idx">3</td>
+            <td class="inquiry_list_title">금쪽일</td>
+            <td class="inquiry_list_td">2024.03.22</td>
+            <td class="inquiry_list_td">답변대기</td>
         </tr>
       </table>
       <div class="inquiry_insert_wrap" >
-        <div class="inquiry_insert" onclick="inquiry_insertform();">
-           &nbsp;글쓰기&nbsp;  
+        <div class="inquiry_insert " onclick="inquiry_insertform();">
+           문의작성  
         </div>
       </div>
     <div>
