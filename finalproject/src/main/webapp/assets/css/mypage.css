@@ -103,7 +103,7 @@
 
 /* [S]my_reserve */
 .my_reserve_list{max-width: 1280px;display: flex; flex-direction: column; gap: 2rem;}
-.reserve_box{ width: 83rem; height: 23rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; flex-direction: column; padding: 1rem; gap: 1rem; border-radius: 9px;}
+.reserve_box{ width: 83rem; height: 23rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; flex-direction: column; padding: 1rem; gap: 1rem; border-radius: 9px; transition: .3s;}
 .reserve_info_idx {width: 100%;}
 .reserve_info_idx tbody tr {height: 4rem; border-bottom: 1px solid var(--main-ton-down);}
 .reserve_info_idx tbody tr th {width: 8%;}
@@ -120,8 +120,24 @@
 .reserve_date { width: 34%;}
 .reserve_room { width: 29%;}
 .reserve_detailed_pay { display: flex; justify-content: space-between;}
+.reserve_name, .reserve_tel, .reserve_pay, .reserve_amount, .hide_detail_reserve{ display: none;}
+.show_detail_reserve, .hide_detail_reserve { cursor: pointer;}
 @media (max-width: 992px) {
     .reserve_box {width: 100%; }
 }
 
 /* [E]my_reserve */
+
+
+/* [S]manager_notify */
+.notify_list_table{ width: 810px;}
+.table>tbody>tr>th,.table>tbody>tr>td{ vertical-align: middle;  padding: 10px; border-bottom: 1px solid #ddd; }
+.notify_list_th{ text-align: center; background-color: rgba(var(--main-ton-down-rgb),0.1); }
+.notify_content{ max-width: 15rem; overflow: hidden; text-overflow: ellipsis;}
+.notify_list_td{ text-align: center; }
+
+.notify_list_td_idx, .notify_list_td_yn{ width: 75px; text-align: center; }
+.notify_list_td_btn{ width: 110px;}
+.notify_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
+.notify_table_title{font-size: 2rem; color: var(--main); font-weight: 500; margin-bottom: 0.8rem;}
+/* [E]manager_notify */
