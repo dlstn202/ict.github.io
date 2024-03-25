@@ -15,8 +15,71 @@
             }
 
             .unique {
-                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+
             }
+
+
+            .radioset-wrap .radioset+.radioset {
+                margin-left: 0;
+            }
+
+
+            .form-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+
+
+            .radioset-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .radioset {
+                display: flex;
+                align-items: center;
+
+                width: auto;
+                /* 기본적으로 내용에 맞게 너비 설정 */
+                max-width: 200px;
+                /* 너비의 최대값 설정 */
+            }
+
+            .radioset-input {
+                margin-right: 5px;
+            }
+
+            .radioset-text {
+                flex-grow: 1;
+                text-align: left;
+                width: 100px;
+            }
+
+            /* Ensure that the labels align nicely with the inputs */
+            /* .radioset-label {
+  display: block;
+  position: relative;
+} */
+
+
+
+            /* You may want to style the checked state differently */
+            .radioset-input:checked+.radioset-label {
+                background-color: #e0e0e0;
+                /* Other styles as needed */
+            }
+
+            ul {
+                margin-bottom: -10px;
+            }
+
+
 
 
 
@@ -117,127 +180,73 @@
                                         </div>
                                         <!-- -------------------------------------------------------------------------------------------------------------------->
                                         <div class="form-wrap">
-                                            <h6 class="form-tit">입지구분 <span>(택1)</span></h6>
                                             <div class="unique">
+                                                <h6 class="form-tit">입지구분 <span>(택1)</span></h6>
+
                                                 <ul class="radioset-wrap">
                                                     <li class="radioset">
                                                         <input id="radioset-b-1" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value=""
                                                             checked="">
                                                         <label class="radioset-label" for="radioset-b-1"></label>
-                                                        <span class="radioset-text">해변</span>
+                                                        <span class="radioset-text">일출명소</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-2" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-2"></label>
-                                                        <span class="radios et-text">섬</span>
+                                                        <span class="radioset-text">수상레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-3" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-3"></label>
-                                                        <span class="radioset-text">섬</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-3" name="radioset-b"
-                                                            class="radioset-input input-line" type="radio" value="">
-                                                        <label class="radioset-label" for="radioset-b-3"></label>
-                                                        <span class="radioset-text">섬</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-3" name="radioset-b"
-                                                            class="radioset-input input-line" type="radio" value="">
-                                                        <label class="radioset-label" for="radioset-b-3"></label>
-                                                        <span class="radioset-text">섬</span>
+                                                        <span class="radioset-text">수상레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-4" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-4"></label>
-                                                        <span class="radioset-text">섬섬섬섬섬섬</span>
+                                                        <span class="radioset-text">항공레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-5" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-5"></label>
-                                                        <span class="radioset-text">섬섬섬섬섬섬</span>
+                                                        <span class="radioset-text">스키</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-6" name="radioset-b"
+                                                            class="radioset-input input-line" type="radio" value="">
+                                                        <label class="radioset-label" for="radioset-b-6"></label>
+                                                        <span class="radioset-text">낚시</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-7" name="radioset-b"
+                                                            class="radioset-input input-line" type="radio" value="">
+                                                        <label class="radioset-label" for="radioset-b-7"></label>
+                                                        <span class="radioset-text">액티비티</span>
                                                     </li>
 
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-8" name="radioset-b"
+                                                            class="radioset-input input-line" type="radio" value="">
+                                                        <label class="radioset-label" for="radioset-b-8"></label>
+                                                        <span class="radioset-text">걷기길</span>
+                                                    </li>
                                                 </ul>
                                             </div>
-
-
                                         </div>
-
-                                        <!-- <div class="form-wrap">
-                                            <h6 class="form-tit">입지구분 <span>(택1)</span></h6>
-                                            <div class="radioset-wrap">
-                                                <div class="radioset">
-                                                    <input id="radioset-b-1" name="radioset-b" class="radioset-input input-line" type="radio" value="" checked="">
-                                                    <label class="radioset-label" for="radioset-b-1"></label>
-                                                    <span class="radioset-text">해변</span>
-                                                </div>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-2" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-2"></label>
-                                                <span class="radioset-text">섬</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-3" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-3"></label>
-                                                <span class="radioset-text">산</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-4" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-4"></label>
-                                                <span class="radioset-text">숲</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-5" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-5"></label>
-                                                <span class="radioset-text">계곡</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-6" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-6"></label>
-                                                <span class="radioset-text">강</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-7" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-7"></label>
-                                                <span class="radioset-text">호수</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-8" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-8"></label>
-                                                <span class="radioset-text">도심</span>
-                                            </div>
-                                            <div class="radioset">
-                                                <input id="radioset-b-9" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-9"></label>
-                                                <span class="radioset-text">도심</span>
-                                            </div>
-                                            <div class="radioset-wrap">
-                                            <div class="radioset">
-                                                <input id="radioset-b-9" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                                                <label class="radioset-label" for="radioset-b-9"></label>
-                                                <span class="radioset-text">도심</span>
-                                            </div>
-                                        </div> -->
-                                        <!-- -------------------------------------------------------------------------------------------------------------------->
                                     </div>
-                                </div>
-                                <div class="contents-btn-group">
-                                    <input type="button" class="btnset btnset-round" value="수정">
+                                    <div class="contents-btn-group">
+                                        <input type="button" class="btnset btnset-round" value="수정">
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </form>
                 </div>
-                </form>
-            </div>
-            <!-- [E]mypage_container_info  -->
+                <!-- [E]mypage_container_info  -->
             </div>
         </main>
     </body>
