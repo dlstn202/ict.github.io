@@ -39,39 +39,39 @@
     <main class="th-layout-main">
         <div id="manager_notify_one">
             <div class="my_info_title">신고 상세 내역</div>
-            <div class="notify_one_detail">
-                <table class="table notify_list_table">
+            <div class="table_one_detail">
+                <table class="table table_list">
                     <tr>
-                      <th class="notify_list_th">신고 번호</th>
-                      <td class="notify_list_td_idx">1</td>
+                      <th class="table_list_th">신고 번호</th>
+                      <td class="table_list_td_idx">1</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">리뷰(캠핑장)번호</th>
-                      <td class="notify_list_td_idx">2</td>
+                      <th class="table_list_th">리뷰(캠핑장)번호</th>
+                      <td class="table_list_td_idx">2</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">리뷰내용</th>
-                      <td class="notify_list_td">adf</td>
+                      <th class="table_list_th">리뷰내용</th>
+                      <td class="table_list_td">adf</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">신고유형</th>
-                      <td class="notify_list_td">adf</td>
+                      <th class="table_list_th">신고유형</th>
+                      <td class="table_list_td">adf</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">신고내용</th>
-                      <td class="notify_list_td">이러한 내용때문에 신고했습니다.</td>
+                      <th class="table_list_th">신고내용</th>
+                      <td class="table_list_td">이러한 내용때문에 신고했습니다.</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">신고일자</th>
-                      <td class="notify_list_td">2024-03-25</td>
+                      <th class="table_list_th">신고일자</th>
+                      <td class="table_list_td">2024-03-25</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">신고자</th>
-                      <td class="notify_list_td">금쪽이</td>
+                      <th class="table_list_th">신고자</th>
+                      <td class="table_list_td">금쪽이</td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">처리내역</th>
-                      <td class="notify_list_td">
+                      <th class="table_list_th">처리내역</th>
+                      <td class="table_list_td">
                         <select id="notify_result" name="notify_result">
                           <option value="wait" selected>처리대기</option>
                           <option value="companion">신고반려</option>
@@ -81,8 +81,8 @@
                       </td>
                     </tr>
                     <tr>
-                      <th class="notify_list_th">처리사유</th>
-                      <td class="notify_list_td">
+                      <th class="table_list_th">처리사유</th>
+                      <td class="table_list_td">
                         <textarea name="" id="" cols="30" rows="10" placeholder="처리사유를 입력하세요."></textarea>
                       </td>
                     </tr>

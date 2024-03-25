@@ -6,7 +6,19 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-    
+    function req_one(req_idx) {
+        $.ajax({
+            type: "GET",
+            url: "mypage_container_manager_req_one.do",
+            data: "data",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
 </script>
 </head>
 <body>
