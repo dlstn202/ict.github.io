@@ -28,30 +28,30 @@
   }
 
   /* -------------------------------- */
-  .table.memberlist_table tbody:last-child {
+  .table.faq_list_table tbody:last-child {
     border-bottom: 1px solid #ddd;
     
   }
-  .member_list_th_wrap{
+  .faq_list_th_wrap{
     background-color: rgba(var(--main-ton-down-rgb), 0.1);
     height: 50px;
   }
-  .memberlist_td_wrap{
+  .faq_list_td_wrap{
     height: 50px;
   }
-  .memberlist_td,.memberlist_th{
+  .faq_list_td,.faq_list_th{
     text-align: center;
     vertical-align: middle !important;
   }
   
 
-  .memberlist_td_idx, .memberlist_td_yn{
+  .faq_list_td_idx, .faq_list_td_yn{
       width: 75px;
       text-align: center;
       align-content: center;
 
   }
-  .memberlist_td_btn{
+  .faq_list_td_btn{
       width: 110px;
   }
   .memberlist_btn{
@@ -64,24 +64,24 @@
       border:none;
 
   }
-  .inquiry_insert_wrap{
+  .faq_insert_wrap{
     display: flex;
     flex-direction: row-reverse;
   }
-  .inquiry_insert{
+  .faq_insert{
     cursor: pointer;
     align-content: center;
     padding-bottom: 2px;
     width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;
   }
-  .inquiry_insert:hover{
+  .faq_insert:hover{
     background-color: rgba(var(--main-ton-up-rgb));
   }
-  .memberlist_td_wrap{
+  .faq_list_td_wrap{
     /* transition: 0.3s; */
     cursor: pointer;
   }
-  .memberlist_title{
+  .faq_list_title{
     align-content: center;
   }
   .inquiry_content{
@@ -132,12 +132,12 @@
 </head>
 <body>
   <main class="th-layout-main">
-    <div id="my_inquiry">
+    <div id="manager_faq">
         <div class="my_info_title">FAQ</div>
     </div>
     <form action="">
       <div class="search_wrap">
-        <select  class="search_inquiry">
+        <select  class="search_faq">
           <option value="all">전체보기</option>
           <option value="name">이름</option>
           <option value="subject">제목</option>
@@ -152,20 +152,20 @@
         <div ><i class="fa-solid fa-magnifying-glass" style="color: #003a1b;"></i></div> -->
       </div>
     </form> 
-    <div id="ceo_memberlist">
-      <table class="table memberlist_table">
-          <tr class="member_list_th_wrap">
-              <th class="memberlist_th">번호</th>
-              <th class="memberlist_th">제목</th>
-              <th class="memberlist_th">작성일자</th>
-              <th class="memberlist_th">답변상태</th>
+    <div id="faq_list">
+      <table class="table faq_list_table">
+          <tr class="faq_list_th_wrap">
+              <th class="faq_list_th">번호</th>
+              <th class="faq_list_th">제목</th>
+              <th class="faq_list_th">작성일자</th>
+              <th class="faq_list_th">답변상태</th>
           </tr>
 
-          <tr class="memberlist_td_wrap" >
-              <td class="memberlist_td_idx">1</td>
-              <td class="memberlist_title" data-toggle="collapse" data-target="#demo,#demo_reply">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="faq_list_td_wrap" >
+              <td class="faq_list_td_idx">1</td>
+              <td class="faq_list_title" data-toggle="collapse" data-target="#demo,#demo_reply">금쪽일</td>
+              <td class="faq_list_td">2024.03.22</td>
+              <td class="faq_list_td">답변대기</td>
           </tr>
           <tr id="demo" class="collapse">
             <td class="space"></td>
@@ -178,39 +178,39 @@
             </td>
             
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">2</td>
-              <td class="memberlist_title">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="faq_list_td_wrap">
+              <td class="faq_list_td_idx">2</td>
+              <td class="faq_list_title">금쪽일</td>
+              <td class="faq_list_td">2024.03.22</td>
+              <td class="faq_list_td">답변대기</td>
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">3</td>
-              <td class="memberlist_title">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="faq_list_td_wrap">
+              <td class="faq_list_td_idx">3</td>
+              <td class="faq_list_title">금쪽일</td>
+              <td class="faq_list_td">2024.03.22</td>
+              <td class="faq_list_td">답변대기</td>
           </tr> 
-          <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">1</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+          <tr class="faq_list_td_wrap">
+            <td class="faq_list_td_idx">1</td>
+            <td class="faq_list_title">금쪽일</td>
+            <td class="faq_list_td">2024.03.22</td>
+            <td class="faq_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">2</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="faq_list_td_wrap">
+            <td class="faq_list_td_idx">2</td>
+            <td class="faq_list_title">금쪽일</td>
+            <td class="faq_list_td">2024.03.22</td>
+            <td class="faq_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">3</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="faq_list_td_wrap">
+            <td class="faq_list_td_idx">3</td>
+            <td class="faq_list_title">금쪽일</td>
+            <td class="faq_list_td">2024.03.22</td>
+            <td class="faq_list_td">답변대기</td>
         </tr>
       </table>
-      <div class="inquiry_insert_wrap" >
-        <div class="inquiry_insert " onclick="inquiry_insertform();">
+      <div class="faq_insert_wrap" >
+        <div class="faq_insert " onclick="inquiry_insertform();">
            FAQ작성  
         </div>
       </div>
