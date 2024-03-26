@@ -6,53 +6,155 @@
         <meta charset="UTF-8">
         <title>Insert title here</title>
         <style>
-        
+            .contents-inner2 {padding: 2.4rem;}
+            .room .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down), 1);background: white;}
+            .unique_room {display: flex; align-items: center;margin-bottom: 40px;}
+            .radioset-wrap .radioset+.radioset {margin-left: 0;}
+            .roomform {flex: 1;padding: 0 20px;display: flex;width: 100%;align-items: center;}
+            .radioset-wrap {display: flex; gap: 10px; justify-content: flex-start;}
+            .room {display: flex;align-items: center;width: auto; max-width: 200px;}
+            .room-input { margin-right: 5px; }
+            .radioset-text {flex-grow: 1;text-align: left;width: 100px;}
+            .radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
+            ul { margin-bottom: -10px;}
+
+
+
+            .people{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+
+            
+
+            .checktime{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+
+            .fee{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+            }
+            
         </style>
 
     </head>
 
     <body>
         <main class="th-layout-main">
-
-            <div class="th-layout-main">
-                <!-- [S]my_room  -->
-                <div id="my_room">
-                    <div class="my_info_title">객실정보수정</div>
-                    <div class="my_room_list">
-                        <div class="room_box">
-
-                            <div class="room_box_content">
-                                <div class="room_box_img">
-                                    <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png"
-                                        alt="">
-                                </div>
-                                <div class="room_info">
-                                    <div class="room_title">객실명</div>
-                                    <div class="room_look">상세보기 ></div>
-                                    <div class="room_detailed">
-                                        <div class="room_time">
-                                            <div class="room_date_to">입실시간</div>
-                                            <div class="room_date_str">퇴실시간</div>
-                                            <div class="room_reserve">
-                                                <div class="room_price">50,000원</div>
-                                                <div class="room_remain">남은객실</div>
+            <div id="my_room">
+                <div class="my_info_title">객실정보수정</div>   
+                <!-- [S]mypage_container_ceo_business_room_insertform  -->
+                <div id="info_content">
+                    <form>
+                        <div class="glamping-N47" data-bid="KAltwpIVGl">
+                            <div class="contents-inner2">
+                                <div class="contents-container container-md">
+                                    <div class="contents-top">
+                                        <span>* 표시는 반드시 입력하셔야 하는 항목입니다</span>
+                                    </div>
+                                    <div class="contents-group">
+                                        <div class="roomform form-wrap">
+                                            <h6 class="form-tit">객실명<span>*</span>
+                                            </h6>
+                                            <div class="contents-form-group">
+                                                <div class="inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                                                </div>
                                             </div>
-                                        </div>    
-                                        <div class="room_addinfo">
-                                            <div class="room_date_to">객실정보 &nbsp;&nbsp;&nbsp;기준2인 · 최대2인</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                         </div>
+                                        <div class="people">
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">최소인원 <span>*</span>
+                                                </h6>
+                                                <div class="peopleset1 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">최대인원 <span>*</span>
+                                                </h6>
+                                                <div class="peopleset2 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="checktime">
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">입실시간 <span>*</span>
+                                                </h6>
+                                                <div class="checktimeset1 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                                                </div>
+                                            </div>
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">퇴실시간 <span>*</span>
+                                                </h6>
+                                                <div class="checktimeset2 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fee">
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">이용요금(주중) <span>*</span>
+                                                </h6>
+                                                <div class="feeset1 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                            <div class="roomform form-wrap">
+                                                <h6 class="form-tit">이용요금(주말) <span>*</span>
+                                                </h6>
+                                                <div class="feeset2 inputset inputset-round">
+                                                    <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                        required="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- -------------------------------------------------------------------------------------------------------------------->
+                                        <div class="roomform form-wrap">
+                                            <div class="unique_room">
+                                                <h6 class="form-tit">숙박시즌</h6>
+
+                                                <ul class="room radioset-wrap">
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-1" name="radioset-b"
+                                                            class="radioset-input input-line" type="radio" value=""
+                                                            checked="">
+                                                        <label class="radioset-label" for="radioset-b-1"></label>
+                                                        <span class="radioset-text">성수기</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-2" name="radioset-b"
+                                                            class="radioset-input input-line" type="radio" value="">
+                                                        <label class="radioset-label" for="radioset-b-2"></label>
+                                                        <span class="radioset-text">비성수기</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contents-btn-group">
+                                        <input type="button" class="btnset btnset-round" value="수정">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
+                <!-- [E]mypage_container_ceo_business_room_insertform  -->
             </div>
-            <!-- [E]my_room  -->
         </main>
     </body>
 

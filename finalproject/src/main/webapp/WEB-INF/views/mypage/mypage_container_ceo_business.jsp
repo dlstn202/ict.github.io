@@ -6,84 +6,18 @@
         <meta charset="UTF-8">
         <title>Insert title here</title>
         <style>
-            .contents-inner2 {
-                padding: 2.4rem;
-            }
+            .contents-inner2 {padding: 2.4rem;}
+            .form-wrap .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down-rgb), 1);background: white;}
+            .unique {display: flex; align-items: center;margin-bottom: 40px;}
+            .radioset-wrap .radioset+.radioset {margin-left: 0;}
+            .form-wrap {display: flex;flex-direction: column;align-items: stretch;}
+            .radioset-wrap {display: flex;flex-wrap: wrap; gap: 10px;}
+            .radioset {display: flex;align-items: center;width: auto; max-width: 200px;}
+            .radioset-input { margin-right: 5px; }
+            .radioset-text {flex-grow: 1;text-align: left;width: 100px;}
+            .radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
+            ul { margin-bottom: -10px;}
 
-            .form-wrap .radioset-input:checked+.radioset-label::before {
-                color: rgba(var(--main-ton-down-rgb), 1);
-            }
-
-            .unique {
-                display: flex;
-                align-items: center;
-                margin-bottom: 40px;
-
-            }
-
-
-            .radioset-wrap .radioset+.radioset {
-                margin-left: 0;
-            }
-
-
-            .form-wrap {
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-
-
-            .radioset-wrap {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-
-            .radioset {
-                display: flex;
-                align-items: center;
-
-                width: auto;
-                /* 기본적으로 내용에 맞게 너비 설정 */
-                max-width: 200px;
-                /* 너비의 최대값 설정 */
-            }
-
-            .radioset-input {
-                margin-right: 5px;
-            }
-
-            .radioset-text {
-                flex-grow: 1;
-                text-align: left;
-                width: 100px;
-            }
-
-            /* Ensure that the labels align nicely with the inputs */
-            /* .radioset-label {
-  display: block;
-  position: relative;
-} */
-
-
-
-            /* You may want to style the checked state differently */
-            .radioset-input:checked+.radioset-label {
-                background-color: #e0e0e0;
-                /* Other styles as needed */
-            }
-
-            ul {
-                margin-bottom: -10px;
-            }
-
-
-
-
-
-            /* -- */
         </style>
     </head>
 
