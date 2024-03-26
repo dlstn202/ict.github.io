@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class JoinController {
     
     // 약관 동의
-    @RequestMapping("joinagree_main.do")
+    @RequestMapping("join_agree_main.do")
     public String joinagree_main(){
 
         return "loginjoin/joinagree_main";
@@ -21,7 +21,7 @@ public class JoinController {
 
 
     // 정보 입력 - 일반회원
-    @RequestMapping("joininput_main.do")
+    @RequestMapping("join_input_main.do")
     public String joininput_main(){
 
         return "loginjoin/joininput_main";
@@ -35,7 +35,7 @@ public class JoinController {
 
 
     // 정보입력 - 사장 회원
-    @RequestMapping("joininput_forceo_main.do")
+    @RequestMapping("join_input_forceo_main.do")
     public String joininput_forceo_main(){
 
         return "loginjoin/joininput_forceo_main";
@@ -49,7 +49,7 @@ public class JoinController {
 
 
     //  회원가입 완료
-    @RequestMapping("joinfinish_main.do")
+    @RequestMapping("join_finish_main.do")
     public String joinfinish_main(){
 
         return "loginjoin/joinfinish_main";
