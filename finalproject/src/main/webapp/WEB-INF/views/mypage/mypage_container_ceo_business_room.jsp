@@ -34,6 +34,7 @@
             .show_detail_room,.hide_detail_room { cursor: pointer;}
             @media (max-width: 992px) {.room_box {width: 100%;}}
             /* [E]my_room */
+
         </style>
                 <script>
                     // 객실정보수정
