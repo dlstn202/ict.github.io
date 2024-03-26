@@ -23,6 +23,12 @@ public class DetailController {
 			return "detail/detail_container_info";
 		}
 
+		@RequestMapping("detail_container_notice.do")
+		public String container_notice(){
+	
+			return "detail/detail_container_notice";
+		}
+
 		@RequestMapping("detail_container_insert_review.do")
 		public String container_insert_review(){
 	
