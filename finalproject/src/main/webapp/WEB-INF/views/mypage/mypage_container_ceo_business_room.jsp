@@ -62,7 +62,6 @@
                                             <div class="room_date_str">퇴실시간</div>
                                             <div class="room_reserve">
                                                 <div class="room_price">50,000원</div>
-                                                <div class="room_remain">남은객실</div>
                                             </div>
                                         </div>    
                                         <div class="room_addinfo">

@@ -5,6 +5,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        <style>
+            .contents-inner2 {padding: 2.4rem;}
+.business .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down-rgb), 1);background: white;}
+.unique {display: flex; align-items: center;margin-bottom: 40px;}
+.unique > ul .radioset+.radioset {margin-left: 0;}
+.business {display: flex;flex-direction: column;align-items: stretch;}
+.radioset {display: flex;align-items: center;width: auto; max-width: 200px;}
+.radioset-input { margin-right: 5px; }
+.uniquetext {flex-grow: 1;text-align: left;width: 100px;}
+.radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
+.unique > ul { display: flex;flex-wrap: wrap; gap: 10px; margin-bottom: -10px;} 
+        </style>
 
     </head>
 

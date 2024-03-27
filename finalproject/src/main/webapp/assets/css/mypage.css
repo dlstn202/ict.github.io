@@ -180,9 +180,8 @@
 .room_time , .room_addinfo{padding: 15px;}
 .room_look {display: flex; justify-content: flex-end; font-size: 1.4rem; font-weight: 500;}
 .room_title { font-size: 2rem; font-weight: 600; padding-top: 1rem;}
-.room_time {display: flex;width: 100%; height: 120px; margin-bottom: 7px; margin-top: 7px; flex-direction: column;}
+.room_time {display: flex;width: 100%; height: 105px; margin-bottom: 7px; margin-top: 7px; flex-direction: column;}
 .room_price{ font-size: 20px; font-weight: 450;}
-.room_remain{ font-size: 12px; color: red;}
 .room_addinfo { display: flex; width: 100%; min-height: 80px; flex-direction: column;}
 .room_room {width: 29%;}
 .room_detailed_pay {display: flex;justify-content: space-between;}
@@ -194,7 +193,7 @@
 /* [E]mypage_container_ceo_business_room */
 
 /* [S]mypage_container_ceo_business  */
-.contents-inner2 {padding: 2.4rem;}
+/* .contents-inner2 {padding: 2.4rem;}
 .business .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down-rgb), 1);background: white;}
 .unique {display: flex; align-items: center;margin-bottom: 40px;}
 .unique > ul .radioset+.radioset {margin-left: 0;}
@@ -203,7 +202,7 @@
 .radioset-input { margin-right: 5px; }
 .uniquetext {flex-grow: 1;text-align: left;width: 100px;}
 .radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
-.unique > ul { display: flex;flex-wrap: wrap; gap: 10px; margin-bottom: -10px;}
+.unique > ul { display: flex;flex-wrap: wrap; gap: 10px; margin-bottom: -10px;} */
 /* [S]mypage_container_ceo_business  */
 
 /* [S]mypage_container_ceo_business_room_insertform */

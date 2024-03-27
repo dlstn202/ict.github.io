@@ -10,7 +10,7 @@
     <body>
         <main class="th-layout-main">
             <div id="my_room">
-                <div class="my_info_title">객실정보수정</div>   
+                <div class="my_info_title">객실등록</div>   
                 <!-- [S]mypage_container_ceo_business_room_insertform  -->
                 <div id="info_content">
                     <form>
