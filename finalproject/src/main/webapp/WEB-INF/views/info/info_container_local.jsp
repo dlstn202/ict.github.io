@@ -33,9 +33,7 @@
             guListHtml += '<div class="gu_select_box">고성군</div>';
         }
         
-        // 기타 시/도 선택에 따른 조건 추가 가능...
-        
-        // .gu_select_list의 내용을 새로운 목록으로 업데이트
+          // .gu_select_list의 내용을 새로운 목록으로 업데이트
         $('.gu_select_list').html(guListHtml);
 
         $('.gu_select_box:first').addClass('active');

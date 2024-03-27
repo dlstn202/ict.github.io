@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/footer.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/info.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/nav.css">
-<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=897d9c3b7e07054fabb6126c0c458f98"></script>
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=897d9c3b7e07054fabb6126c0c458f98&libraries=services"></script>
 <script>
     
 
