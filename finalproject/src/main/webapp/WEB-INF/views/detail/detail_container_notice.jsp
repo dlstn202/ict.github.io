@@ -19,13 +19,16 @@
 					<div class="reserve_box">
 						<div class="reserve_box_content">
 							<div class="reserve_info">
+								<div class="reserve_info_top">
 								<div class="reserve_title">*공지사항*</div>
-								<div class="reserve_detailed">
-									<div class="reserve_date">
-										<div class="reserve_regidate">공지사항내용 호호호</div>
-									</div>
-								</div>
-									<div class="show_detail_reserve">2024-03-26</div>
+								<div class="show_detail_reserve">2024-03-26</div>
+							</div>
+
+							<div class="reserve_detailed">
+								<div class="reserve_regidate">공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호공지사항내용 호호호</div>
+							</div>
+							
+									
 							</div>
 						</div>
 					</div>
