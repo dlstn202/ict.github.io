@@ -5,43 +5,6 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
-        <style>
-            .contents-inner2 {padding: 2.4rem;}
-            .room .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down), 1);background: white;}
-            .unique_room {display: flex; align-items: center;margin-bottom: 40px;}
-            .radioset-wrap .radioset+.radioset {margin-left: 0;}
-            .roomform {flex: 1;padding: 0 20px;display: flex;width: 100%;align-items: center;}
-            .radioset-wrap {display: flex; gap: 10px; justify-content: flex-start;}
-            .room {display: flex;align-items: center;width: auto; max-width: 200px;}
-            .room-input { margin-right: 5px; }
-            .radioset-text {flex-grow: 1;text-align: left;width: 100px;}
-            .radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
-            ul { margin-bottom: -10px;}
-
-
-
-            .people{
-                display: flex;
-                align-items: end;
-                justify-content: center;
-            }
-
-            
-
-            .checktime{
-                display: flex;
-                align-items: end;
-                justify-content: center;
-            }
-
-            .fee{
-                display: flex;
-                align-items: end;
-                justify-content: center;
-            }
-            
-        </style>
-
     </head>
 
     <body>
@@ -133,13 +96,13 @@
                                                             class="radioset-input input-line" type="radio" value=""
                                                             checked="">
                                                         <label class="radioset-label" for="radioset-b-1"></label>
-                                                        <span class="radioset-text">성수기</span>
+                                                        <span class="seoson radioset-text">성수기</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-2" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-2"></label>
-                                                        <span class="radioset-text">비성수기</span>
+                                                        <span class="seoson radioset-text">비성수기</span>
                                                     </li>
                                                 </ul>
                                             </div>
