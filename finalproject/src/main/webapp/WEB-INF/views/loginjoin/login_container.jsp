@@ -21,7 +21,6 @@ function gradeSelect() {
 
     $("#joinModal").modal('show');
 		$("#joinModal").modal({backdrop : "static"});
-
   
 }
 
@@ -51,29 +50,31 @@ function gradeSelect() {
             </div>
             <div class="login_wrap">
               <div id="noraml_login">
-                <div class="contents-form">
-                  <div class="inputset inputset-round">
-                    <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="아이디를 입력해주세요" required="">
-                  </div>
-                  <div class="inputset inputset-round">
-                    <input type="password" class="inputset-input form-control" aria-label="내용" placeholder="비밀번호를 입력해주세요" required="">
-                  </div>
-                  <div class="contents-util">
-                    <div class="checkset">
-                      <input id="checkset-a-1-1" class="checkset-input input-round" type="checkbox" value="" checked="">
-                      <label class="checkset-label" for="checkset-a-1-1"></label>
-                      <span class="checkset-text">아이디저장</span>
+                <form>
+                  <div class="contents-form">
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="아이디를 입력해주세요" required="">
                     </div>
-                    <div class="contents-find">
-                      <a href="javascript:void(0);">아이디 찾기</a>
-                      <a href="javascript:void(0);">비밀번호 찾기</a>
+                    <div class="inputset inputset-round">
+                      <input type="password" class="inputset-input form-control" aria-label="내용" placeholder="비밀번호를 입력해주세요" required="">
+                    </div>
+                    <div class="contents-util">
+                      <div class="checkset">
+                        <input id="checkset-a-1-1" class="checkset-input input-round" type="checkbox" value="" checked="">
+                        <label class="checkset-label" for="checkset-a-1-1"></label>
+                        <span class="checkset-text">아이디저장</span>
+                      </div>
+                      <div class="contents-find">
+                        <a href="javascript:void(0);">아이디 찾기</a>
+                        <a href="javascript:void(0);">비밀번호 찾기</a>
+                      </div>
+                    </div>
+                    <div class="contents-btnset">
+                      <input class="btnset btnset-round" type="button" onclick="" value="로그인">
+                      <input class="btnset btnset-round btnset-line" type="button" onclick="gradeSelect();" value="회원가입">
                     </div>
                   </div>
-                  <div class="contents-btnset">
-                    <a href="javascript:void(0);" class="btnset btnset-round">로그인</a>
-                    <a href="javascript:void(0);" onclick="gradeSelect();" class="btnset btnset-round btnset-line">회원가입</a>
-                  </div>
-                </div>
+                </form>
                 <!-- end:contents-form -->
 
                 <div class="contents-start">
@@ -110,29 +111,31 @@ function gradeSelect() {
                 <!-- end:contents-start -->
               </div>
               <div id="ceo_login">
-                <div class="contents-form">
-                  <div class="inputset inputset-round">
-                    <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="아이디를 입력해주세요" required="">
-                  </div>
-                  <div class="inputset inputset-round">
-                    <input type="password" class="inputset-input form-control" aria-label="내용" placeholder="비밀번호를 입력해주세요" required="">
-                  </div>
-                  <div class="contents-util">
-                    <div class="checkset">
-                      <input id="checkset-a-1-1" class="checkset-input input-round" type="checkbox" value="" checked="">
-                      <label class="checkset-label" for="checkset-a-1-1"></label>
-                      <span class="checkset-text">아이디저장</span>
+                <form>
+                  <div class="contents-form">
+                    <div class="inputset inputset-round">
+                      <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="아이디를 입력해주세요" required="">
                     </div>
-                    <div class="contents-find">
-                      <a href="javascript:void(0);">아이디 찾기</a>
-                      <a href="javascript:void(0);">비밀번호 찾기</a>
+                    <div class="inputset inputset-round">
+                      <input type="password" class="inputset-input form-control" aria-label="내용" placeholder="비밀번호를 입력해주세요" required="">
+                    </div>
+                    <div class="contents-util">
+                      <div class="checkset">
+                        <input id="checkset-a-1-1" class="checkset-input input-round" type="checkbox" value="" checked="">
+                        <label class="checkset-label" for="checkset-a-1-1"></label>
+                        <span class="checkset-text">아이디저장</span>
+                      </div>
+                      <div class="contents-find">
+                        <a href="javascript:void(0);">아이디 찾기</a>
+                        <a href="javascript:void(0);">비밀번호 찾기</a>
+                      </div>
+                    </div>
+                    <div class="contents-btnset">
+                      <input class="btnset btnset-round" type="button" onclick="" value="로그인">
+                      <input class="btnset btnset-round btnset-line" type="button" onclick="gradeSelect();" value="회원가입">
                     </div>
                   </div>
-                  <div class="contents-btnset">
-                    <a href="javascript:void(0);" class="btnset btnset-round">로그인</a>
-                    <a href="javascript:void(0);" onclick="gradeSelect();" class="btnset btnset-round btnset-line">회원가입</a>
-                  </div>
-                </div>
+                </form>
                 <!-- end:contents-form -->
               </div>
             </div>

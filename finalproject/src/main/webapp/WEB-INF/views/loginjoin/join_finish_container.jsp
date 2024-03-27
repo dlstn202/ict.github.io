@@ -43,7 +43,7 @@
             <p class="textset-desc"> 로그인 후 안전하고 편리하게 <br> 캠프로버 서비스를 이용하실 수 있습니다. </p>
           </div>
           <div class="contents-btnset">
-            <a href="javascript:void(0);" class="btnset btnset-round">로그인</a>
+            <input class="btnset btnset-round" type="button" onclick="" value="로그인">
           </div>
         </div>
       </div>

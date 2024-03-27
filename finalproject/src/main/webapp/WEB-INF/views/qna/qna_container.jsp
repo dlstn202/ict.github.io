@@ -26,6 +26,7 @@
 
     <!-- [E]glamping-N11 -->
     <!-- [S]glamping-N42 -->
+<form>    
     <div class="glamping-N42" data-bid="KHltWpT6mP">
         <div class="contents-inner">
             <div class="contents-container container-md">
@@ -59,6 +60,7 @@
 
     <!-- [E]glamping-N42 -->
     <!-- [S]glamping-N43 -->
+
     <div class="glamping-N43" data-bid="BNlTWpT6SZ">
         <div class="contents-inner">
             <div class="contents-container container-md">
@@ -72,103 +74,103 @@
                                 <label class="radioset-label" for="radioset-b-1"></label>
                                 <span class="radioset-text">예약문의</span>
                             </div>
-                        <div class="radioset">
-                            <input id="radioset-b-2" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                            <label class="radioset-label" for="radioset-b-2"></label>
-                            <span class="radioset-text">환불문의</span>
+                            <div class="radioset">
+                                <input id="radioset-b-2" name="radioset-b" class="radioset-input input-line" type="radio" value="">
+                                <label class="radioset-label" for="radioset-b-2"></label>
+                                <span class="radioset-text">환불문의</span>
+                            </div>
+                            <div class="radioset">
+                                <input id="radioset-b-3" name="radioset-b" class="radioset-input input-line" type="radio" value="">
+                                <label class="radioset-label" for="radioset-b-3"></label>
+                                <span class="radioset-text">고객불만</span>
+                            </div>
+                            <div class="radioset">
+                                <input id="radioset-b-4" name="radioset-b" class="radioset-input input-line" type="radio" value="">
+                                <label class="radioset-label" for="radioset-b-4"></label>
+                                <span class="radioset-text">기타</span>
+                            </div>
                         </div>
-                    <div class="radioset">
-                        <input id="radioset-b-3" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                        <label class="radioset-label" for="radioset-b-3"></label>
-                        <span class="radioset-text">고객불만</span>
                     </div>
-                    <div class="radioset">
-                        <input id="radioset-b-4" name="radioset-b" class="radioset-input input-line" type="radio" value="">
-                        <label class="radioset-label" for="radioset-b-4"></label>
-                        <span class="radioset-text">기타</span>
+                    <div class="form-wrap">
+                        <h6 class="form-tit">성명 <span>*</span></h6>
+                        <div class="inputset inputset-round">
+                        <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="form-wrap">
-                <h6 class="form-tit">성명 <span>*</span></h6>
-                <div class="inputset inputset-round">
-                  <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                </div>
-            </div>
-            <div class="form-wrap">
-                <h6 class="form-tit">연락처 <span>*</span></h6>
-                <div class="inputset inputset-round">
-                    <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="-없이 번호를 입력해주세요" required="">
-                </div>
-            </div>
-            <div class="form-wrap">
-                <h6 class="form-tit">이메일 <span>*</span>
-                </h6>
-                <div class="contents-form-group">
-                  <div class="inputset inputset-round">
-                    <div class="contents-mail">
-                      <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                      <span class="joininput_email">@</span>
-                      <input type="text" class="email_domain inputset-input form-control" aria-label="내용" required="">
+                    <div class="form-wrap">
+                        <h6 class="form-tit">연락처 <span>*</span></h6>
+                        <div class="inputset inputset-round">
+                            <input type="text" class="inputset-input form-control" aria-label="내용" placeholder="-없이 번호를 입력해주세요" required="">
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="selectset selectset-round selectset-md">
-                    <button class="selectset-toggle btn" type="button">
-                        <span>선택해주세요</span>
-                    </button>
-                    <ul class="selectset-list">
-                        <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" data-value="직접입력" selected="">
-                                <span>직접입력</span>
+                    <div class="form-wrap">
+                        <h6 class="form-tit">이메일 <span>*</span>
+                        </h6>
+                        <div class="contents-form-group">
+                        <div class="inputset inputset-round">
+                            <div class="contents-mail">
+                            <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                            <span class="joininput_email">@</span>
+                            <input type="text" class="email_domain inputset-input form-control" aria-label="내용" required="">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="selectset selectset-round selectset-md">
+                            <button class="selectset-toggle btn" type="button">
+                                <span>선택해주세요</span>
                             </button>
-                        </li>
-                        <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" value="naver.com">
-                                <span>daum.net</span>
-                            </button>
-                        </li>
-                        <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" value="hanmail.net">
-                              <span>hanmail.net</span>
-                            </button>
-                        </li>
-                        <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" value="kakao.com">
-                              <span>kakao.com</span>
-                            </button>
-                        </li>
-                        <li class="selectset-item">
-                            <button class="selectset-link btn" type="button" value="gmail.com">
-                              <span>gmail.com</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="form-wrap">
-                <h6 class="form-tit">제목 <span>*</span></h6>
-                <div class="inputset inputset-round">
-                    <input type="text" class="inputset-input form-control" aria-label="내용" required="">
-                </div>
-            </div>
-            <div class="form-wrap">
-                <h6 class="form-tit">문의내용 <span>*</span></h6>
-                <div class="inputset inputset-round">
-                    <textarea class="inputset-textarea form-control" required=""></textarea>
-                    <div class="inputset-langth">
-                        <span class="inputset-count">0</span>
-                        <span class="inputset-total">/2000 Byte</span>
+                            <ul class="selectset-list">
+                                <li class="selectset-item">
+                                    <button class="selectset-link btn" type="button" data-value="직접입력" selected="">
+                                        <span>직접입력</span>
+                                    </button>
+                                </li>
+                                <li class="selectset-item">
+                                    <button class="selectset-link btn" type="button" value="naver.com">
+                                        <span>daum.net</span>
+                                    </button>
+                                </li>
+                                <li class="selectset-item">
+                                    <button class="selectset-link btn" type="button" value="hanmail.net">
+                                    <span>hanmail.net</span>
+                                    </button>
+                                </li>
+                                <li class="selectset-item">
+                                    <button class="selectset-link btn" type="button" value="kakao.com">
+                                    <span>kakao.com</span>
+                                    </button>
+                                </li>
+                                <li class="selectset-item">
+                                    <button class="selectset-link btn" type="button" value="gmail.com">
+                                    <span>gmail.com</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <h6 class="form-tit">제목 <span>*</span></h6>
+                        <div class="inputset inputset-round">
+                            <input type="text" class="inputset-input form-control" aria-label="내용" required="">
+                        </div>
+                    </div>
+                    <div class="form-wrap">
+                        <h6 class="form-tit">문의내용 <span>*</span></h6>
+                        <div class="inputset inputset-round">
+                            <textarea class="inputset-textarea form-control" required=""></textarea>
+                            <div class="inputset-langth">
+                                <span class="inputset-count">0</span>
+                                <span class="inputset-total">/2000 Byte</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            <div class="contents-btn-group">
+                <input class="btnset btnset-round" type="button" onclick="" value="문의하기">
+                <input class="btnset btnset-line btnset-round" type="button" onclick="" value="취소하기">
             </div>
-        </div>
-        <div class="contents-btn-group">
-            <a href="javascript:void(0);" class="btnset btnset-round">문의하기</a>
-            <a href="javascript:void(0);" class="btnset btnset-line btnset-round">취소하기</a>
         </div>
     </div>
-</div>
-
+</form>
 </body>
 </html>

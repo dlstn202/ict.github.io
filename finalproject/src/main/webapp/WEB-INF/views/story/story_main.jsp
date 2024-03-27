@@ -28,6 +28,7 @@
                                 url: "story_container.do",
                                 success: function (res_data) {
                                     $("#story_container").html(res_data);
+                                    $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
                                     $.ajax({
                                         url: "footer.do",
                                         success: function (res_data) {

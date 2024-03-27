@@ -176,8 +176,16 @@
  .glamping-N47 .contents-address .contents-form-group { margin-bottom: 0.8rem; }
  .glamping-N47 .contents-btn-group { margin-top: 4rem; }
 }
-
+/* 이메일 폰트 색깔 */
 .joininput_email{ color: rgba(var(--main-ton-down-rgb),1); }
+
+/* 선호지역 */
+.contents-prefer{ min-height: 140px;}
+.input_prefer_wrap{ display: flex; flex-wrap: wrap }
+.checkset + .checkset { margin-top: 0; } 
+.input_prefer{ width: 165px; padding: 5px; }
+
+
 
 /* glamping-N48 [xZlTWpIYnD] */
 .glamping-N48 .contents-inner { padding: 8rem 2.4rem; }
