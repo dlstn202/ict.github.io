@@ -27,6 +27,7 @@
 </head>
 <script>
     $(document).ready(function () {
+
        // main 초기화
        $.ajax({
            url: "nav.do",
@@ -82,7 +83,7 @@
 
 </script>
 <body>
-  
+    
     <div id="join_agree_nav"></div>
     <div id="join_agree_header"></div>
     <div id="join_agree_container"></div>

@@ -1,14 +1,19 @@
 package com.ict.finalproject.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+
 
 @Controller
 public class JoinController {
     
     // 약관 동의
     @RequestMapping("join_agree.do")
-    public String join_agree_main(){
+    public String join_agree_main(Model model,String mem_grade){
+        
+        model.addAttribute("mem_grade", mem_grade);
 
         return "loginjoin/join_agree_main";
     }
@@ -36,7 +41,9 @@ public class JoinController {
 
     // 정보입력 - 사장 회원
     @RequestMapping("join_input_ceo.do")
-    public String join_input_ceo_main(){
+    public String join_input_ceo_main(Model model,String mem_grade){
+
+        model.addAttribute("mem_grade", mem_grade);
 
         return "loginjoin/join_input_main_ceo";
     }

@@ -19,8 +19,8 @@
 				<!-- Modal body -->
 				<div class="modal-body custom-modal-join">
 					<div class="cn_type container">
-						<input class="btn_join_type" type="button" value="일반" onclick="">
-						<input class="btn_join_type" type="button" value="사장" onclick="">
+						<input class="btn_join_type" type="button" value="일반" onclick="location.href='join_agree.do?mem_grade=general'">
+						<input class="btn_join_type" type="button" value="사장" onclick="location.href='join_agree.do?mem_grade=ceo'">
 					</div>
 				</div>
 			</div>

@@ -170,6 +170,7 @@
               </div>
             </div>
           </div>
+          <input type="hidden" name="mem_grade" value="${mem_grade}">
           <div class="contents-btn-group">
             <a href="javascript:void(0);" class="btnset btnset-line btnset-round">이전단계</a>
             <a href="javascript:void(0);" class="btnset btnset-round" onclick="">다음단계</a>

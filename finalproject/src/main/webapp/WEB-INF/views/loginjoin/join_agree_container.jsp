@@ -7,6 +7,7 @@
 </head>
 <body>
 <!-- [E]glamping-N2 -->
+<form>
 <main class="th-layout-main ">
     <!-- [S]glamping-N45 -->
     <div class="glamping-N45" data-bid="SGltwPIrt8">
@@ -101,6 +102,7 @@
               <p> 본 약관은 주식회사 캠프로버(이하 캠프로버')와 고객(당 캠프로버에 숙박예약을 희망하는 자 및 실제 숙박하는 자를 의미하며, 이하 동일합니다)간의 권리와 의무에 대하여 규정함을 그 목적으로 합니다. 이하 이용약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다이용약관에 대한 내용이 노출됩니다이하 이용 약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다 이용약관에 대한 내용이 노출됩니다이용약관에 대한 내용이 노출됩니다 </p>
             </div>
           </div>
+          <input type="hidden" name="mem_grade" value="${mem_grade}">
           <div class="contents-btnset">
             <a href="javascript:void(0);" class="btnset btnset-round">다음단계</a>
           </div>
@@ -109,5 +111,6 @@
     </div>
     <!-- [E]glamping-N46 -->
     </main>
+  </form>
 </body>
 </html>
