@@ -5,12 +5,28 @@
     <head>
         <meta charset="UTF-8">
         <title>Insert title here</title>
+        <style>
+
+
+        </style>
 
                 <script>
                     // 객실정보수정
                     function business_room_insertform(){
                           $.ajax({
                               url: "mypage_container_ceo_business_room_insertform.do",
+                              success: function (res_data) {
+                                  $("#container_content").html(res_data);
+                              },
+                              error: function (jqXHR, textStatus, errorThrown) {
+                                  console.table(jqXHR)
+                              }
+                          });
+                      }
+                    // 객실등록하기
+                    function business_room_insert(){
+                          $.ajax({
+                              url: "mypage_container_ceo_business_room_insert.do",
                               success: function (res_data) {
                                   $("#container_content").html(res_data);
                               },
@@ -61,6 +77,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="insert_container">
+                        <div class="room_insert" onclick="business_room_insert();">등록하기</div>
+                    </div>
                     </div>
                 </div>
             </div>

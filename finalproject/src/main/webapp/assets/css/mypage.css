@@ -162,7 +162,7 @@
 .req_list_td_idx, .memberlist_td_yn{width: 75px; text-align: center;}
 /* [E]req_content*/
 
-/* [S]my_room */
+/* [E]mypage_container_ceo_business_room */
 .my_room_list { max-width: 1280px; display: flex; flex-direction: column; gap: 2rem;}
 .room_box { width: 83rem; min-height: 28rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; flex-direction: column; padding: 1rem; gap: 1rem; border-radius: 9px; transition: .3s;}
 .room_reserve { display: flex; flex-direction: column; align-items: flex-end; height: 100%;}
@@ -188,8 +188,10 @@
 .room_detailed_pay {display: flex;justify-content: space-between;}
 .room_name,.room_tel,.room_pay,.room_amount,.hide_detail_room {display: none;}
 .show_detail_room,.hide_detail_room { cursor: pointer;}
+.room_insert {cursor: pointer; align-content: center; padding-bottom: 2px; width: 90px; line-height: 35px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem;text-align: center;}
+.insert_container{display: flex; justify-content: flex-end; margin-right: 28px;}
 @media (max-width: 992px) {.room_box {width: 100%;}}
-/* [E]my_room */
+/* [E]mypage_container_ceo_business_room */
 
 /* [S]mypage_container_ceo_business  */
 .contents-inner2 {padding: 2.4rem;}
