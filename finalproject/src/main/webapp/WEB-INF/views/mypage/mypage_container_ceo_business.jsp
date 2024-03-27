@@ -7,18 +7,17 @@
         <title>Insert title here</title>
         <style>
             .contents-inner2 {padding: 2.4rem;}
-            .form-wrap .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down-rgb), 1);background: white;}
-            .unique {display: flex; align-items: center;margin-bottom: 40px;}
-            .radioset-wrap .radioset+.radioset {margin-left: 0;}
-            .form-wrap {display: flex;flex-direction: column;align-items: stretch;}
-            .radioset-wrap {display: flex;flex-wrap: wrap; gap: 10px;}
-            .radioset {display: flex;align-items: center;width: auto; max-width: 200px;}
-            .radioset-input { margin-right: 5px; }
-            .radioset-text {flex-grow: 1;text-align: left;width: 100px;}
-            .radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
-            ul { margin-bottom: -10px;}
-
+.business .radioset-input:checked+.radioset-label::before {color: rgba(var(--main-ton-down-rgb), 1);background: white;}
+.unique {display: flex; align-items: center;margin-bottom: 40px;}
+.unique > ul .radioset+.radioset {margin-left: 0;}
+.business {display: flex;flex-direction: column;align-items: stretch;}
+.radioset {display: flex;align-items: center;width: auto; max-width: 200px;}
+.radioset-input { margin-right: 5px; }
+.uniquetext {flex-grow: 1;text-align: left;width: 100px;}
+.radioset-input:checked+.radioset-label {background-color: #e0e0e0;}
+.unique > ul { display: flex;flex-wrap: wrap; gap: 10px; margin-bottom: -10px;} 
         </style>
+
     </head>
 
     <body>
@@ -35,7 +34,7 @@
                                         <span>* 표시는 반드시 입력하셔야 하는 항목입니다</span>
                                     </div>
                                     <div class="contents-group">
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">사업자번호<span>*</span>
                                             </h6>
                                             <div class="contents-form-group">
@@ -46,7 +45,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">업종 <span>*</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -54,7 +53,7 @@
                                                     required="">
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">가게명 <span>*</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -62,7 +61,7 @@
                                                     required="">
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">연락처 <span>*</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -70,7 +69,7 @@
                                                     placeholder="-없이 번호를 입력해주세요" required="">
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">주소 <span>*</span>
                                             </h6>
                                             <div class="contents-address">
@@ -88,7 +87,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">가게소개 <span>*</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -96,7 +95,7 @@
                                                     required="">
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">한줄소개 <span>*</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -104,7 +103,7 @@
                                                     required="">
                                             </div>
                                         </div>
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">홈페이지 <span>(선택)</span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -113,7 +112,7 @@
                                             </div>
                                         </div>
                                         <!-- -------------------------------------------------------------------------------------------------------------------->
-                                        <div class="form-wrap">
+                                        <div class="business form-wrap">
                                             <div class="unique">
                                                 <h6 class="form-tit">입지구분 <span>(택1)</span></h6>
 
@@ -123,50 +122,50 @@
                                                             class="radioset-input input-line" type="radio" value=""
                                                             checked="">
                                                         <label class="radioset-label" for="radioset-b-1"></label>
-                                                        <span class="radioset-text">일출명소</span>
+                                                        <span class="uniquetext radioset-text">일출명소</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-2" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-2"></label>
-                                                        <span class="radioset-text">수상레저</span>
+                                                        <span class="uniquetext radioset-text">수상레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-3" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-3"></label>
-                                                        <span class="radioset-text">수상레저</span>
+                                                        <span class="uniquetext radioset-text">수상레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-4" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-4"></label>
-                                                        <span class="radioset-text">항공레저</span>
+                                                        <span class="uniquetext radioset-text">항공레저</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-5" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-5"></label>
-                                                        <span class="radioset-text">스키</span>
+                                                        <span class="uniquetext radioset-text">스키</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-6" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-6"></label>
-                                                        <span class="radioset-text">낚시</span>
+                                                        <span class="uniquetext radioset-text">낚시</span>
                                                     </li>
                                                     <li class="radioset">
                                                         <input id="radioset-b-7" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-7"></label>
-                                                        <span class="radioset-text">액티비티</span>
+                                                        <span class="uniquetext radioset-text">액티비티</span>
                                                     </li>
 
                                                     <li class="radioset">
                                                         <input id="radioset-b-8" name="radioset-b"
                                                             class="radioset-input input-line" type="radio" value="">
                                                         <label class="radioset-label" for="radioset-b-8"></label>
-                                                        <span class="radioset-text">걷기길</span>
+                                                        <span class="uniquetext radioset-text">걷기길</span>
                                                     </li>
                                                 </ul>
                                             </div>

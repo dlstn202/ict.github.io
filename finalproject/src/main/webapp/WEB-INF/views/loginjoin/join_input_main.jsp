@@ -30,20 +30,20 @@
        $.ajax({
            url: "nav.do",
            success: function (res_data) {
-                $("#joininput_nav").html(res_data);
+                $("#join_input_nav").html(res_data);
                 $.ajax({
                     url: "join_header.do",
                     success: function (res_data) {
-                        $("#joininput_header").html(res_data);
+                        $("#join_input_header").html(res_data);
                         $.ajax({
-                            url: "joininput_container.do",
+                            url: "join_input_container.do",
                             success: function (res_data) {
-                                $("#joininput_container").html(res_data);
+                                $("#join_input_container").html(res_data);
                                 $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
                                 $.ajax({
                                     url: "footer.do",
                                     success: function (res_data) {
-                                        $("#joininput_footer").html(res_data);
+                                        $("#join_input_footer").html(res_data);
                                     },  
                                     error: function (jqXHR, textStatus, errorThrown) {
                                         console.table(jqXHR)
@@ -84,10 +84,10 @@
 </head>
 
 <body>
-    <div id="joininput_nav"></div>
-    <div id="joininput_header"></div>
-    <div id="joininput_container"></div>
-    <div id="joininput_footer"></div>
+    <div id="join_input_nav"></div>
+    <div id="join_input_header"></div>
+    <div id="join_input_container"></div>
+    <div id="join_input_footer"></div>
   
  
 </body>

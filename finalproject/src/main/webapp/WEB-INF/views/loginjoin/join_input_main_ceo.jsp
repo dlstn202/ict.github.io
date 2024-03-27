@@ -17,20 +17,20 @@
        $.ajax({
            url: "nav.do",
            success: function (res_data) {
-                $("#joininput_forceo_nav").html(res_data);
+                $("#join_input_ceo_nav").html(res_data);
                 $.ajax({
                     url: "join_header.do",
                     success: function (res_data) {
-                        $("#joininput_forceo_header").html(res_data);
+                        $("#join_input_ceo_header").html(res_data);
                         $.ajax({
-                            url: "joininput_forceo_container.do",
+                            url: "join_input_container_ceo.do",
                             success: function (res_data) {
-                                $("#joininput_forceo_container").html(res_data);
+                                $("#join_input_ceo_container").html(res_data);
                                 $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
                                 $.ajax({
                                     url: "footer.do",
                                     success: function (res_data) {
-                                        $("#joininput_forceo_footer").html(res_data);
+                                        $("#join_input_ceo_footer").html(res_data);
                                     },  
                                     error: function (jqXHR, textStatus, errorThrown) {
                                         console.table(jqXHR)
@@ -70,9 +70,9 @@
  </script>
 </head>
 <body>
-    <div id="joininput_forceo_nav"></div>
-    <div id="joininput_forceo_header"></div>
-    <div id="joininput_forceo_container"></div>
-    <div id="joininput_forceo_footer"></div>
+    <div id="join_input_ceo_nav"></div>
+    <div id="join_input_ceo_header"></div>
+    <div id="join_input_ceo_container"></div>
+    <div id="join_input_ceo_footer"></div>
 </body>
 </html>

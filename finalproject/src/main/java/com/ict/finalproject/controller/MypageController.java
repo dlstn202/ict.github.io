@@ -14,22 +14,10 @@ public class MypageController {
         return "mypage/mypage_header";
     }
 
-    @RequestMapping("mypage_main_general.do")
+    @RequestMapping("mypage_main.do")
     public String main_general(){
 
-        return "mypage/mypage_main_general";
-    }
-
-    @RequestMapping("mypage_main_ceo.do")
-    public String main_ceo(){
-
-        return "mypage/mypage_main_ceo";
-    }
-
-    @RequestMapping("mypage_main_manager.do")
-    public String main_manager(){
-
-        return "mypage/mypage_main_manager";
+        return "mypage/mypage_main";
     }
 
     @RequestMapping("mypage_container_list.do")
@@ -83,6 +71,10 @@ public class MypageController {
     public String mypage_container_ceo_business_room_insertform() {
         return "mypage/mypage_container_ceo_business_room_insertform";
     }
+    @RequestMapping("mypage_container_ceo_business_room_insert.do")
+    public String mypage_container_ceo_business_room_insert() {
+        return "mypage/mypage_container_ceo_business_room_insert";
+    }
         
     @RequestMapping("mypage_container_manager_member.do")
     public String mypage_container_manager_member() {
@@ -102,16 +94,6 @@ public class MypageController {
     @RequestMapping("mypage_container_manager_req_content.do")
     public String mypage_container_manager_req_content() {
         return "mypage/mypage_container_manager_req_content";
-    }
-
-    @RequestMapping("mypage_container_manager_req_one.do")
-    public String mypage_container_manager_req_one() {
-        return "mypage/mypage_container_manager_req_one";
-    }
-
-    @RequestMapping("mypage_container_manager_req_send.do")
-    public String mypage_container_manager_req_send() {
-        return "redirect:mypage_container_manager_req_content.do";
     }
         
     @RequestMapping("mypage_container_manager_notify.do")

@@ -31,19 +31,19 @@
        $.ajax({
            url: "nav.do",
            success: function (res_data) {
-                $("#joinagree_nav").html(res_data);
+                $("#join_agree_nav").html(res_data);
                 $.ajax({
                     url: "join_header.do",
                     success: function (res_data) {
-                        $("#joinagree_header").html(res_data);
+                        $("#join_agree_header").html(res_data);
                         $.ajax({
-                            url: "joinagree_container.do",
+                            url: "join_agree_container.do",
                             success: function (res_data) {
-                                $("#joinagree_container").html(res_data);
+                                $("#join_agree_container").html(res_data);
                                 $.ajax({
                                     url: "footer.do",
                                     success: function (res_data) {
-                                        $("#joinagree_footer").html(res_data);
+                                        $("#join_agree_footer").html(res_data);
                                     },  
                                     error: function (jqXHR, textStatus, errorThrown) {
                                         console.table(jqXHR)
@@ -83,9 +83,9 @@
 </script>
 <body>
   
-    <div id="joinagree_nav"></div>
-    <div id="joinagree_header"></div>
-    <div id="joinagree_container"></div>
-    <div id="joinagree_footer"></div>
+    <div id="join_agree_nav"></div>
+    <div id="join_agree_header"></div>
+    <div id="join_agree_container"></div>
+    <div id="join_agree_footer"></div>
 
 </body>
