@@ -14,22 +14,10 @@ public class MypageController {
         return "mypage/mypage_header";
     }
 
-    @RequestMapping("mypage_main_general.do")
+    @RequestMapping("mypage_main.do")
     public String main_general(){
 
-        return "mypage/mypage_main_general";
-    }
-
-    @RequestMapping("mypage_main_ceo.do")
-    public String main_ceo(){
-
-        return "mypage/mypage_main_ceo";
-    }
-
-    @RequestMapping("mypage_main_manager.do")
-    public String main_manager(){
-
-        return "mypage/mypage_main_manager";
+        return "mypage/mypage_main";
     }
 
     @RequestMapping("mypage_container_list.do")
