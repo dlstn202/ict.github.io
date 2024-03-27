@@ -29,19 +29,19 @@
     $.ajax({
         url: "nav.do",
         success: function (res_data) {
-             $("#joinfinish_nav").html(res_data);
+             $("#join_finish_nav").html(res_data);
              $.ajax({
                  url: "join_header.do",
                  success: function (res_data) {
-                    $("#joinfinish_header").html(res_data);
+                    $("#join_finish_header").html(res_data);
                     $.ajax({
-                        url: "joinfinish_container.do",
+                        url: "join_finish_container.do",
                         success: function (res_data) {
-                            $("#joinfinish_container").html(res_data);
+                            $("#join_finish_container").html(res_data);
                             $.ajax({
                                 url: "footer.do",
                                 success: function (res_data) {
-                                    $("#joinfinish_footer").html(res_data);
+                                    $("#join_finish_footer").html(res_data);
                                 },  
                                 error: function (jqXHR, textStatus, errorThrown) {
                                     console.table(jqXHR)
@@ -83,9 +83,9 @@
 
 <body>
   
-    <div id="joinfinish_nav"></div>
-    <div id="joinfinish_header"></div>
-    <div id="joinfinish_container"></div>
-    <div id="joinfinish_footer"></div> 
+    <div id="join_finish_nav"></div>
+    <div id="join_finish_header"></div>
+    <div id="join_finish_container"></div>
+    <div id="join_finish_footer"></div> 
   
 </body>

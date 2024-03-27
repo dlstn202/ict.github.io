@@ -22,12 +22,28 @@ function showGeneralReviewModal(){
 
 /* 리뷰 목록 */
 .my_review_list{max-width: 1280px; display: inline-block; padding-bottom: 20px; }
-.review_title{font-size: 2rem; font-weight: 500; color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.9); }   
-.review_addr{color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.9); }   
-.mypage_reviewlist_btn{ position: relative; width: 26rem; height: 27rem; border-radius: 9px; border: none; margin: 10px;}
 .mypage_review_info{ position: absolute; bottom: 12px; left: 12px; text-align: left;}
+.mypage_reviewlist_heart_btn{ display: inline-block; }
+
+.mypage_reviewlist_btn{ position: relative; width: 26rem; height: 27rem; border-radius: 9px; border: none; margin: 10px; margin-top: 4px;
+    margin-bottom: 17px;}
 .mypage_review_backimage{ width:100%; height: 100%; border-radius: 9px; background-size: cover; background-position: center; box-shadow: inset 0px -52px 34px -18px;}
+.rev_keep_heart{ display: flex; width: 26rem; justify-content: flex-end;}
 .review_title_star{ display: flex; justify-content: space-between; width: 243px;}
+.review_title{font-size: 2rem; font-weight: 500; color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.9); }   
+.review_addr{color: #fff; text-shadow: 0 0 2px rgba(0,0,0,.9); }     
+
+.fa-heart{
+    color: red;
+    font-size: 2.2rem;
+}
+
+.hea_num{
+    height: 2.4rem;
+    font-size: 2.1rem;
+    color: rgba(var(--main-rgb),1);
+    
+}
 
 /* GeneralReview Modal */
 .custom-modal-mypage{ max-width: 600px !important;} 
@@ -88,7 +104,7 @@ function showGeneralReviewModal(){
 
             <div class="modal-header generalreview_modal_header">
                 <button id="closegeneralreviewModal" type="button" class="close" data-dismiss="modal">&times;</button>
-                <p class="modal-title">리뷰 수정</p>
+                <p class="modal-title"><a onclick="">강원신재생에너지</a></p>
             </div>
 
 			<div class="modal-content generalreview_modal_content">
@@ -139,7 +155,7 @@ function showGeneralReviewModal(){
                 <div class="form-wrap">
                     <h6 class="form-tit">내용</h6>
                     <div class="inputset inputset-round">
-                        <textarea class="inputset-textarea form-control" required="">몇번째 방문인지 모르는 강원신재새에너지... 정말 좋습니다 여러분도 방문하세요.</textarea>
+                        <textarea class="inputset-textarea form-control" required="">몇번째 방문인지 모르는 강원신재생에너지... 정말 좋습니다 여러분도 방문하세요.</textarea>
                     </div>
                 </div>
 
@@ -161,11 +177,13 @@ function showGeneralReviewModal(){
             <div class="my_info_title">내 리뷰</div>
         </div>
         <div class="my_review_list">
+
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">12</div>
+            </div>
             <button class="mypage_reviewlist_btn"  onclick="showGeneralReviewModal();">
 
                 <div class="mypage_review_backimage" style="background-image:url('${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png');"></div>
-
-
                 <div class="mypage_review_info">
                     <div class="review_addr">강원특별자치도 평창군</div>
                     <div class="review_title_star">
@@ -178,10 +196,13 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
+            </div>
 
-            <button class="mypage_reviewlist_btn"  onclick="showGeneralReviewModal();">
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">0</div>
+            </div>
+            <button class="mypage_reviewlist_btn" onclick="showGeneralReviewModal();">
                 <div class="mypage_review_backimage" style="background-image:url('${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_2.png');"></div>
-
                 <div class="mypage_review_info">
                     <div class="review_addr">강원특별자치도 평창군</div>
                     <div class="review_title_star">
@@ -194,7 +215,11 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
+            </div>
 
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">120</div>
+            </div>
             <button class="mypage_reviewlist_btn"  onclick="showGeneralReviewModal();">
                 <div class="mypage_review_backimage" style="background-image:url('${pageContext.request.contextPath}/assets/img/sample/img_glamping_N6_1.png');"></div>
 
@@ -210,6 +235,11 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
+            </div>
+
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">5</div>
+            </div>
             <button class="mypage_reviewlist_btn" onclick="showGeneralReviewModal();">
                 <div class="mypage_review_backimage" style="background-image:url('${pageContext.request.contextPath}/assets/img/sample/img_glamping_N7_1.png');"></div>
 
@@ -225,11 +255,19 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
+            </div>
+
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">9</div>
+            </div>
             <button class="mypage_reviewlist_btn" onclick="showGeneralReviewModal();">
                 <div class="mypage_review_backimage" style="background-image:url('${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_2.png');"></div>
 
                 <div class="mypage_review_info">
-                    <div class="review_addr">강원특별자치도 평창군</div>
+                    <div class="review_addr_heart">
+                        <div class="review_addr">강원특별자치도 평창군</div>
+                        <div class="review_heart">1♡</div>
+                    </div>
                     <div class="review_title_star">
                         <div class="review_title">강원신재생에너지</div>
                         <div>
@@ -240,11 +278,18 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
+            </div>
+
+            <div class="mypage_reviewlist_heart_btn">
+                <div class="rev_keep_heart"><i class="fa-regular fa-heart"></i>&nbsp;<div class="hea_num">1</div>
+            </div>
             <button class="mypage_reviewlist_btn"  onclick="showGeneralReviewModal();">
                 <div class="mypage_review_backimage" style="background-image:url();"></div>
-
                 <div class="mypage_review_info">
-                    <div class="review_addr">강원특별자치도 평창군</div>
+                    <div class="review_addr_heart">
+                        <div class="review_addr">강원특별자치도 평창군</div>
+                        <div class="review_heart">1♡</div>
+                    </div>
                     <div class="review_title_star">
                         <div class="review_title">강원신재생에너지</div>
                         <div>
@@ -255,7 +300,7 @@ function showGeneralReviewModal(){
                     </div>
                 </div>
             </button>
-           
+           </div>
         </div> 
         
 
