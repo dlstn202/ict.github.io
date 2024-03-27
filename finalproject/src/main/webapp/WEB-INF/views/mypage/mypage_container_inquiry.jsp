@@ -70,7 +70,9 @@
     cursor: pointer;
     align-content: center;
     padding-bottom: 2px;
-    width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;
+    width: 90px; 
+    line-height: 35px;
+    height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;
   }
   .inquiry_insert:hover{
     background-color: rgba(var(--main-ton-up-rgb));

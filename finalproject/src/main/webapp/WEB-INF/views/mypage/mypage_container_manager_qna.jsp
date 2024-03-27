@@ -28,37 +28,37 @@
   }
 
   /* -------------------------------- */
-  .table.memberlist_table tbody:last-child {
+  .table.qna_list_table tbody:last-child {
     border-bottom: 1px solid #ddd;
     
   }
-  .member_list_th_wrap{
+  .qna_list_th_wrap{
     background-color: rgba(var(--main-ton-down-rgb), 0.1);
     height: 50px;
   }
-  .memberlist_td_wrap{
+  .qna_list_td_wrap{
     height: 50px;
   }
-  .memberlist_td,.memberlist_title{
+  .qna_list_td,.qna_list_title{
     width: 100px; /* 필요에 따라 조정 */
     max-width: 100px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis !important;
   }
-  .memberlist_td,.memberlist_th{
+  .qna_list_td,.qna_list_th{
     text-align: center;
     vertical-align: middle !important;
   }
   
 
-  .memberlist_td_idx, .memberlist_td_yn{
+  .qna_list_td_idx, .qna_list_td_yn{
       width: 75px;
       text-align: center;
       align-content: center;
 
   }
-  .memberlist_td_btn{
+  .qna_list_td_btn{
       width: 110px;
   }
   .memberlist_btn{
@@ -77,25 +77,25 @@
   .inquiry_insert:hover{
     background-color: rgba(var(--main-ton-up-rgb));
   }
-  .memberlist_td_wrap{
+  .qna_list_td_wrap{
     /* transition: 0.3s; */
     cursor: pointer;
   }
-  .memberlist_title{
+  .qna_list_title{
     align-content: center;
   }
-  .inquiry_content{
+  .qna_content{
     
     padding: 10px;
   }
   
-  .inquiry_reply{
+  .qna_reply{
     padding: 10px;
     margin-top: 10px;
     
     background-color: rgba(var(--main-ton-down-rgb), 0.1);
   }
-  .inquiry_reply_title,.inquiry_content_title{
+  .qna_reply_title,.qna_content_title{
     margin-bottom: 10px;
   }
   .reply_btn{
@@ -106,7 +106,7 @@
   .reply_btn:hover{
     background-color: rgba(var(--main-ton-up-rgb));
   }
-  .inquiry_reply_content {
+  .qna_reply_content {
     width: 100%;
     resize: none;
     border: none;
@@ -155,72 +155,72 @@
         <div ><i class="fa-solid fa-magnifying-glass" style="color: #003a1b;"></i></div> -->
       </div>
     </form> 
-    <div id="ceo_memberlist">
-      <table class="table memberlist_table">
-          <tr class="member_list_th_wrap">
-              <th class="memberlist_th">번호</th>
-              <th class="memberlist_th">제목</th>
-              <th class="memberlist_th">작성자</th>
-              <th class="memberlist_th">작성일자</th>
-              <th class="memberlist_th">답변상태</th>
+    <div id="qna_list">
+      <table class="table qna_list_table">
+          <tr class="qna_list_th_wrap">
+              <th class="qna_list_th">번호</th>
+              <th class="qna_list_th">제목</th>
+              <th class="qna_list_th">작성자</th>
+              <th class="qna_list_th">작성일자</th>
+              <th class="qna_list_th">답변상태</th>
           </tr>
 
-          <tr class="memberlist_td_wrap" >
-              <td class="memberlist_td_idx">1</td>
-              <td class="memberlist_title" data-toggle="collapse" data-target="#demo,#demo_reply">금쪽일</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="qna_list_td_wrap" >
+              <td class="qna_list_td_idx">1</td>
+              <td class="qna_list_title" data-toggle="collapse" data-target="#demo,#demo_reply">금쪽일</td>
+              <td class="qna_list_td">금쪽일</td>
+              <td class="qna_list_td">2024.03.22</td>
+              <td class="qna_list_td">답변대기</td>
           </tr>
           <tr id="demo" class="collapse">
             <td class="space"></td>
             <td colspan="4">
-              <div class="inquiry_content">
-                <div class="inquiry_content_title">[문의내용]</div>
-                <div class="inquiry_content_content">내용 내용</div>
+              <div class="qna_content">
+                <div class="qna_content_title">[문의내용]</div>
+                <div class="qna_content_content">내용 내용</div>
               </div>
-              <div class="inquiry_reply">
-                <div class="inquiry_reply_title">[답변]</div>
-                <textarea class="inquiry_reply_content" rows="5" placeholder="답변 내용을 작성하세요."></textarea>
+              <div class="qna_reply">
+                <div class="qna_reply_title">[답변]</div>
+                <textarea class="qna_reply_content" rows="5" placeholder="답변 내용을 작성하세요."></textarea>
               </div>
               <input class="reply_btn" type="button" value=" 답변작성 ">
             </td>
             
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">2</td>
-              <td class="memberlist_title">금쪽일</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="qna_list_td_wrap">
+              <td class="qna_list_td_idx">2</td>
+              <td class="qna_list_title">금쪽일</td>
+              <td class="qna_list_td">금쪽일</td>
+              <td class="qna_list_td">2024.03.22</td>
+              <td class="qna_list_td">답변대기</td>
           </tr>
-          <tr class="memberlist_td_wrap">
-              <td class="memberlist_td_idx">3</td>
-              <td class="memberlist_title">금쪽일</td>
-              <td class="memberlist_td">금쪽일</td>
-              <td class="memberlist_td">2024.03.22</td>
-              <td class="memberlist_td">답변대기</td>
+          <tr class="qna_list_td_wrap">
+              <td class="qna_list_td_idx">3</td>
+              <td class="qna_list_title">금쪽일</td>
+              <td class="qna_list_td">금쪽일</td>
+              <td class="qna_list_td">2024.03.22</td>
+              <td class="qna_list_td">답변대기</td>
           </tr> 
-          <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">1</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+          <tr class="qna_list_td_wrap">
+            <td class="qna_list_td_idx">1</td>
+            <td class="qna_list_title">금쪽일</td>
+            <td class="qna_list_td">금쪽일</td>
+            <td class="qna_list_td">2024.03.22</td>
+            <td class="qna_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">2</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="qna_list_td_wrap">
+            <td class="qna_list_td_idx">2</td>
+            <td class="qna_list_title">금쪽일</td>
+            <td class="qna_list_td">금쪽일</td>
+            <td class="qna_list_td">2024.03.22</td>
+            <td class="qna_list_td">답변대기</td>
         </tr>
-        <tr class="memberlist_td_wrap">
-            <td class="memberlist_td_idx">3</td>
-            <td class="memberlist_title">금쪽일</td>
-            <td class="memberlist_td">금쪽일</td>
-            <td class="memberlist_td">2024.03.22</td>
-            <td class="memberlist_td">답변대기</td>
+        <tr class="qna_list_td_wrap">
+            <td class="qna_list_td_idx">3</td>
+            <td class="qna_list_title">금쪽일</td>
+            <td class="qna_list_td">금쪽일</td>
+            <td class="qna_list_td">2024.03.22</td>
+            <td class="qna_list_td">답변대기</td>
         </tr>
       </table>
       
