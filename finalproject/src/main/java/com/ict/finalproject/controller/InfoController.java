@@ -52,17 +52,17 @@ public class InfoController {
             return "info/info_camping";
         }
 
-        else if ("hospital".equals(type)) {
+        else if ("HP8".equals(type)) {
 
             return "info/info_hospital";
         }
 
-        else if ("store".equals(type)) {
+        else if ("CS2".equals(type)) {
 
             return "info/info_store";
         }
         // 마트 페이지
-        else if ("mart".equals(type)) {
+        else if ("MT1".equals(type)) {
 
             return "info/info_mart";
         }
