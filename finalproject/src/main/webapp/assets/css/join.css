@@ -180,10 +180,7 @@
 .joininput_email{ color: rgba(var(--main-ton-down-rgb),1); }
 
 /* 선호지역 */
-.contents-prefer{ min-height: 140px;}
-.input_prefer_wrap{ display: flex; flex-wrap: wrap }
-.checkset + .checkset { margin-top: 0; } 
-.input_prefer{ width: 165px; padding: 5px; }
+
 
 
 

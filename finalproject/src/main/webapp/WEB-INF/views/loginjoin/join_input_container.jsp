@@ -4,6 +4,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const citySelect = document.getElementById('citySelect');
+    const districtSelect = document.getElementById('districtSelect');
+  
+    citySelect.addEventListener('click', function(e) {
+      const value = e.target.getAttribute('data-value');
+      updateDistrictSelect(value);
+    });
+  
+    function updateDistrictSelect(city) {
+      while (districtSelect.firstChild) {
+        districtSelect.removeChild(districtSelect.firstChild);
+      }
+  
+      let districts = [];
+      if (city == 'seoul') {
+        districts = ['강남구', '서초구', '용산구'];
+      } else if (city == 'busan') {
+        districts = ['해운대구', '수영구', '부산진구'];
+      } else if (city == 'daegu') {
+        districts = ['중구', '동구', '서구'];
+      }
+  
+      districts.forEach(function(district) {
+        const li = document.createElement('li');
+        li.classList.add('selectset-item');
+        const button = document.createElement('button');
+        button.classList.add('selectset-link', 'btn');
+        button.type = 'button';
+        button.setAttribute('data-value', district.toLowerCase());
+        button.innerHTML = `<span>${district}</span>`;
+        li.appendChild(button);
+        districtSelect.appendChild(li);
+      });
+    }
+  });
+  </script>
+  
 </head>
 <body>
 <!-- [E]glamping-N2 -->
@@ -147,94 +186,82 @@
               <div class="form-wrap">
                 <h6 class="form-tit">선호지역</h6>
                 <div class="contents-prefer">
-                  <div class="contents-form-group input_prefer_wrap">
-
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-1" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-1"></label>
-                      <span class="checkset-text">서울특별시</span>
+                  <div class="contents-form-group">
+                    <div class="selectset selectset-round selectset-md">
+                      <button class="selectset-toggle btn" type="button">
+                        <span>시/도</span>
+                      </button>
+                      <ul class="selectset-list" id="citySelect">
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="seoul">
+                                <span>서울특별시</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="busan">
+                                <span>부산광역시</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="daegu">
+                                <span>대구광역시</span>
+                            </button>
+                          </li>
+                      </ul>
                     </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-2" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-2"></label>
-                      <span class="checkset-text">부산광역시</span>
+                    <div class="selectset selectset-round selectset-md">
+                      <button class="selectset-toggle btn" type="button">
+                          <span>군/구</span>
+                      </button>
+                      <ul class="selectset-list" id="districtSelect">
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="" selected="">
+                                <span>강남구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>서초구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>용산구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>해운대구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>수영구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>부산진구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>중구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>동구</span>
+                            </button>
+                          </li>
+                          <li class="selectset-item">
+                            <button class="selectset-prefer btn" type="button" data-value="">
+                                <span>서구</span>
+                            </button>
+                          </li>
+                      </ul>
                     </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-3" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-3"></label>
-                      <span class="checkset-text">대구광역시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-4" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-4"></label>
-                      <span class="checkset-text">인천광역시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-5" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-5"></label>
-                      <span class="checkset-text">광주광역시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-6" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-6"></label>
-                      <span class="checkset-text">대전광역시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-7" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-7"></label>
-                      <span class="checkset-text">울산광역시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-8" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-8"></label>
-                      <span class="checkset-text">세종특별자치시</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-9" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-9"></label>
-                      <span class="checkset-text">경기도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-10" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-10"></label>
-                      <span class="checkset-text">강원특별자치도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-11" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-11"></label>
-                      <span class="checkset-text">충청북도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-12" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-12"></label>
-                      <span class="checkset-text">충청남도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-13" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-13"></label>
-                      <span class="checkset-text">전북특별자치도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-14" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-14"></label>
-                      <span class="checkset-text">전라남도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-15" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-15"></label>
-                      <span class="checkset-text">경상북도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-16" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-16"></label>
-                      <span class="checkset-text">경상남도</span>
-                    </div>
-                    <div class="checkset input_prefer">
-                      <input id="checkset-a-1-17" class="checkset-input input-round" type="checkbox" value="">
-                      <label class="checkset-label" for="checkset-a-1-17"></label>
-                      <span class="checkset-text">제주특별자치도</span>
-                    </div>
-
+                  </div>
                 </div>
               </div>
 
