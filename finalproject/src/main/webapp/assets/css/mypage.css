@@ -87,7 +87,7 @@
 /* [S]my_keep */
 
 .my_keep_list{max-width: 1280px;display: flex; flex-direction: column; gap: 2rem;}
-.keep_box{ width: 83rem; height: 15rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; align-items: center; padding: 1rem; gap: 1rem; border-radius: 9px;}
+.keep_box{ width: 100%; height: 15rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; align-items: center; padding: 1rem; gap: 1rem; border-radius: 9px;}
 .keep_box_img img{width: 14rem; border-top-left-radius: 9px; border-bottom-left-radius: 9px;}
 .keep_box_content{height: 100%;width: 100%;display: flex; gap: 1rem; flex-direction: column; align-items: flex-start;}
 .keep_box_content_f { width: 100%; display: flex; justify-content: space-between;}
@@ -103,7 +103,7 @@
 
 /* [S]my_reserve */
 .my_reserve_list{max-width: 1280px;display: flex; flex-direction: column; gap: 2rem;}
-.reserve_box{ width: 83rem; height: 23rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; flex-direction: column; padding: 1rem; gap: 1rem; border-radius: 9px; transition: .3s;}
+.reserve_box{ width: 100%; height: 23rem; background-color: rgba(var(--main-ton-down-rgb), 0.1); display: flex; flex-direction: column; padding: 1rem; gap: 1rem; border-radius: 9px; transition: .3s;}
 .reserve_info_idx {width: 100%;}
 .reserve_info_idx tbody tr {height: 4rem; border-bottom: 1px solid var(--main-ton-down);}
 .reserve_info_idx tbody tr th {width: 8%;}
@@ -130,12 +130,12 @@
 
 
 /* [S]manager_notify */
-.table_list{ width: 810px;}
+.table_list{ width: 100%;}
 .table_list>tbody>tr>th,.table_list>tbody>tr>td{ vertical-align: middle;  padding: 10px; border-bottom: 1px solid #ddd; }
 
 .table_list_th{ text-align: center; background-color: rgba(var(--main-ton-down-rgb),0.1); }
 .table_content{ width: 30rem; max-width: 30rem; overflow: hidden; text-overflow: ellipsis;}
-.table_list_td_idx, .table_list_td_yn{ width: 75px; }
+.table_list_td_idx, .table_list_td_yn{ width: 75px; text-align: center; }
 .table_one:hover{cursor: pointer; background-color: rgba(var(--main-rgb),0.1);}
 .table_list_td_btn{ width: 110px;}
 .table_list_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
@@ -144,7 +144,7 @@
 
 
 /* [S]manager_notify_one */
-.table_one_detail>.table_list>tbody>tr>th {width: 3rem;}
+.table_one_detail>.table_list>tbody>tr>th {width: 17rem;}
 .table_one_detail>.table>tbody>tr:last-child>td {border-bottom: none;text-align-last: center;}
 #table_result{width: 100%;border: none;margin-left: -5px;}
 #table_result:focus-visible{outline: none;}
@@ -153,7 +153,7 @@
 /* [E]manager_notify_one */
 
 /* [S]req_content*/
-.req_list_table{ width: 810px;}
+.req_list_table{ width: 100%;}
 .center{text-align: center;}
 .req_list_table>tbody>tr:last-child {border-bottom: 1px solid #ddd;}
 .req_list_td_wrap:hover{cursor: pointer; background-color: rgba(var(--main-rgb),0.1);}
@@ -221,3 +221,18 @@
 .checktime{display: flex;align-items: end;justify-content: center; }
 .fee{display: flex;align-items: end;justify-content: center;}
 /* [S]mypage_container_ceo_business_room_insertform */
+
+
+
+
+
+/* [S] my_authorize */
+#manager_list_table { margin-top: 1rem;}
+#manager_list_title { display: flex; justify-content: space-between;}
+#manager_list_title>input{padding: 0; min-width: 9rem; height: 4rem;}
+#manager_list_title>div{font-size: 2rem; font-weight: 500; color: var(--main);}
+#manager_list_table .tel { width: 15rem; max-width: 15rem;  overflow: hidden; text-overflow: ellipsis;}
+#manager_list_table .email { width: 18rem;  max-width: 18rem;overflow: hidden; text-overflow: ellipsis;}
+#manager_list_table .name { max-width: 12rem; width: 12rem; overflow: hidden; text-overflow: ellipsis;}
+#manager_list_table .yn { width: 8rem;}
+/* [E] my_authorize */
