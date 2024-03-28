@@ -347,6 +347,10 @@ progress { vertical-align: baseline; }
  }
 
 /* ========== */
+/* Modal : 중앙에 띄우기*/
+.modal { top: 50%; left: 50%; transform: translate(-50%, -50%); width: fit-content; height: fit-content; }
+
+/* ========== */
 /* Textset */
 .textset { position: relative; } 
 .textset .textset-name { font-size: var(--fs-h6); font-weight: 600; color: var( --text-color3); } 
@@ -634,6 +638,10 @@ table th{text-align: center;}
 .selectset .selectset-link.on,
 .selectset .selectset-link:hover { background-color: rgba(var(--primary-rgb), .1); } 
 .selectset .selectset-link.on::after { content: '\e918'; } 
+.selectset .selectset-prefer::after { content: none; position: absolute; top: 50%; right: 1.8rem; transform: translateY(-50%); font-family: var(--ff-ico); font-size: var(--fs-h5); color: var(--primary); } 
+.selectset .selectset-prefer.on,
+.selectset .selectset-prefer:hover { background-color: rgba(var(--primary-rgb), .1); } 
+.selectset .selectset-prefer.on::after { content: '\e918'; } 
 .selectset .selectset-select { position: relative; width: 100%; color: var(--text-color3); height: var(--ht-md); padding: 0 1.6rem; font-size: var(--fs-p1); text-align: left; border-radius: 0; border: 1px solid var(--border-color); padding-right: calc(1.6rem + 2rem + 1.6rem); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background-image: none; -webkit-appearance: none; -moz-appearance: none; } 
 .selectset .selectset-arrow { display: block; } 
 .selectset .selectset-arrow::after { content: '\e90c'; position: absolute; top: 50%; right: 1.6rem; z-index: 1; transform: translateY(-50%); font-family: var(--ff-ico); font-size: var(--fs-h4); } 
@@ -670,6 +678,7 @@ table th{text-align: center;}
  .selectset .selectset-toggle { padding-right: calc(1.2rem + 1.6rem + 1.2rem); } 
  .selectset .selectset-toggle::after { right: 1.2rem; } 
  .selectset .selectset-link::after { right: 1.2rem; } 
+ .selectset .selectset-prefer::after { right: 1.2rem; } 
  .selectset .selectset-select { padding: 0 1.2rem; padding-right: calc(1.2rem + 1.6rem + 1.2rem); background-position: right 1.2rem center; background-size: 1.6rem;  } 
  .selectset.selectset-sm .btn { padding: 0 0.8rem; } 
  .selectset.selectset-sm .selectset-toggle { padding-right: calc(0.8rem + 1.6rem + 0.8rem); } 
