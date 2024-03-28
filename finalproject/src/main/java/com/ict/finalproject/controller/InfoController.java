@@ -3,6 +3,8 @@ package com.ict.finalproject.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import ch.qos.logback.core.model.Model;
+
 @Controller
 public class InfoController {
 
@@ -46,7 +48,7 @@ public class InfoController {
         }
     }
     @RequestMapping("info_container_place.do")
-    public String info_container_place(String type){    
+    public String info_container_place(String type ,Model model){    
         if ("camping".equals(type)) {
  
             return "info/info_camping";
@@ -54,7 +56,12 @@ public class InfoController {
 
         else if ("HP8".equals(type)) {
 
+            
             return "info/info_hospital";
+
+        }else if ("PM9".equals(type)) {
+
+            return "info/info_drug";
         }
 
         else if ("CS2".equals(type)) {
