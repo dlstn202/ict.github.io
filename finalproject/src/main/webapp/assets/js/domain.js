@@ -3,7 +3,7 @@
 (function () {
     // Selectset
     const selectsetToggle = document.querySelectorAll(".selectset-toggle");
-    const selectsetLink = document.querySelectorAll(".selectset-link, .selectset-prefer, .selectset-story");
+    const selectsetLink = document.querySelectorAll(".selectset-link, .selectset-prefer, .selectset-story,.selectset-y");
     selectsetToggle.forEach((buttonElement) => {
       const clickEventHandler = (event) => {
         event.stopPropagation();
@@ -16,8 +16,9 @@
     });
     selectsetLink.forEach((buttonElement) => {
       const clickEventHandler = (event) => {
+
         event.stopPropagation();
-        const button = event.target.closest(".selectset-link, .selectset-prefer, .selectset-story");
+        const button = event.target.closest(".selectset-link, .selectset-prefer, .selectset-story,.selectset-y");
         //console.log(button.querySelector("span").innerHTML);
         const buttonText = button.querySelector("span").innerHTML;
         const buttonGrandParent = button.closest(".selectset-list");
@@ -27,7 +28,7 @@
           .closest(".selectset")
           .querySelector(".selectset-toggle");
         buttonParentSiblings.forEach((siblingElement) => {
-          siblingElement.querySelector(".selectset-link, .selectset-prefer, .selectset-story").classList.remove("on");
+          siblingElement.querySelector(".selectset-link, .selectset-prefer, .selectset-story,.selectset-y").classList.remove("on");
         });
         //console.log(buttonText);
         //button.classList.toggle("on");
