@@ -73,12 +73,77 @@
                         <table class="table table_list">
                             <tr>
                                 <th class="table_list_th">관리자 번호</th>
-                                <td class="table_list_td">1</td>
+                                <td class="table_list_td" id="mem_idx">1</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">아이디</th>
+                                <td class="table_list_td" id="mem_id">1</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">패스워드초기화</th>
+                                <td class="table_list_td"><input class="btnset btnset-round btnset-line btn_pwd_initialization" type="button" value="비밀번호 초기화"></td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">이메일</th>
+                                <td class="table_list_td" id="mem_email">camperover@naver.com</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">전화번호</th>
+                                <td class="table_list_td" id="mem_tel">010-0000-0000</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">계정부여일자</th>
+                                <td class="table_list_td" id="mem_joindate">2024.03.28</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">공지사항권한</th>
+                                <td class="table_list_td" id="not_man_yn">1</td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">회원관리권한</th>
+                                <td class="table_list_td" >
+                                    <select class="select" id="mem_man_yn" name="mem_man_yn">
+                                        <option value="y" selected>y</option>
+                                        <option value="n">n</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">신고권한</th>
+                                <td class="table_list_td">
+                                    <select class="select" id="rep_man_yn" name="rep_man_yn">
+                                        <option value="y" selected>y</option>
+                                        <option value="n">n</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">온라인문의권한</th>
+                                <td class="table_list_td" id="qna_man_yn">
+                                    <select class="select" id="qna_man_yn" name="qna_man_yn">
+                                        <option value="y" selected>y</option>
+                                        <option value="n">n</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">탈퇴여부</th>
+                                <td class="table_list_td" id="mem_quit_yn">
+                                    <select class="select" id="mem_quit_yn" name="mem_quit_yn">
+                                        <option value="y" selected>y</option>
+                                        <option value="n">n</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table_list_th">탈퇴일자</th>
+                                <td class="table_list_td" id="mem_quitdate">1</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="btn_modify_td"><input class="btnset btnset-round" type="button" value="수정"></td>
                             </tr>
                         </table>
-                        <div class="textarea_parent">
-                            <textarea class="form-control" name="" id="" ></textarea>
-                        </div>
+
 
                     </div>
                 </div>

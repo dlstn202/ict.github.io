@@ -4,7 +4,7 @@
 .container{display: flex; margin-top: 12rem; color: var(--main-ton-down);margin-bottom: 12rem;}
 #container_content{width: 858px;}
 
-
+select.select { width: 100%; border: none; margin-left: -3px;}
 
 /* [S]mypage_container_list */
 .mypage_container_list_nav{ margin-right: 5rem; border: 1px solid rgba(var(--main-ton-down-rgb), 0.3); border-radius: 12px; flex: 0 0 282px; height: -moz-fit-content; height: fit-content; overflow: hidden;}
@@ -150,6 +150,7 @@
 #table_result:focus-visible{outline: none;}
 .table_list_td textarea {width: 100%; resize: none; border: none;}
 .table_list_td textarea:focus-visible {outline: none;}
+
 /* [E]manager_notify_one */
 
 /* [S]req_content*/
@@ -236,6 +237,8 @@
 #manager_list_table .name { max-width: 12rem; width: 12rem; overflow: hidden; text-overflow: ellipsis;}
 #manager_list_table .yn { width: 9rem;}
 /* [E] my_authorize */
-
-
+/* [S] my_authorize modal */
+.btn_modify_td{border-bottom: none !important; text-align: center;}
+.btn_pwd_initialization{ height: 3rem; width: 13rem; font-size: 14px; border: none;}
+/* [E] my_authorize modal */
 

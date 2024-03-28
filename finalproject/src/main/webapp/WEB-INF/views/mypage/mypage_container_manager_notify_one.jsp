@@ -72,7 +72,7 @@
                     <tr>
                       <th class="table_list_th">처리내역</th>
                       <td class="table_list_td">
-                        <select id="notify_result" name="notify_result">
+                        <select class="select" id="notify_result" name="notify_result">
                           <option value="wait" selected>처리대기</option>
                           <option value="companion">신고반려</option>
                           <option value="processed_hide_review">신고수리:댓글숨김</option>
