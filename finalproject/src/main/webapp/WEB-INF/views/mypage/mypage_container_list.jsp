@@ -189,6 +189,21 @@
         });
     }
 
+    // 권한/계정 부여
+    function authorize(){
+        $.ajax({
+            url: "mypage_container_manager_authorize.do",
+            success: function (res_data) {
+                $("#container_content").html(res_data);
+                changeLiColor();
+                $("#authorize").css("color", "#00AF52");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                console.table(jqXHR)
+            }
+        });
+    }
+
 
 </script>
 <script>
@@ -224,6 +239,7 @@
     <li id="faq"><div onclick="faq();">FAQ</div></li>
     <li id="req_content"><div onclick="req_content();">캠핑장신청내역</div></li>
     <li id="notify"><div onclick="notify();">신고내역</div></li>
+    <li id="authorize"><div onclick="authorize();">관리자 계정/권한</div></li>
 </ul>
 </nav>
 </body>
