@@ -22,9 +22,9 @@
         </div>
         <div class="place_select">
             <div class="place_select_kind" onclick="changeContent('camping')">캠핑장</div>
-            <div class="place_select_kind" onclick="changeContent('HP8')">병원/약국</div>
-            <div class="place_select_kind" onclick="changeContent('CS2')">편의점</div>
-            <div class="place_select_kind" onclick="changeContent('MT1')">마트</div>
+            <div class="place_select_kind" onclick="changeContent('HP8')" id="HP8" data-order="0">병원/약국</div>
+            <div class="place_select_kind" onclick="changeContent('CS2')" id="CS2" data-order="1">편의점</div>
+            <div class="place_select_kind" onclick="changeContent('MT1')" id="MT1" data-order="2">마트</div>
         </div>
         <div class="hashtag">
             <div class="hashtag_icon"onclick="filter('filter')">
