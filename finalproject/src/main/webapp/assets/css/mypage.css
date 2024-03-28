@@ -231,8 +231,22 @@
 #manager_list_title { display: flex; justify-content: space-between;}
 #manager_list_title>input{padding: 0; min-width: 9rem; height: 4rem;}
 #manager_list_title>div{font-size: 2rem; font-weight: 500; color: var(--main);}
+#manager_list_table .num {width: 5rem;}
 #manager_list_table .tel { width: 15rem; max-width: 15rem;  overflow: hidden; text-overflow: ellipsis;}
-#manager_list_table .email { width: 18rem;  max-width: 18rem;overflow: hidden; text-overflow: ellipsis;}
 #manager_list_table .name { max-width: 12rem; width: 12rem; overflow: hidden; text-overflow: ellipsis;}
-#manager_list_table .yn { width: 8rem;}
+#manager_list_table .yn { width: 9rem;}
 /* [E] my_authorize */
+
+
+.modal {top: 50%; left: 50%; transform: translate(-50%, -50%); width: fit-content; height: fit-content;}
+.modal-content{box-shadow: 3px 5px 6px 0px rgba(0,0,0,.5);}
+.modal-header{background-color: white; border-top-left-radius: 2rem; border-top-right-radius: 2rem;}
+.modal-header a{color: var(--main) !important; font-size: 1.7rem; font-weight: 600;}
+.modal-header .close {margin-top: 1.1px;}
+.modal-body{background-color: white; box-shadow: none; border: none;border-radius: 0;border-bottom-left-radius: 2rem; border-bottom-right-radius: 2rem;box-shadow: none; overflow: hidden;}
+.textarea_parent{width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;}
+.textarea_parent textarea{width: 100%; height: 100%;  resize: none;padding: 10px;font-size: 15px; color: var(--main-ton-down);}
+.textarea_parent textarea:focus {border-color: #00AF52; outline: none; box-shadow: 0 0 7px rgba(var(--main-rgb), 0.3);}
