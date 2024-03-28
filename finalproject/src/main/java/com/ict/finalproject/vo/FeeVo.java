@@ -18,6 +18,5 @@ public class FeeVo {
 	int	   fee_adult;		//성인
 	int	   fee_child;		//소인
 	int	   fee_infant;		//유아
-	int	   fee_charge;		//요금
 
 }
