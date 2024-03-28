@@ -1,12 +1,21 @@
 package com.ict.finalproject.controller;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import ch.qos.logback.core.model.Model;
+import com.ict.finalproject.dao.CampMapper;
+import com.ict.finalproject.vo.CampVo;
+
 
 @Controller
 public class InfoController {
+
+    @Autowired
+	CampMapper camp_dao;
 
     @RequestMapping("info_main.do")
     public String main(){
@@ -50,6 +59,10 @@ public class InfoController {
     @RequestMapping("info_container_place.do")
     public String info_container_place(String type ,Model model){    
         if ("camping".equals(type)) {
+
+            List<CampVo> list = camp_dao.selectList();
+
+            model.addAttribute("list",list);
  
             return "info/info_camping";
         }
