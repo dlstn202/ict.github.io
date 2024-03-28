@@ -110,7 +110,14 @@ public class MypageController {
     public String mypage_container_manager_notify_send() {
         return "redirect:mypage_container_manager_notify.do";
     }
+
+    //[S] authorize 권한/계정
+    @RequestMapping("mypage_container_manager_authorize.do")
+    public String mypage_container_manager_authorize() {
+        return "mypage/mypage_container_manager_authorize";
+    }
     
+    //[E] authorize 권한/계정
 
 
 

@@ -33,19 +33,19 @@
                         <th class="table_list_th">신고 번호</th>
                         <th class="table_list_th">리뷰번호</th>
                         <th class="table_list_th notify_content">리뷰내용</th>
-                        <th class="table_list_th">신고유형</th>
-                        <th class="table_list_th">신고일자</th>
-                        <th class="table_list_th">신고자</th>
-                        <th class="table_list_th">처리내역</th>
+                        <th class="table_list_th center">신고유형</th>
+                        <th class="table_list_th center">신고일자</th>
+                        <th class="table_list_th center">신고자</th>
+                        <th class="table_list_th center">처리내역</th>
                     </tr>
                     <tr onclick="notify_detail(1);" class="table_one">
                         <td class="table_list_td_idx">1</td>
                         <td class="table_list_td_idx">2</td>
                         <td class="table_list_td notify_content">adf</td>
-                        <td class="table_list_td">adf</td>
-                        <td class="table_list_td">2024-03-25</td>
-                        <td class="table_list_td">금쪽이</td>
-                        <td class="table_list_td">처리대기</td>
+                        <td class="table_list_td center">adf</td>
+                        <td class="table_list_td center">2024-03-25</td>
+                        <td class="table_list_td center">금쪽이</td>
+                        <td class="table_list_td center">처리대기</td>
                     </tr>
                    
                 </table>
@@ -93,10 +93,10 @@
                         <td class="table_list_td_idx">1</td>
                         <td class="table_list_td_idx">2</td>
                         <td class="table_list_td notify_content">adf</td>
-                        <td class="table_list_td">adf</td>
-                        <td class="table_list_td">2024-03-25</td>
-                        <td class="table_list_td">금쪽이</td>
-                        <td class="table_list_td">처리대기</td>
+                        <td class="table_list_td center">adf</td>
+                        <td class="table_list_td center" >2024-03-25</td>
+                        <td class="table_list_td center">금쪽이</td>
+                        <td class="table_list_td center">처리대기</td>
                     </tr>
                 </table>
                 <nav class="pagiset pagiset-circ">

@@ -43,11 +43,11 @@
                 <table class="table table_list">
                     <tr>
                       <th class="table_list_th">신고 번호</th>
-                      <td class="table_list_td_idx">1</td>
+                      <td class="table_list_td">1</td>
                     </tr>
                     <tr>
                       <th class="table_list_th">리뷰(캠핑장)번호</th>
-                      <td class="table_list_td_idx">2</td>
+                      <td class="table_list_td">2</td>
                     </tr>
                     <tr>
                       <th class="table_list_th">리뷰내용</th>
