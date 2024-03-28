@@ -12,9 +12,9 @@
 
                 <script>
                     // 객실정보수정
-                    function business_room_insertform(){
+                    function business_room_roomform(){
                           $.ajax({
-                              url: "mypage_container_ceo_business_room_insertform.do",
+                              url: "mypage_container_ceo_business_room_roomform.do",
                               success: function (res_data) {
                                   $("#container_content").html(res_data);
                               },
@@ -23,10 +23,22 @@
                               }
                           });
                       }
+                     // 요금정보수정
+                     function business_room_feeform(){
+                          $.ajax({
+                              url: "mypage_container_ceo_business_room_feeform.do",
+                              success: function (res_data) {
+                                  $("#container_content").html(res_data);
+                              },
+                              error: function (jqXHR, textStatus, errorThrown) {
+                                  console.table(jqXHR)
+                              }
+                          });
+                      }                     
                     // 객실등록하기
-                    function business_room_insert(){
+                    function business_room_roominsert(){
                           $.ajax({
-                              url: "mypage_container_ceo_business_room_insert.do",
+                              url: "mypage_container_ceo_business_room_roominsert.do",
                               success: function (res_data) {
                                   $("#container_content").html(res_data);
                               },
@@ -35,6 +47,19 @@
                               }
                           });
                       }
+                    // 요금등록하기
+                    function business_room_feeinsert(){
+                          $.ajax({
+                              url: "mypage_container_ceo_business_room_feeinsert.do",
+                              success: function (res_data) {
+                                  $("#container_content").html(res_data);
+                              },
+                              error: function (jqXHR, textStatus, errorThrown) {
+                                  console.table(jqXHR)
+                              }
+                          });
+                      }
+
                   </script>
     </head>
 
@@ -55,7 +80,8 @@
                                 </div>
                                 <div class="room_info">
                                     <div class="room_title">객실명</div>
-                                    <div class="room_look" onclick="business_room_insertform();">상세보기 ></div>
+                                    <div class="room_look" onclick="business_room_roomform();">객실상세 ></div>
+                                    <div class="room_fee" onclick="business_room_feeform();">요금상세 ></div>
                                     <div class="room_detailed">
                                         <div class="room_time">
                                             <div class="room_date_to">입실시간</div>
@@ -66,18 +92,19 @@
                                         </div>    
                                         <div class="room_addinfo">
                                             <div class="room_date_to">객실정보 &nbsp;&nbsp;&nbsp;기준2인 · 최대2인</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
-                                            <div class="room_date_str">추가정보 &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보(기타) &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보(기타) &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보(기타) &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보(기타) &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
+                                            <div class="room_date_str">추가정보(기타) &nbsp;&nbsp;&nbsp;기준인원 외 추가 시 1인 20,000원 / 체크인 최소 1일전 호텔 측에 연락 필수</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="insert_container">
-                        <div class="room_insert" onclick="business_room_insert();">등록하기</div>
+                        <div class="room_insert" onclick="business_room_roominsert();">객실등록</div>
+                        <div class="fee_insert" onclick="business_room_feeinsert();">요금등록</div>
                     </div>
                     </div>
                 </div>
