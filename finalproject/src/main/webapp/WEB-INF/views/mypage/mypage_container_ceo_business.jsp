@@ -23,13 +23,16 @@
 .general_review_img_wrap>button{ position: absolute; top: 3px; right: 10px; border:none; background-color: transparent; color:#fff }
 .general_reivew_photo{ display: flex;
   justify-content: flex-end;  }
-.general_reivew_photo_btn{ width: 182px; }
+.general_reivew_photo_btn{ width: 182px;margin-right: 60px; }
 .photo {display: flex;flex-direction: column;align-items: stretch; margin-top: 41px;}
 
 
 
-        </style>
 
+        </style>
+<script>
+    
+</script>
     </head>
 
     <body>
@@ -158,6 +161,22 @@
                                             </div>
                                         </div>
                                         <div class="business form-wrap">
+                                            <h6 class="form-tit">홈페이지
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">예약구분<span style="font-size: 15px;">(, 구분 필수)</span>
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:전화,온라인예약대기,온라인실시간예약,현장" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="business form-wrap">
                                             <h6 class="form-tit">예약페이지 <span></span>
                                             </h6>
                                             <div class="inputset inputset-round">
@@ -165,6 +184,17 @@
                                                     required="">
                                             </div>
                                         </div>
+
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">입지구분<span style="font-size: 15px;">(, 구분 필수)</span>
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:해변,산,숲,계곡,강,호수" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+
+
                                         <div class="business form-wrap">
                                             <h6 class="form-tit">주요시설(일반야영장) <span></span>
                                             </h6>
@@ -201,7 +231,7 @@
                                             <h6 class="form-tit">내부시설(글램핑)<span style="font-size: 15px;">(, 구분 필수)</span>
                                             </h6>
                                             <div class="inputset inputset-round">
-                                                <input type="text" placeholder="예시: 침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실,내부샤워실" class="inputset-input form-control" aria-label="내용"
+                                                <input type="text" placeholder="예시:침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실,내부샤워실" class="inputset-input form-control" aria-label="내용"
                                                     required="">
                                             </div>
                                         </div>
@@ -209,26 +239,20 @@
                                             <h6 class="form-tit">내부시설(카라반)<span style="font-size: 15px;">(, 구분 필수)</span>
                                             </h6>
                                             <div class="inputset inputset-round">
-                                                <input type="text" placeholder="예시: 침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실,내부샤워실" class="inputset-input form-control" aria-label="내용"
+                                                <input type="text" placeholder="예시:침대,TV,에어컨,냉장고,유무선인터넷,난방기구,취사도구,내부화장실,내부샤워실" class="inputset-input form-control" aria-label="내용"
                                                     required="">
                                             </div>
                                         </div>
                                         <div class="business form-wrap">
-                                            <h6 class="form-tit">부대시설 <span>*</span> <span style="font-size: 15px;">(, 구분 필수)</span>
+                                            <h6 class="form-tit">캠핑장비대여<span style="font-size: 15px;">(, 구분 필수)</span>
                                             </h6>
                                             <div class="inputset inputset-round">
-                                                <input type="text" placeholder="예시: 전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터,산책로,운동장,운동시설,마트.편의점,덤프스테이션,기타 " class="inputset-input form-control" aria-label="내용"
+                                                <input type="text" placeholder="예시:텐트,릴선,화로대,난방기구,식기,침낭" class="inputset-input form-control" aria-label="내용"
                                                     required="">
                                             </div>
                                         </div>
-                                        <div class="business form-wrap">
-                                            <h6 class="form-tit">부대시설기타<span style="font-size: 15px;">(, 구분 필수)</span>
-                                            </h6>
-                                            <div class="inputset inputset-round">
-                                                <input type="text" placeholder="예시: 음식점, 영농체험장,카페,펜,작은도서관,포토존스튜디오,고카트트랙 등" class="inputset-input form-control" aria-label="내용"
-                                                    required="">
-                                            </div>
-                                        </div>
+
+
                                         <div class="business form-wrap">
                                             <h6 class="form-tit">화장실개수
                                             </h6>
@@ -253,72 +277,68 @@
                                                     required="">
                                             </div>
                                         </div>
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">부대시설 <span>*</span> <span style="font-size: 15px;">(, 구분 필수)</span>
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:전기,무선인터넷,장작판매,온수,트렘폴린,물놀이장,놀이터,산책로,운동장,운동시설,마트.편의점,덤프스테이션,기타 " class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">부대시설기타<span style="font-size: 15px;">(, 구분 필수)</span></h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:음식점,영농체험장,카페,펜,작은도서관,포토존스튜디오,고카트트랙 등" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">체험프로그램여부</h6>
+                                            <div class="form-wrap">
+                                                <div class="selectset selectset-round selectset-md">
+                                                  <button class="selectset-toggle btn" type="button">
+                                                    <span>선택해주세요</span>
+                                                  </button>
+                                                  <ul class="selectset-list">
+                                                    <li class="selectset-item">
+                                                      <button class="selectset-y btn" type="button" data-value="직접입력" selected="">
+                                                        <span>y</span>
+                                                      </button>
+                                                    </li>
+                                                    <li class="selectset-item">
+                                                      <button class="selectset-y btn" type="button" value="naver.com">
+                                                        <span>n</span>
+                                                      </button>
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+
+                                        </div>
+
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">체험프로그램명<span style="font-size: 15px;">(, 구분 필수)</span>
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:래프팅,영농 체험,고카트 체험,갯벌 체험,커피체험 등" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        <div class="business form-wrap">
+                                            <h6 class="form-tit">테마환경<span style="font-size: 15px;">(, 구분 필수)</span>
+                                            </h6>
+                                            <div class="inputset inputset-round">
+                                                <input type="text" placeholder="예시:일출명소,일몰명소,수상레저,낚시,액티비티,봄꽃여행,여름물놀이,가을단풍명소,겨울눈꽃명소,걷기길" class="inputset-input form-control" aria-label="내용"
+                                                    required="">
+                                            </div>
+                                        </div>
+                                        
+
 
 
                                         <!-- -------------------------------------------------------------------------------------------------------------------->
-                                        <div class="business form-wrap">
-                                            <div class="unique">
-                                                <h6 class="form-tit">입지구분 <span>*</span></h6>
-                                                <ul class="radioset-wrap">
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-1" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value=""
-                                                          >
-                                                        <label class="radioset-label" for="radioset-b-1"></label>
-                                                        <span class="uniquetext radioset-text">산</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-2" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-2"></label>
-                                                        <span class="uniquetext radioset-text">숲</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-3" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-3"></label>
-                                                        <span class="uniquetext radioset-text">강</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-4" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-4"></label>
-                                                        <span class="uniquetext radioset-text">해변</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-5" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-5"></label>
-                                                        <span class="uniquetext radioset-text">계곡</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-6" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-6"></label>
-                                                        <span class="uniquetext radioset-text">섬</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-7" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-7"></label>
-                                                        <span class="uniquetext radioset-text">도심</span>
-                                                    </li>
 
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-8" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-8"></label>
-                                                        <span class="uniquetext radioset-text">호수</span>
-                                                    </li>
-                                                    <li class="radioset">
-                                                        <input id="radioset-b-9" name="radioset-b"
-                                                            class="radioset-input input-line" type="checkbox" value="">
-                                                        <label class="radioset-label" for="radioset-b-9"></label>
-                                                        <span class="uniquetext radioset-text">기타</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
 
                                         <div class="business form-wrap">
                                             <div class="unique">
@@ -393,9 +413,53 @@
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div class="business form-wrap">
+                                            <div class="unique">
+                                                <h6 class="form-tit">사이트바닥재</h6>
+                                                <ul class="radioset-wrap">
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-1" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value=""
+                                                          >
+                                                        <label class="radioset-label" for="radioset-b-1"></label>
+                                                        <span class="uniquetext radioset-text">잔디</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-2" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value="">
+                                                        <label class="radioset-label" for="radioset-b-2"></label>
+                                                        <span class="uniquetext radioset-text">파쇄석</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-3" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value="">
+                                                        <label class="radioset-label" for="radioset-b-3"></label>
+                                                        <span class="uniquetext radioset-text">테크</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-4" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value="">
+                                                        <label class="radioset-label" for="radioset-b-4"></label>
+                                                        <span class="uniquetext radioset-text">자갈</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-5" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value="">
+                                                        <label class="radioset-label" for="radioset-b-5"></label>
+                                                        <span class="uniquetext radioset-text">맨흙</span>
+                                                    </li>
+                                                    <li class="radioset">
+                                                        <input id="radioset-b-6" name="radioset-b"
+                                                            class="radioset-input input-line" type="checkbox" value="">
+                                                        <label class="radioset-label" for="radioset-b-6"></label>
+                                                        <span class="uniquetext radioset-text">툴팁</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
 
                                         <div class="photo">
-                                            <h6 class="form-tit">사진<span style="font-size: 15px;">(최대 20장)</span></h6>
+                                            <h6 class="form-tit">대표이미지<span style="font-size: 15px;">(최대 20장)</span></h6>
                                             <div class="general_review_img_x_wrap">
 
                                                 <div class="general_review_img_wrap">
@@ -467,14 +531,7 @@
                                             <input type="file" class="general_reivew_photo_btn" name="photo">
                                         </div>
                                         
-                                        <div class="business form-wrap">
-                                            <h6 class="form-tit">홈페이지
-                                            </h6>
-                                            <div class="inputset inputset-round">
-                                                <input type="text" class="inputset-input form-control" aria-label="내용"
-                                                    required="">
-                                            </div>
-                                        </div>
+
 
                                     </div>
                                     <div class="contents-btn-group">
