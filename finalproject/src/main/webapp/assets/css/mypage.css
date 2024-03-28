@@ -231,8 +231,11 @@
 #manager_list_title { display: flex; justify-content: space-between;}
 #manager_list_title>input{padding: 0; min-width: 9rem; height: 4rem;}
 #manager_list_title>div{font-size: 2rem; font-weight: 500; color: var(--main);}
+#manager_list_table .num {width: 5rem;}
 #manager_list_table .tel { width: 15rem; max-width: 15rem;  overflow: hidden; text-overflow: ellipsis;}
-#manager_list_table .email { width: 18rem;  max-width: 18rem;overflow: hidden; text-overflow: ellipsis;}
 #manager_list_table .name { max-width: 12rem; width: 12rem; overflow: hidden; text-overflow: ellipsis;}
-#manager_list_table .yn { width: 8rem;}
+#manager_list_table .yn { width: 9rem;}
 /* [E] my_authorize */
+
+
+
