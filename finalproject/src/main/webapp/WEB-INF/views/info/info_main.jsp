@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,6 +66,7 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+    
     <div id="info_nav"></div>
     <div id="info_container1"></div>
     

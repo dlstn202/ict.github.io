@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,108 +12,10 @@
     <div id="place_area">
         <div class="place_list">
             <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
+                <img  class="img" src="" alt="이미지1">
             </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>병원/약국~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
+            <div class="place_list_content"></div>
         </div>
-        <div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div>
-        <div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div>
-        <div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div><div class="place_list">
-            <div class="place_list_img" >
-                <img  class="img" src="../assets/img/sample/img_glamping_N6_1.png" alt="이미지1">
-            </div>
-            <div class="place_list_content">
-                <div>해쉬태그~~~~~~~~~~~~~~~</div>
-                <div>캠핌장명~~~~~~~~~~</div>
-                <div>주소~~~~~~~~~~~~~~~~</div>
-                <div>한줄소개~~~~~~~~~~~~~~~~~~</div>
-            </div>
-        </div>
-    </div>
+    </div>    
 </body>
 </html>

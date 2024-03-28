@@ -16,19 +16,23 @@
 </script>
 </head>
 <body>
+    
     <div id="list" >
-        <div class="sido_select">
-            <div id="sido" onclick="filter('local')"><span>전국</span> <i class="fa-solid fa-angle-down" style="color: #003a1b;"></i></div>
-        </div>
-        <div class="place_select">
-            <div class="place_select_kind" onclick="changeContent('camping')">캠핑장</div>
-            <div class="place_select_kind" onclick="changeContent('HP8')" id="HP8" data-order="0">병원/약국</div>
-            <div class="place_select_kind" onclick="changeContent('CS2')" id="CS2" data-order="1">편의점</div>
-            <div class="place_select_kind" onclick="changeContent('MT1')" id="MT1" data-order="2">마트</div>
-        </div>
-        <div class="hashtag">
-            <div class="hashtag_icon"onclick="filter('filter')">
-                <i class="fa-solid fa-sliders" style="color: #00391c;" ></i> 필터
+        <div class="fixed_top">
+            <div class="sido_select">
+                <div id="sido" onclick="filter('local')"><span>전국</span> <i class="fa-solid fa-angle-down" style="color: #003a1b;"></i></div>
+            </div>
+            <div class="place_select">
+                <div class="place_select_kind" onclick="changeContent('camping')">캠핑장</div>
+                <div class="place_select_kind" onclick="changeContent('HP8')" id="HP8" data-order="0">병원</div>
+                <div class="place_select_kind" onclick="changeContent('PM9')" id="PM9" data-order="1">약국</div>
+                <div class="place_select_kind" onclick="changeContent('CS2')" id="CS2" data-order="2">편의점</div>
+                <div class="place_select_kind" onclick="changeContent('MT1')" id="MT1" data-order="3">마트</div>
+            </div>
+            <div class="hashtag">
+                <div class="hashtag_icon"onclick="filter('filter')">
+                    <i class="fa-solid fa-sliders" style="color: #00391c;" ></i> 필터
+                </div>
             </div>
         </div>
         <div id="place_area">
