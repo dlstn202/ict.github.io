@@ -43,11 +43,11 @@
                 <table class="table table_list">
                     <tr>
                       <th class="table_list_th">신고 번호</th>
-                      <td class="table_list_td_idx">1</td>
+                      <td class="table_list_td">1</td>
                     </tr>
                     <tr>
                       <th class="table_list_th">리뷰(캠핑장)번호</th>
-                      <td class="table_list_td_idx">2</td>
+                      <td class="table_list_td">2</td>
                     </tr>
                     <tr>
                       <th class="table_list_th">리뷰내용</th>
@@ -72,7 +72,7 @@
                     <tr>
                       <th class="table_list_th">처리내역</th>
                       <td class="table_list_td">
-                        <select id="notify_result" name="notify_result">
+                        <select class="select" id="notify_result" name="notify_result">
                           <option value="wait" selected>처리대기</option>
                           <option value="companion">신고반려</option>
                           <option value="processed_hide_review">신고수리:댓글숨김</option>

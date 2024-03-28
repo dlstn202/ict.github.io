@@ -93,6 +93,7 @@
                 $("#container_content").html(res_data);
                 changeLiColor();
                 $("#business").css("color", "#00AF52");
+                $.getScript("${pageContext.request.contextPath}/assets/js/domain.js");
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 console.table(jqXHR)

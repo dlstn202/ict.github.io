@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ include file="mypage_container_general_review_modal.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,14 +48,32 @@ function showGeneralReviewModal(){
 
 /* GeneralReview Modal */
 .custom-modal-mypage{ max-width: 600px !important;} 
-.modal { top: 50%; left: 50%; transform: translate(-50%, -50%); width: fit-content; height: fit-content; }
 .modal-dialog>.modal-body{ max-width: 380px  !important; }
 .modal-title{ font-size: larger; font-weight: 700; }
 .generalreview_modal_header{ background-color: #fff; padding:20px }
 .generalreview_modal_content{ background-color: #fff; position: relative; background-clip: none; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; outline: 0;}
 .form-wrap{ padding-right: 20px; padding-left: 20px; padding-top: 15px;}
 .gl_modify_btn_wrap{ display: flex; justify-content: center; align-items: center; margin-bottom: 20px;}
-.generalreview_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;}
+
+
+/* 버튼 */
+.generalreview_btn_modify { display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; width: 9.2rem; padding: 0 2.8rem; height: 3.8rem; color: var(--white); background-color: var(--main); border-width: 2px; border-style: solid; border-color: var(--main); border-radius: .4rem; font-weight: 500; letter-spacing: var(--letter-spacing); transition: .3s; border-radius: 3rem; } 
+.generalreview_btn_modify::before { transition: inherit; } 
+.generalreview_btn_modify::after { transition: inherit; } 
+.generalreview_btn_modify + .generalreview_btn_modify { margin-left: .8rem; } 
+.generalreview_btn_modify:hover { color: var(--white); background-color: rgba(var(--main-ton-up-rgb)); border-color: rgba(var(--main-ton-up-rgb)); text-decoration: none;} 
+.generalreview_btn_modify:disabled, .generalreview_btn_modify.disabled { background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; border: none !important;} 
+.generalreview_btn_modify:disabled:hover, .generalreview_btn_modify.disabled:hover {background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; color: var(--main) !important;border: none !important;} 
+/* 하얀 버튼 */
+.generalreview_btn_modify.btnset-line { color: var(--main-ton-down); background-color: transparent; border-color: var(--main); } 
+.generalreview_btn_modify.btnset-line:hover { color: var(--white); background-color: var(--main-ton-up); border-color: var(--main-ton-up); text-decoration: none;} 
+.generalreview_btn_modify.btnset-line:disabled, .btnset.btnset-line.disabled { color: var(--text-color4); background-color: var(--bg-color); border-color: var(--line-color1); } 
+.generalreview_btn_modify.btnset-line.btnset-black { border-color: var(--line-color4); color: var(--text-color2); } 
+.generalreview_btn_modify.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--main); color: var(--white); text-decoration: none;} 
+.generalreview_btn_modify.btnset-line.btnset-white { border-color: var(--white); color: var(--white); } 
+.generalreview_btn_modify.btnset-line.btnset-white:hover { background-color: var(--white); color: var(--text-color1); } 
+
+/* 이미지 */
 .general_review_img_wrap{ display: inline-block; position: relative; width: 110px; padding:0px; margin-left: 7px; }
 .general_review_img_wrap>img{ width:104px; border-radius: 4px; }
 .general_review_img_wrap>button{ position: absolute; top: 3px; right: 10px; border:none; background-color: transparent; color:#fff }
@@ -97,79 +116,7 @@ function showGeneralReviewModal(){
 </style>
 </head>
 <body>
-    <!-- 리뷰모달 -->
-
-    <div id="GeneralReviewModal" class="modal fade custom-modal-mypage" role="dialog">
-		<div class="modal-dialog custom-modal-mypage">
-
-            <div class="modal-header generalreview_modal_header">
-                <button id="closegeneralreviewModal" type="button" class="close" data-dismiss="modal">&times;</button>
-                <p class="modal-title"><a onclick="">강원신재생에너지</a></p>
-            </div>
-
-			<div class="modal-content generalreview_modal_content">
-				<!-- Modal body -->
-                <div class="form-wrap general_review_img_x_wrap">
-                    <div class="form-wrap general_review_img_wrap">
-                        <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png">
-                        <button>X</button>
-                    </div>
-                    <div class="form-wrap general_review_img_wrap">
-                        <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png">
-                        <button>X</button>
-                    </div>
-                    <div class="form-wrap general_review_img_wrap">
-                        <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png">
-                        <button>X</button>
-                    </div>
-                    <div class="form-wrap general_review_img_wrap">
-                        <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png">
-                        <button>X</button>
-                    </div>
-                    <div class="form-wrap general_review_img_wrap">
-                        <img src="${pageContext.request.contextPath}/assets/img/sample/img_glamping_N5_1.png">
-                        <button>X</button>
-                    </div>
-                </div>
-                <div class="general_reivew_photo">
-                    <input type="file" class="general_reivew_photo_btn" name="photo">
-                </div>
-
-                <div class="form-wrap">
-                    <h6 class="form-tit">별점</h6>
-                    <div class="star_intro_star">
-                        <fieldset class="rate">
-                           <input type="radio" id="rating10" name="re_review_grade" value="5.0" onclick="handleRatingClick(this.value)"><label for="rating10" title="5점"></label>
-                                <input type="radio" id="rating9" name="re_review_grade" value="4.5" onclick="handleRatingClick(this.value)"><label class="half" for="rating9" title="4.5점"></label>
-                                <input type="radio" id="rating8" name="re_review_grade" value="4.0" onclick="handleRatingClick(this.value)"><label for="rating8" title="4점"></label>
-                                <input type="radio" id="rating7" name="re_review_grade" value="3.5" onclick="handleRatingClick(this.value)"><label class="half" for="rating7" title="3.5점"></label>
-                                <input type="radio" id="rating6" name="re_review_grade" value="3.0" onclick="handleRatingClick(this.value)"><label for="rating6" title="3점"></label>
-                                <input type="radio" id="rating5" name="re_review_grade" value="2.5" onclick="handleRatingClick(this.value)"><label class="half" for="rating5" title="2.5점"></label>
-                                <input type="radio" id="rating4" name="re_review_grade" value="2.0" onclick="handleRatingClick(this.value)"><label for="rating4" title="2점"></label>
-                                <input type="radio" id="rating3" name="re_review_grade" value="1.5" onclick="handleRatingClick(this.value)"><label class="half" for="rating3" title="1.5점"></label>
-                                <input type="radio" id="rating2" name="re_review_grade" value="1" onclick="handleRatingClick(this.value)"><label for="rating2" title="1점"></label>
-                                <input type="radio" id="rating1" name="re_review_grade" value="0.5" onclick="handleRatingClick(this.value)"><label class="half" for="rating1" title="0.5점"></label>
-                        </fieldset>
-                     </div>
-                </div>
-                <div class="form-wrap">
-                    <h6 class="form-tit">내용</h6>
-                    <div class="inputset inputset-round">
-                        <textarea class="inputset-textarea form-control" required="">몇번째 방문인지 모르는 강원신재생에너지... 정말 좋습니다 여러분도 방문하세요.</textarea>
-                    </div>
-                </div>
-
-                <div class="form-wrap">
-                    <div class="inputset inputset-round gl_modify_btn_wrap">
-                        <input class="generalreview_btn_modify" type="button" onclick="" value="수정하기">
-                        <input class="generalreview_btn_modify" type="button" onclick="" value="삭제하기">
-                    </div>
-                </div>
-                </div>
-			</div>
-		</div>
-	</div>
-
+    
     <!-- 리뷰 목록 -->
 
     <main class="th-layout-main">

@@ -88,8 +88,7 @@
                                         <!-- -------------------------------------------------------------------------------------------------------------------->
                                         <div class="roomform form-wrap">
                                             <div class="unique_room">
-                                                <h6 class="form-tit">숙박시즌</h6>
-
+                                                <h6 class="form-tit">성수기여부</h6>
                                                 <ul class="room radioset-wrap">
                                                     <li class="radioset">
                                                         <input id="radioset-b-1" name="radioset-b"
