@@ -67,13 +67,22 @@ public class MypageController {
         return "mypage/mypage_container_ceo_business_room";
     }
 
-    @RequestMapping("mypage_container_ceo_business_room_insertform.do")
-    public String mypage_container_ceo_business_room_insertform() {
-        return "mypage/mypage_container_ceo_business_room_insertform";
+    @RequestMapping("mypage_container_ceo_business_room_roomform.do")
+    public String mypage_container_ceo_business_room_roomform() {
+        return "mypage/mypage_container_ceo_business_room_roomform";
     }
-    @RequestMapping("mypage_container_ceo_business_room_insert.do")
-    public String mypage_container_ceo_business_room_insert() {
-        return "mypage/mypage_container_ceo_business_room_insert";
+    @RequestMapping("mypage_container_ceo_business_room_feeform.do")
+    public String mypage_container_ceo_business_room_feeform() {
+        return "mypage/mypage_container_ceo_business_room_feeform";
+    }
+        
+    @RequestMapping("mypage_container_ceo_business_room_roominsert.do")
+    public String mypage_container_ceo_business_room_roominsert() {
+        return "mypage/mypage_container_ceo_business_room_roominsert";
+    }
+    @RequestMapping("mypage_container_ceo_business_room_feeinsert.do")
+    public String mypage_container_ceo_business_room_feeinsert() {
+        return "mypage/mypage_container_ceo_business_room_feeinsert";
     }
         
     @RequestMapping("mypage_container_manager_member.do")
