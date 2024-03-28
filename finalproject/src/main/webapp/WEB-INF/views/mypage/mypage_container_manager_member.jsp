@@ -74,7 +74,23 @@
 .memberlist_td{ text-align: center; }
 .memberlist_td_idx, .memberlist_td_yn{ width: 75px; text-align: center; }
 .memberlist_td_btn{ width: 110px;}
-.memberlist_btn{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; }
+/* 버튼 */
+.memberlist_btn { display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; width: 9.2rem; padding: 0 2.8rem; height: 3.8rem; color: var(--white); background-color: var(--main); border-width: 2px; border-style: solid; border-color: var(--main); border-radius: .4rem; font-weight: 500; letter-spacing: var(--letter-spacing); transition: .3s; border-radius: 3rem; } 
+.memberlist_btn::before { transition: inherit; } 
+.memberlist_btn::after { transition: inherit; } 
+.memberlist_btn + .memberlist_btn { margin-left: .8rem; } 
+.memberlist_btn:hover { color: var(--white); background-color: rgba(var(--main-ton-up-rgb)); border-color: rgba(var(--main-ton-up-rgb)); text-decoration: none;} 
+.memberlist_btn:disabled, .memberlist_btn.disabled { background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; border: none !important;} 
+.memberlist_btn:disabled:hover, .memberlist_btn.disabled:hover {background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; color: var(--main) !important;border: none !important;} 
+/* 히얀버튼 */
+.memberlist_btn.btnset-line { color: var(--main-ton-down); background-color: transparent; border-color: var(--main); } 
+.memberlist_btn.btnset-line:hover { color: var(--white); background-color: var(--main-ton-up); border-color: var(--main-ton-up); text-decoration: none;} 
+.memberlist_btn.btnset-line:disabled, .btnset.btnset-line.disabled { color: var(--text-color4); background-color: var(--bg-color); border-color: var(--line-color1); } 
+.memberlist_btn.btnset-line.btnset-black { border-color: var(--line-color4); color: var(--text-color2); } 
+.memberlist_btn.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--main); color: var(--white); text-decoration: none;} 
+.memberlist_btn.btnset-line.btnset-white { border-color: var(--white); color: var(--white); } 
+.memberlist_btn.btnset-line.btnset-white:hover { background-color: var(--white); color: var(--text-color1); } 
+
 .memberlist_span{ color: var(--main);}
 
 /* memberlist Modal */
@@ -85,7 +101,7 @@
 .memberlist_modal_content{ background-color: #fff; position: relative; background-clip: none; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; outline: 0;}
 .form-wrap{ padding-right: 20px; padding-left: 20px; padding-top: 15px;}
 .ml_modify_btn_wrap{ display: flex; justify-content: center; align-items: center; margin-bottom: 20px;}
-.memberlist_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; padding-bottom: 2px; margin:5px; margin-top: none;}
+/* .memberlist_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; padding-bottom: 2px; margin:5px; margin-top: none;} */
 
 </style>
 

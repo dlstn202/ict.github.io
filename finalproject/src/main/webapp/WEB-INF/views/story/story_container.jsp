@@ -42,17 +42,17 @@ function showAll(element) {
         </button>
         <ul class="selectset-list">
             <li class="selectset-item">
-            <button class="selectset-link btn" type="button" data-value="" selected="">
+            <button class="selectset-story btn" type="button" data-value="" selected="">
                 <span>최신순</span>
             </button>
             </li>
             <li class="selectset-item">
-            <button class="selectset-link btn" type="button" data-value="">
+            <button class="selectset-story btn" type="button" data-value="">
                 <span>좋아요순</span>
             </button>
             </li>
             <li class="selectset-item">
-            <button class="selectset-link btn" type="button" data-value="">
+            <button class="selectset-story btn" type="button" data-value="">
                 <span>리뷰갯수순</span>
             </button>
             </li>

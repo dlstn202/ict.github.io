@@ -3,7 +3,7 @@
 (function () {
     // Selectset
     const selectsetToggle = document.querySelectorAll(".selectset-toggle");
-    const selectsetLink = document.querySelectorAll(".selectset-link, selectset-prefer");
+    const selectsetLink = document.querySelectorAll(".selectset-link, .selectset-prefer, .selectset-story");
     selectsetToggle.forEach((buttonElement) => {
       const clickEventHandler = (event) => {
         event.stopPropagation();
@@ -17,7 +17,7 @@
     selectsetLink.forEach((buttonElement) => {
       const clickEventHandler = (event) => {
         event.stopPropagation();
-        const button = event.target.closest(".selectset-link, selectset-prefer");
+        const button = event.target.closest(".selectset-link, .selectset-prefer, .selectset-story");
         //console.log(button.querySelector("span").innerHTML);
         const buttonText = button.querySelector("span").innerHTML;
         const buttonGrandParent = button.closest(".selectset-list");
@@ -27,16 +27,24 @@
           .closest(".selectset")
           .querySelector(".selectset-toggle");
         buttonParentSiblings.forEach((siblingElement) => {
-          siblingElement.querySelector(".selectset-link, selectset-prefer").classList.remove("on");
+          siblingElement.querySelector(".selectset-link, .selectset-prefer, .selectset-story").classList.remove("on");
         });
         //console.log(buttonText);
         //button.classList.toggle("on");
         buttonSelectsetToggle.querySelector("span").innerHTML = buttonText;
-        if(buttonText != "직접입력"){
+        if(buttonText == "직접입력"){
+         document.querySelector(".email_domain").value = "";}
+        else if(buttonText == "naver.com"){
          document.querySelector(".email_domain").value = buttonText;}
-         else{
-          document.querySelector(".email_domain").value = "";
-         }
+        else if(buttonText == "daum.net"){
+          document.querySelector(".email_domain").value = buttonText;}
+        else if(buttonText == "hanmail.net"){
+          document.querySelector(".email_domain").value = buttonText;}
+        else if(buttonText == "kakao.com"){
+          document.querySelector(".email_domain").value = buttonText;}
+        else if(buttonText == "gmail.com"){
+          document.querySelector(".email_domain").value = buttonText;}
+        
       };
       buttonElement.removeEventListener("click", clickEventHandler);
       buttonElement.addEventListener("click", clickEventHandler);
