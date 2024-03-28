@@ -70,7 +70,7 @@
 
             <div class="form-wrap">
                 <div class="inputset inputset-round gl_modify_btn_wrap">
-                    <input class="generalreview_btn_modify" type="button" onclick="" value="수정하기">
+                    <input class="generalreview_btn_modify btnset-line" type="button" onclick="" value="수정하기">
                     <input class="generalreview_btn_modify" type="button" onclick="" value="삭제하기">
                 </div>
             </div>

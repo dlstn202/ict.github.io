@@ -54,7 +54,26 @@ function showGeneralReviewModal(){
 .generalreview_modal_content{ background-color: #fff; position: relative; background-clip: none; border: none; border-radius: 0px; -webkit-box-shadow: none; box-shadow: none; outline: 0;}
 .form-wrap{ padding-right: 20px; padding-left: 20px; padding-top: 15px;}
 .gl_modify_btn_wrap{ display: flex; justify-content: center; align-items: center; margin-bottom: 20px;}
-.generalreview_btn_modify{ width: 90px; height: 35px; color: #fff; background-color: var(--main); border-radius: 3rem; text-align: center; border:none; margin:5px; margin-top: none;}
+
+
+/* 버튼 */
+.generalreview_btn_modify { display: inline-flex; justify-content: center; align-items: center; flex-shrink: 0; width: 9.2rem; padding: 0 2.8rem; height: 3.8rem; color: var(--white); background-color: var(--main); border-width: 2px; border-style: solid; border-color: var(--main); border-radius: .4rem; font-weight: 500; letter-spacing: var(--letter-spacing); transition: .3s; border-radius: 3rem; } 
+.generalreview_btn_modify::before { transition: inherit; } 
+.generalreview_btn_modify::after { transition: inherit; } 
+.generalreview_btn_modify + .generalreview_btn_modify { margin-left: .8rem; } 
+.generalreview_btn_modify:hover { color: var(--white); background-color: rgba(var(--main-ton-up-rgb)); border-color: rgba(var(--main-ton-up-rgb)); text-decoration: none;} 
+.generalreview_btn_modify:disabled, .generalreview_btn_modify.disabled { background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; border: none !important;} 
+.generalreview_btn_modify:disabled:hover, .generalreview_btn_modify.disabled:hover {background-color: rgba(var(--main-ton-down-rgb), 0.1) !important; color: var(--main) !important;border: none !important;} 
+/* 하얀 버튼 */
+.generalreview_btn_modify.btnset-line { color: var(--main-ton-down); background-color: transparent; border-color: var(--main); } 
+.generalreview_btn_modify.btnset-line:hover { color: var(--white); background-color: var(--main-ton-up); border-color: var(--main-ton-up); text-decoration: none;} 
+.generalreview_btn_modify.btnset-line:disabled, .btnset.btnset-line.disabled { color: var(--text-color4); background-color: var(--bg-color); border-color: var(--line-color1); } 
+.generalreview_btn_modify.btnset-line.btnset-black { border-color: var(--line-color4); color: var(--text-color2); } 
+.generalreview_btn_modify.btnset-line.btnset-black:hover { border-color: var(--line-color4); background-color: var(--main); color: var(--white); text-decoration: none;} 
+.generalreview_btn_modify.btnset-line.btnset-white { border-color: var(--white); color: var(--white); } 
+.generalreview_btn_modify.btnset-line.btnset-white:hover { background-color: var(--white); color: var(--text-color1); } 
+
+/* 이미지 */
 .general_review_img_wrap{ display: inline-block; position: relative; width: 110px; padding:0px; margin-left: 7px; }
 .general_review_img_wrap>img{ width:104px; border-radius: 4px; }
 .general_review_img_wrap>button{ position: absolute; top: 3px; right: 10px; border:none; background-color: transparent; color:#fff }

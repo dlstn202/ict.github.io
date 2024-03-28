@@ -39,8 +39,8 @@
             </div>          
             <div class="form-wrap">
                 <div class="inputset inputset-round ml_modify_btn_wrap">
-                    <input class="memberlist_btn_modify" type="button" onclick="" value="수정하기">
-                    <input class="memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    <input class="memberlist_btn btnset-line" type="button" onclick="" value="수정하기">
+                    <input class="memberlist_btn" type="button" onclick="" value="삭제하기">
                 </div>
             </div>
             </div>
@@ -112,8 +112,8 @@
             
             <div class="form-wrap">
                 <div class="inputset inputset-round ml_modify_btn_wrap">
-                    <input class="memberlist_btn_modify" type="button" onclick="" value="수정하기">
-                    <input class="memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    <input class="memberlist_btn btnset-line" type="button" onclick="" value="수정하기">
+                    <input class="memberlist_btn" type="button" onclick="" value="삭제하기">
                 </div>
             </div>
         </div>
@@ -177,8 +177,8 @@
             
             <div class="form-wrap">
                 <div class="inputset inputset-round ml_modify_btn_wrap">
-                    <input class="btnset btnset-line btnset-round memberlist_btn_modify" type="button" onclick="" value="수정하기">
-                    <input class="btnset btnset-round memberlist_btn_modify" type="button" onclick="" value="삭제하기">
+                    <input class="memberlist_btn btnset-line" type="button" onclick="" value="수정하기">
+                    <input class="memberlist_btn" type="button" onclick="" value="삭제하기">
                 </div>
             </div>
             </div>
